@@ -35,11 +35,11 @@ function App() {
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/checklist" element={<Checklist />} />
           <Route path="/inventory" element={<Inventory />} />
-          <Route path="/co_hosting" element={<CoHosting />} />
-          <Route path="/smart_devices" element={<SmartDevices />} />
+          <Route path="/co-hosting" element={<CoHosting />} />
+          <Route path="/smart-devices" element={<SmartDevices />} />
           <Route path="/automations" element={<Automations />} />
           <Route path="/integrations" element={<Integrations />} />
-          <Route path="/direct_booking" element={<DirectBooking />} />
+          <Route path="/direct-booking" element={<DirectBooking />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/users" element={<Users />} />
           <Route path="/help-center" element={<HelpCenter />} />

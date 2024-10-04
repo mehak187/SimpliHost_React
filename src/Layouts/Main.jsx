@@ -139,7 +139,7 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/co_hosting"
+                    to="/co-hosting"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
                       "/co_hosting"
                     )}`}
@@ -152,7 +152,7 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/smart_devices"
+                    to="/smart-devices"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
                       "/smart_devices"
                     )}`}
@@ -191,7 +191,7 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/direct_booking"
+                    to="/direct-booking"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
                       "/direct_booking"
                     )}`}
