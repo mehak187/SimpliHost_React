@@ -7,16 +7,15 @@
 @font-face {
     font-family: 'opensans';
     src: url('../font/opensans-light-webfont.woff2') format('woff2'),
-         url('../font/opensans-light-webfont.woff') format('woff');
+        url('../font/opensans-light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
-/*  */
 
 @font-face {
     font-family: 'opensans';
     src: url('../font/opensans-semibold-webfont.woff2') format('woff2'),
-         url('../font/opensans-semibold-webfont.woff') format('woff');
+        url('../font/opensans-semibold-webfont.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
@@ -24,7 +23,7 @@
 @font-face {
     font-family: 'opensans';
     src: url('../font/opensans-bold-webfont.woff2') format('woff2'),
-         url('../font/opensans-bold-webfont.woff') format('woff');
+        url('../font/opensans-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -32,7 +31,7 @@
 @font-face {
     font-family: 'opensans';
     src: url('../font/opensans-extrabold-webfont.woff2') format('woff2'),
-         url('../font/opensans-extrabold-webfont.woff') format('woff');
+        url('../font/opensans-extrabold-webfont.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -41,6 +40,7 @@
     --green: #32F0CD;
     --blue: #3551B6;
 }
+
 /* ------------------
 default
 ------------------- */
@@ -48,16 +48,16 @@ body {
     font-family: 'opensans';
 }
 
-.bg-green{
-    background-color: var( --green);
+.bg-green {
+    background-color: var(--green);
 }
 
-.text-green{
-    background-color: var( --green);
+.text-green {
+    background-color: var(--green);
 }
 
-.bg-blue{
-    background-color: var( --blue);
+.bg-blue {
+    background-color: var(--blue);
 }
 
 .border-grey {
@@ -76,11 +76,11 @@ body {
     font-weight: 700;
 }
 
-.font-12{
+.font-12 {
     font-size: 12px;
 }
 
-select:focus{
+select:focus {
     outline: none;
 }
 
@@ -158,7 +158,7 @@ template
 }
 
 .logodiv {
-  max-width: 200px;
+    max-width: 200px;
 }
 
 .left-mid {
@@ -237,6 +237,7 @@ template
     right: 14px;
     cursor: pointer;
 }
+
 .tog {
     background-color: var(--blue);
     color: #fff;
@@ -252,6 +253,7 @@ template
     width: 100%;
     height: 100%;
 }
+
 .profile {
     width: 40px;
 }
@@ -261,23 +263,27 @@ template
     .main {
         position: relative;
     }
+
     .left {
         position: absolute;
         display: none;
     }
+
     .right {
         width: 100% !important;
     }
 
 }
-@media screen and (max-width: 575px){
-    .drop-list{
+
+@media screen and (max-width: 575px) {
+    .drop-list {
         position: absolute;
         top: 59px;
         width: 100%;
         z-index: 4;
     }
 }
+
 @media screen and (min-width:769px) {
     .left {
         display: block !important;
