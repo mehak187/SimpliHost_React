@@ -55,6 +55,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
+                      <img src="" alt="" />
                       <MdDashboard className="sideicon me-2" />
                       <p className="mb-0">Dashboard</p>
                     </div>
