@@ -8,6 +8,21 @@ import { IoCloseCircleSharp } from "react-icons/io5";
 import { MdDashboard } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import automations from "../assets/img/automations.png";
+import calendar from "../assets/img/calendar.png";
+import cohosting from "../assets/img/cohosting.png";
+import checklist from "../assets/img/checklist.png";
+import dashboard from "../assets/img/dashboard.png";
+import directbooking from "../assets/img/directbooking.png";
+import inbox from "../assets/img/inbox.png";
+import integrations from "../assets/img/integrations.png";
+import inventory from "../assets/img/inventory.png";
+import properties from "../assets/img/properties.png";
+import reports from "../assets/img/reports.png";
+import smartdevices from "../assets/img/smartdevices.png";
+import tasks from "../assets/img/tasks.png";
+import users from "../assets/img/users.png";
+import helpcenter from "../assets/img/helpcenter.png";
 
 function Main() {
   const [isLeftVisible, setIsLeftVisible] = useState(false);
@@ -55,8 +70,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src="" alt="" />
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={dashboard} alt="" className="sideicon me-2" />
                       <p className="mb-0">Dashboard</p>
                     </div>
                   </Link>
@@ -69,8 +83,21 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={inbox} alt="" className="sideicon me-2" />
                       <p className="mb-0">Inbox</p>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="admin/calendar"
+                    className={`sidelink d-flex align-items-center text-white ${isActive(
+                      "/admin/calendar"
+                    )}`}
+                  >
+                    <div className="d-flex align-items-center">
+                      <img src={calendar} alt="" className="sideicon me-2" />
+                      <p className="mb-0">Calendar</p>
                     </div>
                   </Link>
                 </li>
@@ -82,7 +109,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={properties} alt="" className="sideicon me-2" />
                       <p className="mb-0">Properties</p>
                     </div>
                   </Link>
@@ -95,7 +122,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={tasks} alt="" className="sideicon me-2" />
                       <p className="mb-0">Tasks</p>
                     </div>
                   </Link>
@@ -108,7 +135,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={checklist} alt="" className="sideicon me-2" />
                       <p className="mb-0">Checklist</p>
                     </div>
                   </Link>
@@ -121,7 +148,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={inventory} alt="" className="sideicon me-2" />
                       <p className="mb-0">Inventory</p>
                     </div>
                   </Link>
@@ -134,7 +161,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={cohosting} alt="" className="sideicon me-2" />
                       <p className="mb-0">CoHosting</p>
                     </div>
                   </Link>
@@ -147,7 +174,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={smartdevices} alt="" className="sideicon me-2" />
                       <p className="mb-0">SmartDevices</p>
                     </div>
                   </Link>
@@ -160,7 +187,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={automations} alt="" className="sideicon me-2" />
                       <p className="mb-0">Automations</p>
                     </div>
                   </Link>
@@ -173,7 +200,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={integrations} alt="" className="sideicon me-2" />
                       <p className="mb-0">Integrations</p>
                     </div>
                   </Link>
@@ -186,7 +213,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={directbooking} alt="" className="sideicon me-2" />
                       <p className="mb-0">DirectBooking</p>
                     </div>
                   </Link>
@@ -199,7 +226,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={reports} alt="" className="sideicon me-2" />
                       <p className="mb-0">Reports</p>
                     </div>
                   </Link>
@@ -212,7 +239,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={users} alt="" className="sideicon me-2" />
                       <p className="mb-0">Users</p>
                     </div>
                   </Link>
@@ -225,7 +252,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={helpcenter} alt="" className="sideicon me-2" />
                       <p className="mb-0">HelpCenter</p>
                     </div>
                   </Link>
@@ -238,7 +265,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
+                      <img src={dashboard} alt="" className="sideicon me-2" />
                       <p className="mb-0">Settings</p>
                     </div>
                   </Link>
