@@ -28,22 +28,22 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route element={<Main />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/inbox" element={<Inbox />} />
-          <Route path="/calendar" element={<Calendar />} />
-          <Route path="/properties" element={<Properties />} />
-          <Route path="/tasks" element={<Tasks />} />
-          <Route path="/checklist" element={<Checklist />} />
-          <Route path="/inventory" element={<Inventory />} />
-          <Route path="/co-hosting" element={<CoHosting />} />
-          <Route path="/smart-devices" element={<SmartDevices />} />
-          <Route path="/automations" element={<Automations />} />
-          <Route path="/integrations" element={<Integrations />} />
-          <Route path="/direct-booking" element={<DirectBooking />} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/help-center" element={<HelpCenter />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="admin/dashboard" element={<Dashboard />} />
+          <Route path="admin/inbox" element={<Inbox />} />
+          <Route path="admin/calendar" element={<Calendar />} />
+          <Route path="admin/properties" element={<Properties />} />
+          <Route path="admin/tasks" element={<Tasks />} />
+          <Route path="admin/checklist" element={<Checklist />} />
+          <Route path="admin/inventory" element={<Inventory />} />
+          <Route path="admin/co-hosting" element={<CoHosting />} />
+          <Route path="admin/smart-devices" element={<SmartDevices />} />
+          <Route path="admin/automations" element={<Automations />} />
+          <Route path="admin/integrations" element={<Integrations />} />
+          <Route path="admin/direct-booking" element={<DirectBooking />} />
+          <Route path="admin/reports" element={<Reports />} />
+          <Route path="admin/users" element={<Users />} />
+          <Route path="admin/help-center" element={<HelpCenter />} />
+          <Route path="admin/settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>

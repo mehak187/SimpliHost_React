@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
-import { Link, useLocation } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import logo from "../assets/img/dashboard-logo.png";
 import { IoMdLogOut } from "react-icons/io";
 import profile from "../assets/img/profile.png";
@@ -12,6 +11,7 @@ import { FaSearch } from "react-icons/fa";
 
 function Main() {
   const [isLeftVisible, setIsLeftVisible] = useState(false);
+  const location = useLocation(); // Call useLocation at the top
 
   const toggleLeftDisplay = () => {
     setIsLeftVisible(!isLeftVisible);
@@ -21,10 +21,11 @@ function Main() {
     setIsLeftVisible(false);
   };
 
-  function isActive(routes) {
-    const location = useLocation();
-    return routes.includes(location.pathname) ? "active" : "";
+  // Update this function to use location.pathname
+  function isActive(route) {
+    return location.pathname.startsWith(route) ? "active" : "";
   }
+
   return (
     <section>
       <div className="main">
@@ -37,20 +38,20 @@ function Main() {
               />
             </div>
             <Link
-              to="/dashboard"
+              to="admin/dashboard"
               className="logodiv d-flex align-items-center justify-content-center px-4"
             >
               <img src={logo} alt="" className="w-100" />
             </Link>
           </div>
           <div className="left-mid">
-            <div className="list ">
+            <div className="list">
               <ul className="list-unstyled">
                 <li>
                   <Link
-                    to="/dashboard"
+                    to="admin/dashboard"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/dashboard"
+                      "/admin/dashboard"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -61,9 +62,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/inbox"
+                    to="admin/inbox"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/inbox"
+                      "/admin/inbox"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -74,22 +75,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/calendar"
+                    to="admin/properties"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/calendar"
-                    )}`}
-                  >
-                    <div className="d-flex align-items-center">
-                      <MdDashboard className="sideicon me-2" />
-                      <p className="mb-0">Calendar</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/properties"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/properties"
+                      "/admin/properties"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -100,9 +88,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/tasks"
+                    to="admin/tasks"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/tasks"
+                      "/admin/tasks"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -113,9 +101,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/checklist"
+                    to="admin/checklist"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/checklist"
+                      "/admin/checklist"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -126,9 +114,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/inventory"
+                    to="admin/inventory"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/inventory"
+                      "/admin/inventory"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -139,9 +127,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/co-hosting"
+                    to="admin/co-hosting"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/co_hosting"
+                      "/admin/co-hosting"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -152,9 +140,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/smart-devices"
+                    to="admin/smart-devices"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/smart_devices"
+                      "/admin/smart-devices"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -165,9 +153,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/automations"
+                    to="admin/automations"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/automations"
+                      "/admin/automations"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -178,9 +166,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/integrations"
+                    to="admin/integrations"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/integrations"
+                      "/admin/integrations"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -191,9 +179,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/direct-booking"
+                    to="admin/direct-booking"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/direct_booking"
+                      "/admin/direct-booking"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -204,9 +192,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/reports"
+                    to="admin/reports"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/reports"
+                      "/admin/reports"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -217,9 +205,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/users"
+                    to="admin/users"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/users"
+                      "/admin/users"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -230,9 +218,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/help-center"
+                    to="admin/help-center"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/help-center"
+                      "/admin/help-center"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -243,9 +231,9 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="/settings"
+                    to="admin/settings"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/settings"
+                      "/admin/settings"
                     )}`}
                   >
                     <div className="d-flex align-items-center">
@@ -330,6 +318,7 @@ function Main() {
                       </div>
                     </Link>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -337,7 +326,7 @@ function Main() {
 
           <div className="right-bottom">
             <div className="bottom-main">
-              <div className="content ">
+              <div className="content">
                 <div className="container-fluid">
                   <Outlet />
                 </div>
