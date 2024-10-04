@@ -29,21 +29,21 @@ function App() {
       <Routes>
         <Route element={<Main />}>
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/dashboard" element={<Inbox />} />
-          <Route path="/dashboard" element={<Calendar />} />
-          <Route path="/dashboard" element={<Properties />} />
-          <Route path="/dashboard" element={<Tasks />} />
-          <Route path="/dashboard" element={<Checklist />} />
-          <Route path="/dashboard" element={<Inventory />} />
-          <Route path="/dashboard" element={<CoHosting />} />
-          <Route path="/dashboard" element={<SmartDevices />} />
-          <Route path="/dashboard" element={<Automations />} />
-          <Route path="/dashboard" element={<Integrations />} />
-          <Route path="/dashboard" element={<DirectBooking />} />
-          <Route path="/dashboard" element={<Reports />} />
-          <Route path="/dashboard" element={<Users />} />
-          <Route path="/dashboard" element={<HelpCenter />} />
-          <Route path="/dashboard" element={<Settings />} />
+          <Route path="/inbox" element={<Inbox />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/checklist" element={<Checklist />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/co-hosting" element={<CoHosting />} />
+          <Route path="/smart-devices" element={<SmartDevices />} />
+          <Route path="/automations" element={<Automations />} />
+          <Route path="/integrations" element={<Integrations />} />
+          <Route path="/direct-booking" element={<DirectBooking />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/help-center" element={<HelpCenter />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>
