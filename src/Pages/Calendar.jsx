@@ -1,5 +1,7 @@
 import React from "react";
-
+import CalendarSettings from "../Components/Calendar/CalendarSettings";
+import Single from "../Components/Calendar/Single";
+import Multi from "../Components/Calendar/Multi";
 
 function Calendar() {
   return (
@@ -14,36 +16,36 @@ function Calendar() {
             >
               <button
                 className="nav-link active"
-                id="Favorite-tab"
+                id="Multi-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#Favorite"
+                data-bs-target="#Multi"
                 type="button"
                 role="tab"
-                aria-controls="Favorite"
+                aria-controls="Multi"
                 aria-selected="true"
               >
                 Multi
               </button>
               <button
                 className="nav-link"
-                id="Reservations-tab"
+                id="Single-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#Reservations"
+                data-bs-target="#Single"
                 type="button"
                 role="tab"
-                aria-controls="Reservations"
+                aria-controls="Single"
                 aria-selected="false"
               >
                 Single
               </button>
               <button
                 className="nav-link"
-                id="Operations-tab"
+                id="Settings-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#Operations"
+                data-bs-target="#Settings"
                 type="button"
                 role="tab"
-                aria-controls="Operations"
+                aria-controls="Settings"
                 aria-selected="false"
               >
                 Settings
@@ -52,30 +54,30 @@ function Calendar() {
             <div className="tab-content mt-3" id="nav-tabContent">
               <div
                 className="tab-pane fade show active"
-                id="Favorite"
+                id="Multi"
                 role="tabpanel"
-                aria-labelledby="Favorite-tab"
+                aria-labelledby="Multi-tab"
                 tabIndex={0}
               >
-                <Favorite/>
+                <Multi />
               </div>
               <div
                 className="tab-pane fade"
-                id="Reservations"
+                id="Single"
                 role="tabpanel"
-                aria-labelledby="Reservations-tab"
+                aria-labelledby="Single-tab"
                 tabIndex={0}
               >
-                <Reservations/>
+                <Single />
               </div>
               <div
                 className="tab-pane fade"
-                id="Operations"
+                id="Settings"
                 role="tabpanel"
-                aria-labelledby="Operations-tab"
+                aria-labelledby="Settings-tab"
                 tabIndex={0}
               >
-                <Operations/>
+                <CalendarSettings />
               </div>
             </div>
           </nav>
@@ -86,4 +88,3 @@ function Calendar() {
 }
 
 export default Calendar;
-
