@@ -7,7 +7,8 @@ import OutofStockItems from "../Components/Inventory/OutofStockItems";
 function Inventory() {
   return (
     <section>
-      <Link to='/admin/add-inventory'>Add New item</Link>
+      <Link to='/admin/add-inventory' className="me-3">Add New item</Link>
+      <Link to='/admin/edit-inventory'>Edit item</Link>
       <div className="container-fluid">
         <div>
           <nav>
