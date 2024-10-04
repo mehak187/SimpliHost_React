@@ -13,6 +13,7 @@ import Tasks from "./Pages/Tasks";
 import AddTasks from "../src/Components/Tasks/AddTask";
 import Checklist from "./Pages/Checklist";
 import Inventory from "./Pages/Inventory";
+import AddInventory from "../src/Components/Inventory/AddItems";
 import CoHosting from "./Pages/CoHosting";
 import SmartDevices from "./Pages/SmartDevices";
 import Automations from "./Pages/Automations";
@@ -37,6 +38,7 @@ function App() {
           <Route path="admin/add-tasks" element={<AddTasks />} />
           <Route path="admin/checklist" element={<Checklist />} />
           <Route path="admin/inventory" element={<Inventory />} />
+          <Route path="admin/add-inventory" element={<AddInventory />} />
           <Route path="admin/co-hosting" element={<CoHosting />} />
           <Route path="admin/smart-devices" element={<SmartDevices />} />
           <Route path="admin/automations" element={<Automations />} />
