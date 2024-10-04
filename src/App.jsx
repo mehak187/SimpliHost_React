@@ -10,6 +10,7 @@ import Inbox from "./Pages/Inbox";
 import Calendar from "./Pages/Calendar";
 import Properties from "./Pages/Properties";
 import Tasks from "./Pages/Tasks";
+import AddTasks from "../src/Components/Tasks/AddTask";
 import Checklist from "./Pages/Checklist";
 import Inventory from "./Pages/Inventory";
 import CoHosting from "./Pages/CoHosting";
@@ -33,6 +34,7 @@ function App() {
           <Route path="admin/calendar" element={<Calendar />} />
           <Route path="admin/properties" element={<Properties />} />
           <Route path="admin/tasks" element={<Tasks />} />
+          <Route path="admin/add-tasks" element={<AddTasks />} />
           <Route path="admin/checklist" element={<Checklist />} />
           <Route path="admin/inventory" element={<Inventory />} />
           <Route path="admin/co-hosting" element={<CoHosting />} />
