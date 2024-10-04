@@ -1,0 +1,18 @@
+.not-icon {
+    color: #484848;
+}
+.not-main {
+    padding: 6px 6px;
+    border: 1px solid #CDCDCD;
+}
+.new-not:before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    right: 5px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: red;
+}
