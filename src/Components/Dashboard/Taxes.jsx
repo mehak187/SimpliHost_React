@@ -1,9 +1,17 @@
 import React from 'react'
+import { CiStar } from "react-icons/ci";
 
 function Taxes() {
   return (
     <div>
-      Taxes
+      <div>
+          <div>
+            <h2>Occupancy Taxes <CiStar/></h2>
+          </div>
+          <div>
+            
+          </div>
+      </div>
     </div>
   )
 }
