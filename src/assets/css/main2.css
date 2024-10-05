@@ -9,3 +9,43 @@
     border: none;
     border-bottom: 2px solid #3551B6
 }
+
+.text-blue{
+    color: #3551B6;
+}
+
+.bg-lightgrey{
+    background-color: #F7F7F7;
+}
+
+.chk{
+    accent-color: black !important;
+    height: 15px;
+    width: 15px
+}
+
+.filter-col{
+    width: calc(20% - 12px);
+    margin: 0 6px;
+}
+
+@media screen and (max-width: 1200px){
+    .filter-col {
+        width: calc(33.33% - 12px);
+        margin: 6px 6px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .filter-col {
+        width: calc(50% - 12px);
+        margin: 6px 6px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .filter-col {
+        width: calc(100% - 12px);
+        margin: 6px 6px;
+    }
+}

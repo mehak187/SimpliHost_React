@@ -37,14 +37,14 @@ const percentagePlugin = {
   },
 };
 
-const DonutChart = () => {
+const PetsDonut = () => {
   const data = {
-    labels: ["AirBnB", "VRBO", "Direct"],
+    labels: ["Without Pets", "Pets"],
     datasets: [
       {
-        data: [45675.9, 22430, 34625.9], // Booking amounts
-        backgroundColor: ["#3551B6", "#34A853", "#F4B942"], // Colors for each section
-        hoverBackgroundColor: ["#3551B6", "#34A853", "#F4B942"],
+        data: [45675.9, 22430], // Booking amounts
+        backgroundColor: [ "#34A853", "#F4B942"], // Colors for each section
+        hoverBackgroundColor: [ "#34A853", "#F4B942"],
         borderWidth: 0, // No border for clean look
       },
     ],
@@ -88,4 +88,4 @@ const DonutChart = () => {
   );
 };
 
-export default DonutChart;
+export default PetsDonut;

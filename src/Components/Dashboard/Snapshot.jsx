@@ -4,6 +4,10 @@ import { GrUpload } from "react-icons/gr";
 import UserImg from '../../assets/img/user.png';
 import LcdImg from '../../assets/img/donut.png';
 import DonutChart from './DonutChart';
+import PetsDonut from './PetsDonut';
+import { IoPawOutline } from "react-icons/io5";
+import BarChart from './BarChart';
+import QuickFilter from './Common/QuickFilter';
 
 // Reusable StatCard component
 const StatCard = ({ title, value, image }) => (
@@ -58,9 +62,16 @@ function Snapshot() {
   return (
     <div>
       <div className="d-flex align-items-center justify-content-between">
-        <h4 className="fw-semibold">
-          Snapshot Dashboard <CiStar />
-        </h4>
+        <div className='d-flex align-items-center'>
+          <div>
+            <h4 className="fw-semibold">
+              Snapshot Dashboard <CiStar />
+          </h4>
+          </div>
+          <div className='ms-2'>
+            <QuickFilter/>
+          </div>
+        </div>
         <div className="dropdown">
           <button className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <GrUpload className="me-2" />Export
@@ -106,11 +117,31 @@ function Snapshot() {
                 <img src={LcdImg} alt="" />
               </div>
               <div className='ms-2'>
-                <h6 className='mb-0 fw-semibold'>Revenue by Platform</h6>
+                <h6 className='mb-0 fw-semibold'>Bookings by Platform</h6>
               </div>
             </div>
             <DonutChart/>
           </div>
+        </div>
+        <div className="col-3">
+          <div className='bg-white shadow rounded-3 p-2'>
+            <div className='d-flex align-items-center'>
+              <div>
+               <IoPawOutline className='fs-4 text-blue'/>
+              </div>
+              <div className='ms-2'>
+                <h6 className='mb-0 fw-semi'>Pets</h6>
+              </div>
+            </div>
+            <PetsDonut/>
+          </div>
+        </div>
+      </div>
+      <div className="row mt-3">
+        <div className='col-12'>
+            <div className='bg-white shadow rounded-3 p-2'>
+              <BarChart/>
+            </div>
         </div>
       </div>
     </div>

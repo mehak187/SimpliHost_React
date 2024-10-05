@@ -150,7 +150,7 @@ template
     height: 100dvh;
     width: 250px;
     background-color: var(--blue);
-    z-index: 9999;
+    z-index: 9;
 }
 
 .left-top {
