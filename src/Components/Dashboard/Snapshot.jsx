@@ -97,7 +97,7 @@ function Snapshot() {
         ))}
       </div>
       <div className="row">
-        <div className="col-3">
+        <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
           <div className='bg-white shadow rounded-3 p-2'>
             <div className='d-flex align-items-center'>
               <div>
@@ -110,7 +110,7 @@ function Snapshot() {
             <DonutChart/>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
           <div className='bg-white shadow rounded-3 p-2'>
             <div className='d-flex align-items-center'>
               <div>
@@ -123,7 +123,7 @@ function Snapshot() {
             <DonutChart/>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
           <div className='bg-white shadow rounded-3 p-2'>
             <div className='d-flex align-items-center'>
               <div>
