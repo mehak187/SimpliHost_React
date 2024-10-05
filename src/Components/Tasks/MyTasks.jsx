@@ -1,5 +1,7 @@
 import React from "react";
-import { FaTrash, FaEye, FaPencilAlt } from "react-icons/fa";
+import { HiTrash } from "react-icons/hi2";
+import { IoPencil } from "react-icons/io5";
+import { TbCopy } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 function MyTasks() {
@@ -14,7 +16,7 @@ function MyTasks() {
       status: "Not Started",
     },
     {
-      id: 1,
+      id: 2,
       taskname: "Green Back Home Inspection",
       property: "447 S st Francis Ave unit 01",
       tasktype: "Cleaning",
@@ -23,7 +25,7 @@ function MyTasks() {
       status: "In Progress",
     },
     {
-      id: 1,
+      id: 3,
       taskname: "Green Back Home Inspection",
       property: "447 S st Francis Ave unit 01",
       tasktype: "Cleaning",
@@ -32,7 +34,7 @@ function MyTasks() {
       status: "Overdue",
     },
     {
-      id: 1,
+      id: 4,
       taskname: "Green Back Home Inspection",
       property: "447 S st Francis Ave unit 01",
       tasktype: "Cleaning",
@@ -41,13 +43,22 @@ function MyTasks() {
       status: "Completed",
     },
   ];
+
   const getStatusClass = (status) => {
-    if (status === "Not Started") return "text-primary";
-    if (status === "In Progress") return "text-black";
-    if (status === "Overdue") return "text-danger";
-    if (status === "Completed") return "text-success";
-    return ""; // Default class if no match
+    switch (status) {
+      case "Not Started":
+        return "text-primary"; // Blue for Not Started
+      case "In Progress":
+        return "text-warning"; // Yellow for In Progress
+      case "Overdue":
+        return "text-danger"; // Red for Overdue
+      case "Completed":
+        return "text-success"; // Green for Completed
+      default:
+        return "";
+    }
   };
+
   return (
     <div>
       <div className="table-responsive default-table mt-3">
@@ -64,24 +75,26 @@ function MyTasks() {
             </tr>
           </thead>
           <tbody>
-            {DataCollection.map((data, index) => (
+            {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.taskname}</td>
                 <td className="small text-black">{data.property}</td>
                 <td className="small text-black text-nowrap">{data.tasktype}</td>
                 <td className="small text-black">{data.assignedTo}</td>
                 <td className="small text-black">{data.endDate}</td>
-                <td className={`small text-black ${getStatusClass(data.status)}`}>{data.status}</td>
+                <td className={`small fw-semi ${getStatusClass(data.status)}`}>
+                  {data.status}
+                </td>
                 <td className="small text-black">
                   <div className="d-flex">
-                    <Link to="#" className="mx-1 text-blue">
-                      <FaTrash />
+                    <Link to="#" className="mx-1 tblicon">
+                      <TbCopy />
                     </Link>
-                    <Link to="/manager_detail" className="mx-1 text-blue">
-                      <FaEye />
+                    <Link to="/manager_detail" className="mx-1 tblicon">
+                      <IoPencil />
                     </Link>
-                    <Link to="/edit_manager" className="mx-1 text-blue">
-                      <FaPencilAlt />
+                    <Link to="/delete_task" className="mx-1 tblicon">
+                      <HiTrash />
                     </Link>
                   </div>
                 </td>
