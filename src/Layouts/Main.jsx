@@ -29,7 +29,6 @@ import logout from "../assets/img/logout.png";
 import logoMin from "../assets/img/logo-min.png";
 import slideMax from "../assets/img/slide-max.png";
 
-
 function Main() {
   const location = useLocation(); // Call useLocation at the top
 
@@ -42,7 +41,7 @@ function Main() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setIsMinimized(true);  // Add min-sidebar class if screen width is below 768px
+        setIsMinimized(true); // Add min-sidebar class if screen width is below 768px
       } else {
         setIsMinimized(false); // Remove min-sidebar class for larger screens
       }
@@ -67,7 +66,7 @@ function Main() {
   return (
     <section>
       <div className={`main ${isMinimized ? "min-sidebar" : ""}`}>
-        <div className="left position-relative">
+        <div className="left">
           {!isMinimized && (
             <img
               src={slideMin}
@@ -324,8 +323,8 @@ function Main() {
               to="/"
               className="logouts w-100 border border-1 border-white d-flex align-items-center justify-content-center text-decoration-none text-white px-3 py-2 rounded-3"
             >
-                <img src={logout} alt="" className="sideicon" />
-                <p className="mb-0">Logout</p>
+              <img src={logout} alt="" className="sideicon" />
+              <p className="mb-0">Logout</p>
             </Link>
           </div>
         </div>
@@ -372,7 +371,6 @@ function Main() {
                       </div>
                     </Link>
                   </div>
-                  
                 </div>
               </div>
             </div>
