@@ -13,7 +13,6 @@ import All from "../Components/Checklist/All";
 function Checklist() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -236,7 +235,6 @@ function Checklist() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

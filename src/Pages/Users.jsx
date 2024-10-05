@@ -10,7 +10,6 @@ import AllUsers from "../Components/Users/AllUsers";
 function Users() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -170,7 +169,6 @@ function Users() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

@@ -6,7 +6,6 @@ import Widgets from "../Components/DirectBooking/Widgets";
 function DirectBooking() {
   return (
     <section>
-      <div className="container-fluid">
         <div >
           <nav className="main-tabs">
             <div
@@ -82,7 +81,6 @@ function DirectBooking() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

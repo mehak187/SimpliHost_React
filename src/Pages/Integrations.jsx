@@ -6,7 +6,6 @@ import Webhooks from "../Components/Integrations/Webhooks";
 function Integrations() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -82,7 +81,6 @@ function Integrations() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

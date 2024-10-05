@@ -6,7 +6,6 @@ import Taxes from "../Components/Reports/Taxes";
 function Reports() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -82,7 +81,6 @@ function Reports() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

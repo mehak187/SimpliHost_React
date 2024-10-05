@@ -7,7 +7,6 @@ import SpecialIndicators from "../Components/Automations/SpecialIndicators";
 function Automations() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -104,7 +103,6 @@ function Automations() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

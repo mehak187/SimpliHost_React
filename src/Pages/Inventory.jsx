@@ -9,7 +9,6 @@ function Inventory() {
     <section>
       <Link to='/admin/add-inventory' className="me-3">Add New item</Link>
       <Link to='/admin/edit-inventory'>Edit item</Link>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -85,7 +84,6 @@ function Inventory() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }
