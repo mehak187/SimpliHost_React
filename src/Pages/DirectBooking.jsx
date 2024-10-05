@@ -7,8 +7,8 @@ function DirectBooking() {
   return (
     <section>
       <div className="container-fluid">
-        <div>
-          <nav>
+        <div >
+          <nav className="main-tabs">
             <div
               className="nav nav-tabs border-0 mt-3"
               id="nav-tab"
