@@ -322,6 +322,7 @@ template
     justify-content: center;
 }
 
+
 @media screen and (max-width:768px) {
     .main {
         position: relative;
