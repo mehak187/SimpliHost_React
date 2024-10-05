@@ -5,7 +5,6 @@ import PropertyGroups from "../Components/Properties/PropertyGroups";
 function Properties() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -60,7 +59,6 @@ function Properties() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

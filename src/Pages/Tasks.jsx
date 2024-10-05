@@ -8,7 +8,6 @@ function Tasks() {
   return (
     <section>
       <Link to='/admin/add-tasks'>Add New Task</Link>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -84,7 +83,6 @@ function Tasks() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

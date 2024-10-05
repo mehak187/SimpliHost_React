@@ -6,7 +6,6 @@ import OperationsCodes from "../Components/SmartDevices/OperationsCodes";
 function SmartDevices() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -82,7 +81,6 @@ function SmartDevices() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

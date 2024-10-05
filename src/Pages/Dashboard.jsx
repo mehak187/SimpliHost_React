@@ -9,7 +9,6 @@ import Snapshot from "../Components/Dashboard/Snapshot";
 function Dashboard() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -148,7 +147,6 @@ function Dashboard() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

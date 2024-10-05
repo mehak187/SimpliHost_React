@@ -7,7 +7,6 @@ import FeeTypes from "../Components/CoHosting/FeeTypes";
 function CoHosting() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -104,7 +103,6 @@ function CoHosting() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }

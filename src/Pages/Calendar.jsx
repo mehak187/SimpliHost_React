@@ -6,7 +6,6 @@ import Multi from "../Components/Calendar/Multi";
 function Calendar() {
   return (
     <section>
-      <div className="container-fluid">
         <div>
           <nav className="main-tabs">
             <div
@@ -82,7 +81,6 @@ function Calendar() {
             </div>
           </nav>
         </div>
-      </div>
     </section>
   );
 }
