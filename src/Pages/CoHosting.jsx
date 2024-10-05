@@ -9,7 +9,7 @@ function CoHosting() {
     <section>
       <div className="container-fluid">
         <div>
-          <nav>
+          <nav className="main-tabs">
             <div
               className="nav nav-tabs border-0 mt-3"
               id="nav-tab"

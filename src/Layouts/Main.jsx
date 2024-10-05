@@ -350,14 +350,14 @@ function Main() {
                     />
                   </div>
                   <Link
-                    to="/"
+                    
                     className="not-main rounded-circle new-not position-relative  me-2"
                   >
                     <IoIosNotifications className="fs-4 d-flex align-items-center not-icon" />
                   </Link>
                   <div className="d-flex justify-content-between w-100 align-items-center">
                     <Link
-                      to="/"
+                      
                       className="mb-0 text-decoration-none d-flex align-items-center"
                     >
                       <div className="">
