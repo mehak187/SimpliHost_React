@@ -21,3 +21,17 @@
 .default-table td {
     padding: 16px 16px;
 }
+.graybutton {
+    background: #E7E7E7;
+    border: 1px solid #D5D5D5;
+    padding: 10px 10px;
+    min-width: 130px;
+    max-width: 150px;
+}
+.bluebutton {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 10px 10px;
+    min-width: 130px;
+    max-width: 140px;
+}

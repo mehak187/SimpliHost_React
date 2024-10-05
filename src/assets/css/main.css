@@ -179,7 +179,6 @@ template
 .list>ul>li {
     justify-content: center;
     color: #fff;
-    margin-bottom: 10px;
 }
 
 .sidelink {
@@ -266,6 +265,9 @@ template
     top: 16px;
     z-index: 9;
     width: 36px;
+}
+.min-sidebar .list>ul>li {
+    margin-bottom: 10px;
 }
 
 .min-sidebar .logodiv {

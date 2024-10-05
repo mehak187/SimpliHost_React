@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 function Tasks() {
   return (
     <section>
+      <Link to='/admin/add-tasks'>Add New Task</Link>
         <div>
           <nav className="main-tabs">
             <div
