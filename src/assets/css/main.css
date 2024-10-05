@@ -211,7 +211,7 @@ template
 .right-top {
     height: 80px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .userimg {
@@ -222,12 +222,7 @@ template
 
 .right-bottom {
     height: calc(100dvh - 80px);
-    padding: 12px 0;
-}
-
-.bottom-main {
-    height: calc(100dvh - 105px);
-    padding: 10px 5px;
+    padding: 18px 20px;
 }
 
 .content {
@@ -357,9 +352,12 @@ template
         top: 16px;
         width: 30px;
     }
-    /* .right-top {
-        padding: 0 15px;
-    } */
+    .right-bottom {
+        padding: 18px 8px;
+    }
+    .right-top {
+        padding: 0px 20px;
+    }
 }
 
 @media screen and (max-width: 575px) {}

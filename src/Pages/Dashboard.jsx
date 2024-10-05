@@ -12,7 +12,7 @@ function Dashboard() {
         <div>
           <nav className="main-tabs">
             <div
-              className="nav nav-tabs border-0 mt-3 border-bottom"
+              className="nav nav-tabs border-0 border-bottom"
               id="nav-tab"
               role="tablist"
             >
