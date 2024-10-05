@@ -157,8 +157,8 @@ template
     height: 80px;
 }
 
-.logodiv {
-    max-width: 200px;
+.logo-min{
+    display: none;
 }
 
 .left-mid {
@@ -168,7 +168,7 @@ template
 
 .list ul {
     overflow: auto;
-    height: calc(100dvh - 163px);
+    height: calc(100dvh - 155px);
     padding: 0 10px;
 }
 
@@ -183,8 +183,10 @@ template
     padding: 10px 10px;
 }
 
+
 .sideicon {
     width: 16px;
+    margin-right: 10px;
 }
 
 .sidelink.active {
@@ -247,41 +249,71 @@ template
 }
 
 .logodiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    max-width: 200px;
+    padding: 0 26px;
 }
 
 .profile {
     width: 40px;
 }
 
+/* -----minimize-scrollbar------- */
+.left {
+    position: relative;
+}
+.sidebar-adjuster {
+    right: -17px;
+    top: 16px;
+    z-index: 9;
+    width: 36px;
+}
+.min-sidebar .logodiv {
+    padding: 0 20px;
+}
+.min-sidebar .left{
+    width: 80px;
+}
+.min-sidebar .right {
+    width: calc(100% - 80px);
+}
+.min-sidebar .logo-max {
+    display: none;
+}
+.min-sidebar .logo-min{
+    display: block;
+}
+.min-sidebar .left li p,
+.min-sidebar .logouts p{
+    display: none;
+}
+.min-sidebar .logouts{
+    border: none !important;
+    padding: 6px !important;
+}
+.min-sidebar .sidelink {
+    padding: 6px 6px;
+    width: max-content;
+}
+.min-sidebar .sidelink {
+    padding: 6px 6px;
+    width: max-content;
+}
+.min-sidebar .sideicon {
+    margin: 0;
+}
+.min-sidebar .list>ul>li {
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width:768px) {
-    .main {
+    .ma/in {
         position: relative;
     }
-
-    .left {
-        position: absolute;
-        display: none;
-    }
-
-    .right {
-        width: 100% !important;
-    }
-
 }
 
 @media screen and (max-width: 575px) {
-    .drop-list {
-        position: absolute;
-        top: 59px;
-        width: 100%;
-        z-index: 4;
-    }
+ 
 }
 
 @media screen and (min-width:769px) {
