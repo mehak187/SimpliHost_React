@@ -336,7 +336,7 @@ function Main() {
               </div>
               <div className=" d-flex align-items-center justify-content-between ">
                 <div className="d-flex align-items-center">
-                  <div className="border-grey d-none d-xl-flex px-2 py-1 rounded-3 me-2">
+                  <div className="border-grey bg-white d-none d-xl-flex px-2 py-1 rounded-3 me-2">
                     <label
                       htmlFor="search"
                       className="bg-blue rounded-3 d-flex align-items-center text-white px-2 py-2"
@@ -349,17 +349,11 @@ function Main() {
                       className="border-0 focus-none ps-2"
                     />
                   </div>
-                  <Link
-                    
-                    className="not-main rounded-circle new-not position-relative  me-2"
-                  >
+                  <Link className="not-main rounded-circle new-not position-relative  me-2">
                     <IoIosNotifications className="fs-4 d-flex align-items-center not-icon" />
                   </Link>
                   <div className="d-flex justify-content-between w-100 align-items-center">
-                    <Link
-                      
-                      className="mb-0 text-decoration-none d-flex align-items-center"
-                    >
+                    <Link className="mb-0 text-decoration-none d-flex align-items-center">
                       <div className="">
                         <img src={profile} alt="" className="profile" />
                       </div>
@@ -377,10 +371,10 @@ function Main() {
           </div>
 
           <div className="right-bottom">
-            <div className="bottom-main">
-                <div className="container-fluid">
-                  <Outlet />
-                </div>
+            <div className="content">
+              <div className="container-fluid">
+                <Outlet />
+              </div>
             </div>
           </div>
         </div>
