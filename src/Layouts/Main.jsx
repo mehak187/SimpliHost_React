@@ -378,11 +378,9 @@ function Main() {
 
           <div className="right-bottom">
             <div className="bottom-main">
-              <div className="content">
                 <div className="container-fluid">
                   <Outlet />
                 </div>
-              </div>
             </div>
           </div>
         </div>
