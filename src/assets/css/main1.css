@@ -16,3 +16,12 @@
     border-radius: 50%;
     background-color: red;
 }
+/* -----------default-table------- */
+.default-table th,
+.default-table td {
+    padding: 16px 16px;
+}
+.default-table thead {
+}
+
+  
