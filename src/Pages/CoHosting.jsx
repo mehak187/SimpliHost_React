@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Expenses from "../Components/CoHosting/Expenses";
 import Owners from "../Components/CoHosting/Owners";
 import Invoices from "../Components/CoHosting/Invoices";
@@ -8,10 +7,6 @@ import FeeTypes from "../Components/CoHosting/FeeTypes";
 function CoHosting() {
   return (
     <section>
-      <Link to="/admin/add-inventory" className="me-3">
-        Add New item
-      </Link>
-      <Link to="/admin/edit-inventory">Edit item</Link>
       <div className="container-fluid">
         <div>
           <nav>
