@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import logo from "../assets/img/dashboard-logo.png";
 import { IoMdLogOut } from "react-icons/io";
-import profile from "../assets/img/profile.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleSharp } from "react-icons/io5";
-import { MdDashboard } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import { FaChevronCircleRight } from "react-icons/fa";
+
+import logo from "../assets/img/dashboard-logo.png";
+import profile from "../assets/img/profile.png";
 import automations from "../assets/img/automations.png";
 import calendar from "../assets/img/calendar.png";
 import cohosting from "../assets/img/cohosting.png";
@@ -23,40 +24,73 @@ import smartdevices from "../assets/img/smartdevices.png";
 import tasks from "../assets/img/tasks.png";
 import users from "../assets/img/users.png";
 import helpcenter from "../assets/img/helpcenter.png";
+import slideMin from "../assets/img/slide-min.png";
+import logout from "../assets/img/logout.png";
+import logoMin from "../assets/img/logo-min.png";
+import slideMax from "../assets/img/slide-max.png";
+
 
 function Main() {
-  const [isLeftVisible, setIsLeftVisible] = useState(false);
   const location = useLocation(); // Call useLocation at the top
 
-  const toggleLeftDisplay = () => {
-    setIsLeftVisible(!isLeftVisible);
-  };
-
-  const hideLeftDisplay = () => {
-    setIsLeftVisible(false);
-  };
-
-  // Update this function to use location.pathname
   function isActive(route) {
     return location.pathname.startsWith(route) ? "active" : "";
   }
+  const [isMinimized, setIsMinimized] = useState(false);
+
+  // Check the window width on initial load
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsMinimized(true);  // Add min-sidebar class if screen width is below 768px
+      } else {
+        setIsMinimized(false); // Remove min-sidebar class for larger screens
+      }
+    };
+
+    // Run the function initially
+    handleResize();
+
+    // Attach event listener to handle window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleSidebar = () => {
+    setIsMinimized(!isMinimized);
+  };
 
   return (
     <section>
-      <div className="main">
-        <div className={isLeftVisible ? "left d-block" : "left d-none"}>
+      <div className={`main ${isMinimized ? "min-sidebar" : ""}`}>
+        <div className="left position-relative">
+          {!isMinimized && (
+            <img
+              src={slideMin}
+              alt="slidemin"
+              className="slideMin text-white position-absolute sidebar-adjuster pointer"
+              onClick={toggleSidebar}
+            />
+          )}
+          {isMinimized && (
+            <img
+              src={slideMax}
+              alt="slidemax"
+              className="slideMax text-white position-absolute sidebar-adjuster pointer"
+              onClick={toggleSidebar}
+            />
+          )}
           <div className="left-top">
-            <div className="d-flex align-items-center justify-content-end">
-              <IoCloseCircleSharp
-                className="d-md-none hidesidebar fs-4 text-white pointer"
-                onClick={hideLeftDisplay}
-              />
-            </div>
             <Link
               to="admin/dashboard"
-              className="logodiv d-flex align-items-center justify-content-center px-4"
+              className="logodiv d-flex w-100 h-100 align-items-center justify-content-center "
             >
-              <img src={logo} alt="" className="w-100" />
+              <img src={logo} alt="" className="w-100 logo-max" />
+              <img src={logoMin} alt="" className="w-100 logo-min" />
             </Link>
           </div>
           <div className="left-mid">
@@ -70,7 +104,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={dashboard} alt="" className="sideicon me-2" />
+                      <img src={dashboard} alt="" className="sideicon" />
                       <p className="mb-0">Dashboard</p>
                     </div>
                   </Link>
@@ -83,7 +117,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={inbox} alt="" className="sideicon me-2" />
+                      <img src={inbox} alt="" className="sideicon" />
                       <p className="mb-0">Inbox</p>
                     </div>
                   </Link>
@@ -96,7 +130,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={calendar} alt="" className="sideicon me-2" />
+                      <img src={calendar} alt="" className="sideicon" />
                       <p className="mb-0">Calendar</p>
                     </div>
                   </Link>
@@ -109,7 +143,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={properties} alt="" className="sideicon me-2" />
+                      <img src={properties} alt="" className="sideicon" />
                       <p className="mb-0">Properties</p>
                     </div>
                   </Link>
@@ -122,7 +156,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={tasks} alt="" className="sideicon me-2" />
+                      <img src={tasks} alt="" className="sideicon" />
                       <p className="mb-0">Tasks</p>
                     </div>
                   </Link>
@@ -135,7 +169,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={checklist} alt="" className="sideicon me-2" />
+                      <img src={checklist} alt="" className="sideicon" />
                       <p className="mb-0">Checklist</p>
                     </div>
                   </Link>
@@ -148,7 +182,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={inventory} alt="" className="sideicon me-2" />
+                      <img src={inventory} alt="" className="sideicon" />
                       <p className="mb-0">Inventory</p>
                     </div>
                   </Link>
@@ -161,7 +195,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={cohosting} alt="" className="sideicon me-2" />
+                      <img src={cohosting} alt="" className="sideicon" />
                       <p className="mb-0">CoHosting</p>
                     </div>
                   </Link>
@@ -174,7 +208,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={smartdevices} alt="" className="sideicon me-2" />
+                      <img src={smartdevices} alt="" className="sideicon" />
                       <p className="mb-0">SmartDevices</p>
                     </div>
                   </Link>
@@ -187,7 +221,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={automations} alt="" className="sideicon me-2" />
+                      <img src={automations} alt="" className="sideicon" />
                       <p className="mb-0">Automations</p>
                     </div>
                   </Link>
@@ -200,7 +234,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={integrations} alt="" className="sideicon me-2" />
+                      <img src={integrations} alt="" className="sideicon" />
                       <p className="mb-0">Integrations</p>
                     </div>
                   </Link>
@@ -213,7 +247,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={directbooking} alt="" className="sideicon me-2" />
+                      <img src={directbooking} alt="" className="sideicon" />
                       <p className="mb-0">DirectBooking</p>
                     </div>
                   </Link>
@@ -226,7 +260,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={reports} alt="" className="sideicon me-2" />
+                      <img src={reports} alt="" className="sideicon" />
                       <p className="mb-0">Reports</p>
                     </div>
                   </Link>
@@ -239,7 +273,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={users} alt="" className="sideicon me-2" />
+                      <img src={users} alt="" className="sideicon" />
                       <p className="mb-0">Users</p>
                     </div>
                   </Link>
@@ -252,7 +286,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={helpcenter} alt="" className="sideicon me-2" />
+                      <img src={helpcenter} alt="" className="sideicon" />
                       <p className="mb-0">HelpCenter</p>
                     </div>
                   </Link>
@@ -265,7 +299,7 @@ function Main() {
                     )}`}
                   >
                     <div className="d-flex align-items-center">
-                      <img src={dashboard} alt="" className="sideicon me-2" />
+                      <img src={dashboard} alt="" className="sideicon" />
                       <p className="mb-0">Settings</p>
                     </div>
                   </Link>
@@ -277,7 +311,7 @@ function Main() {
                     className={`sidelink d-flex align-items-center text-white ${isActive(["/employees", "/add_employee", "/edit_employee",, "/employee_detail"])}`}
                   >
                     <div className="d-flex align-items-center">
-                      <FaUsers className="sideicon me-2" />
+                      <FaUsers className="sideicon" />
                       <p className="mb-0">Employees</p>
                     </div>
                   </Link>
@@ -288,12 +322,10 @@ function Main() {
           <div className="left-bottom d-flex justify-content-center align-items-center">
             <Link
               to="/"
-              className="logouts w-100 border border-1 border-white text-decoration-none text-white px-3 py-2 rounded-3"
+              className="logouts w-100 border border-1 border-white d-flex align-items-center justify-content-center text-decoration-none text-white px-3 py-2 rounded-3"
             >
-              <div className="d-flex align-items-center justify-content-center">
-                <IoMdLogOut className="me-2" />
+                <img src={logout} alt="" className="sideicon" />
                 <p className="mb-0">Logout</p>
-              </div>
             </Link>
           </div>
         </div>
@@ -301,12 +333,6 @@ function Main() {
           <div className="right-top d-flex align-items-center justify-content-between input-shadow w-100">
             <div className="d-flex align-items-center justify-content-between w-100">
               <div className="d-flex align-items-center">
-                <span
-                  className="me-2 tog d-flex bg-green align-items-center d-md-none pointer"
-                  onClick={toggleLeftDisplay}
-                >
-                  <GiHamburgerMenu />
-                </span>
                 <h1 className="fs-5 mb-0 fw-semi">Dashboard</h1>
               </div>
               <div className=" d-flex align-items-center justify-content-between ">
