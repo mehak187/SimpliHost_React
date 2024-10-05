@@ -150,9 +150,11 @@ function Main() {
                 <li>
                   <Link
                     to="admin/tasks"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/tasks"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/tasks") || isActive("/admin/add-tasks")
+                        ? "active"
+                        : ""
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={tasks} alt="" className="sideicon" />
@@ -160,6 +162,7 @@ function Main() {
                     </div>
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     to="admin/checklist"
