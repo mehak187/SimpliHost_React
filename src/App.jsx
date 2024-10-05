@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/css/main.css";
 import "./assets/css/main1.css";
 import "./assets/css/main2.css";
+import "./assets/css/main3.css";
 import Main from "./Layouts/Main";
 import Dashboard from "./Pages/Dashboard";
 import Inbox from "./Pages/Inbox";
