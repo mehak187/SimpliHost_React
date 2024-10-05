@@ -5,7 +5,7 @@ function AddTask() {
     <>
       <section>
         <div>
-          <h2>Add New Task</h2>
+          <h2 className='fw-semi fs-3'>Add New Task</h2>
         </div>
         <form action="">
           <div className="row">
@@ -13,11 +13,11 @@ function AddTask() {
               <div className="row">
                 <div className="col-md-6 mt-3">
                   <label htmlFor="TaskName" className='fw-semi'>Task Name</label><br />
-                  <input type="text" id='TaskName' className='inputstyle' placeholder='Type name here'/>
+                  <input type="text" id='TaskName' className='inputstyle focus-none' placeholder='Type name here'/>
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="Property" className='fw-semi'>Property</label><br />
-                  <select name="Property" id="Property" className='inputstyle'>
+                  <select name="Property" id="Property" className='inputstyle focus-none'>
                     <option value="" selected disabled hidden>Select Property</option>
                     <option value="Property1">Property1</option>
                     <option value="Property2">Property2</option>
@@ -26,7 +26,7 @@ function AddTask() {
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="TaskType" className='fw-semi'>Select Task Type</label><br />
-                  <select name="TaskType" id="TaskType" className='inputstyle'>
+                  <select name="TaskType" id="TaskType" className='inputstyle focus-none'>
                     <option value="" selected disabled hidden>Select Task Type</option>
                     <option value="Task1">Task1</option>
                     <option value="Task2">Task2</option>
@@ -35,7 +35,7 @@ function AddTask() {
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="Assign" className='fw-semi'>Assign To</label><br />
-                  <select name="Assign" id="Assign" className='inputstyle'>
+                  <select name="Assign" id="Assign" className='inputstyle focus-none'>
                     <option value="" selected disabled hidden>Select Assign To</option>
                     <option value="Assign1">Assign1</option>
                     <option value="Assign2">Assign2</option>
@@ -44,26 +44,26 @@ function AddTask() {
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="StartDate" className='fw-semi'>Select Start Date</label><br />
-                  <input type="date" id='StartDate' className='inputstyle'/>
+                  <input type="date" id='StartDate' className='inputstyle focus-none'/>
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="StartTime" className='fw-semi'>Select Start Time</label><br />
-                  <input type="time" id='StartTime' className='inputstyle'/>
+                  <input type="time" id='StartTime' className='inputstyle focus-none'/>
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="EndDate" className='fw-semi'>Select End Date</label><br />
-                  <input type="date" id='EndDate' className='inputstyle'/>
+                  <input type="date" id='EndDate' className='inputstyle focus-none'/>
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="EndTime" className='fw-semi'>Select End Time</label><br />
-                  <input type="time" id='EndTime' className='inputstyle'/>
+                  <input type="time" id='EndTime' className='inputstyle focus-none'/>
                 </div>
                 <div className="col-md-6 mt-3">
                   
                 </div>
                 <div className="col-md-6 mt-3">
                   <label htmlFor="Checklist" className='fw-semi'>Select Checklist</label><br />
-                  <select name="Checklist" id="Checklist" className='inputstyle'>
+                  <select name="Checklist" id="Checklist" className='inputstyle focus-none'>
                     <option value="" selected disabled hidden>Select Select Checklist</option>
                     <option value="Checklist1">Checklist1</option>
                     <option value="Checklist2">Checklist2</option>
@@ -72,7 +72,7 @@ function AddTask() {
                 </div>
                 <div className="col-12 mt-3">
                   <label htmlFor="Notes" className='fw-semi'>Internal Notes</label><br />
-                  <textarea name="Notes" id="Notes" className='inputstyle' rows={4}>Type here</textarea>
+                  <textarea name="Notes" id="Notes" className='inputstyle focus-none' rows={4}>Type here</textarea>
                 </div>
                 <div className="col-12 mt-3">
                   <div className="d-flex align-items-center">
@@ -101,10 +101,10 @@ function AddTask() {
                     <label htmlFor="Images">Able to Add Images?</label>
                   </div>
                 </div>
-                <div className="col-12 mt-3">
+                <div className="col-12 mt-4">
                   <div className="d-flex align-items-center">
-                    <input type="reset" className='graybutton'/>
-                    <input type="submit" className='bluebutton'/>
+                    <input type="reset" className='graybutton rounded-2 me-4 text-black' value="Cancel"/>
+                    <input type="submit" className='bluebutton rounded-2 text-white' value="Save"/>
                   </div>
                 </div>
                 
