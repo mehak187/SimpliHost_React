@@ -65,13 +65,13 @@ function AllTasks() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black">Task Name</th>
-              <th className="small fw-semi text-black">Property</th>
-              <th className="small fw-semi text-black">Task Type</th>
-              <th className="small fw-semi text-black">Assigned To</th>
-              <th className="small fw-semi text-black">Due Date</th>
-              <th className="small fw-semi text-black">Status</th>
-              <th className="small fw-semi text-black">Action</th>
+              <th className="small fw-semi text-black text-nowrap">Task Name</th>
+              <th className="small fw-semi text-black text-nowrap">Property</th>
+              <th className="small fw-semi text-black text-nowrap">Task Type</th>
+              <th className="small fw-semi text-black text-nowrap">Assigned To</th>
+              <th className="small fw-semi text-black text-nowrap">Due Date</th>
+              <th className="small fw-semi text-black text-nowrap">Status</th>
+              <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
           <tbody>

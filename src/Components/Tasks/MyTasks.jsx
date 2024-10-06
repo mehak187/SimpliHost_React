@@ -65,13 +65,13 @@ function MyTasks() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black">Task Name</th>
-              <th className="small fw-semi text-black">Property</th>
-              <th className="small fw-semi text-black">Task Type</th>
-              <th className="small fw-semi text-black">Assigned To</th>
-              <th className="small fw-semi text-black">End Date</th>
-              <th className="small fw-semi text-black">Status</th>
-              <th className="small fw-semi text-black">Action</th>
+              <th className="small fw-semi text-black text-nowrap">Task Name</th>
+              <th className="small fw-semi text-black text-nowrap">Property</th>
+              <th className="small fw-semi text-black text-nowrap">Task Type</th>
+              <th className="small fw-semi text-black text-nowrap">Assigned To</th>
+              <th className="small fw-semi text-black text-nowrap">End Date</th>
+              <th className="small fw-semi text-black text-nowrap">Status</th>
+              <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -88,13 +88,13 @@ function MyTasks() {
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="#" className="mx-1 tblicon">
-                      <TbCopy />
+                      <TbCopy className="fs-5"/>
                     </Link>
                     <Link to="/manager_detail" className="mx-1 tblicon">
-                      <IoPencil />
+                      <IoPencil className="fs-5"/>
                     </Link>
                     <Link to="/delete_task" className="mx-1 tblicon">
-                      <HiTrash />
+                      <HiTrash className="fs-5"/>
                     </Link>
                   </div>
                 </td>
