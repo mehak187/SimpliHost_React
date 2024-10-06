@@ -9,8 +9,8 @@
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 46px;
+    height: 28px;
 }
 
 .switch input {
@@ -34,10 +34,10 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 22px;
+    width: 22px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -52,9 +52,9 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
 }
 
 .slider.round {
@@ -92,4 +92,8 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: center;
     background-color: #EDEEF0;
+}
+
+.table thead {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
