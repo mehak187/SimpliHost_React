@@ -94,6 +94,16 @@ input:checked+.slider:before {
     background-color: #EDEEF0;
 }
 
+.redbtn{
+    background-color: #F6DACD;
+    padding: 10px ;
+    text-align: center;
+    border-radius: 10px;
+    color: #DB7F5B;
+    font-weight: 600;
+}
+
 .table thead {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
