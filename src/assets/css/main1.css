@@ -103,3 +103,6 @@
 .bg-grey2 {
     background: #E0E2E6;
 }
+.platform-img {
+    max-width: 80px;
+}
