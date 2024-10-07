@@ -108,7 +108,7 @@ function Owners() {
                 <td className="small text-black">{data.Balance}</td>
                 <td className="small text-black">
                   <div className="d-flex">
-                    <Link to="#" className="mx-1 tblicon">
+                    <Link to="/admin/co-hosting-details" className="mx-1 tblicon">
                       <FaEye className="fs-5" />
                     </Link>
                     <Link to="/admin/edit-inventory" className="mx-1 tblicon">

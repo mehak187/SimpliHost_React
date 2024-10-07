@@ -275,9 +275,12 @@ function Main() {
                 <li>
                   <Link
                     to="admin/users"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/users"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/users")||
+                      isActive("/admin/user-details")
+                        ? "active"
+                        : ""
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={users} alt="" className="sideicon" />
