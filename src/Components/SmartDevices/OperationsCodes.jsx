@@ -137,12 +137,14 @@ function OperationsCodes() {
                 {data.status}
               </td>
               <td className="small text-black">
-                <img
+            <div className="d-flex align-items-center">
+            <img
                   src={data.Property}
                   alt="property-img"
                   className="img-fluid me-2 property-img"
                 />
                 {data.PropertyName}
+            </div>
               </td>
               <td className="small fw-semi">
                 {data.LastUsed}

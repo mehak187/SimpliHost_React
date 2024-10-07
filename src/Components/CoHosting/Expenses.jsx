@@ -74,12 +74,14 @@ function Expenses() {
                   {data.ExpenseType}
                 </td>
                 <td className="small text-black">
-                  <img
+                 <div className="d-flex align-items-center">
+                 <img
                     src={data.Owner}
                     alt="property-img"
                     className="img-fluid me-2 owner-img"
                   />
                   {data.OwnerName}
+                 </div>
                 </td>
                 <td className="small text-black">
                   <img

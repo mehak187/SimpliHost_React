@@ -127,27 +127,31 @@ function AllDevices() {
                 </td>
                 <td className="small text-black">{data.Type}</td>
                 <td className="small text-black">
+                  <div className="d-flex align-items-center">
                   <img
                     src={data.Property}
                     alt="property-img"
                     className="img-fluid me-2 property-img"
                   />
                   {data.PropertyName}
+                  </div>
                 </td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>
                   {data.status}
                 </td>
                 <td className="small fw-semi">
-                  <img
+                <div className="d-flex align-items-center">
+                <img
                     src={battery}
                     alt="property-img"
                     className="img-fluid me-2 property-img"
                   />
                   {data.Battery}
+                </div>
                 </td>
                 <td className="small fw-semi">
                   <div className="d-flex align-items-center">
-                    <div className="me-3">
+                    <div className="me-3 d-flex align-items-center">
                       <label className="switch me-2">
                         <input type="checkbox" id="Capture" checked={data.Lock === "Lock"} readOnly/>
                         <span className="slider round"></span>
