@@ -51,7 +51,7 @@ function AccessProfiles() {
                 <td className="small text-black">{data.LastUpdated}</td>
                 <td className="small text-black">
                   <div className="d-flex">
-                    <Link to="/admin/edit-inventory" className="mx-1 tblicon">
+                    <Link to="" className="mx-1 tblicon">
                       <TbCopy  className=" fs-5"/>
                     </Link>
                     <Link to="/admin/edit-inventory" className="mx-1 tblicon">
