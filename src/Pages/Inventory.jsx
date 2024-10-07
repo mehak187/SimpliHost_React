@@ -7,12 +7,10 @@ import OutofStockItems from "../Components/Inventory/OutofStockItems";
 function Inventory() {
   return (
     <section>
-      <Link to='/admin/add-inventory' className="me-3">Add New item</Link>
-      <Link to='/admin/edit-inventory'>Edit item</Link>
         <div>
           <nav className="main-tabs">
             <div
-              className="nav nav-tabs border-0"
+              className="nav nav-tabs border-0 border-bottom"
               id="nav-tab"
               role="tablist"
             >

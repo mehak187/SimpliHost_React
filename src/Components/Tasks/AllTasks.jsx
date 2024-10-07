@@ -3,6 +3,7 @@ import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { TbCopy } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import FilterRow from "./FilterRow";
 
 function AllTasks() {
   const DataCollection = [
@@ -61,6 +62,7 @@ function AllTasks() {
 
   return (
     <div>
+      <FilterRow />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
