@@ -11,7 +11,7 @@ function FilterRow(props) {
            <div className="row">
                 <div className="col-sm-7 col-xl-7 col-xxl-6">
                     <div className='border-grey h-100 d-flex custom-rounded'>
-                        <input for="search" type="search" className='ps-2 small text-grey w-100 focus-none border-0 bg-transparent py-2'  placeholder={`Search ${props.searchName}`} />
+                        <input for="search" type="search" className='ps-2 small text-grey w-100 focus-none border-0 bg-transparent py-2'  placeholder='Type to search user' />
                         <label htmlFor="search" className='px-sm-3 px-2 d-flex small text-grey align-items-center text-white py-2 search-bg'>
                             <FaSearch className=''/>
                         </label>
