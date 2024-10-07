@@ -70,7 +70,7 @@ function GuestCodes() {
   };
   return (
     <div>
-      <FilterRow />
+      <FilterRow  searchName="Guest Code" btnName="Add Guest Code" btnLink="#"/>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
