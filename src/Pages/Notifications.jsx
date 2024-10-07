@@ -38,20 +38,6 @@ function Notifications() {
       Date: "11/02/2023",
       Time: "1 mins. ago",
     },
-    {
-      id: 1,
-      Title: "Notification Title Here",
-      Content: "Notification Contenet will be  Here",
-      Date: "11/02/2023",
-      Time: "1 mins. ago",
-    },
-    {
-      id: 1,
-      Title: "Notification Title Here",
-      Content: "Notification Contenet will be  Here",
-      Date: "11/02/2023",
-      Time: "1 mins. ago",
-    },
   ];
   return (
     <div className="graysection">
