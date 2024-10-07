@@ -39,6 +39,7 @@
 :root {
     --green: #32F0CD;
     --blue: #3551B6;
+    --red: #FE5D26;
 }
 
 /* ------------------
@@ -58,6 +59,10 @@ body {
 
 .bg-blue {
     background-color: var(--blue);
+}
+
+.text-blue {
+    color: var(--blue);
 }
 
 .border-grey {
@@ -126,6 +131,9 @@ textarea {
     cursor: pointer;
 }
 
+.opacity-hover:hover {
+    opacity: 0.8;
+}
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -179,7 +187,6 @@ template
 .list>ul>li {
     justify-content: center;
     color: #fff;
-    margin-bottom: 10px;
 }
 
 .sidelink {
@@ -266,6 +273,9 @@ template
     top: 16px;
     z-index: 9;
     width: 36px;
+}
+.min-sidebar .list>ul>li {
+    margin-bottom: 10px;
 }
 
 .min-sidebar .logodiv {
