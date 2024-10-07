@@ -17,13 +17,13 @@ const BarChart = () => {
         data: [2500, 6000, 7500, 2200, 5000, 7500, 5000, 2200, 3200, 0, 9500, 5000],
         backgroundColor: '#3551B6', // Customize bar color
         borderRadius: {
-          topLeft: 10,   // Top left corner
-          topRight: 10,  // Top right corner
+          topLeft: 15,   // Top left corner
+          topRight: 15,  // Top right corner
           bottomLeft: 0, // Bottom left corner
           bottomRight: 0 // Bottom right corner
         },
         borderSkipped: false, // Ensure the bar corners are rounded
-        barThickness: 40 // Adjust the width of the bars
+        barThickness: 15 // Adjust the width of the bars
       }
     ]
   };

@@ -27,6 +27,8 @@ import Users from "./Pages/Users";
 import HelpCenter from "./Pages/HelpCenter";
 import Settings from "./Pages/Settings";
 import ReplenishItems from "./Components/Inventory/ReplenishItems";
+import GettingStart from "./Components/StepperForm/GettingStart";
+import LabelStepper from "./Components/StepperForm/LabelStepper";
 import CohostingDetails from "./Pages/CohostingDetails";
 import UserDetails from "./Pages/UserDetails";
 
@@ -58,6 +60,8 @@ function App() {
           <Route path="admin/user-details" element={<UserDetails />} />
           <Route path="admin/help-center" element={<HelpCenter />} />
           <Route path="admin/settings" element={<Settings />} />
+          <Route path="admin/stepper" element={<GettingStart />} />
+          <Route path="admin/labelStepper" element={<LabelStepper />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -61,7 +61,7 @@ function Snapshot() {
 
   return (
     <div>
-      <div className="d-flex align-items-center justify-content-between">
+      <div className="d-sm-flex align-items-center justify-content-between">
         <div className='d-flex align-items-center'>
           <div>
             <h4 className="fw-semibold">
