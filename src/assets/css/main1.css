@@ -92,3 +92,11 @@
     border: 1px solid var(--blue);
     color: #fff;
 }
+
+.owner-img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+.property-img {
+    max-width: 140px;
+}
