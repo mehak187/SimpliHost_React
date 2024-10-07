@@ -96,7 +96,7 @@ function OperationsCodes() {
   };
   return (
     <div>
-    <FilterRow />
+    <FilterRow searchName="Operation Codes" btnName="Add Operation Code" btnLink="#" />
     <div className="table-responsive default-table mt-3">
       <table className="table">
         <thead className="">
