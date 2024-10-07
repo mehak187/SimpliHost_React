@@ -11,7 +11,7 @@ function FilterRow() {
            <div className="row">
                 <div className="col-sm-7 col-xl-7 col-xxl-6">
                     <div className='border-grey h-100 d-flex custom-rounded'>
-                        <input for="search" type="search" className='ps-2 small text-grey w-100 focus-none border-0 bg-transparent py-2'  placeholder='Type to search user' />
+                        <input for="search" type="search" className='ps-2 small text-grey w-100 focus-none border-0 bg-transparent py-2' placeholder='Type to search report'/>
                         <label htmlFor="search" className='px-sm-3 px-2 d-flex small text-grey align-items-center text-white py-2 search-bg'>
                             <FaSearch className=''/>
                         </label>
@@ -28,7 +28,7 @@ function FilterRow() {
            </div>
         </div>
         <div className="d-sm-flex col-xl-6 col-12 mt-3 mt-xl-0 justify-content-end align-items-center">
-           <Link to='/admin/user-details' className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">Add Profile</Link>
+           <Link to="" className="px-sm-4 mt-3 mt-sm-0 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">Add Report</Link>
         </div>
     </div>
   )
