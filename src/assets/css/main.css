@@ -61,6 +61,10 @@ body {
     background-color: var(--blue);
 }
 
+.text-blue {
+    color: var(--blue);
+}
+
 .border-grey {
     border: 1px solid #CDCDCD;
 }
@@ -127,6 +131,9 @@ textarea {
     cursor: pointer;
 }
 
+.opacity-hover:hover {
+    opacity: 0.8;
+}
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;

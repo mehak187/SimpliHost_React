@@ -179,9 +179,14 @@ function Main() {
                 <li>
                   <Link
                     to="admin/inventory"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/inventory"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/inventory") ||
+                      isActive("/admin/add-inventory") ||
+                      isActive("/admin/replenish-items") ||
+                      isActive("/admin/edit-inventory")
+                        ? "active"
+                        : ""
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={inventory} alt="" className="sideicon" />
@@ -375,7 +380,7 @@ function Main() {
 
           <div className="right-bottom">
             <div className="content">
-              <div className="container-fluid">
+              <div className="container-fluid h-100">
                 <Outlet />
               </div>
             </div>

@@ -26,6 +26,7 @@ import Reports from "./Pages/Reports";
 import Users from "./Pages/Users";
 import HelpCenter from "./Pages/HelpCenter";
 import Settings from "./Pages/Settings";
+import ReplenishItems from "./Components/Inventory/ReplenishItems";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="admin/inventory" element={<Inventory />} />
           <Route path="admin/add-inventory" element={<AddInventory />} />
           <Route path="admin/edit-inventory" element={<EditInventory />} />
+          <Route path="admin/replenish-items" element={<ReplenishItems />} />
           <Route path="admin/co-hosting" element={<CoHosting />} />
           <Route path="admin/smart-devices" element={<SmartDevices />} />
           <Route path="admin/automations" element={<Automations />} />

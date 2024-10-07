@@ -2,16 +2,14 @@ import React from "react";
 import History from "../Components/Tasks/History";
 import AllTasks from "../Components/Tasks/AllTasks";
 import MyTasks from "../Components/Tasks/MyTasks";
-import { Link } from "react-router-dom";
 
 function Tasks() {
   return (
     <section>
-      <Link to='/admin/add-tasks'>Add New Task</Link>
         <div>
           <nav className="main-tabs">
             <div
-              className="nav nav-tabs border-0"
+              className="nav nav-tabs border-0 border-bottom"
               id="nav-tab"
               role="tablist"
             >

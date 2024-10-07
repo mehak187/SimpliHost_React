@@ -16,7 +16,7 @@ function Checklist() {
         <div>
           <nav className="main-tabs">
             <div
-              className="nav nav-tabs border-0"
+              className="nav nav-tabs border-0 border-bottom"
               id="nav-tab"
               role="tablist"
             >

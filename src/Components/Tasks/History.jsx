@@ -3,6 +3,8 @@ import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { TbCopy } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import action from "../../assets/img/history-action.png";
+import FilterRow from "./FilterRow";
 
 function History() {
   const DataCollection = [
@@ -61,17 +63,18 @@ function History() {
 
   return (
     <div>
+      <FilterRow />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black">Task Name</th>
-              <th className="small fw-semi text-black">Property</th>
-              <th className="small fw-semi text-black">Task Type</th>
-              <th className="small fw-semi text-black">Assigned To</th>
-              <th className="small fw-semi text-black">Completed Date</th>
-              <th className="small fw-semi text-black">Status</th>
-              <th className="small fw-semi text-black">Action</th>
+              <th className="small fw-semi text-black text-nowrap">Task Name</th>
+              <th className="small fw-semi text-black text-nowrap">Property</th>
+              <th className="small fw-semi text-black text-nowrap">Task Type</th>
+              <th className="small fw-semi text-black text-nowrap">Assigned To</th>
+              <th className="small fw-semi text-black text-nowrap">Completed Date</th>
+              <th className="small fw-semi text-black text-nowrap">Status</th>
+              <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -88,13 +91,7 @@ function History() {
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="#" className="mx-1 tblicon">
-                      <TbCopy />
-                    </Link>
-                    <Link to="/manager_detail" className="mx-1 tblicon">
-                      <IoPencil />
-                    </Link>
-                    <Link to="/delete_task" className="mx-1 tblicon">
-                      <HiTrash />
+                     <img src={action} alt="action" className="img-fluid"/>
                     </Link>
                   </div>
                 </td>
