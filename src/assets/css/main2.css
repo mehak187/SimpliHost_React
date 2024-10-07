@@ -29,6 +29,40 @@
     margin: 0 6px;
 }
 
+.bg-lgrey{
+    background-color: #F7F7F7;
+}
+
+.host-img{
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    object-fit: cover;
+}
+
+.step-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.step-font{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.lblue{
+    color: #32F0CD;
+}
+
+.bg-lblue{
+    background-color: #32F0CD;
+}
+
+.max{
+    width: max-content;
+}
+
 @media screen and (max-width: 1200px){
     .filter-col {
         width: calc(33.33% - 12px);
