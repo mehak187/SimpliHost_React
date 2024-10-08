@@ -31,6 +31,7 @@ import GettingStart from "./Components/StepperForm/GettingStart";
 import LabelStepper from "./Components/StepperForm/LabelStepper";
 import CohostingDetails from "./Pages/CohostingDetails";
 import UserDetails from "./Pages/UserDetails";
+import Profile from "./Pages/Profile";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
           <Route path="admin/settings" element={<Settings />} />
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
+          <Route path="admin/profile" element={<Profile />} />
         </Route>
       </Routes>
     </BrowserRouter>
