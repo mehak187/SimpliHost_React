@@ -106,3 +106,27 @@
 .platform-img {
     max-width: 80px;
 }
+.detail-bg {
+    background: #E0E2E666;
+}
+.edit-bg {
+    background: #E0E2E666;
+}
+.detail-icon {
+    width: 18px;
+}
+.detail-user-img {
+    max-width: 120px;
+}
+.property-main {
+    max-width: 70px;
+}
+.vertical-tabs.main-tabs .nav-tabs .nav-link.active {
+    background: #32F0CD;
+    color: #fff !important;
+    border-radius: 6px 0 0 6px;
+}
+.vertical-nav-box {
+    background: #F7F7F7;
+    background: red;
+}

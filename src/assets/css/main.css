@@ -64,6 +64,9 @@ body {
 .text-blue {
     color: var(--blue);
 }
+.text-blue2 {
+    color: #303C6C;
+}
 
 .border-grey {
     border: 1px solid #CDCDCD;

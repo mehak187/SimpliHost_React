@@ -364,7 +364,7 @@ function Main() {
                     <IoIosNotifications className="fs-4 d-flex align-items-center not-icon" />
                   </Link>
                   <div className="d-flex justify-content-between w-100 align-items-center">
-                    <Link className="mb-0 text-decoration-none d-flex align-items-center">
+                    <Link to="admin/profile" className="mb-0 text-decoration-none d-flex align-items-center">
                       <div className="">
                         <img src={profile} alt="" className="profile" />
                       </div>
