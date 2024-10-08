@@ -360,7 +360,7 @@ function Main() {
                       className="border-0 focus-none ps-2"
                     />
                   </div>
-                  <Link className="not-main rounded-circle new-not position-relative  me-2">
+                  <Link to='admin/Notifications'className="not-main rounded-circle new-not position-relative  me-2">
                     <IoIosNotifications className="fs-4 d-flex align-items-center not-icon" />
                   </Link>
                   <div className="d-flex justify-content-between w-100 align-items-center">

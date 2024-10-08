@@ -32,6 +32,7 @@ import LabelStepper from "./Components/StepperForm/LabelStepper";
 import CohostingDetails from "./Pages/CohostingDetails";
 import UserDetails from "./Pages/UserDetails";
 import Profile from "./Pages/Profile";
+import Notifications from "./Pages/Notifications";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
           <Route path="admin/profile" element={<Profile />} />
+          <Route path="admin/Notifications" element={<Notifications />} />
         </Route>
       </Routes>
     </BrowserRouter>
