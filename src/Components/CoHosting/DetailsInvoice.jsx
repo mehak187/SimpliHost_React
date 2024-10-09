@@ -49,7 +49,7 @@ function DetailsInvoice() {
   };
   return (
     <div>
-      <FilterRow searchName="Invoice" btnName="Create Invoice" btnLink="#" />
+      <FilterRow searchName="Invoice" btnName="Create Invoice" btnLink="/admin/add-invoice" />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
