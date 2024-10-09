@@ -9,6 +9,7 @@ import mailing from "../../assets/img/mailing.png";
 import balance from "../../assets/img/balance.png";
 import terms from "../../assets/img/tems.png";
 import { Link } from "react-router-dom";
+import { IoPencil } from "react-icons/io5";
 
 function OwnerDetailBox() {
   return (
@@ -23,7 +24,7 @@ function OwnerDetailBox() {
             className="rounded-3 text-black text-decoration-none px-3 py-2 edit-bg"
           >
             <span className="small me-2">Edit info</span>
-            <FaEye className="fs-5" />
+                      <IoPencil className=" fs-6" />
           </Link>
         </div>
         <div className="row px-3">

@@ -118,6 +118,9 @@
 .detail-user-img {
     max-width: 120px;
 }
+.detail-user-img2 {
+    max-width: 80px;
+}
 .property-main {
     max-width: 70px;
 }
@@ -129,4 +132,28 @@
 .vertical-nav-box {
     background: #F7F7F7;
     background: red;
+}
+.vertical-tab-left {
+    max-width: 200px;
+}
+.vertical-tab-right {
+   width: calc(100% - 210px);
+   height: calc(100dvh - 141px);
+   overflow: auto;
+}
+
+@media screen and (max-width: 577px) {
+    .vertical-tab-left {
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        height: max-content !important;
+    }
+    .vertical-tab-right {
+       width: calc(100% - 0px);
+    height: auto;
+
+    }
+    .vertical-tabs.main-tabs .nav-tabs .nav-link.active {
+        border-radius: 6px;
+    }
 }
