@@ -64,14 +64,12 @@ function App() {
           <Route path="admin/help-center" element={<HelpCenter />} />
           <Route path="admin/settings" element={<Settings />} />
           <Route path="admin/addAutomation" element={<AddAutomation />} />
-        </Route>
-        <Route>
-          <Route path="admin/stepper" element={<GettingStart />} />
-          <Route path="admin/labelStepper" element={<LabelStepper />} />
-          <Route path="/login" element={<Login />} />
           <Route path="admin/profile" element={<Profile />} />
           <Route path="admin/Notifications" element={<Notifications />} />
         </Route>
+          <Route path="admin/stepper" element={<GettingStart />} />
+          <Route path="admin/labelStepper" element={<LabelStepper />} />
+          <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
    </div>
