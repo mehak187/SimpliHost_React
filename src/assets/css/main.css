@@ -64,6 +64,9 @@ body {
 .text-blue {
     color: var(--blue);
 }
+.text-blue2 {
+    color: #303C6C;
+}
 
 .border-grey {
     border: 1px solid #CDCDCD;
@@ -370,7 +373,6 @@ template
     }
 }
 
-@media screen and (max-width: 575px) {}
 
 @media screen and (min-width:769px) {
     .left {
