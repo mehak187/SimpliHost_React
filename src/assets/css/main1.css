@@ -141,7 +141,14 @@
    height: calc(100dvh - 141px);
    overflow: auto;
 }
-
+.bell {
+    width: 60px;
+}
+@media screen and (max-width: 992px) {
+.bell {
+    width: 50px;
+}
+}
 @media screen and (max-width: 577px) {
     .vertical-tab-left {
         max-width: calc(100% - 20px);
@@ -155,5 +162,8 @@
     }
     .vertical-tabs.main-tabs .nav-tabs .nav-link.active {
         border-radius: 6px;
+    }
+    .bell {
+        width: 40px;
     }
 }
