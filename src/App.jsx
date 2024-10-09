@@ -65,6 +65,7 @@ function App() {
           <Route path="admin/settings" element={<Settings />} />
           <Route path="admin/addAutomation" element={<AddAutomation />} />
         </Route>
+        <Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
           <Route path="/login" element={<Login />} />
