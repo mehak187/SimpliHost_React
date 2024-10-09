@@ -242,7 +242,7 @@ function AddNewInvoice() {
                 Add Refund
               </Link>
               <Link
-                to=""
+                to="/admin/add-expenses"
                 className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2"
               >
                 Add Expense

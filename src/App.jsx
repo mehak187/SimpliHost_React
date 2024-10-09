@@ -37,6 +37,7 @@ import Profile from "./Pages/Profile";
 import Notifications from "./Pages/Notifications";
 import AddNewOwner from "./Components/CoHosting/AddNewOwner";
 import AddNewInvoice from "./Components/CoHosting/AddNewInvoice";
+import AddNewExpenses from "./Components/CoHosting/AddNewExpenses";
 function App() {
   return (
    <div>
@@ -70,6 +71,7 @@ function App() {
           <Route path="admin/Notifications" element={<Notifications />} />
           <Route path="admin/add-owner" element={<AddNewOwner />} />
           <Route path="admin/add-invoice" element={<AddNewInvoice />} />
+          <Route path="admin/add-expenses" element={<AddNewExpenses />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
