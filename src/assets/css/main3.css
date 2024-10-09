@@ -69,6 +69,7 @@ input:checked+.slider:before {
     background-color: #F7F7F7;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
 .table thead tr {
     background-color: #ffffff;
     border: solid 5px #F7F7F7;
@@ -76,13 +77,15 @@ input:checked+.slider:before {
 
 .table thead tr th {
     background-color: #ffffff;
-    padding:25px 15px;
+    padding: 25px 15px;
     border-bottom: none;
 }
+
 .table tbody tr:last-child td {
     border-bottom: none;
 }
-.tblicon{
+
+.tblicon {
     width: 45px;
     height: 45px;
     color: #000;
@@ -94,9 +97,9 @@ input:checked+.slider:before {
     background-color: #EDEEF0;
 }
 
-.redbtn{
+.redbtn {
     background-color: #F6DACD;
-    padding: 10px ;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     color: #DB7F5B;
@@ -105,5 +108,25 @@ input:checked+.slider:before {
 
 .table thead {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.graysection {
+    background: #F7F7F7;
+    height: calc(100dvh - 135px);
+    border-radius: 20px;
+    padding: 10px
+}
+
+.innerdiv {
+    height: 100%;
+    overflow: auto;
+    padding: 0 10px;
+
+}
+
+.notif {
+    background: #EBEBEB;
+    border-radius: 15px;
 
 }
