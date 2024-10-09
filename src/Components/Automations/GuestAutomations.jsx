@@ -33,7 +33,7 @@ function GuestAutomations() {
   
   return (
     <div>
-      <FilterRow searchName="automation" btnName="Add Automation" btnLink="#"/>
+      <FilterRow searchName="automation" btnName="Add Automation" btnLink="/admin/addAutomation"/>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
