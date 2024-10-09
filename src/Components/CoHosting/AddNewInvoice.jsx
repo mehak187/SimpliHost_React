@@ -317,7 +317,6 @@ function AddNewInvoice() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
