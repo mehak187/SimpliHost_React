@@ -51,7 +51,7 @@ function Payments() {
   
   return (
     <div className="">
-      <div className="d-flex align-items-center">
+      <div className="d-flex justify-content-end align-items-center">
       <Link className="d-inline-block mt-3 border border-1 border-primary rounded-3 px-4 py-2 text-decoration-none">Add Payment</Link>
       </div>
       <div className="table-responsive default-table mt-3">
