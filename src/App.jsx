@@ -31,6 +31,8 @@ import GettingStart from "./Components/StepperForm/GettingStart";
 import LabelStepper from "./Components/StepperForm/LabelStepper";
 import CohostingDetails from "./Pages/CohostingDetails";
 import UserDetails from "./Pages/UserDetails";
+import AddAutomation from "./Components/Automations/AddAutomation";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -60,9 +62,11 @@ function App() {
           <Route path="admin/user-details" element={<UserDetails />} />
           <Route path="admin/help-center" element={<HelpCenter />} />
           <Route path="admin/settings" element={<Settings />} />
+          <Route path="admin/addAutomation" element={<AddAutomation />} />
+        </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
-        </Route>
+          <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
    </div>
