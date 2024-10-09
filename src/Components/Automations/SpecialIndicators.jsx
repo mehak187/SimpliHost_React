@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import property from "../../assets/img/property-collection.png";
 import icon from "../../assets/img/icon-auto.png";
 import FilterRow from "./FilterRow";
-import { FaEye } from "react-icons/fa";
-import { FaDollarSign } from "react-icons/fa";
 import { TbCopy } from "react-icons/tb";
 
 function SpecialIndicators() {
@@ -32,7 +30,7 @@ function SpecialIndicators() {
   
   return (
     <div>
-      <FilterRow searchName="Special Indicator" btnName="Add Special Indicator" btnLink="#"/>
+      <FilterRow searchName="Special Indicator" btnName="Add Special Indicator" btnLink="/admin/add-special-indicators"/>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">

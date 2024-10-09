@@ -41,6 +41,7 @@ import AddNewExpenses from "./Components/CoHosting/AddNewExpenses";
 import AddOperationsCodes from "./Components/SmartDevices/AddOperationsCodes";
 import AddSmartDevice from "./Components/SmartDevices/AddSmartDevice";
 import AddCannedText from "./Components/Automations/AddCannedText";
+import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators";
 function App() {
   return (
    <div>
@@ -77,6 +78,7 @@ function App() {
           <Route path="admin/add-smart-device" element={<AddSmartDevice />} />
           <Route path="admin/add-operations-codes" element={<AddOperationsCodes />} />
           <Route path="admin/add-canned-text" element={<AddCannedText />} />
+          <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />

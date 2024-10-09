@@ -155,3 +155,12 @@ input:checked+.slider:before {
     background:#F7F7F7;
     border: solid 1px #ccbcbc;
 }
+
+.greenbtn{
+    background: var(--green);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight:bold;
+    margin-top: 5px;
+}
