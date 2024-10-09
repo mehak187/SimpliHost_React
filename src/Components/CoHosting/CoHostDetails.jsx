@@ -1,133 +1,68 @@
 import React from "react";
-import { HiTrash } from "react-icons/hi2";
-import { IoPencil } from "react-icons/io5";
-import { FaEye } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import propertyCollection from "../../assets/img/property.png";
-import owner from "../../assets/img/owner.png";
 import OwnerDetailBox from "./OwnerDetailBox";
+import DetailsInvoice from "./DetailsInvoice";
+import DetailsFiles from "./DetailsFiles";
 
 function CoHostDetails() {
-  const DataCollection = [
-    {
-      id: 1,
-      Owner: owner,
-      OwnerName: "Naseeb Designer",
-      Phone: "+21 315 999 999",
-      property: propertyCollection,
-      PropertyName: "Naseeb Designer",
-      FeeType: "15% Flat Fee",
-      Balance: "$345,00",
-    },
-    {
-      id: 1,
-      Owner: owner,
-      OwnerName: "Naseeb Designer",
-      Phone: "+21 315 999 999",
-      property: propertyCollection,
-      PropertyName: "Naseeb Designer",
-      FeeType: "15% Flat Fee",
-      Balance: "$345,00",
-    },
-    {
-      id: 1,
-      Owner: owner,
-      OwnerName: "Naseeb Designer",
-      Phone: "+21 315 999 999",
-      property: propertyCollection,
-      PropertyName: "Naseeb Designer",
-      FeeType: "15% Flat Fee",
-      Balance: "$345,00",
-    },
-    {
-      id: 1,
-      Owner: owner,
-      OwnerName: "Naseeb Designer",
-      Phone: "+21 315 999 999",
-      property: propertyCollection,
-      PropertyName: "Naseeb Designer",
-      FeeType: "15% Flat Fee",
-      Balance: "$345,00",
-    },
-    {
-      id: 1,
-      Owner: owner,
-      OwnerName: "Naseeb Designer",
-      Phone: "+21 315 999 999",
-      property: propertyCollection,
-      PropertyName: "Naseeb Designer",
-      FeeType: "15% Flat Fee",
-      Balance: "$345,00",
-    },
-  ];
+
   return (
     <div>
       <OwnerDetailBox />
-      <div className="table-responsive default-table mt-3">
-        <table className="table">
-          <thead className="">
-            <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">
-                Owner Name
-              </th>
-              <th className="small fw-semi text-black text-nowrap">
-                Phone Number
-              </th>
-              <th className="small fw-semi text-black text-nowrap">
-                Properties
-              </th>
-              <th className="small fw-semi text-black text-nowrap">Fee Type</th>
-              <th className="small fw-semi text-black text-nowrap">Balance</th>
-              <th className="small fw-semi text-black text-nowrap">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {DataCollection.map((data) => (
-              <tr key={data.id} className="align-middle">
-                <td className="small text-black">
-                  <div className="d-flex align-items-center">
-                    <img
-                      src={data.Owner}
-                      alt="property-img"
-                      className="img-fluid me-2 owner-img"
-                    />
-                    {data.OwnerName}
-                  </div>
-                </td>
-                <td className="small text-black">{data.Phone}</td>
-                <td className="small text-black">
-                  <div className="d-flex align-items-center">
-                    <img
-                      src={data.property}
-                      alt="property-img"
-                      className="img-fluid me-2 owner-img"
-                    />
-                    {data.PropertyName}
-                  </div>
-                </td>
-                <td className="small text-black text-nowrap">{data.FeeType}</td>
-                <td className="small text-black">{data.Balance}</td>
-                <td className="small text-black">
-                  <div className="d-flex">
-                    <Link
-                      to="/admin/co-hosting-details"
-                      className="mx-1 tblicon"
-                    >
-                      <FaEye className="fs-5" />
-                    </Link>
-                    <Link to="/admin/edit-inventory" className="mx-1 tblicon">
-                      <IoPencil className=" fs-5" />
-                    </Link>
-                    <Link to="" className="mx-1 tblicon">
-                      <HiTrash className=" fs-5" />
-                    </Link>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <h4 className="fw-semi mt-4">Properties Details:</h4>
+      <div>
+          <nav className="main-tabs">
+            <div
+              className="nav nav-tabs border-0 border-bottom"
+              id="nav-tab"
+              role="tablist"
+            >
+              <button
+                className="nav-link active"
+                id="guest-automations-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#guest-automations"
+                type="button"
+                role="tab"
+                aria-controls="guest-automations"
+                aria-selected="true"
+              >
+                Invoices
+              </button>
+              <button
+                className="nav-link"
+                id="operations-automations-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#operations-automations"
+                type="button"
+                role="tab"
+                aria-controls="operations-automations"
+                aria-selected="false"
+              >
+                Files
+              </button>
+            </div>
+            <div className="tab-content mt-3" id="nav-tabContent">
+              <div
+                className="tab-pane fade show active"
+                id="guest-automations"
+                role="tabpanel"
+                aria-labelledby="guest-automations-tab"
+                tabIndex={0}
+              >
+                <DetailsInvoice />
+              </div>
+              <div
+                className="tab-pane fade"
+                id="operations-automations"
+                role="tabpanel"
+                aria-labelledby="operations-automations-tab"
+                tabIndex={0}
+              >
+                <DetailsFiles />
+              </div>
+            </div>
+          </nav>
+        </div>
     </div>
   );
 }
