@@ -75,6 +75,7 @@ function App() {
           <Route path="admin/Notifications" element={<Notifications />} />
           <Route path="admin/add-owner" element={<AddNewOwner />} />
           <Route path="admin/add-invoice" element={<AddNewInvoice />} />
+          <Route path="admin/add-expenses" element={<AddNewExpenses />} />         
           <Route path="admin/add-smart-device" element={<AddSmartDevice />} />
           <Route path="admin/add-operations-codes" element={<AddOperationsCodes />} />
           <Route path="admin/add-canned-text" element={<AddCannedText />} />
