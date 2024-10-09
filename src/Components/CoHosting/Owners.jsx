@@ -61,7 +61,7 @@ function Owners() {
   ];
   return (
     <div>
-      <FilterRow searchName="Owner" btnName="Add Owner" btnLink="#" />
+      <FilterRow searchName="Owner" btnName="Add Owner" btnLink="/admin/add-owner" />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">

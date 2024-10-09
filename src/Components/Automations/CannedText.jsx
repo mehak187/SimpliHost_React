@@ -37,7 +37,7 @@ function CannedText() {
   ];
   return (
     <div>
-    <FilterRow searchName="automation" btnName="Add Canned Text" btnLink="#"/>
+    <FilterRow searchName="automation" btnName="Add Canned Text" btnLink="/admin/add-canned-text"/>
     <div className="table-responsive default-table mt-3">
       <table className="table">
         <thead className="">

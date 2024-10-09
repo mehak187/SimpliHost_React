@@ -97,7 +97,7 @@ function AllDevices() {
   };
   return (
     <div>
-      <FilterRow searchName="Device" btnName="Add Smart Device" btnLink="#"/>
+      <FilterRow searchName="Device" btnName="Add Smart Device" btnLink="/admin/add-smart-device"/>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
