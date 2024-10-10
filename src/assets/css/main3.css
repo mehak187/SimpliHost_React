@@ -1,6 +1,6 @@
 .inputstyle {
     width: 100%;
-    padding: 10px;
+    padding: 18px;
     border-radius: 10px;
     background-color: #F3F3F5;
     border: solid 1px #D5D5D5;
@@ -163,4 +163,33 @@ input:checked+.slider:before {
     border-radius: 10px;
     font-weight:bold;
     margin-top: 5px;
+}
+
+.p-datepicker table td.p-datepicker-today > span {
+    background: var(--green) !important;
+    color: #fff !important;
+    border-color: transparent;
+}
+.p-inputtext {
+    color: #4b5563;
+    background: transparent;
+    border: none !important;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
+    outline-color: transparent;
+}
+.p-button {
+    color: #000;
+    background: #D5D5D5;
+    border: none !important;
+    padding: 8px !important;
+    border-radius: 6px;
+}
+.impdate{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F3F3F5;
+    border: solid 1px #D5D5D5;
 }
