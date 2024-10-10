@@ -42,6 +42,12 @@ function Webhooks() {
 
   return (
     <div>
+      <div className="d-flex justify-content-between align-items-center mt-3">
+        <h3 className="fs-5  text-capitalize text-black fw-semi">Webhook</h3>
+        <Link className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">
+          Add Web hook
+        </Link>
+      </div>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
@@ -56,7 +62,9 @@ function Webhooks() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.Name}</td>
                 <td className="small text-black">
-                  <a href={data.Details} target="blank">{data.Details}</a>
+                  <a href={data.Details} target="blank">
+                    {data.Details}
+                  </a>
                 </td>
                 <td className="small text-black">
                   <div className="d-flex">
