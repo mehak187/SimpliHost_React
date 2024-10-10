@@ -35,6 +35,7 @@ import AddAutomation from "./Components/Automations/AddAutomation";
 import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import Notifications from "./Pages/Notifications";
+import EditPropertyTabs from "./Components/Properties/EditPropertyTabs";
 function App() {
   return (
    <div>
@@ -66,6 +67,7 @@ function App() {
           <Route path="admin/addAutomation" element={<AddAutomation />} />
           <Route path="admin/profile" element={<Profile />} />
           <Route path="admin/Notifications" element={<Notifications />} />
+          <Route path="admin/editProperty" element={<EditPropertyTabs />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />

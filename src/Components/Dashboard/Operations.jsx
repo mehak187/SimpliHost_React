@@ -1,10 +1,13 @@
 import React from 'react';
 import { GrUpload } from 'react-icons/gr';
 import QuickFilter from './Common/QuickFilter';
-import { CiStar } from 'react-icons/ci';
 import UserImg from '../../assets/img/user.png';
 import LcdImg from '../../assets/img/donut.png';
 import TaskDonutChart from './TaskDonutChart';
+import { BiSolidFileExport } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
+import DateCalendarPicker from './Common/DateCalendarPicker';
+import { BsStarFill } from 'react-icons/bs';
 
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
@@ -100,23 +103,22 @@ function Operations() {
       <div className="d-sm-flex align-items-center justify-content-between">
         <div className="d-flex align-items-center">
           <h4 className="fw-semibold">
-            Today at a Glance <CiStar />
+            Today at a Glance <BsStarFill className='text-warning'/>
           </h4>
-          <QuickFilter className="ms-2" />
+          <div className='mx-2'>
+            <QuickFilter />
+          </div>
+          <div>
+            <DateCalendarPicker/>
+          </div>
         </div>
         <div className="dropdown">
-          <button
-            className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <GrUpload className="me-2" /> Export
+          <button className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Excel</Link></li><hr className='m-0'></hr>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Pdf</Link></li>
           </ul>
         </div>
       </div>

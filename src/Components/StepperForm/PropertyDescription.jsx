@@ -38,7 +38,7 @@ function PropertyDescription() {
                             name=""
                             id=""
                             className="form-control shadow-none bg-lgrey ex-small"
-                            rows="9"
+                            rows="10"
                             placeholder="Type here"
                             value={text}
                             onChange={handleTextChange}

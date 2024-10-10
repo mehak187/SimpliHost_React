@@ -8,6 +8,8 @@ import PetsDonut from './PetsDonut';
 import { IoPawOutline } from "react-icons/io5";
 import BarChart from './BarChart';
 import QuickFilter from './Common/QuickFilter';
+import { Link } from 'react-router-dom';
+import { BiSolidFileExport } from 'react-icons/bi';
 
 // Reusable StatCard component
 const StatCard = ({ title, value, image }) => (
@@ -68,7 +70,7 @@ function Snapshot() {
               Snapshot Dashboard <CiStar />
           </h4>
           </div>
-          <div className='ms-2'>
+          <div className='mx-2'>
             <QuickFilter/>
           </div>
         </div>
@@ -77,9 +79,8 @@ function Snapshot() {
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Excel</Link></li><hr className='m-0'></hr>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Pdf</Link></li>
           </ul>
         </div>
       </div>

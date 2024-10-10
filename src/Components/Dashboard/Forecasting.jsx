@@ -8,6 +8,9 @@ import { IoPawOutline } from 'react-icons/io5'
 import PetsDonut from './PetsDonut'
 import LcdImg from '../../assets/img/donut.png';
 import BarChart from './BarChart'
+import { Link } from 'react-router-dom'
+import { BiSolidFileExport } from 'react-icons/bi'
+import DateCalendarPicker from './Common/DateCalendarPicker'
 
 
 const StatCard = ({ title, value, image }) => (
@@ -67,8 +70,8 @@ function Forecasting() {
             Forcasting Dashboard <CiStar />
           </h4>
           </div>
-          <div className='ms-2'>
-            <QuickFilter/>
+          <div className='mx-2'>
+            <QuickFilter className=''/>
           </div>
         </div>
         <div className="dropdown">
@@ -76,15 +79,19 @@ function Forecasting() {
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2 fs-4'/>Export to Excel</Link></li><hr className='m-0'></hr>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2 fs-4'/>Export to Pdf</Link></li>
           </ul>
         </div>
       </div>
-      <div className='row'>
-          <div className="col-4">
-              <h6>Report Period:</h6>
+      <div className='row mt-3'>
+          <div className="col-6">
+          <div className='d-flex align-items-center'>
+            <h6 className='mb-0 fw-semi'>Report Period:</h6>
+            <div className='ms-2'>
+              <DateCalendarPicker />
+            </div>
+          </div>
           </div>
       </div>
       <div className="row mt-3">

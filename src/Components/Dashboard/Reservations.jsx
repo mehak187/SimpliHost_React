@@ -8,6 +8,8 @@ import { IoPawOutline } from 'react-icons/io5'
 import PetsDonut from './PetsDonut'
 import LcdImg from '../../assets/img/donut.png';
 import BarChart from './BarChart'
+import { BiSolidFileExport } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 
 const StatCard = ({ title, value, image }) => (
@@ -67,7 +69,7 @@ function Reservations() {
             Today at a Glance <CiStar />
           </h4>
           </div>
-          <div className='ms-2'>
+          <div className='mx-2'>
             <QuickFilter/>
           </div>
         </div>
@@ -76,9 +78,8 @@ function Reservations() {
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Excel</Link></li><hr className='m-0'></hr>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Pdf</Link></li>
           </ul>
         </div>
       </div>

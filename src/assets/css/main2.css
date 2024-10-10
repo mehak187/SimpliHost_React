@@ -75,15 +75,15 @@
     height: 30px;
 }
 
-.lh-2{
+.lh-2 {
     line-height: 2.0;
 }
 
-.css-1nmqws6-MuiTypography-root {
+/* .css-1nmqws6-MuiTypography-root {
     white-space: nowrap;
-}
+} */
 
-.folder-img{
+.folder-img {
     width: 100%;
     height: 100%;
     max-width: 250px;
@@ -91,7 +91,7 @@
     object-fit: cover;
 }
 
-.b-img{
+.b-img {
     height: 350px;
     width: 100%;
     display: flex;
@@ -102,23 +102,23 @@
     border-radius: 10px;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-.text-lblue{
+.text-lblue {
     color: #32F0CD;
 }
 
-.in-w{
+.in-w {
     width: 55px;
 }
 
-.in-s{
+.in-s {
     width: 105px;
 }
 
-.index-10{
+.index-10 {
     z-index: 10;
 }
 
@@ -148,16 +148,17 @@ input:focus{
 .login-h {
     height: 100dvh;
 }
-.sky-bg{
+
+.sky-bg {
     background-color: #B4DFE5;
 }
 
-.social-img{
+.social-img {
     width: 20px;
     height: 20px;
 }
 
-.position-or{
+.position-or {
     position: relative;
     width: 100%;
     height: 1px;
@@ -165,7 +166,7 @@ input:focus{
     top: 0px;
 }
 
-.index-q{
+.index-q {
     position: absolute;
     width: max-content;
     z-index: 1;
@@ -175,11 +176,163 @@ input:focus{
     transform: translatex(-50%)
 }
 
-.set-div{
+.set-div {
     width: 100%;
     height: 350px;
     border: 2px dashed #ccc;
     border-radius: 10px;
+}
+
+.pet-height {
+    height: calc(100vh - 320px);
+    overflow-y: auto;
+}
+
+.sm-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.img-property {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.position-cover {
+    position: absolute;
+    bottom: 4px;
+    left: 2px
+}
+
+.position-drop {
+    position: absolute;
+    top: 4px;
+    right: 2px
+}
+
+.room-counter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.room-counter-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.room-counter-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.room-counter-button {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.room-counter-count {
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.position-btn {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    top: 12px;
+    max-width: 190px;
+    right: 65px;
+}
+
+.custom-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+
+.main-canvas canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.main-table table thead tr th{
+    padding: 4px;
+    font-weight: 400;
+}
+
+.main-table table tbody tr td{
+    padding: 12px;
+    background-color: #F7F7F7;
+}
+
+.main-table table thead tr{
+    background-color: #F7F7F7;
+    box-shadow: none
+}
+
+.main-table .table{
+    box-shadow: none;
+    background-color: #fff !important;
+    border-collapse: separate;
+    border-spacing: 0px 10px
+}
+
+.main-table table thead{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.prop-img{
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    object-fit: cover;
+    border-radius: 6px
+}
+
+.main-table .table tbody tr td{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.main-table .table tbody tr td:first-child{
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.main-table .table tbody tr td:last-child{
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.table-img{
+    width: 100%;
+    height: 100%;
+    max-width: 40px;
+    object-fit: cover;
 }
 
 
@@ -195,6 +348,7 @@ input:focus{
         width: calc(50% - 12px);
         margin: 6px 6px;
     }
+
     .shadow-custom {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         border-radius: 12px;

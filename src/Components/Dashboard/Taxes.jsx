@@ -3,6 +3,8 @@ import { CiStar } from "react-icons/ci";
 import QuickFilter from './Common/QuickFilter';
 import { GrUpload } from 'react-icons/gr';
 import UserImg from '../../assets/img/user.png';
+import { Link } from 'react-router-dom';
+import { BiSolidFileExport } from 'react-icons/bi';
 
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
@@ -31,7 +33,7 @@ function Taxes() {
               Occupancy Taxes  <CiStar />
           </h4>
           </div>
-          <div className='ms-2'>
+          <div className='mx-2'>
             <QuickFilter/>
           </div>
         </div>
@@ -40,9 +42,8 @@ function Taxes() {
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Excel</Link></li><hr className='m-0'></hr>
+            <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Pdf</Link></li>
           </ul>
         </div>
       </div>

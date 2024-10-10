@@ -23,7 +23,7 @@ function UploadImages() {
                     <div>
                         <p className="bg-lgrey rounded-pill py-2 px-4 max fw-semi border">Step 04</p>
                     </div>
-                    <h2 className="step-font">Add Some Photos of Your Place!</h2>
+                    <h2 className="step-font mt-4">Add Some Photos of Your Place!</h2>
                     <p className="fw-normal lh-2 mt-3">
                         You’ll need 5 photos to kick things off, but feel free to add more or make changes later!
                     </p>
