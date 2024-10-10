@@ -193,3 +193,34 @@ input:checked+.slider:before {
     background-color: #F3F3F5;
     border: solid 1px #D5D5D5;
 }
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    text-align: center;
+    border-style: solid;
+    border-width: 0;
+    padding: 10px 15px;
+}
+
+
+
+.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
+    background: #ffffff;
+    padding: 10px;
+
+}
+
+
+.p-datepicker .p-datepicker-header {
+    padding: 20px;
+    color: #000;
+    font-weight: 600;
+    border-bottom:none !important;
+}
+
+.p-datepicker-header {
+    justify-content: space-around !important;
+    padding:15px !important;
+}
+.p-link{
+    margin:0 5px;
+}
