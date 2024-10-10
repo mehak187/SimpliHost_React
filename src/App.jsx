@@ -36,6 +36,13 @@ import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import Notifications from "./Pages/Notifications";
 import EditPropertyTabs from "./Components/Properties/EditPropertyTabs";
+import AddNewOwner from "./Components/CoHosting/AddNewOwner";
+import AddNewInvoice from "./Components/CoHosting/AddNewInvoice";
+import AddNewExpenses from "./Components/CoHosting/AddNewExpenses";
+import AddOperationsCodes from "./Components/SmartDevices/AddOperationsCodes";
+import AddSmartDevice from "./Components/SmartDevices/AddSmartDevice";
+import AddCannedText from "./Components/Automations/AddCannedText";
+import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators";
 function App() {
   return (
    <div>
@@ -68,6 +75,13 @@ function App() {
           <Route path="admin/profile" element={<Profile />} />
           <Route path="admin/Notifications" element={<Notifications />} />
           <Route path="admin/editProperty" element={<EditPropertyTabs />} />
+          <Route path="admin/add-owner" element={<AddNewOwner />} />
+          <Route path="admin/add-invoice" element={<AddNewInvoice />} />
+          <Route path="admin/add-expenses" element={<AddNewExpenses />} />         
+          <Route path="admin/add-smart-device" element={<AddSmartDevice />} />
+          <Route path="admin/add-operations-codes" element={<AddOperationsCodes />} />
+          <Route path="admin/add-canned-text" element={<AddCannedText />} />
+          <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />

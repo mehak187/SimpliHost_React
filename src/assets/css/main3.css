@@ -130,3 +130,37 @@ input:checked+.slider:before {
     border-radius: 15px;
 
 }
+
+.comimg {
+    background-color: #fff;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.inicons {
+    color: var(--blue);
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.cannedinput{
+    margin: 0 5px;
+    border-radius: 5px;
+    background:#F7F7F7;
+    border: solid 1px #ccbcbc;
+}
+
+.greenbtn{
+    background: var(--green);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight:bold;
+    margin-top: 5px;
+}

@@ -4,8 +4,6 @@ import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import property from "../../assets/img/property-collection.png";
 import FilterRow from "./FilterRow";
-import { FaEye } from "react-icons/fa";
-import { FaDollarSign } from "react-icons/fa";
 import { TbCopy } from "react-icons/tb";
 
 function GuestAutomations() {
@@ -35,7 +33,7 @@ function GuestAutomations() {
   
   return (
     <div>
-      <FilterRow searchName="automation" btnName="Add Automation" btnLink="#"/>
+      <FilterRow searchName="automation" btnName="Add Automation" btnLink="/admin/addAutomation"/>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">

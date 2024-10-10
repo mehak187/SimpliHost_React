@@ -1,6 +1,6 @@
 import React from "react";
 
-function UsersNotifications() {
+function Notifications() {
   const DataCollection = [
     {
       id: 1,
@@ -135,6 +135,4 @@ function UsersNotifications() {
   );
 }
 
-export default UsersNotifications;
-
-
+export default Notifications;
