@@ -10,6 +10,7 @@ import AminitiesDetails from './AminitiesDetails';
 import PropertyTitle from './PropertyTitle';
 import PropertyDescription from './PropertyDescription';
 import SetPricePage from './SetPricePage';
+import HouseRules from './HouseRules';
 
 // Define your steps
 const steps = [
@@ -77,7 +78,7 @@ function LabelStepper() {
             case 7:
                 return <PropertyDescription/>;
             case 8:
-                return <Typography>House Rules content goes here.</Typography>;
+                return <HouseRules/>;
             case 9:
                 return <SetPricePage/>;
             default:

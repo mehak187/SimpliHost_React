@@ -43,7 +43,7 @@ const PropertyAddress = () => {
                     </div>
                 </div>
                 <div className="col-6">
-                    <div style={{ width: "100%", padding: "1rem", borderRadius: "12px", border: "1px solid #ccc" }}>
+                    <div className='position-relative border rounded-3 p-2'>
                         <input
                             type="text"
                             value={address}
@@ -58,26 +58,21 @@ const PropertyAddress = () => {
                             }}
                         />
 
-                        <button
+                        <div className='position-relative'>
+                        <div className='position-btn'>
+                        <button className='btn bg-white ex-small w-100'
                             onClick={handleUseCurrentLocation}
-                            style={{
-                                display: "block",
-                                width: "100%",
-                                padding: "0.75rem",
-                                borderRadius: "8px",
-                                backgroundColor: "#f0f0f0",
-                                border: "1px solid #ccc",
-                                cursor: "pointer",
-                            }}
                         >
                             Use my current location
                         </button>
+                        </div>
 
                         <LoadScript googleMapsApiKey="AIzaSyAu1gwHCSzLG9ACacQqLk-LG8oJMkarNF0">
                             <GoogleMap mapContainerStyle={mapStyles} zoom={13} center={center}>
                                 {currentLocation && <Marker position={currentLocation} />}
                             </GoogleMap>
                         </LoadScript>
+                        </div>
                     </div>
                 </div>
             </div>
