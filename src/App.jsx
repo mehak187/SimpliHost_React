@@ -43,6 +43,7 @@ import AddOperationsCodes from "./Components/SmartDevices/AddOperationsCodes";
 import AddSmartDevice from "./Components/SmartDevices/AddSmartDevice";
 import AddCannedText from "./Components/Automations/AddCannedText";
 import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators";
+import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 function App() {
   return (
    <div>
@@ -82,6 +83,8 @@ function App() {
           <Route path="admin/add-operations-codes" element={<AddOperationsCodes />} />
           <Route path="admin/add-canned-text" element={<AddCannedText />} />
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
+          <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
+          AddChecklistCategory
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />

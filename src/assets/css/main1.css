@@ -152,6 +152,17 @@
 .payment-img {
     max-width: 80px;
 }
+.border-tab-0 {
+    position: relative;
+}
+.border-tab-0:before {
+    position: absolute;
+    content: '';
+    background: #717171;
+    height: 24px;
+    width: 2px;
+    right: 0;
+}
 /* --------checkbox------ */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     .checkbox-wrapper-13 input[type=checkbox] {
@@ -253,6 +264,9 @@
 @media screen and (max-width: 992px) {
 .bell {
     width: 50px;
+}
+.border-tab-0:before {
+    width: 0px;
 }
 }
 @media screen and (max-width: 577px) {
