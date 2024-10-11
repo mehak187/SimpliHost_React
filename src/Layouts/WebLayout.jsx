@@ -33,7 +33,7 @@ function WebLayout() {
                 </Link>
               </li>
               <li className="nav-item mx-1 mx-xl-3">
-                <Link className="nav-link" to="/listing">
+                <Link className="nav-link" to="/Listings">
                   Listings
                 </Link>
               </li>
