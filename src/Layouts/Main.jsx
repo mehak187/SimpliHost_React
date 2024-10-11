@@ -302,11 +302,14 @@ function Main() {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                <Link
                     to="admin/settings"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/settings"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/settings")||
+                      isActive("/admin/add-checklist-category")
+                        ? "active"
+                        : ""
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={dashboard} alt="" className="sideicon" />
