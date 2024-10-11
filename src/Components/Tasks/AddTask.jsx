@@ -1,3 +1,4 @@
+import { Calendar } from 'primereact/calendar'
 import React from 'react'
 
 function AddTask() {
@@ -53,7 +54,10 @@ function AddTask() {
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="EndDate" className='fw-semi'>Select End Date</label><br />
                   <input type="date" id='EndDate' className='inputstyle focus-none'/>
+                  <Calendar showIcon className='impdate'/>
                 </div>
+                
+
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="EndTime" className='fw-semi'>Select End Time</label><br />
                   <input type="time" id='EndTime' className='inputstyle focus-none'/>
