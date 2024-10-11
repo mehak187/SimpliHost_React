@@ -48,8 +48,8 @@ const Sliderr = () => {
     return (
         <section className="around py-5">
             <div className="container">
-                <div className="row">
-                    <div className="d-flex flex-column flex-md-row justify-content-between">
+                <div className="row high-slide position-relative">
+                    <div className="d-flex flex-column flex-md-row justify-content-between ">
                         <div>
                             <p className="mb-0 fs-2 fw-bold high-fives-title">High Fives All Around!</p>
                             <p className="mb-0 mt-2 black-color fw-semi">Our customers are thrilled—SimpliHost saves them time and makes management a breeze!</p>
@@ -62,7 +62,7 @@ const Sliderr = () => {
                                     <div className="slidercomma">
                                         <img src={testimonial.comma} alt="comma" className="w-100" />
                                     </div>
-                                    <p className="mb-0 black-color mt-2">{testimonial.text}</p>
+                                    <p className="mb-0 black-color mt-2 slider-p">{testimonial.text}</p>
                                     <div className="d-flex align-items-center mt-2">
                                         <div className="slider-img1">
                                             <img src={testimonial.image} alt="profile" className="w-100" />

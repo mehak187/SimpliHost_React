@@ -261,6 +261,44 @@
   .checkbox-wrapper-13 *:after {
     box-sizing: inherit;
   }
+  .slider-p {
+    min-height: 124px;
+    max-height: 124px;
+    overflow: auto;
+  }
+  .slick-prev:before {
+    display: none;
+  }
+  .slick-next:before {
+    display: none;
+  }
+ 
+  .high-slide .slick-prev, 
+  .high-slide .slick-next {
+    position: absolute !important;
+    top: 0% !important;
+    transform: translateY(0) !important;
+  }
+  .high-slide .slick-prev, 
+  .high-slide .slick-next {
+    width: 60px !important;
+    height: 100% !important;
+  }
+
+  .high-slide .slick-prev img, 
+  .high-slide .slick-next img {
+    width: 100% !important;
+  }
+  .high-slide .slick-next {
+    right: 20px !important;
+  }
+  .high-slide .slick-prev {
+    right: 90px !important;
+    left: auto !important;
+  }
+  .high-slide .slick-slider {
+    position: static !important;
+  }
 @media screen and (max-width: 992px) {
 .bell {
     width: 50px;
