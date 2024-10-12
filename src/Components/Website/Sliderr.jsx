@@ -43,12 +43,26 @@ const Sliderr = () => {
                 <img src={rightarrow} alt="right" className="w-100" />
             </div>
         ),
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2, // Show 2 slides when the screen width is less than 992px
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1, // Show 1 slide when the screen width is less than 768px
+                },
+            },
+        ],
     };
 
     return (
         <section className="around py-5">
             <div className="container">
-                <div className="row high-slide position-relative">
+                <div className="high-slide position-relative">
                     <div className="d-flex flex-column flex-md-row justify-content-between ">
                         <div>
                             <p className="mb-0 fs-2 fw-bold high-fives-title">High Fives All Around!</p>
@@ -57,7 +71,7 @@ const Sliderr = () => {
                     </div>
                     <Slider {...settings}>
                         {testimonials.map((testimonial, index) => (
-                            <div className="col-lg-4 col-md-6 p-2" key={index}>
+                            <div className="col-lg-4 col-md-6 slider-box" key={index}>
                                 <div className="slider-bg p-3 mt-3 h-100">
                                     <div className="slidercomma">
                                         <img src={testimonial.comma} alt="comma" className="w-100" />

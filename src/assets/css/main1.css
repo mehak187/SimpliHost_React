@@ -275,29 +275,35 @@
  
   .high-slide .slick-prev, 
   .high-slide .slick-next {
-    position: absolute !important;
-    top: 0% !important;
-    transform: translateY(0) !important;
+    position: absolute;
+    top: 6px;
+    transform: translateY(0);
   }
   .high-slide .slick-prev, 
   .high-slide .slick-next {
-    width: 60px !important;
-    height: 100% !important;
+    width: 60px;
   }
 
   .high-slide .slick-prev img, 
   .high-slide .slick-next img {
-    width: 100% !important;
+    width: 100%;
   }
   .high-slide .slick-next {
-    right: 20px !important;
+    right: 0px;
   }
   .high-slide .slick-prev {
-    right: 90px !important;
-    left: auto !important;
+    right: 70px;
+    left: auto;
   }
   .high-slide .slick-slider {
-    position: static !important;
+    position: static;
+  }
+  .high-slide .slider-box {
+    padding: 10px 10px;
+  }
+  .high-slide .slick-slider {
+    margin: 0 -10px;
+    padding: 0;
   }
 @media screen and (max-width: 992px) {
 .bell {
@@ -324,4 +330,20 @@
     .bell {
         width: 40px;
     }
+    .high-slide .slick-prev, .high-slide .slick-next {
+      width: 40px !important;
+  }
+  .high-slide .slick-prev {
+    right: 50px;
+    left: auto;
+}
+}
+@media screen and (max-width: 480px) {
+  .high-slide .high-fives-title {
+    margin-bottom: 60px !important;
+  }
+  .high-slide .slick-prev, 
+  .high-slide .slick-next {
+    top: 50px;
+  }
 }
