@@ -817,7 +817,7 @@
     border-bottom-right-radius: 20px;
 }
 
-.active {
+.simplihost-navbar .active {
     color: var(--green) !important;
 }
 
@@ -877,6 +877,7 @@
 .font-custom{
     font-weight: 400px;
 }
+
 /* -----------before--After--------------- */
 /* .feature2 {
     position: relative;

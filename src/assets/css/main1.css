@@ -305,6 +305,15 @@
     margin: 0 -10px;
     padding: 0;
   }
+  .bg-tag {
+    background: #B4DFE5;
+  }
+  .filter-det-box {
+    height: 224px;
+}
+.filter-det-box {
+    overflow: auto;
+}
 @media screen and (max-width: 992px) {
 .bell {
     width: 50px;

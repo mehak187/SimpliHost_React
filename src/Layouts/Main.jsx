@@ -135,12 +135,15 @@ function Main() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="admin/properties"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/properties"
-                    )}`}
+                    <Link
+                    to="/admin/properties"
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/properties") || isActive("/admin/add-property-tags")
+                        ? "active"
+                        : ""
+                    }`}
                   >
+                    
                     <div className="d-flex align-items-center">
                       <img src={properties} alt="" className="sideicon" />
                       <p className="mb-0">Properties</p>
