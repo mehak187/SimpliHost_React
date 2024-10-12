@@ -9,20 +9,20 @@ const testimonials = [
     {
         text: "I am proud to say that after a few months of taking this course...I passed my exam and now I’ve secured a high paying job! This content was exactly what the exam covered.",
         name: "Will Somers",
-        image: aroundcircle,  // Corrected: no curly braces
-        comma: slidercomma,   // Corrected: no curly braces
+        image: aroundcircle, 
+        comma: slidercomma,  
     },
     {
         text: "Another great testimonial! SimpliHost has made my life so much easier.",
         name: "Jane Doe",
-        image: aroundcircle,  // Corrected: no curly braces
-        comma: slidercomma,   // Corrected: no curly braces
+        image: aroundcircle, 
+        comma: slidercomma,  
     },
     {
         text: "I can’t recommend this service enough! It has truly changed my life.",
         name: "John Smith",
-        image: aroundcircle,  // Corrected: no curly braces
-        comma: slidercomma,   // Corrected: no curly braces
+        image: aroundcircle, 
+        comma: slidercomma,  
     },
 ];
 
@@ -31,7 +31,7 @@ const Sliderr = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,  // Change this to 1 to match your original layout
+        slidesToShow: 3,  
         slidesToScroll: 1,
         prevArrow: (
             <div className="slider-arrow slider-prev">
@@ -47,13 +47,13 @@ const Sliderr = () => {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2, // Show 2 slides when the screen width is less than 992px
+                    slidesToShow: 2, 
                 },
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1, // Show 1 slide when the screen width is less than 768px
+                    slidesToShow: 1,
                 },
             },
         ],
