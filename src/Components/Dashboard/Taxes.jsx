@@ -2,31 +2,33 @@ import React from 'react'
 import { CiStar } from "react-icons/ci";
 import QuickFilter from './Common/QuickFilter';
 import { GrUpload } from 'react-icons/gr';
-import UserImg from '../../assets/img/user.png';
+import TaxesCollected from '../../assets/img/TaxesCollected.png';
+import TaxesOwed from '../../assets/img/TaxesOwed.png';
 import { Link } from 'react-router-dom';
 import { BiSolidFileExport } from 'react-icons/bi';
+import DateCalendarPicker from './Common/DateCalendarPicker';
 
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
       </div>
-      <img src={image} alt={title} />
+      <img src={image} alt={title} className='md-img'/>
     </div>
   </div>
 );
 
 function Taxes() {
   const userStats = [
-    { title: 'Taxes Total', value: '$40,689', image: UserImg },
-    { title: 'Host Responsible Taxes', value: '$40,689', image: UserImg },
-    { title: 'Platform Responsible Taxes', value: '$40,689', image: UserImg },
+    { title: 'Taxes Total', value: '$40,689', image: TaxesCollected },
+    { title: 'Host Responsible Taxes', value: '$40,689', image: TaxesOwed },
+    { title: 'Platform Responsible Taxes', value: '$40,689', image: TaxesOwed },
   ];
   return (
     <div>
-      <div className="d-sm-flex align-items-center justify-content-between">
+      <div className="d-lg-flex align-items-center justify-content-between">
         <div className='d-flex align-items-center'>
           <div>
             <h4 className="fw-semibold">
@@ -35,6 +37,9 @@ function Taxes() {
           </div>
           <div className='mx-2'>
             <QuickFilter/>
+          </div>
+          <div className='mx-2'>
+            <DateCalendarPicker/>
           </div>
         </div>
         <div className="dropdown">

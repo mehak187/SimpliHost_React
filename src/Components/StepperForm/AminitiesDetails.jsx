@@ -46,7 +46,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 const AmenityOption = ({ imgSrc, label }) => (
-  <div className="col-6 border-end">
+  <div className="col-sm-6 border-end">
     <div className='d-flex align-items-center'>
       <input type="checkbox" className='chk me-3' />
       <label>
@@ -76,14 +76,14 @@ export default function CustomizedAccordions() {
   return (
     <div className='container pt-5 pb-4'>
       <div className="row">
-        <div className="col-6">
+        <div className="col-lg-6">
           <p className='bg-lgrey rounded-pill py-2 px-4 max fw-semi border'>Step 06</p>
           <h2 className='step-font mt-4'>Show Off Your Place’s Amenities!</h2>
           <p className='fw-normal lh-2 mt-3'>
             Got more perks? No problem—add extra amenities anytime after you publish!
           </p>
         </div>
-        <div className="col-6">
+        <div className="col-lg-6">
           <div className='pet-height'>
             <div className='p-2'>
             <Accordion className='mb-2 rounded-3 border-0' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>

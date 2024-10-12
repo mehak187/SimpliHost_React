@@ -1,6 +1,10 @@
 import React from 'react';
 import Pricing from './Pricing';
 import Tasks from './Tasks';
+import Checklist from './Checklist';
+import Inventory from './Inventory';
+import AutomationTable from './AutomationTable';
+import Detail from './Detail';
 
 function EditPropertyTabs() {
   return (
@@ -189,7 +193,7 @@ function EditPropertyTabs() {
               aria-labelledby="details-tab"
               tabIndex={0}
             >
-              {/* Content for Details */}
+              <Detail/>
             </div>
             <div
               className="tab-pane fade"
@@ -225,7 +229,7 @@ function EditPropertyTabs() {
               aria-labelledby="checklists-tab"
               tabIndex={0}
             >
-              {/* Content for Checklists */}
+              <Checklist/>
             </div>
             <div
               className="tab-pane fade"
@@ -234,7 +238,7 @@ function EditPropertyTabs() {
               aria-labelledby="inventory-tab"
               tabIndex={0}
             >
-              {/* Content for Inventory */}
+              <Inventory/>
             </div>
             <div
               className="tab-pane fade"
@@ -243,7 +247,7 @@ function EditPropertyTabs() {
               aria-labelledby="automations-tab"
               tabIndex={0}
             >
-              {/* Content for Automations */}
+              <AutomationTable/>
             </div>
             <div
               className="tab-pane fade"

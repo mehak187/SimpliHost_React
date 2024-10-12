@@ -44,14 +44,14 @@ function PropertySpace() {
 
     return (
         <div className="container py-5">
-            <div className="row px-4 justify-content-between">
-                <div className="col-5">
+            <div className="row px-lg-4 justify-content-between">
+                <div className="col-xl-5 col-lg-6">
                     <p className="bg-lgrey rounded-pill py-2 px-4 max fw-semi border">Step 03</p>
                     <h2 className="font-step fw-semi lh-base">Let’s Get the Basics on Your Space!</h2>
                     <p>Don’t worry, we’ll dive into the details like amenities and photos later!</p>
                 </div>
 
-                <div className="col-6">
+                <div className="col-lg-6">
                     {propertyOptions.map((property) => (
                         <div
                             key={property.value}
@@ -64,7 +64,7 @@ function PropertySpace() {
                                 <img src={property.imgSrc} alt={property.label} className="lease-img shadow" />
                                 <div className="ms-2">
                                     <h6 className="fw-semi mb-0">{property.label}</h6>
-                                    <p className="mb-0">{property.description}</p>
+                                    <p className="mb-0 font-des">{property.description}</p>
                                 </div>
                             </div>
                             <div className='ms-2'>
@@ -86,11 +86,11 @@ function PropertySpace() {
 
                     {/* Property size and unit inputs */}
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-sm-6 mb-3">
                             <label className="fw-semi">Property Size</label>
                             <input type="text" className="form-control shadow-none" placeholder="Type here" />
                         </div>
-                        <div className="col-6">
+                        <div className="col-sm-6 mb-3">
                             <label className="fw-semi">Property Unit</label>
                             <select className="form-select shadow-none">
                                 <option value="square-feet">Square Feet</option>

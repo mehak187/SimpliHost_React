@@ -3,7 +3,21 @@ import DonutChart from './DonutChart'
 import { CiStar } from 'react-icons/ci'
 import QuickFilter from './Common/QuickFilter'
 import { GrUpload } from 'react-icons/gr'
-import UserImg from '../../assets/img/user.png';
+import CheckIn from '../../assets/img/checkin.png';
+import CheckOut from '../../assets/img/checkout.png';
+import Guest from '../../assets/img/guests.png';
+import Occupancyrate from '../../assets/img/Occupancyrate.png';
+import Revenue from '../../assets/img/Revenue.png';
+import ANR from '../../assets/img/ANR.png';
+import NFR from '../../assets/img/NFR.png';
+import Cancelations from '../../assets/img/Cancelations.png';
+import Nights from '../../assets/img/nights.png';
+import NBLOCKEDN from '../../assets/img/NBLOCKEDN.png';
+import RevPAR from '../../assets/img/RevPAR.png';
+import BookingDays from '../../assets/img/BookingDays.png';
+import AvgLOS from '../../assets/img/AvgLOS.png';
+import Clearance from '../../assets/img/clearence.png';
+import PF from '../../assets/img/PF.png';
 import { IoPawOutline } from 'react-icons/io5'
 import PetsDonut from './PetsDonut'
 import LcdImg from '../../assets/img/donut.png';
@@ -32,7 +46,7 @@ const RevenueCard = ({ title, value, image }) => (
         <p className="mb-0 small">{title}</p>
         <h6 className="fw-semibold fs-4">{value}</h6>
       </div>
-      <img src={image} alt={title} />
+      <img src={image} alt={title} className='md-img'/>
     </div>
   </div>
 );
@@ -40,24 +54,24 @@ const RevenueCard = ({ title, value, image }) => (
 
 function Forecasting() {
   const userStats = [
-    { title: 'Number of Check-Ins', value: '$40,689', image: UserImg },
-    { title: 'Number of Check-Outs', value: '$40,689', image: UserImg },
-    { title: 'Current Number of Guests', value: '$40,689', image: UserImg },
+    { title: 'Texes Owed', value: '$40,689', image: CheckIn },
+    { title: 'Taxes Collected', value: '$40,689', image: CheckOut },
+    { title: 'Current Number of Guests', value: '$40,689', image: Guest },
   ];
 
   const revenueData = [
-    { title: 'Gross Revenue', value: '$40,689', image: UserImg },
-    { title: 'Occupancy Rate', value: '20%', image: UserImg },
-    { title: 'Avg Nightly Rate', value: '$40,689', image: UserImg },
-    { title: 'Number of Forecasting', value: '$40,689', image: UserImg },
-    { title: 'Number of Cancellations', value: '10', image: UserImg },
-    { title: 'Number of Nights', value: '29', image: UserImg },
-    { title: 'Number of Blocked Nights', value: '29', image: UserImg },
-    { title: 'RevPAR', value: '$40,689', image: UserImg },
-    { title: 'Avg Booking Days', value: '10', image: UserImg },
-    { title: 'Avg LOS', value: '3.25', image: UserImg },
-    { title: 'Cleaning Fees', value: '$40,689', image: UserImg },
-    { title: 'Platform Fees', value: '$40,689', image: UserImg },
+    { title: 'Gross Revenue', value: '$40,689', image: Revenue },
+    { title: 'Occupancy Rate', value: '20%', image: Occupancyrate },
+    { title: 'Avg Nightly Rate', value: '$40,689', image: ANR },
+    { title: 'Number of Forecasting', value: '$40,689', image: NFR },
+    { title: 'Number of Cancellations', value: '10', image: Cancelations },
+    { title: 'Number of Nights', value: '29', image: Nights },
+    { title: 'Number of Blocked Nights', value: '29', image: NBLOCKEDN },
+    { title: 'RevPAR', value: '$40,689', image: RevPAR },
+    { title: 'Avg Booking Days', value: '10', image: BookingDays },
+    { title: 'Avg LOS', value: '3.25', image: AvgLOS },
+    { title: 'Cleaning Fees', value: '$40,689', image: Clearance },
+    { title: 'Platform Fees', value: '$40,689', image: PF },
   
   ];
   
@@ -85,11 +99,21 @@ function Forecasting() {
         </div>
       </div>
       <div className='row mt-3'>
-          <div className="col-6">
-          <div className='d-flex align-items-center'>
+          <div className="col-xl-5">
+          <div className='d-sm-flex align-items-center'>
             <h6 className='mb-0 fw-semi'>Report Period:</h6>
-            <div className='ms-2'>
+            <div className='ms-sm-2 mt-sm-0 mt-2'>
               <DateCalendarPicker />
+            </div>
+          </div>
+          </div>
+          <div className="col-xl-6 col-lg-9 mt-xl-0 mt-3">
+          <div className='d-sm-flex align-items-center'>
+            <h6 className='mb-0 fw-semi text-nowrap'>Compare another Period:</h6>
+            <div className='ms-sm-2 w-100 mt-sm-0 mt-2'>
+              <select name="" id="" className='form-select'>
+                <option value="">None</option>
+              </select>
             </div>
           </div>
           </div>

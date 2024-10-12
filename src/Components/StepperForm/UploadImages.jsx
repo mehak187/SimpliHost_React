@@ -19,7 +19,7 @@ function UploadImages() {
     return (
         <div className="container pt-5 pb-4">
             <div className="row justify-content-between">
-                <div className="col-5">
+                <div className="col-xl-5 col-lg-6">
                     <div>
                         <p className="bg-lgrey rounded-pill py-2 px-4 max fw-semi border">Step 04</p>
                     </div>
@@ -28,7 +28,7 @@ function UploadImages() {
                         You’ll need 5 photos to kick things off, but feel free to add more or make changes later!
                     </p>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div className="bg-lgrey d-flex flex-column align-items-center justify-content-center b-img">
                         <div>
                             {previewImage ? (

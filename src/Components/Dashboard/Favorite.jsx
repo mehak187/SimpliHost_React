@@ -1,6 +1,11 @@
 import React from 'react';
 import { CiFilter, CiStar } from 'react-icons/ci';
 import UserImg from '../../assets/img/user.png';
+import Inventory from '../../assets/img/inven.png';
+import Graphup from '../../assets/img/graph.png';
+import Inbox from '../../assets/img/inboxmessages.png';
+import Clearence from '../../assets/img/clearence.png';
+import Proprtylisting from '../../assets/img/proprtylisting.png';
 import LineGraph from './LineGraph';
 import QuickFilter from './Common/QuickFilter';
 import { GrUpload } from 'react-icons/gr';
@@ -16,7 +21,7 @@ const StatCard = ({ title, value, image }) => {
           <h4 className='fw-semibold'>{value}</h4>
         </div>
         <div>
-          <img src={image} alt={title} />
+          <img src={image} alt={title} className='md-img'/>
         </div>
       </div>
     </div>
@@ -26,11 +31,11 @@ const StatCard = ({ title, value, image }) => {
 function Favorite() {
   const userStats = [
     { title: 'Total Users', value: '40,689', image: UserImg },
-    { title: 'Total Inventory', value: '102', image: UserImg },
-    { title: 'Total Sales', value: '$ 324,3400', image: UserImg },
-    { title: 'Total cleaners', value: '34', image: UserImg },
-    { title: 'Total inbox message', value: '40,689', image: UserImg },
-    { title: 'Total property listings', value: '40', image: UserImg },
+    { title: 'Total Inventory', value: '102', image: Inventory },
+    { title: 'Total Sales', value: '$ 324,3400', image: Graphup },
+    { title: 'Total cleaners', value: '34', image: Clearence },
+    { title: 'Total inbox message', value: '40,689', image: Inbox },
+    { title: 'Total property listings', value: '40', image: Proprtylisting },
   ];
 
   return (

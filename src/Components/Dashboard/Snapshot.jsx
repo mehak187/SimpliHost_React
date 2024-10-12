@@ -1,7 +1,22 @@
 import React from 'react';
 import { CiStar } from "react-icons/ci";
 import { GrUpload } from "react-icons/gr";
-import UserImg from '../../assets/img/user.png';
+import CheckIn from '../../assets/img/checkin.png';
+import CheckOut from '../../assets/img/checkout.png';
+import Guest from '../../assets/img/guests.png';
+import Occupancyrate from '../../assets/img/Occupancyrate.png';
+import Revenue from '../../assets/img/Revenue.png';
+import ANR from '../../assets/img/ANR.png';
+import NFR from '../../assets/img/NFR.png';
+import Cancelations from '../../assets/img/Cancelations.png';
+import Nights from '../../assets/img/nights.png';
+import NBLOCKEDN from '../../assets/img/NBLOCKEDN.png';
+import RevPAR from '../../assets/img/RevPAR.png';
+import BookingDays from '../../assets/img/BookingDays.png';
+import AvgLOS from '../../assets/img/AvgLOS.png';
+import Clearance from '../../assets/img/clearence.png';
+import PF from '../../assets/img/PF.png';
+import GPF from '../../assets/img/GPF.png';
 import LcdImg from '../../assets/img/donut.png';
 import DonutChart from './DonutChart';
 import PetsDonut from './PetsDonut';
@@ -39,25 +54,25 @@ const RevenueCard = ({ title, value, image }) => (
 
 function Snapshot() {
   const userStats = [
-    { title: 'Number of Check-Ins', value: '233', image: UserImg },
-    { title: 'Number of Check-Outs', value: '20%', image: UserImg },
-    { title: 'Current Number of Guests', value: '600', image: UserImg },
-    { title: 'Number of Reservations', value: '689', image: UserImg },
+    { title: 'Number of Check-Ins', value: '233', image: CheckIn },
+    { title: 'Number of Check-Outs', value: '20%', image: CheckOut },
+    { title: 'Current Number of Guests', value: '600', image: Guest },
+    { title: 'Number of Reservations', value: '689', image: NFR },
   ];
 
   const revenueData = [
-    { title: 'Gross Revenue', value: '$40,689', image: UserImg },
-    { title: 'Occupancy Rate', value: '20%', image: UserImg },
-    { title: 'Avg Nightly Rate', value: '$40,689', image: UserImg },
-    { title: 'Number of Cancellations', value: '10', image: UserImg },
-    { title: 'Number of Nights', value: '29', image: UserImg },
-    { title: 'Number of Blocked Nights', value: '29', image: UserImg },
-    { title: 'RevPAR', value: '$40,689', image: UserImg },
-    { title: 'Avg Booking Days', value: '10', image: UserImg },
-    { title: 'Avg LOS', value: '3.25', image: UserImg },
-    { title: 'Cleaning Fees', value: '$40,689', image: UserImg },
-    { title: 'Platform Fees', value: '$40,689', image: UserImg },
-    { title: 'Gross Payout after Fees', value: '$40,689', image: UserImg },
+    { title: 'Gross Revenue', value: '$40,689', image: Revenue },
+    { title: 'Occupancy Rate', value: '20%', image: Occupancyrate },
+    { title: 'Avg Nightly Rate', value: '$40,689', image: ANR },
+    { title: 'Number of Cancellations', value: '10', image: Cancelations },
+    { title: 'Number of Nights', value: '29', image: Nights },
+    { title: 'Number of Blocked Nights', value: '29', image: NBLOCKEDN },
+    { title: 'RevPAR', value: '$40,689', image: RevPAR },
+    { title: 'Avg Booking Days', value: '10', image: BookingDays },
+    { title: 'Avg LOS', value: '3.25', image: AvgLOS },
+    { title: 'Cleaning Fees', value: '$40,689', image: Clearance },
+    { title: 'Platform Fees', value: '$40,689', image: PF },
+    { title: 'Gross Payout after Fees', value: '$40,689', image: GPF },
 
   ];
 

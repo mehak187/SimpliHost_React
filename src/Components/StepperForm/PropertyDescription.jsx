@@ -22,7 +22,7 @@ function PropertyDescription() {
     return (
         <div className="container pt-5 pb-4">
             <div className="row align-items-center">
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div>
                         <p className="bg-lgrey rounded-pill py-2 px-4 max fw-semi border">Step 08</p>
                     </div>
@@ -32,7 +32,7 @@ function PropertyDescription() {
                         Tell guests what makes your place unique—share the magic!
                     </p>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div>
                         <textarea
                             name=""
