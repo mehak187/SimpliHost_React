@@ -349,7 +349,7 @@
     box-shadow: 0px 0px 24px 0px #DADADAB2;
 }
 
-.slider {
+/* .slider {
     width: 100%;
 }
 
@@ -360,7 +360,7 @@
     background: #E8FEFF;
     border-radius: 25px;
     outline: none;
-}
+} */
 
 .range-labels {
     display: flex;

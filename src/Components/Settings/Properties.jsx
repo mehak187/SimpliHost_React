@@ -130,7 +130,7 @@ function Properties() {
               </label>
             </div>
             <Link
-              to="#"
+              to="/admin/add-property-tags"
               className="px-sm-4 px-3 bg-blue  my-2 text-center d-block d-sm-inline text-white rounded-2 opacity-hover text-decoration-none py-2"
             >
               Add Tags
@@ -155,7 +155,7 @@ function Properties() {
                     {data.Name}
                   </td>
                   <td className="small text-black">
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center justify-content-center">
                       <img
                         src={data.Properties}
                         alt="property-img"
