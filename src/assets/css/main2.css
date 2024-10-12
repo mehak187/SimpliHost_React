@@ -276,34 +276,34 @@ input:focus {
     height: 100% !important;
 }
 
-.main-table table thead tr th{
+.main-table table thead tr th {
     padding: 4px;
     font-weight: 400;
 }
 
-.main-table table tbody tr td{
+.main-table table tbody tr td {
     padding: 12px;
     background-color: #F7F7F7;
 }
 
-.main-table table thead tr{
+.main-table table thead tr {
     background-color: #F7F7F7;
     box-shadow: none
 }
 
-.main-table .table{
+.main-table .table {
     box-shadow: none;
     background-color: #fff !important;
     border-collapse: separate;
     border-spacing: 0px 10px
 }
 
-.main-table table thead{
+.main-table table thead {
     box-shadow: none;
     background-color: transparent;
 }
 
-.prop-img{
+.prop-img {
     width: 100%;
     height: 100%;
     max-width: 50px;
@@ -311,29 +311,182 @@ input:focus {
     border-radius: 6px
 }
 
-.main-table .table tbody tr td{
+.main-table .table tbody tr td {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd !important;
 }
 
-.main-table .table tbody tr td:first-child{
+.main-table .table tbody tr td:first-child {
     border-left: 1px solid #ddd;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-.main-table .table tbody tr td:last-child{
+.main-table .table tbody tr td:last-child {
     border-right: 1px solid #ddd;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.table-img{
+.table-img {
     width: 100%;
     height: 100%;
     max-width: 40px;
     object-fit: cover;
 }
+
+.bg-ldanger {
+    background-color: rgba(244, 151, 108, 0.3);
+    color: rgba(219, 127, 91, 1);
+}
+
+.bg-red2 {
+    background-color: rgba(193, 53, 21, 0.3);
+    color: #C13515;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.toggle-label.off {
+    margin-right: 8px;
+    color: #9ca3af;
+}
+
+.toggle-label.on {
+    margin-left: 8px;
+    color: #9ca3af;
+}
+
+.toggle-switch.on .toggle-label.off {
+    color: #717171;
+}
+
+.toggle-switch.off .toggle-label.on {
+    color: #9ca3af;
+}
+
+.toggle-slider {
+    width: 54px;
+    height: 36px;
+    background-color: #717171;
+    border-radius: 18px;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.toggle-switch.on .toggle-slider {
+    background-color: #3551B6;
+}
+
+.toggle-knob {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: left 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-switch.on .toggle-knob {
+    left: 21px;
+}
+
+.checkmark {
+    color: #000;
+    font-size: 12px;
+}
+
+.upload-img {
+    height: 150px;
+    width: 320px;
+    border: 2px dashed #DEDEDE;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cover-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.steps{
+    min-width: 1000px;
+}
+
+.step-min{
+    overflow-x: scroll
+}
+
+.md-img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+/* ----------------Chat---------- */
+.left-chat{
+    width: calc(25% - 12px);
+    margin: 0 6px;
+    
+}
+
+.mid-chat{
+    width: calc(75% - 12px);
+    margin: 0 6px;
+}
+
+.mid{
+    width: calc(100% - 300px);
+    border: 1px solid red
+}
+
+.right-chat{
+   max-width: 300px;
+    width: 100%;
+    border: 1px solid red
+}
+
+.main{
+    height: calc(100dvh - 130px)
+}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -359,5 +512,22 @@ input:focus {
     .filter-col {
         width: calc(100% - 12px);
         margin: 6px 6px;
+    }
+    .lease-img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+    .font-des{
+        font-size: 14px;
+    }
+    .rad {
+        width: 20px;
+        height: 20px;
+    }
+    .step-font {
+        font-size: 27px;
+        font-weight: 600;
     }
 }

@@ -22,7 +22,7 @@ function PropertyTitle() {
     return (
         <div className="container pt-5 pb-4">
             <div className="row align-items-center">
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div>
                         <p className="bg-lgrey rounded-pill py-2 px-4 max fw-semi border">Step 07</p>
                     </div>
@@ -31,7 +31,7 @@ function PropertyTitle() {
                         Keep it short and sweet—you can always spice it up later!
                     </p>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div>
                         <textarea
                             name="" 

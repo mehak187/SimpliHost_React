@@ -2,6 +2,18 @@ import React from 'react';
 import { GrUpload } from 'react-icons/gr';
 import QuickFilter from './Common/QuickFilter';
 import UserImg from '../../assets/img/user.png';
+import OL from '../../assets/img/OI.png';
+import Clearance from '../../assets/img/clearence.png';
+import OM from '../../assets/img/OM.png';
+import OverdueAdmin from '../../assets/img/OverdueAdmin.png';
+import OMI from '../../assets/img/OMI.png';
+import UMI from '../../assets/img/UMI.png';
+import LSI from '../../assets/img/LSI.png';
+import OSI from '../../assets/img/OSI.png';
+import Openinvoices from '../../assets/img/openinvoices.png';
+import Overdueinvoices from '../../assets/img/overdueinvoices.png';
+import MWM from '../../assets/img/MWM.png';
+import UM from '../../assets/img/UM.png';
 import LcdImg from '../../assets/img/donut.png';
 import TaskDonutChart from './TaskDonutChart';
 import { BiSolidFileExport } from 'react-icons/bi';
@@ -71,30 +83,30 @@ const Messaging = ({ title, value, image }) => (
 function Operations() {
 
   const userStats = [
-    { title: 'Overdue Cleaning', value: '689', image: UserImg },
-    { title: 'Overdue Inspections', value: '689', image: UserImg },
-    { title: 'Overdue Maintenance', value: '689', image: UserImg },
-    { title: 'Overdue Admin', value: '689', image: UserImg },
+    { title: 'Overdue Cleaning', value: '689', image: Clearance },
+    { title: 'Overdue Inspections', value: '689', image: OL },
+    { title: 'Overdue Maintenance', value: '689', image: OM },
+    { title: 'Overdue Admin', value: '689', image: OverdueAdmin },
   ];
 
   const userMaintenance = [
-    { title: 'Overdue Maintenance Items', value: '689', image: UserImg },
-    { title: 'Upcoming Maintenance Items', value: '689', image: UserImg },
+    { title: 'Overdue Maintenance Items', value: '689', image: OMI },
+    { title: 'Upcoming Maintenance Items', value: '689', image: UMI },
   ];
 
   const userInventory = [
-    { title: 'Low Stock Inventory', value: '689', image: UserImg },
-    { title: 'Out Of Stock Inventory', value: '689', image: UserImg },
+    { title: 'Low Stock Inventory', value: '689', image: LSI },
+    { title: 'Out Of Stock Inventory', value: '689', image: OSI },
   ];
 
   const userInvoice = [
-    { title: 'Open Invoices', value: '689', image: UserImg },
-    { title: 'Overdue Invoices', value: '689', image: UserImg },
+    { title: 'Open Invoices', value: '689', image: Openinvoices },
+    { title: 'Overdue Invoices', value: '689', image: Overdueinvoices },
   ];
 
   const userMessaging = [
-    { title: 'Missing Welcome Message', value: '689', image: UserImg },
-    { title: 'Unread Messages', value: '689', image: UserImg },
+    { title: 'Missing Welcome Message', value: '689', image: MWM },
+    { title: 'Unread Messages', value: '689', image: UM },
   ];
 
 

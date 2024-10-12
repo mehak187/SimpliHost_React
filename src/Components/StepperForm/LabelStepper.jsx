@@ -76,87 +76,91 @@ function LabelStepper() {
             case 6:
                 return <PropertyTitle />;
             case 7:
-                return <PropertyDescription/>;
+                return <PropertyDescription />;
             case 8:
-                return <HouseRules/>;
+                return <HouseRules />;
             case 9:
-                return <SetPricePage/>;
+                return <SetPricePage />;
             default:
                 return <Typography>Unknown step</Typography>;
         }
     };
 
     return (
-        <div className=''>
-            <div className='bg-lgrey py-3'>
-                <div className='container'>
-                    <div className='d-flex align-items-center justify-content-between'>
-                        <div>
-                            <img src={HostLogo} alt="" className='host-img' />
-                        </div>
-                        <div>
-                            <button className='bg-blue text-white shadow rounded-3 py-2 px-3 border-0'>Save & Exit</button>
+        <form action="">
+            <div className=''>
+                <div className='bg-lgrey py-3'>
+                    <div className='container'>
+                        <div className='d-flex align-items-center justify-content-between'>
+                            <div>
+                                <img src={HostLogo} alt="" className='host-img' />
+                            </div>
+                            <div>
+                                <button className='bg-blue text-white shadow rounded-3 py-2 px-3 border-0'>Save & Exit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='py-4 container'>
-                <Box sx={{ width: '100%' }}>
-                    <Stepper activeStep={activeStep} alternativeLabel>
-                        {steps.map((label, index) => (
-                            <CustomStep key={label} active={activeStep === index}>
-                                <StepLabel>
-                                    <Typography variant="body2">{label}</Typography>
-                                </StepLabel>
-                            </CustomStep>
-                        ))}
-                    </Stepper>
-                    <div>
-                        {activeStep === steps.length ? (
-                            <Typography>All steps completed</Typography>
-                        ) : (
-                            <div>
-                                {getStepContent(activeStep)} {/* Render the content based on the active step */}
-                                <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
-                                    <Button
-                                        className='bg-lgrey text-dark rounded-3 py-2 px-4 fw-semi border text-decoration-none'
-                                        disabled={activeStep === 0}
-                                        onClick={handleBack}
-                                        sx={{
-                                            mr: 1,
-                                            backgroundColor: '#F7F7F7',
-                                            color: 'dark',
-                                            padding: '10px 20px',
-                                            borderRadius: '8px',
-                                            textDecoration: 'none',
-                                            fontWeight: 600,
-                                        }}
-                                    >
-                                        Back
-                                    </Button>
+                <div className='py-4 container'>
+                    <Box sx={{ width: '100%' }}>
+                        <div className='step-min'>
+                        <Stepper activeStep={activeStep} alternativeLabel className='steps'>
+                            {steps.map((label, index) => (
+                                <CustomStep  key={label} active={activeStep === index}>
+                                    <StepLabel>
+                                        <Typography variant="body2">{label}</Typography>
+                                    </StepLabel>
+                                </CustomStep>
+                            ))}
+                        </Stepper>
+                        </div>
+                        <div>
+                            {activeStep === steps.length ? (
+                                <Typography>All steps completed</Typography>
+                            ) : (
+                                <div>
+                                    {getStepContent(activeStep)} {/* Render the content based on the active step */}
+                                    <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
+                                        <Button
+                                            className='bg-lgrey text-dark rounded-3 py-2 px-4 fw-semi border text-decoration-none'
+                                            disabled={activeStep === 0}
+                                            onClick={handleBack}
+                                            sx={{
+                                                mr: 1,
+                                                backgroundColor: '#F7F7F7',
+                                                color: 'dark',
+                                                padding: '10px 20px',
+                                                borderRadius: '8px',
+                                                textDecoration: 'none',
+                                                fontWeight: 600,
+                                            }}
+                                        >
+                                            Back
+                                        </Button>
 
-                                    <Button
-                                        variant="contained"
-                                        className='bg-lblue text-blue rounded-3 py-2 px-4 fw-semi border-0 text-decoration-none'
-                                        onClick={handleNext}
-                                        sx={{
-                                            backgroundColor: activeStep === steps.length - 1 ? '#32F0CD' : '#32F0CD',
-                                            color: 'blue',
-                                            padding: '10px 20px',
-                                            borderRadius: '8px',
-                                            fontWeight: 600,
-                                            textDecoration: 'none',
-                                        }}
-                                    >
-                                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                                    </Button>
-                                </Box>
-                            </div>
-                        )}
-                    </div>
-                </Box>
+                                        <Button
+                                            variant="contained"
+                                            className='bg-lblue text-blue rounded-3 py-2 px-4 fw-semi border-0 text-decoration-none'
+                                            onClick={handleNext}
+                                            sx={{
+                                                backgroundColor: activeStep === steps.length - 1 ? '#32F0CD' : '#32F0CD',
+                                                color: 'blue',
+                                                padding: '10px 20px',
+                                                borderRadius: '8px',
+                                                fontWeight: 600,
+                                                textDecoration: 'none',
+                                            }}
+                                        >
+                                            {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                                        </Button>
+                                    </Box>
+                                </div>
+                            )}
+                        </div>
+                    </Box>
+                </div>
             </div>
-        </div>
+        </form>
     );
 }
 

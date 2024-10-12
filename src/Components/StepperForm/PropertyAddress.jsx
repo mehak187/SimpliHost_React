@@ -33,7 +33,7 @@ const PropertyAddress = () => {
     return (
         <div className='container py-5'>
             <div className="row justify-content-between">
-                <div className="col-5">
+                <div className="col-xl-5 col-lg-6">
                     <div>
                         <p className='bg-lgrey rounded-pill py-2 px-4 max fw-semi border'>Step 02</p>
                     </div>
@@ -42,7 +42,7 @@ const PropertyAddress = () => {
                         <p className='lh-2'>Don’t worry, we’ll dive into the details like amenities and photos later!</p>
                     </div>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div className='position-relative border rounded-3 p-2'>
                         <input
                             type="text"

@@ -47,8 +47,8 @@ function PropertyType() {
 
   return (
     <div className='container py-5'>
-      <div className="row  px-4">
-        <div className="col-6">
+      <div className="row  px-lg-4">
+        <div className="col-lg-6">
           <div>
             <p className='bg-lgrey rounded-pill py-2 px-4 max fw-semi border'>Step 01</p>
           </div>
@@ -58,7 +58,7 @@ function PropertyType() {
           </div>
         </div>
 
-        <div className="col-6">
+        <div className="col-lg-6">
           {propertyOptions.map((property) => (
             <div
               key={property.value}
@@ -71,10 +71,10 @@ function PropertyType() {
                 </div>
                 <div className='ms-2'>
                   <h6 className='fw-semi mb-0'>{property.label}</h6>
-                  <p className='mb-0'>{property.description}</p>
+                  <p className='mb-0 font-des'>{property.description}</p>
                 </div>
               </div>
-              <div>
+              <div className='ms-3'>
                 <input
                   type="radio"
                   className='rad'

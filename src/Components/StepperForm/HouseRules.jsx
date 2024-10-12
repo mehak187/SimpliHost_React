@@ -11,14 +11,14 @@ function HouseRules() {
 
     return (
         <div className="container py-5">
-            <div className="row px-4 justify-content-between">
-                <div className="col-5">
+            <div className="row px-lg-4 justify-content-between">
+                <div className="col-xl-5 col-lg-6">
                     <p className="bg-lgrey rounded-pill py-2 px-4 max fw-semi border">Step 09</p>
                     <h2 className="font-step fw-semi lh-base mt-4">Let’s Get the Basics on Your Space!</h2>
                     <p>Don’t worry, we’ll dive into the details like amenities and photos later!</p>
                 </div>
 
-                <div className="col-6">
+                <div className="col-lg-6">
                     <div className='pet-height'>
                         <div className='p-2'>
                             <div className='d-flex align-items-center justify-content-between'>

@@ -1,61 +1,60 @@
 import React from "react";
 import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
-import { TbCopy } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { CiFilter } from "react-icons/ci";
 
-function Tasks() {
+function Inventory() {
   const DataCollection = [
     {
       id: 1,
-      taskname: "Green Back Home Inspection",
-      property: "447 S st Francis Ave unit 01",
-      tasktype: "Cleaning",
-      assignedTo: "Admin",
-      endDate: "January 10, 2024",
-      status: "Not Started",
+      itemName: "Toilet Paper",
+      description: "Product Description",
+      type: "Bathroom",
+      shared: "Yes",
+      size: "Product size here",
+      stock: "10",
+      status: "Low Stock",
     },
     {
       id: 2,
-      taskname: "Green Back Home Inspection",
-      property: "447 S st Francis Ave unit 01",
-      tasktype: "Cleaning",
-      assignedTo: "Admin",
-      endDate: "January 10, 2024",
-      status: "In Progress",
+      itemName: "Toilet Paper",
+      description: "Product Description",
+      type: "Bathroom",
+      shared: "Yes",
+      size: "Product size here",
+      stock: "10",
+      status: "Out of Stock",
     },
     {
       id: 3,
-      taskname: "Green Back Home Inspection",
-      property: "447 S st Francis Ave unit 01",
-      tasktype: "Cleaning",
-      assignedTo: "Admin",
-      endDate: "January 10, 2024",
-      status: "Overdue",
+      itemName: "Toilet Paper",
+      description: "Product Description",
+      type: "Bathroom",
+      shared: "Yes",
+      size: "Product size here",
+      stock: "10",
+      status: "Low Stock",
     },
     {
       id: 4,
-      taskname: "Green Back Home Inspection",
-      property: "447 S st Francis Ave unit 01",
-      tasktype: "Cleaning",
-      assignedTo: "Admin",
-      endDate: "January 10, 2024",
-      status: "Completed",
+      itemName: "Toilet Paper",
+      description: "Product Description",
+      type: "Bathroom",
+      shared: "Yes",
+      size: "Product size here",
+      stock: "10",
+      status: "Out of Stock",
     },
   ];
 
   const getStatusClass = (status) => {
     switch (status) {
-      case "Not Started":
-        return "text-primary"; // Blue for Not Started
-      case "In Progress":
-        return "text-warning"; // Yellow for In Progress
-      case "Overdue":
-        return "text-danger"; // Red for Overdue
-      case "Completed":
-        return "text-success"; // Green for Completed
+      case "Low Stock":
+        return "bg-ldanger";
+      case "Out of Stock":
+        return "bg-red2";
       default:
         return "";
     }
@@ -85,19 +84,20 @@ function Tasks() {
            </div>
         </div>
         <div className="d-sm-flex col-xl-6 col-12 mt-3 mt-xl-0 justify-content-end align-items-center">
-           <Link to="" className="px-sm-4 mt-3 me-2 mt-sm-0 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">Add Task</Link>
-           <Link to="#" className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white me-sm-2 text-decoration-none py-2">View in Calendar</Link>
+           <Link to="" className="px-sm-4 mt-3 me-2 mt-sm-0 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">Replenish Item</Link>
+           <Link to="#" className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white me-sm-2 text-decoration-none py-2">Create New</Link>
         </div>
     </div>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Task Name</th>
-              <th className="small fw-semi text-black text-nowrap">Property</th>
-              <th className="small fw-semi text-black text-nowrap">Task Type</th>
-              <th className="small fw-semi text-black text-nowrap">Assigned To</th>
-              <th className="small fw-semi text-black text-nowrap">End Date</th>
+              <th className="small fw-semi text-black text-nowrap">Item Name</th>
+              <th className="small fw-semi text-black text-nowrap">Description</th>
+              <th className="small fw-semi text-black text-nowrap">Type</th>
+              <th className="small fw-semi text-black text-nowrap">Shared</th>
+              <th className="small fw-semi text-black text-nowrap">Size</th>
+              <th className="small fw-semi text-black text-nowrap">Stock</th>
               <th className="small fw-semi text-black text-nowrap">Status</th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
@@ -105,23 +105,21 @@ function Tasks() {
           <tbody>
             {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
-                <td className="small text-black">{data.taskname}</td>
-                <td className="small text-black">{data.property}</td>
-                <td className="small text-black text-nowrap">{data.tasktype}</td>
-                <td className="small text-black">{data.assignedTo}</td>
-                <td className="small text-black">{data.endDate}</td>
-                <td className={`small fw-semi ${getStatusClass(data.status)}`}>
-                  {data.status}
+                <td className="small text-black">{data.itemName}</td>
+                <td className="small text-black">{data.description}</td>
+                <td className="small text-black text-nowrap">{data.type}</td>
+                <td className="small text-black text-nowrap">{data.shared}</td>
+                <td className="small text-black">{data.size}</td>
+                <td className="small text-black">{data.stock}</td>
+                <td>
+                 <p className={`small fw-semi mb-0 rounded-2 px-3 py-1 text-nowrap max ${getStatusClass(data.status)}`}> {data.status}</p>
                 </td>
                 <td className="small text-black">
                   <div className="d-flex">
-                    <Link to="#" className="mx-1 tblicon">
-                      <TbCopy className="fs-5"/>
-                    </Link>
-                    <Link to="/manager_detail" className="mx-1 tblicon">
+                    <Link to="" className="mx-1 tblicon">
                       <IoPencil className="fs-5"/>
                     </Link>
-                    <Link to="/delete_task" className="mx-1 tblicon">
+                    <Link to="" className="mx-1 tblicon">
                       <HiTrash className="fs-5"/>
                     </Link>
                   </div>
@@ -135,4 +133,6 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default Inventory;
+
+

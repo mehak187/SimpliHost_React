@@ -18,7 +18,7 @@ function EditImages() {
   return (
     <div className='container pt-5 pb-4'>
       <div className="row">
-        <div className="col-6">
+        <div className="col-lg-6">
           <div>
             <p className='bg-lgrey rounded-pill py-2 px-4 max fw-semi border'>Step 05</p>
           </div>
@@ -31,12 +31,12 @@ function EditImages() {
             <input type="file" id='up-more' className='d-none' />
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-lg-6 mt-lg-0 mt-3">
           <div className='pet-height bg-lgrey rounded-3 border'>
             <div className='p-3'>
               <div className="row">
                 {images.map((image, index) => (
-                  <div className="col-6 mb-2" key={index}>
+                  <div className="col-sm-6 mb-2" key={index}>
                     <div className='position-relative'>
                       <img src={image.src} alt={image.alt} className='img-property' />
                       {image.isCover && (
