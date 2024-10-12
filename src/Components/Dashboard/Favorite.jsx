@@ -43,8 +43,8 @@ function Favorite() {
       <div className="d-sm-flex align-items-center justify-content-between">
         <div className='d-flex align-items-center'>
           <div>
-            <h4 className="fw-semibold">
-              Name of your Favorite Dashboard here<CiStar />
+            <h4 className="fw-semibold d-flex">
+              Dashboard <CiStar />
           </h4>
           </div>
           <div className='mx-2'>
