@@ -84,7 +84,7 @@ function Notifications() {
           <tbody>
             {DataCollection.map((data) => (
               <tr className="align-middle">
-                <td className="small text-black text-capitalize fw-semi">
+                <td className="small text-black text-capitalize fw-semi text-center">
                   {data.title}
                 </td>
                 <td className="small text-black">
