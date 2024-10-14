@@ -53,6 +53,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
+import Feature from "./Components/Website/Feature";
 import TaskandChecklist from "./Components/Website/TaskandChecklist";
 import InventoryManagement from "./Components/Website/InventoryManagement";
 import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
@@ -100,12 +101,12 @@ function App() {
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
           <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
           <Route path="admin/add-property-tags" element={<AddPropertyTags />} />
-          AddChecklistCategory
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/Listings" element={<Listings />} />
           <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/feature" element={<Feature />} />
           <Route path="/TaskandChecklist" element={<TaskandChecklist />} />
           <Route path="/InventoryManagement" element={<InventoryManagement />} />
           <Route path="/MaintenanceTracking" element={<MaintenanceTracking />} />
