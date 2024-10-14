@@ -6,6 +6,8 @@ import "./assets/css/main.css";
 import "./assets/css/main1.css";
 import "./assets/css/main2.css";
 import "./assets/css/main3.css";
+import "./assets/css/main4.css";
+import "./assets/css/main5.css";
 import Main from "./Layouts/Main";
 import Dashboard from "./Pages/Dashboard";
 import Inbox from "./Pages/Inbox";
@@ -43,6 +45,14 @@ import AddOperationsCodes from "./Components/SmartDevices/AddOperationsCodes";
 import AddSmartDevice from "./Components/SmartDevices/AddSmartDevice";
 import AddCannedText from "./Components/Automations/AddCannedText";
 import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators";
+import WebLayout from "./Layouts/WebLayout";
+import Home from "./Components/Website/Home";
+import Listings from "./Components/Website/Listings";
+import Pricing from "./Components/Properties/Pricing";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
+import AddPropertyTags from "./Components/Settings/AddPropertyTags";
 function App() {
   return (
    <div>
@@ -82,6 +92,14 @@ function App() {
           <Route path="admin/add-operations-codes" element={<AddOperationsCodes />} />
           <Route path="admin/add-canned-text" element={<AddCannedText />} />
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
+          <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
+          <Route path="admin/add-property-tags" element={<AddPropertyTags />} />
+          AddChecklistCategory
+        </Route>
+        <Route element={<WebLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/Listings" element={<Listings />} />
+          <Route path="/Pricing" element={<Pricing />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />

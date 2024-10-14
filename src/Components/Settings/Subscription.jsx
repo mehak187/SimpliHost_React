@@ -32,7 +32,8 @@ function Subscription() {
   
   return (
     <div className="h-100 d-flex flex-column">
-      <div className="table-responsive default-table mt-3">
+      <h2 className="fs-5 mb-0 text-black fw-semi mt-3">Subscription Setting</h2>
+      <div className="table-responsive default-table mt-4">
         <table className="table w-100">
           <thead className="w-100">
             <tr className="align-middle border-bottom-0">
