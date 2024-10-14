@@ -60,6 +60,8 @@ import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
 import Supercharge from "./Components/Website/Supercharge";
 import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
 import BookDirect from "./Components/Website/BookDirect";
+import UnifiedInbox from "./Components/Website/UnifiedInbox";
+import Smartdevices from "./Components/Website/SmartDevices";
 function App() {
   return (
    <div>
@@ -113,6 +115,8 @@ function App() {
           <Route path="/cohosting" element={<Supercharge />} />
           <Route path="/automation" element={<TaskswithAutomation />} />
           <Route path="/direct-booking" element={<BookDirect />} />
+          <Route path="/unified-inbox" element={<UnifiedInbox />} />
+          <Route path="/smart-devices" element={<Smartdevices />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
