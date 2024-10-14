@@ -55,6 +55,7 @@ import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
 import TaskandChecklist from "./Components/Website/TaskandChecklist";
 import InventoryManagement from "./Components/Website/InventoryManagement";
+import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
 function App() {
   return (
    <div>
@@ -104,6 +105,7 @@ function App() {
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/TaskandChecklist" element={<TaskandChecklist />} />
           <Route path="/InventoryManagement" element={<InventoryManagement />} />
+          <Route path="/MaintenanceTracking" element={<MaintenanceTracking />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
