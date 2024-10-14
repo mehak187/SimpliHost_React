@@ -249,26 +249,36 @@
     min-height: 300px;
 }
 
-.custom-accordion .accordion-button {
+.custom-accordion .accordion-item {
     background-color: white;
     border-radius: 8px;
-    border: none;
-    outline: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 20px 24px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
 }
-
+.custom-accordion button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
 
 .custom-accordion .accordion-button:not(.collapsed) {
-    background-color: white !important;
-    border-radius: 8px !important;
+    background-color: white;
+    border-radius: 8px;
     padding: 20px 24px;
+    box-shadow: none;
+    color: #000;
 }
 
 .custom-accordion .accordion-button.collapsed {
-    border-radius: 8px !important;
+    border-radius: 8px;
     padding: 20px 24px;
+}
+
+.custom-accordion .accordion-button:focus {
+    border:none;
+    outline: 0;
+    box-shadow: none;
 }
 
 .custom-accordion .accordion-button::after {
