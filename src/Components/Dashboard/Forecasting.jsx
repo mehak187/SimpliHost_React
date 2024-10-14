@@ -78,13 +78,13 @@ function Forecasting() {
   return (
     <div>
       <div className="d-sm-flex align-items-center justify-content-between border-bottom pb-2">
-        <div className='d-flex align-items-center'>
+        <div className='d-sm-flex align-items-center'>
           <div>
             <h4 className="fw-semibold">
             Forcasting Dashboard <CiStar />
           </h4>
           </div>
-          <div className='mx-2'>
+          <div className='mx-sm-2 my-sm-0 my-2'>
             <QuickFilter className=''/>
           </div>
         </div>

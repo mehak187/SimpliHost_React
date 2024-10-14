@@ -30,7 +30,7 @@
 }
 
 .bg-lgrey {
-    background-color: #F7F7F7;
+    background-color: #F7F7F7 !important;
 }
 
 .host-img {
@@ -456,9 +456,15 @@ input:focus {
 }
 
 .md-img{
-    width: 25px;
-    height: 25px;
+    width: 25px !important;
+    height: 25px !important;
     object-fit: contain;
+}
+
+.css-17o22dy-MuiAvatar-root{
+    width: 25px !important;
+    height: 25px !important;
+    font-size: 12px !important;
 }
 /* ----------------Chat---------- */
 .left-chat{
@@ -474,21 +480,73 @@ input:focus {
 
 .mid{
     width: calc(100% - 300px);
-    border: 1px solid red
+    border: 1px solid red;
+    justify-content: space-between;
 }
 
 .right-chat{
    max-width: 300px;
     width: 100%;
-    border: 1px solid red
+    border: 1px solid red;
 }
 
 .main{
     height: calc(100dvh - 130px)
 }
 
+.css-113cboj-MuiTabs-root {
+    min-height: 29px !important;
+}
 
+.css-19wsa2m-MuiButtonBase-root-MuiTab-root{
+    min-height: 29px !important;
+    min-width: 35px !important;
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
 
+.chat-person.active{
+    background-color: #E0E6FA;
+    border-radius: 10px;
+}
+
+.chat-person:hover{
+    background-color: #E0E6FA;
+    border-radius: 10px;
+
+}
+.person-chat{
+    height: calc(100vh - 248px);
+    overflow-y: auto;
+}
+
+.css-142372x-MuiButtonBase-root-MuiButton-root{
+    min-width: 17px !important;
+    padding: 8px 9px !important;
+}
+
+.css-uywun8-MuiPaper-root-MuiPopover-paper{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2),0px 0px 0px 0px rgba(0,0,0,0.14),0px 0px 0px 0px rgba(0,0,0,0.12) !important;
+    top: 106px !important;
+}
+
+.md1-img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain
+}
+
+.chat-input{
+    background: rgba(53, 81, 182, 0.1);
+
+}
+
+.ai-img{
+    background-color: rgba(53, 81, 182, 0.1);
+    padding: 9px 9px;
+    border-radius: 5px;
+}
 @media screen and (max-width: 1200px) {
     .filter-col {
         width: calc(33.33% - 12px);
