@@ -156,6 +156,10 @@
 .coreF-card1 {
     width: max-content;
 }
+.coreF-card1 img {
+    width: 30px;
+
+}
 
 .unlock-sec {
     background: linear-gradient(180deg, #FFFFFF 0%, #B4DFE5 100%);

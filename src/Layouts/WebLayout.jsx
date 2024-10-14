@@ -50,16 +50,19 @@ function WebLayout() {
                   Listings
                 </Link>
               </li>
-              <li className="nav-item dropdown mx-1 mx-xl-3">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
+              <li className="nav-item d-flex align-items-center dropdown mx-1 mx-xl-3">
+                <Link to="feature"
+                  className="nav-link"
+                >
+                  Feature
+                </Link>
+                <p 
+                  className="nav-link mb-0 dropdown-toggle"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Feature
-                </a>
+                  </p>
                 <ul className="dropdown-menu py-0">
                   <li>
                     <Link

@@ -53,6 +53,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
+import Feature from "./Components/Website/Feature";
 function App() {
   return (
    <div>
@@ -94,12 +95,12 @@ function App() {
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
           <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
           <Route path="admin/add-property-tags" element={<AddPropertyTags />} />
-          AddChecklistCategory
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/Listings" element={<Listings />} />
           <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/feature" element={<Feature />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
