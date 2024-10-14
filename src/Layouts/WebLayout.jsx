@@ -46,7 +46,7 @@ function WebLayout() {
                 </Link>
               </li>
               <li className="nav-item mx-1 mx-xl-3">
-                <Link className="nav-link" to="/Listings">
+                <Link className="nav-link" to="/listings">
                   Listings
                 </Link>
               </li>

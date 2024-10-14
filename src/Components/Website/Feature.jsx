@@ -21,6 +21,15 @@ import cf5 from "../../assets/img/cf-5.svg";
 import cf6 from "../../assets/img/cf-6.svg";
 import cf7 from "../../assets/img/cf-7.svg";
 import cf8 from "../../assets/img/cf-8.svg";
+import whychoose1 from "../../assets/img/simplest 1.png";
+import whychoose2 from "../../assets/img/simplest2.svg";
+import whychoose3 from "../../assets/img/simplies3.svg";
+import support1 from "../../assets/img/msg-pic.svg";
+import support2 from "../../assets/img/cut-heart.svg";
+import support3 from "../../assets/img/handuser.svg";
+import FaqSection from "./FaqSection";
+import GotbackSection from "./GotbackSection";
+
 
 function Feature() {
   const FeatureCard = (props) => {
@@ -28,13 +37,11 @@ function Feature() {
       <div class="col-lg-3 col-md-4 col-sm-6  mb-4">
         <div class="bg-grey p-4 rounded-5 h-100 d-flex flex-column">
           <div class="bg-yellow d-flex justify-content-center align-items-center p-3 rounded-3 coreF-card1 mb-4">
-            <img src= {props.img} alt="pic" class="" />
+            <img src={props.img} alt="pic" class="" />
           </div>
           <div class="mb-5">
             <h5 class="mb-3 fw-semi text-capitalize">{props.name}</h5>
-            <p class="mb-0">
-            {props.des}
-            </p>
+            <p class="mb-0">{props.des}</p>
           </div>
           <div class="text-center mt-auto">
             <Link
@@ -207,38 +214,279 @@ function Feature() {
         <div class="container">
           <h2 class="text-center mb-4 fw-bold">Core Features</h2>
           <div class="row">
-            <FeatureCard name="Unified Inbox" des="A single destination for guest communication synched with your
-              listing data across all channels."  link="#" img={cf11}/>
-               <FeatureCard name="Smart Devices Integration" des="Eliminate repetitive tasks and reduce
-mistakes with booking reminders, directions,
-payment requests and more based on
-easy-to-create rules."  link="#" img={cf1}/>
-               <FeatureCard name="Task and Checklists" des="Eliminate repetitive tasks and reduce
-mistakes with booking reminders, directions,
-payment requests and more based on
-easy-to-create rules."  link="#" img={cf2}/>
-               <FeatureCard name="Inventory Management" des="Eliminate repetitive tasks and reduce
-mistakes with booking reminders, directions,
-payment requests and more based on
-easy-to-create rules."  link="#" img={cf4}/>
-               <FeatureCard name="Maintenance Tracking" des="A single destination for guest communication
-synched with your listing data across all
-channels."  link="#" img={cf5}/>
-               <FeatureCard name="Co-Hosting" des="Create invoices, share financial reports, and 
-give owners access to their property calendars.
- Simplify your co-hosting duties and keep 
-everyone in the loop!"  link="#" img={cf6}/>
-               <FeatureCard name="Automations" des="Eliminate repetitive tasks and reduce mistake
-with booking reminders, directions, payment
-requests and more based on
-easy-to-create rules."  link="#" img={cf7}/>
-               <FeatureCard name="Direct Booking" des="Eliminate repetitive tasks and reduce
-mistakes with booking reminders, directions,
-payment requests and more based on
-easy-to-create rules."  link="#" img={cf8}/>
+            <FeatureCard
+              name="Unified Inbox"
+              des="A single destination for guest communication synched with your
+              listing data across all channels."
+              link=""
+              img={cf11}
+            />
+            <FeatureCard
+              name="Smart Devices Integration"
+              des="Eliminate repetitive tasks and reduce
+                mistakes with booking reminders, directions,
+                payment requests and more based on
+                easy-to-create rules."
+              link="/task-and-checklist"
+              img={cf1}
+            />
+            <FeatureCard
+              name="Task and Checklists"
+              des="Eliminate repetitive tasks and reduce
+            mistakes with booking reminders, directions,
+            payment requests and more based on
+            easy-to-create rules."
+              link="/inventory-management"
+              img={cf2}
+            />
+            <FeatureCard
+              name="Inventory Management"
+              des="Eliminate repetitive tasks and reduce
+                mistakes with booking reminders, directions,
+                payment requests and more based on
+                easy-to-create rules."
+              link="#"
+              img={cf4}
+            />
+            <FeatureCard
+              name="Maintenance Tracking"
+              des="A single destination for guest communication
+            synched with your listing data across all
+            channels."
+              link="/maintenance-tracking"
+              img={cf5}
+            />
+            <FeatureCard
+              name="Co-Hosting"
+              des="Create invoices, share financial reports, and 
+            give owners access to their property calendars.
+            Simplify your co-hosting duties and keep 
+            everyone in the loop!"
+              link="/cohosting#"
+              img={cf6}
+            />
+            <FeatureCard
+              name="Automations"
+              des="Eliminate repetitive tasks and reduce mistake
+            with booking reminders, directions, payment
+            requests and more based on
+            easy-to-create rules."
+              link="/automation"
+              img={cf7}
+            />
+            <FeatureCard
+              name="Direct Booking"
+              des="Eliminate repetitive tasks and reduce
+            mistakes with booking reminders, directions,
+            payment requests and more based on
+            easy-to-create rules."
+              link="/direct-booking"
+              img={cf8}
+            />
           </div>
         </div>
       </section>
+      <section class="simplehost py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row">
+                        <h2 class="black-color fw-bold text-center">Why Simplihost</h2>
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="simplihost-card p-3 h-100">
+                                <div>
+                                    <img src={whychoose1} alt="All in one" class="w-100 h-100" />
+                                </div>
+                                <p class="mb-0 fs-4 fw-bold blue-color mt-3">All-In-One Awesomeness</p>
+                                <p class="mb-0 light-grey mt-2">No need to buy separate systems for cleaning or remote
+                                    locks—it’s all</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="simplihost-card p-3 h-100">
+                                <div>
+                                    <img src={whychoose2} alt="All in one" class="w-100 h-100" />
+                                </div>
+                                <p class="mb-0 fs-4 fw-bold blue-color mt-3">Free Personal Onboarding</p>
+                                <p class="mb-0 light-grey mt-2">We’ll get you up and running in no time with
+                                    personalized help from a real live person.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-3">
+                            <div class="simplihost-card p-3 h-100">
+                                <div>
+                                    <img src={whychoose3} alt="All in one" class="w-100 h-100" />
+                                </div>
+                                <p class="mb-0 fs-4 fw-bold blue-color mt-3">No Extra Charges</p>
+                                <p class="mb-0 light-grey mt-2">Access every feature from day one, with no
+                                    hidden fees or add-ons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="unlock-sec py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row">
+                        <h2 class="fw-bold text-center mb-5">Unlock your potential with <span
+                                class="litblue">Simplihost</span>
+                            Property Management Platform</h2>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Easy to Use</h5>
+                                <p class="mb-0">All your bookings, one easy view.
+                                    Add, cancel, or adjust bookings in
+                                    just a few clicks!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Efficient</h5>
+                                <p class="mb-0">Automate the routine,
+                                    minimize errors, and
+                                    free up your time for the big decisions.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Powerful & Versatile</h5>
+                                <p class="mb-0">Streamline every phase of your guest’s
+                                    vacation journey with our robust platform.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Secure & Compliant</h5>
+                                <p class="mb-0">We prioritize your privacy and security.
+                                    SimpliHost is committed to keeping your
+                                    data and your guests’ data safe and
+                                    compliant with top security standards.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Success Training</h5>
+                                <p class="mb-0">Our expert team is here to ensure a
+                                    smooth start. We stick with you until
+                                    everything’s running like clockwork.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Customer Support</h5>
+                                <p class="mb-0">Whether it’s through tutorials, our
+                                    comprehensive knowledge center, or
+                                    live chat, our support team is ready to
+                                    assist you.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Anytime, Anywhere, Any Device</h5>
+                                <p class="mb-0">Manage your properties effortlessly,
+                                    no matter where you are or what
+                                    device you’re using.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Community support</h5>
+                                <p class="mb-0">Dive into our vibrant support community.
+                                    Share insights, get tips, and learn from
+                                    fellow users.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="trans-shadow p-4 rounded-4 h-100">
+                                <h5 class="fw-semi">Expert knowledge</h5>
+                                <p class="mb-0">As vacation rental owners ourselves, we’ve
+                                    got the insider scoop! Tap into our tailored
+                                    knowledge to boost your property
+                                    management skills and grow your business
+                                    like a pro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="onboarding-sec py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="fw-bold text-center mb-5">Onboarding & Support</h2>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="my-shadow p-4 rounded-4 onboarding-card h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="bg-exblue d-flex justify-content-center align-items-center p-3 rounded-4 coreF-card1 mb-4">
+                                <img src={support1} alt="pic" class="" />
+                            </div>
+                            <h5 class="ms-3 fw-semi">Email, Phone & Chat</h5>
+                        </div>
+                        <div class="mb-5">
+                            <p class="mb-0">You’re never alone. Our Customer Support team
+                                of in-house staff are available via chat, phone
+                                and email to provide industry-leading
+                                customer care.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <button type="button" class="border-0 explore-btn mt-2 rounded-5 leran-btn fw-semi">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="my-shadow p-4 rounded-4 onboarding-card h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="bg-exblue d-flex justify-content-center align-items-center p-3 rounded-4 coreF-card1 mb-4">
+                                <img src={support2} alt="pic" class="" />
+                            </div>
+                            <h5 class="ms-3 fw-semi">Extra Support</h5>
+                        </div>
+                        <div class="mb-5">
+                            <p class="mb-0">With our all-inclusive package, you get unlimited
+                                in-app support to help you make the most of our
+                                platform. Plus, enjoy a one-on-one onboarding
+                                session during your first 30 days—completely free!</p>
+                        </div>
+                        <div class="mt-auto">
+                            <button type="button" class="border-0 explore-btn mt-2 rounded-5 leran-btn fw-semi">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="my-shadow p-4 rounded-4 onboarding-card h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="bg-exblue d-flex justify-content-center align-items-center p-3 rounded-4 coreF-card1 mb-4">
+                                <img src={support3} alt="pic" class="" />
+                            </div>
+                            <h5 class="ms-3 fw-semi">Customer Success</h5>
+                        </div>
+                        <div class="mb-5">
+                            <p class="mb-0">We Won’t Leave You Hanging! Our Customer
+                                Success team will check in regularly to understand
+                                your business goals and help you make the most of
+                                the SimpliHost platform.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <Link to="#" class="border-0 text-decoration-none  explore-btn mt-2 rounded-5 leran-btn fw-semi">Learn
+                                More</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <FaqSection />
+    <GotbackSection />
     </div>
   );
 }
