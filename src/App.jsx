@@ -104,15 +104,15 @@ function App() {
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/Listings" element={<Listings />} />
-          <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/listings" element={<Listings />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/feature" element={<Feature />} />
-          <Route path="/TaskandChecklist" element={<TaskandChecklist />} />
-          <Route path="/InventoryManagement" element={<InventoryManagement />} />
-          <Route path="/MaintenanceTracking" element={<MaintenanceTracking />} />
-          <Route path="/Supercharge" element={<Supercharge />} />
-          <Route path="/TaskswithAutomation" element={<TaskswithAutomation />} />
-          <Route path="/BookDirect" element={<BookDirect />} />
+          <Route path="/task-and-checklist" element={<TaskandChecklist />} />
+          <Route path="/inventory-management" element={<InventoryManagement />} />
+          <Route path="/maintenance-tracking" element={<MaintenanceTracking />} />
+          <Route path="/cohosting" element={<Supercharge />} />
+          <Route path="/automation" element={<TaskswithAutomation />} />
+          <Route path="/direct-booking" element={<BookDirect />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
