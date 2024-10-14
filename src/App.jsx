@@ -53,6 +53,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
+import TaskandChecklist from "./Components/Website/TaskandChecklist";
 function App() {
   return (
    <div>
@@ -100,6 +101,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Listings" element={<Listings />} />
           <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/TaskandChecklist" element={<TaskandChecklist />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
