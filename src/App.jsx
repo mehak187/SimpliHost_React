@@ -54,6 +54,12 @@ import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
 import Feature from "./Components/Website/Feature";
+import TaskandChecklist from "./Components/Website/TaskandChecklist";
+import InventoryManagement from "./Components/Website/InventoryManagement";
+import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
+import Supercharge from "./Components/Website/Supercharge";
+import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
+import BookDirect from "./Components/Website/BookDirect";
 function App() {
   return (
    <div>
@@ -101,6 +107,12 @@ function App() {
           <Route path="/Listings" element={<Listings />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/feature" element={<Feature />} />
+          <Route path="/TaskandChecklist" element={<TaskandChecklist />} />
+          <Route path="/InventoryManagement" element={<InventoryManagement />} />
+          <Route path="/MaintenanceTracking" element={<MaintenanceTracking />} />
+          <Route path="/Supercharge" element={<Supercharge />} />
+          <Route path="/TaskswithAutomation" element={<TaskswithAutomation />} />
+          <Route path="/BookDirect" element={<BookDirect />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
