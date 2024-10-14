@@ -4,6 +4,8 @@ import slidercomma from "../../assets/img/slidercomma1.svg";
 import Left from "../../assets/img/Left.svg";
 import rightarrow from "../../assets/img/rightarrow.png";
 import aroundcircle from "../../assets/img/aroundcircle-1.svg";
+import { FaQuoteLeft } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const testimonials = [
     {
@@ -28,7 +30,7 @@ const testimonials = [
 
 const Sliderr = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,  
@@ -60,7 +62,7 @@ const Sliderr = () => {
     };
 
     return (
-        <section className="around py-5">
+        <section className="around py-5 mb-5">
             <div className="container">
                 <div className="high-slide position-relative">
                     <div className="d-flex flex-column flex-md-row justify-content-between ">
@@ -73,13 +75,13 @@ const Sliderr = () => {
                         {testimonials.map((testimonial, index) => (
                             <div className="col-lg-4 col-md-6 slider-box" key={index}>
                                 <div className="slider-bg p-3 mt-3 h-100">
-                                    <div className="slidercomma">
-                                        <img src={testimonial.comma} alt="comma" className="w-100" />
+                                    <div className="comma">
+                                        <FaQuoteLeft />
                                     </div>
                                     <p className="mb-0 black-color mt-2 slider-p">{testimonial.text}</p>
                                     <div className="d-flex align-items-center mt-2">
-                                        <div className="slider-img1">
-                                            <img src={testimonial.image} alt="profile" className="w-100" />
+                                        <div className="user-slide">
+                                        <FaRegUserCircle className='fs-4'/>
                                         </div>
                                         <p className="mb-0 fs-6 fw-semi black-color ms-3">{testimonial.name}</p>
                                     </div>

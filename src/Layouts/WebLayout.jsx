@@ -1,18 +1,31 @@
 import React from "react";
 import logo from "../assets/img/simplihost-navbar.svg"
+import feature1 from "../assets/img/feature1.png";
+import feature1Active from "../assets/img/feature1Active.png";
+import feature2 from "../assets/img/feature2.png";
+import feature2Active from "../assets/img/feature2Active.png";
+import feature3 from "../assets/img/feature3.png";
+import feature3Active from "../assets/img/feature3Active.png";
+import feature4 from "../assets/img/feature4.png";
+import feature4Active from "../assets/img/feature4Active.png";
+import feature5 from "../assets/img/feature5.png";
+import feature5Active from "../assets/img/feature5Active.png";
+import feature6 from "../assets/img/feature6.png";
+import feature6Active from "../assets/img/feature6Active.png";
+import feature7 from "../assets/img/feature7.png";
+import feature7Active from "../assets/img/feature7Active.png";
+import feature8 from "../assets/img/feature8.png";
+import feature8Active from "../assets/img/feature8Active.png";
+
 import { Outlet, Link } from "react-router-dom";
 
 function WebLayout() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg simplihost-navbar bg-body-tertiary">
+      <nav className="navbar web-nav py-3 navbar-expand-lg simplihost-navbar bg-body-tertiary">
         <div className="container-fluid custom-padd">
           <Link className="navbar-brand" to="/">
-            <img
-              src={logo}
-              alt="logo"
-              className="simplhostnnav-logo"
-            />
+            <img src={logo} alt="logo" className="simplhostnnav-logo" />
           </Link>
           <button
             className="navbar-toggler focus-none"
@@ -47,22 +60,120 @@ function WebLayout() {
                 >
                   Feature
                 </a>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu py-0">
                   <li>
-                    <Link className="dropdown-item" to="/feature1">
-                      Feature1
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature1} className="" alt="feature1" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature1Active} className="" alt="feature1" />
+                      </div>
+                      <p className="mb-0">Unified Inbox</p>
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/feature2">
-                      Feature2
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature2} className="" alt="feature2" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature2Active} className="" alt="feature2" />
+                      </div>
+                      <p className="mb-0">Smart Devices Integration</p>
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/feature3">
-                      Feature3
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature3} className="" alt="feature3" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature3Active} className="" alt="feature3" />
+                      </div>
+                      <p className="mb-0">Unified Inbox</p>
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature4} className="" alt="feature4" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature4Active} className="" alt="feature4" />
+                      </div>
+                      <p className="mb-0">Inventory Management</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature5} className="" alt="feature5" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature5Active} className="" alt="feature5" />
+                      </div>
+                      <p className="mb-0">Maintenance Tracking</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature6} className="" alt="feature6" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature6Active} className="" alt="feature6" />
+                      </div>
+                      <p className="mb-0">Tasks and Checklists</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature7} className="" alt="feature7" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature7Active} className="" alt="feature7" />
+                      </div>
+                      <p className="mb-0">Automations</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
+                      to="/feature1"
+                    >
+                      <div className="feature-img me-2 feature">
+                        <img src={feature8} className="" alt="feature8" />
+                      </div>
+                      <div className="feature-img me-2 feature-active">
+                        <img src={feature8Active} className="" alt="feature8" />
+                      </div>
+                      <p className="mb-0">Direct Booking</p>
+                    </Link>
+                  </li>
+              
                 </ul>
               </li>
               <li className="nav-item mx-1 mx-xl-3">
@@ -80,20 +191,29 @@ function WebLayout() {
                 >
                   Resources
                 </a>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu py-0">
                   <li>
-                    <Link className="dropdown-item" to="/resources1">
-                      Resources1
+                    <Link
+                      className="dropdown-item py-2 border-bottom border-1 fw-semi"
+                      to="/resources1"
+                    >
+                      FAQS
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/resources2">
-                      Resources2
+                    <Link
+                      className="dropdown-item py-2 border-bottom border-1 fw-semi"
+                      to="/resources2"
+                    >
+                      Success Stories
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/resources3">
-                      Resources3
+                    <Link
+                      className="dropdown-item py-2 fw-semi"
+                      to="/resources3"
+                    >
+                      Help Center
                     </Link>
                   </li>
                 </ul>

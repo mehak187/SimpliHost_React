@@ -75,20 +75,7 @@ function Preferences() {
                   </select>
                 </div>
               </div>
-              <div className="col-12 mt-5">
-                <div className="d-flex align-items-center">
-                  <input
-                    type="reset"
-                    className="graybutton rounded-2 me-4 text-black"
-                    value="Cancel"
-                  />
-                  <input
-                    type="submit"
-                    className="bluebutton rounded-2 text-white"
-                    value="Save"
-                  />
-                </div>
-              </div>
+             
             </div>
           </div>
           <h2 className="fs-6 mt-4 bg-white mb-0 text-black py-4 setting-shadow  px-3 rounded-3 text-blue2 fw-bold">
@@ -407,6 +394,20 @@ function Preferences() {
               </div>
             </div>
           </div>
+          <div className="col-12 mt-5">
+                <div className="d-flex align-items-center">
+                  <input
+                    type="reset"
+                    className="graybutton rounded-2 me-4 text-black"
+                    value="Cancel"
+                  />
+                  <input
+                    type="submit"
+                    className="bluebutton rounded-2 text-white"
+                    value="Save"
+                  />
+                </div>
+              </div>
         </form>
       </div>
     </div>

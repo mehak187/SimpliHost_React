@@ -15,11 +15,13 @@ import maintanceitem from "../../assets/img/maintanceitem.svg";
 import smartdevice2 from "../../assets/img/smartdevice2.svg";
 import WhySimplihost from "./WhySimplihost";
 import Sliderr from "./Sliderr";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <>
-      <div className="container py-5">
+    <section class="hero-section py-5">
+      <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div>
@@ -33,9 +35,9 @@ function Home() {
                 between is a breeze. Seamlessly automate your rental operations
                 and get back to doing what you love!{" "}
               </p>
-              <button type="button" className="hero-btn fw-semi mt-3">
-                Try for free
-              </button>
+              <Link to="#" className="hero-btn text-black opacity-hover text-decoration-none d-inline-block fw-semi mt-3">
+                Try for free!
+              </Link>
               <p className="mb-0 mt-3">
                 Try SimpliHost for free for 30 days. No credit card required.
               </p>
@@ -48,6 +50,7 @@ function Home() {
           </div>
         </div>
       </div>
+      </section>
       <section className="feature py-5">
         <div className="container">
           <div className="row">
@@ -151,9 +154,9 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="feature2 py-5">
+      <section className="feature2 custom-feature position-relative py-5">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center position-relative">
             <div className="col-xl-5 col-md-6 mx-auto">
               <div>
                 <img
@@ -166,7 +169,7 @@ function Home() {
             <div className="col-xl-7 mt-3 mt-xl-0">
               <div className="row">
                 <div className="col-xl-5 col-sm-6">
-                  <div className="featurecard-main2 d-flex align-items-center  py-2 px-3 rounded-4 h-100">
+                  <div className="featurecard-main2 d-flex align-items-center  py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={guestmessage} className="w-100 p-2" />
                     </div>
@@ -174,7 +177,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-xl-5 col-sm-6 mt-3 mt-sm-0">
-                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-4 h-100">
+                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={cleaningtourner} className="w-100 p-2" />
                     </div>
@@ -182,7 +185,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3 ms-0 ms-xl-4">
-                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-4 h-100">
+                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={maintanceitem} className="w-100 p-2" />
                     </div>
@@ -190,7 +193,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3">
-                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-4 h-100">
+                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={smartdevice2} className="w-100 p-2" />
                     </div>
