@@ -8,6 +8,9 @@ import CommonMid from "./CommonMid";
 import WhySimplihost from "./WhySimplihost";
 import Sliderr from "./Sliderr";
 import GuestSection from "./GuestSection";
+import FaqSection from "./FaqSection";
+import CheckoutFeatures from "./CheckoutFeatures";
+import GotbackSection from "./GotbackSection";
 
 function InventoryManagement() {
   const checklistItems = [
@@ -43,6 +46,9 @@ function InventoryManagement() {
       />
       <WhySimplihost />
       <Sliderr />
+      <FaqSection/>
+      <CheckoutFeatures/>
+      <GotbackSection/>
     </div>
   );
 }
