@@ -112,16 +112,18 @@ function Operations() {
 
   return (
     <div>
-      <div className="d-sm-flex align-items-center justify-content-between">
-        <div className="d-flex align-items-center">
+      <div className="d-xl-flex align-items-center justify-content-between">
+        <div className="d-lg-flex align-items-center">
           <h4 className="fw-semibold">
             Today at a Glance <BsStarFill className='text-warning'/>
           </h4>
-          <div className='mx-2'>
+          <div className='d-sm-flex justify-content-end'>
+          <div className='mx-sm-2'>
             <QuickFilter />
           </div>
-          <div>
+          <div className='my-sm-0 my-2'>
             <DateCalendarPicker/>
+          </div>
           </div>
         </div>
         <div className="dropdown">

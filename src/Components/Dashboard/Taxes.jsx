@@ -29,17 +29,19 @@ function Taxes() {
   return (
     <div>
       <div className="d-lg-flex align-items-center justify-content-between">
-        <div className='d-flex align-items-center'>
+        <div className='d-md-flex align-items-center'>
           <div>
             <h4 className="fw-semibold">
               Occupancy Taxes  <CiStar />
           </h4>
           </div>
-          <div className='mx-2'>
+          <div className='d-sm-flex align-items-center justify-content-end my-sm-0 my-2'>
+          <div className='mx-sm-2 mt-sm-0 mt-2'>
             <QuickFilter/>
           </div>
-          <div className='mx-2'>
+          <div className='mx-sm-2 mt-sm-0 mt-2'>
             <DateCalendarPicker/>
+          </div>
           </div>
         </div>
         <div className="dropdown">
