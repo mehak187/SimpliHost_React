@@ -57,6 +57,7 @@ import TaskandChecklist from "./Components/Website/TaskandChecklist";
 import InventoryManagement from "./Components/Website/InventoryManagement";
 import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
 import Supercharge from "./Components/Website/Supercharge";
+import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
 function App() {
   return (
    <div>
@@ -108,6 +109,7 @@ function App() {
           <Route path="/InventoryManagement" element={<InventoryManagement />} />
           <Route path="/MaintenanceTracking" element={<MaintenanceTracking />} />
           <Route path="/Supercharge" element={<Supercharge />} />
+          <Route path="/TaskswithAutomation" element={<TaskswithAutomation />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
