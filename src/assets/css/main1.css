@@ -517,6 +517,11 @@
     width: 0px;
   }
 }
+@media screen and (max-width: 768px) {
+  .searchform-group {
+    border: none !important;
+  }
+}
 
 @media screen and (max-width: 577px) {
   .vertical-tab-left {
