@@ -8,7 +8,7 @@ function WhySimplihost() {
     <div>
       <section className="simplehost py-5">
         <div className="container">
-          <div className="row">
+          <div className="row py-4">
             <div className="col-lg-10 mx-auto">
               <div className="row">
                 <h2 className="black-color fw-semi text-center">
@@ -23,7 +23,7 @@ function WhySimplihost() {
                         className="w-100 h-100"
                       />
                     </div>
-                    <p className="mb-0 fs-4 fw-semi blue-color mt-3">
+                    <p className="mb-0 fs-5 fw-semi blue-color mt-3">
                       All-In-One Awesomeness
                     </p>
                     <p className="mb-0 light-grey mt-2">
@@ -41,7 +41,7 @@ function WhySimplihost() {
                         className="w-100 h-100"
                       />
                     </div>
-                    <p className="mb-0 fs-4 fw-semi blue-color mt-3">
+                    <p className="mb-0 fs-5 fw-semi blue-color mt-3">
                       Free Personal Onboarding
                     </p>
                     <p className="mb-0 light-grey mt-2">
@@ -59,7 +59,7 @@ function WhySimplihost() {
                         className="w-100 h-100"
                       />
                     </div>
-                    <p className="mb-0 fs-4 fw-semi blue-color mt-3">
+                    <p className="mb-0 fs-5 fw-semi blue-color mt-3">
                       No Extra Charges
                     </p>
                     <p className="mb-0 light-grey mt-2">
