@@ -13,15 +13,14 @@ import Revive from '../../assets/img/brevive.png';
 import Bdy from '../../assets/img/bdy.png';
 import Language from '../../assets/img/language.png';
 import AI from '../../assets/img/ai.png';
-import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import { FaCaretDown } from "react-icons/fa";
 
 const options = ['Create a merge commit', 'Squash and merge', 'Rebase and merge'];
 
@@ -134,7 +133,7 @@ function MidChat() {
                                     aria-haspopup="menu"
                                     onClick={handleToggle}
                                 >
-                                    <ArrowDropDownIcon />
+                                    <FaCaretDown />
                                 </Button>
                             </ButtonGroup>
                             <Popper sx={{ zIndex: 1 }} open={open}  anchorEl={anchorRef.current} role={undefined}
