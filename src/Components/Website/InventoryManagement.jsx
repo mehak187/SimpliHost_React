@@ -40,6 +40,7 @@ function InventoryManagement() {
         title="Perks of Our Inventory Management"
         checklistItems={checklistItems}
         imgSrc={automationtic}
+        imgclass="tic-img"
         description="Whether you’re keeping track of cleaning supplies, guest amenities, or maintenance tools, our inventory
                     management system ensures you’re always prepared. No more last-minute runs to the
                     store—just smooth, efficient, and stress-free inventory control."

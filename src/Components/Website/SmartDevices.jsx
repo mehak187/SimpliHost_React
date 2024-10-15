@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import hero from "../../assets/img/climatehero.svg";
+import hero from "../../assets/img/climatehero.png";
 import platform1 from "../../assets/img/platform1.svg";
 import platform2 from "../../assets/img/platform2.svg";
 import FaqSection from "./FaqSection";
@@ -42,7 +42,7 @@ function SmartDevices() {
               </div>
             </div>
             <div class="col-6 d-lg-block d-none">
-              <div class="mb-5 mb-lg-0">
+              <div class="mb-5 mb-lg-0 ps-lg-5">
                 <img src={hero} alt="pic" class="w-100" />
               </div>
             </div>
@@ -72,6 +72,7 @@ with Our Smart Automation!"
         description="At SimpliHost, we pack a punch with our ever-growing lineup of over 100 smart devices. From unlocking doors without a key to setting the perfect cozy vibe before your guests arrive, we’ve got it all covered. Why juggle when you can automate? Dive into our world of smart locks and thermostats where managing your properties is as easy as pie. Get ready to scale, grow, and impress with every click. With SimpliHost, you’re not just managing properties—you’re mastering the art of smart hosting!"
         checklistItems={checklistItems}
         imgSrc={automationtic}
+        imgclass="tic-img"
       />
       <CheckoutFeatures />
       <Sliderr />

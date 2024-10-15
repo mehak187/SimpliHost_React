@@ -6,9 +6,14 @@ import FaqSection from "./FaqSection";
 import GotbackSection from "./GotbackSection";
 import BrandsSection from "./BrandsSection";
 import GuestSection from "./GuestSection";
-import automationtic from "../../assets/img/automation-tic.svg";
+import dot from "../../assets/img/dot.png";
+import filter from "../../assets/img/filtr.svg";
+import document from "../../assets/img/docomnt.svg";
+import text from "../../assets/img/text.svg";
+
 import CheckoutFeatures from "./CheckoutFeatures";
 import Sliderr from "./Sliderr";
+
 
 function UnifiedInbox() {
     const checklistItems = [
@@ -35,7 +40,7 @@ function UnifiedInbox() {
                     </div>
                 </div>
                 <div class="col-6 d-lg-block d-none">
-                    <div class="mb-5 mb-lg-0">
+                    <div class="mb-5 mb-lg-0 ps-lg-5">
                     <img src={hero} alt="pic" class="w-100" />
                     </div>
                 </div>
@@ -43,7 +48,7 @@ function UnifiedInbox() {
         </div>
     </section>
       <BrandsSection />
-      <section class="effort-sec py-5">
+      <section class="effort-sec py-4 py-lg-5">
         <div class="container">
             <div class="text-center">
                 <h2 class="fw-bold">Effortless Guest Messages, Just a Tap Away!</h2>
@@ -66,8 +71,68 @@ function UnifiedInbox() {
 and Booking.com. Chat via SMS, WhatsApp, email, or direct  messaging—all from one place. Plus, set up pre-written templates 
 and automatic triggers to ensure you never miss a beat. SimpliHost  makes every interaction smoother and smarter!"
         checklistItems={checklistItems}
-        imgSrc={automationtic}
+        imgSrc={dot}
+        imgclass="dot-img"
       />
+          <section class="unified-sec py-5 bg-litgrey">
+        <div class="container">
+            <div class="row">
+                <h2 class="fw-bold text-center mb-5">Get to Know <span class="litblue">Simplihost</span> Unified Inbox
+                </h2>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="bg-litgrey p-4 rounded-4 h-100 d-flex flex-column border border-5 border-white">
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="bg-blue d-flex justify-content-center align-items-center p-3 rounded-4 coreF-card1 mb-4">
+                                <img src={filter} alt="pic" class="" />
+                            </div>
+                            <h5 class="ms-3 fw-semi">Filter/Search Your Messages</h5>
+                        </div>
+                        <div class="">
+                            <p class="mb-0">Need to track down a message? No problem! Filter
+                                by date, guest name, and more to zero in on the
+                                conversation you need. Easily spot all unread
+                                messages and get cracking!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="bg-litgrey p-4 rounded-4 h-100 d-flex flex-column border border-5 border-white">
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="bg-blue d-flex justify-content-center align-items-center p-3 rounded-4 coreF-card1 mb-4">
+                                <img src={document} alt="pic" class="" />
+                            </div>
+                            <h5 class="ms-3 fw-semi">Pre-Built Templates </h5>
+                        </div>
+                        <div class="">
+                            <p class="mb-0">Answer in a flash using our pre-built templates! No
+                                need to hunt for details—canned fields pull in guest
+                                info automatically. Save time and keep the
+                                convo rolling!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="bg-litgrey p-4 rounded-4 h-100 d-flex flex-column border border-5 border-white">
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="bg-blue d-flex justify-content-center align-items-center p-3 rounded-4 coreF-card1 mb-4">
+                                <img src={text} alt="pic" class="" />
+                            </div>
+                            <h5 class="ms-3 fw-semi">Automated Guest Messaging</h5>
+                        </div>
+                        <div class="">
+                            <p class="mb-0">Create automated guest messages triggered by
+                                preset dates, times, or events like check-in, during
+                                the stay, and check-out. Sit back and let the
+                                magic happen!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
       <CheckoutFeatures/>
       <Sliderr />
       <FaqSection/>

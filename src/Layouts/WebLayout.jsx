@@ -22,6 +22,7 @@ import { Outlet, Link } from "react-router-dom";
 function WebLayout() {
   return (
     <>
+      <header className="bg-grey">
       <nav className="navbar web-nav py-3 navbar-expand-lg simplihost-navbar bg-body-tertiary">
         <div className="container-fluid custom-padd">
           <Link className="navbar-brand" to="/">
@@ -123,7 +124,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="//maintenance-tracking"
+                      to="/maintenance-tracking"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature5} className="" alt="feature5" />
@@ -242,6 +243,7 @@ function WebLayout() {
           </div>
         </div>
       </nav>
+      </header>
       <Outlet />
       <section className="footer">
         <div className="footer py-5 border-bottom">

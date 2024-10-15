@@ -100,8 +100,8 @@
 
 .fhero-sec,
 .commhero-sec {
-    padding-bottom: 100px !important;
-    min-height: 500px !important;
+    padding-bottom: 120px !important;
+    /* min-height: 500px !important; */
     border-bottom-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
 }
@@ -228,9 +228,13 @@
 }
 
 .leran-btn {
-    padding: 10px 30px;
-    background-color: var(--d-green);
-    color: black;
+    padding: 15px 32px;
+    background: linear-gradient(#32F0CD,#3BB29C);
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.14);
+    color: #222222;
+}
+.leran-btn:hover {
+    color: #222222;
 }
 
 .my-shadow {
@@ -266,14 +270,15 @@
 .custom-accordion .accordion-button:not(.collapsed) {
     background-color: white;
     border-radius: 8px;
-    padding: 20px 24px;
     box-shadow: none;
     color: #000;
 }
 
 .custom-accordion .accordion-button.collapsed {
     border-radius: 8px;
-    padding: 20px 24px;
+}
+.custom-accordion button svg {
+    min-width: 25px;
 }
 
 .custom-accordion .accordion-button:focus {
@@ -286,16 +291,16 @@
     display: none;
 }
 
-.custom-accordion .accordion-header .fas.fa-plus {
-    color: #000;
-}
-
 .custom-accordion .accordion-item {
     border: none;
 }
 .accordion-item{
     border-radius: 8px !important;
 }
+.custom-accordion .accordion-button:not(.collapsed) .icon {
+    transform: rotate(135deg);
+}
+
 .gotBack-sec {
     background: linear-gradient(90deg, rgba(180, 223, 229, 0) 0%, rgba(173, 220, 226, 0.2) 50%, rgba(180, 223, 229, 0) 100%);
 }
@@ -316,7 +321,10 @@
     height: 25px;
     width: 25px;
 }
-
+.dot-img {
+    height: 6px;
+    width: 6px;
+}
 .communication-sec {
     background: linear-gradient(to bottom, #ECFDFA 0%, #FFFFFF 100%);
 }
