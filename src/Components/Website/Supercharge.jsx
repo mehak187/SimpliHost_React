@@ -41,7 +41,7 @@ function Supercharge() {
         title="The Joy of Co-Hosting with Us!"
         checklistItems={checklistItems}
         imgSrc={automationtic}
-        imgclass="tic-img"
+        imgclassName="tic-img"
         description="With SimpliHost, co-hosting is a breeze. Generate invoices quickly and accurately, share transparent financial reports, and give property owners easy access to their calendars. Streamline communication and enhance collaboration, making property management efficient and hassle-free. Co-hosting has never been this easy or fun!"
       />
       <WhySimplihost />

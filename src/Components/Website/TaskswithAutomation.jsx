@@ -41,7 +41,7 @@ function TaskswithAutomation() {
         title="Why Automation Will Knock Your Socks Off!"
         checklistItems={checklistItems}
         imgSrc={automationtic}
-        imgclass="tic-img"
+        imgclassName="tic-img"
         description="With our Property Management Platform and the many vacation rental partners we are integrated with, you can automate messaging, guest vetting, insurance cleaning, pricing, reviews, task management and more. Our Open API makes your options virtually endless, meaning you can automate even the smallest part of your day-to-day operations.This means you can reclaim a huge percentage of your time and instead, focus on growth."
       />
       <WhySimplihost />

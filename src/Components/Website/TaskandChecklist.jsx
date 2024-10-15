@@ -41,7 +41,7 @@ function TaskandChecklist() {
         title="Why You'll Love Our Tasks and Checklists"
         checklistItems={checklistItems}
         imgSrc={automationtic}
-        imgclass="tic-img"
+        imgclassName="tic-img"
         description="Our task and checklist system is your secret weapon to streamline operations, zap errors, and save tons of time. From sparkling clean properties to hassle-free maintenance, our tools keep you organized and efficient. Supercharge your workflow, keep your team in sync, and wow your guests with the ultimate hosting experience!"
       />
       <WhySimplihost />

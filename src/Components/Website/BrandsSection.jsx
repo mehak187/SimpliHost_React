@@ -24,11 +24,11 @@ function BrandsSection() {
   ];
 
   return (
-    <section class="logoPics-sec py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-10 logoImg-main">
-            <h3 class="mb-4 litblue fw-bold">
+    <section className="logoPics-sec py-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-10 logoImg-main">
+            <h3 className="mb-4 litblue fw-bold">
               Get More Done with Our Awesome Integrations!
             </h3>
             <div className="row justify-content-center">
@@ -53,7 +53,7 @@ function BrandsSection() {
               <Link
                 to="#"
                 type="button"
-                class="border-0 text-white opacity-hover text-decoration-none explore-btn mt-2"
+                className="border-0 text-white opacity-hover text-decoration-none explore-btn mt-2"
               >
                 Explore the Full List
               </Link>
