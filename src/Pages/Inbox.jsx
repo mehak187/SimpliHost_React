@@ -9,7 +9,7 @@ function Inbox() {
       <div className='left-chat bg-lgrey rounded-3'>
           <LeftChat/>
       </div>
-      <div className='mid-chat d-flex  border'>
+      <div className='mid-chat d-flex '>
         <div className='mid'>
             <MidChat/>
         </div>

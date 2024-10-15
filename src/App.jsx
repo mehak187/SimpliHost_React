@@ -53,6 +53,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
+import ConnectModal from "./Components/Modals/ConnectModal";
+import AddProperty from "./Components/Modals/AddProperty";
 import Feature from "./Components/Website/Feature";
 import TaskandChecklist from "./Components/Website/TaskandChecklist";
 import InventoryManagement from "./Components/Website/InventoryManagement";
@@ -121,6 +123,8 @@ function App() {
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/connect" element={<ConnectModal />} />
+          <Route path="/addProperty" element={<AddProperty />} />
       </Routes>
     </BrowserRouter>
    </div>

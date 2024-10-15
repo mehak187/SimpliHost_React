@@ -21,13 +21,17 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import { FaCaretDown } from "react-icons/fa";
+import { IoMicOutline } from "react-icons/io5";
+import { CiFaceSmile } from "react-icons/ci";
+import { GoPaperclip } from "react-icons/go";
+import { BiMessageDetail } from "react-icons/bi";
 
-const options = ['Create a merge commit', 'Squash and merge', 'Rebase and merge'];
+const options = ['Send', 'via App', 'via SMS' , 'via E-mail'];
 
 function MidChat() {
     const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(1);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
@@ -50,7 +54,7 @@ function MidChat() {
     setOpen(false);
   };
     return (
-        <div>
+        <div className='border border-muted border-2 border-top-0 rounded-3'>
             <div className='border border-dark p-2 rounded-3 d-flex align-items-center justify-content-between'>
                 <div className='d-flex align-items-center'>
                     <AvatarGroup max={3}>
@@ -103,21 +107,32 @@ function MidChat() {
                     </PopupState>
                 </div>
             </div>
-            <div>
-
+            <div className='chat-start'>
+                
             </div>
-            <div>
-                <div>
-
+            <div className='d-flex align-items-center bg-white p-2 shadow rounded-3'>
+                <div className='d-flex align-items-center me-2'>
+                    <div className=''>
+                        <IoMicOutline className='fs-4 text-prpl me-2'/>
+                    </div>
+                    <div>
+                        <CiFaceSmile className='fs-4 text-prpl me-2'/>
+                    </div>
+                    <div>
+                        <GoPaperclip className='fs-4 text-prpl me-2'/>
+                    </div>
+                    <div>
+                        <BiMessageDetail className='fs-4 text-prpl me-2'/>
+                    </div>
+                </div>
+                <div className='w-100 me-2'>
+                <input type="text" className='chat-input w-100 border-0' placeholder='Type your message'/>
                 </div>
                 <div className='d-flex align-items-center'>
-                    <div>
-                        <input type="text" className='chat-input' />
+                    <div className='me-2'>
+                        <img src={AI} alt="ai" className='ai-img' />
                     </div>
-                    <div>
-                        <img src={AI} alt="" className='ai-img' />
-                    </div>
-                    <div>
+                    <div className='frag'>
                         <React.Fragment>
                             <ButtonGroup
                                 variant="contained"
@@ -154,7 +169,6 @@ function MidChat() {
                                                     {options.map((option, index) => (
                                                         <MenuItem
                                                             key={option}
-                                                            disabled={index === 2}
                                                             selected={index === selectedIndex}
                                                             onClick={(event) => handleMenuItemClick(event, index)}
                                                         >
