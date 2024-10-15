@@ -100,7 +100,7 @@
 
 .fhero-sec,
 .commhero-sec {
-    padding-bottom: 120px !important;
+    padding-bottom: 120px;
     /* min-height: 500px !important; */
     border-bottom-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
