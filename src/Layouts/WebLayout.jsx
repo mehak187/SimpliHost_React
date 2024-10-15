@@ -25,17 +25,36 @@ import phoneverification from "../assets/img/phoneverification-pic.svg";
 import emailconfirmation from "../assets/img/emailconfirmation-pic.svg";
 import wellcome from "../assets/img/wellcome-pic.svg";
 import { FaBars } from "react-icons/fa";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 function WebLayout() {
   const inputRefs = useRef([]);
 
   const handleInputChange = (e, index) => {
     if (e.target.value.length === 1 && index < inputRefs.current.length - 1) {
-      // Move focus to the next input
       inputRefs.current[index + 1].focus();
     }
   };
+
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
+
+  function isFeatureActive() {
+    const paths = [
+      "/feature",
+      "/cohosting",
+      "/smart-devices",
+      "/unified-inbox",
+      "/inventory-management",
+      "/maintenance-tracking",
+      "/task-and-checklist",
+      "/automation",
+      "/direct-booking",
+    ];
+    return paths.some((path) => isActive(path));
+  }
+
   return (
     <>
       <header className="bg-grey">
@@ -61,21 +80,35 @@ function WebLayout() {
             >
               <ul className="navbar-nav  me-lg-3 ms-auto mb-2 mb-lg-0">
                 <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link active" aria-current="page" to="/">
+                  <Link
+                    className={`nav-link ${isActive("/") ? "active" : ""}`}
+                    aria-current="page"
+                    to="/"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link" to="/listings">
+                  <Link
+                    className={`nav-link  pe-1 pe-lg-0 ${
+                      isActive("/listings") ? "active" : ""
+                    }`}
+                    to="/listings"
+                  >
                     Listings
                   </Link>
                 </li>
-                <li className="nav-item  d-flex flex-wrap dropdown mx-1 mx-xl-2">
-                  <Link to="feature" className="nav-link pe-1 pe-lg-0">
+                <li className="nav-item d-flex flex-wrap dropdown mx-1 mx-xl-2">
+                  <Link
+                    to="/feature"
+                    className={`nav-link pe-1 pe-lg-0 ${
+                      isFeatureActive() ? "active" : ""
+                    }`}
+                  >
                     Feature
                   </Link>
                   <p
-                    className="nav-link mb-0 dropdown-toggle"
+                    className="nav-link mb-0 pe-0 dropdown-toggle"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -227,8 +260,14 @@ function WebLayout() {
                     </li>
                   </ul>
                 </li>
+
                 <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link" to="/pricing">
+                  <Link
+                    className={`nav-link  pe-1 pe-lg-0 ${
+                      isActive("/pricing") ? "active" : ""
+                    }`}
+                    to="/pricing"
+                  >
                     Pricing
                   </Link>
                 </li>
@@ -246,7 +285,7 @@ function WebLayout() {
                     <li>
                       <Link
                         className="dropdown-item py-2 border-bottom border-1 fw-semi"
-                        to="/resources1"
+                        to="#"
                       >
                         FAQS
                       </Link>
@@ -254,23 +293,25 @@ function WebLayout() {
                     <li>
                       <Link
                         className="dropdown-item py-2 border-bottom border-1 fw-semi"
-                        to="/resources2"
+                        to="#"
                       >
                         Success Stories
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        className="dropdown-item py-2 fw-semi"
-                        to="/resources3"
-                      >
+                      <Link className="dropdown-item py-2 fw-semi" to="#">
                         Help Center
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link" to="/contact-us">
+                  <Link
+                    className={`nav-link  pe-1 pe-lg-0 ${
+                      isActive("/contact-us") ? "active" : ""
+                    }`}
+                    to="/contact-us"
+                  >
                     Contact
                   </Link>
                 </li>
