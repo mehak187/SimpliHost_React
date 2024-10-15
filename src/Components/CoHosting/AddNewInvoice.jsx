@@ -18,7 +18,6 @@ function AddNewInvoice() {
       Hosting: "$245.00",
       FlatFees: "$245.00",
       Taxes: "$245.00",
-      Income: "$245.00",
     },
     {
       id: 1,
@@ -31,7 +30,6 @@ function AddNewInvoice() {
       Hosting: "$245.00",
       FlatFees: "$245.00",
       Taxes: "$245.00",
-      Income: "$245.00",
     },
     {
       id: 1,
@@ -44,7 +42,6 @@ function AddNewInvoice() {
       Hosting: "$245.00",
       FlatFees: "$245.00",
       Taxes: "$245.00",
-      Income: "$245.00",
     },
     {
       id: 1,
@@ -57,7 +54,6 @@ function AddNewInvoice() {
       Hosting: "$245.00",
       FlatFees: "$245.00",
       Taxes: "$245.00",
-      Income: "$245.00",
     },
     {
       id: 1,
@@ -70,7 +66,6 @@ function AddNewInvoice() {
       Hosting: "$245.00",
       FlatFees: "$245.00",
       Taxes: "$245.00",
-      Income: "$245.00",
     },
   ];
   const DataCollection1 = [
