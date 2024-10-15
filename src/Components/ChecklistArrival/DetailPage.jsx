@@ -145,7 +145,7 @@ function DetailPage() {
           <button className='btn bg-blue text-white py-2 w-100 px-4'><FaChevronRight className='me-2 mb-1' />Expand All</button>
         </div>
         <div className='ms-sm-2 mt-sm-0 mt-3'>
-          <button className='btn bg-lgrey border text-blue w-100 py-2 px-4'><FaChevronRight />Collapse All</button>
+          <button className='btn bg-lgrey border text-blue w-100 py-2 px-4'><FaChevronRight className='me-2 mb-1'/>Collapse All</button>
         </div>
       </div>
       <div className='mt-4'>

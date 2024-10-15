@@ -11,6 +11,7 @@ import Slider from 'react-slick';
 import Left from "../../assets/img/arrow_left.png";
 import rightarrow from "../../assets/img/arrow_right.png";
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const listings = [
     {
@@ -77,18 +78,18 @@ const ListingCard = () => {
         slidesToShow: 3, // Adjust this based on how many cards you want to show at once
         slidesToScroll: 1,
         prevArrow: (
-            <div className="slider-arrow slider-prev">
-                <img src={Left} alt="left" className="ar-img" />
+            <div className="slider-arrow1 slider-prev">
+                <img src={Left} alt="left" className="ar-img shadow" />
             </div>
         ),
         nextArrow: (
-            <div className="slider-arrow slider-next">
-                <img src={rightarrow} alt="right" className="ar-img" />
+            <div className="slider-arrow1 slider-next">
+                <img src={rightarrow} alt="right" className="ar-img shadow" />
             </div>
         ),
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -105,10 +106,10 @@ const ListingCard = () => {
     };
 
     return (
-        <div>
+        <div className='slides'>
             <Slider {...settings}>
             {listings.map((listing, index) => (
-                <div className="col-12 mt-4 px-2 py-5" key={index}>
+                <div className="col-12 mt-4 mx-auto px-4 py-5" key={index}>
                     <div className="p-3 furnished-shadow rounded-3">
                         <div className="furnished-siz">
                             <img src={listing.imageSrc} alt="furnished" className="w-100" />
@@ -153,10 +154,10 @@ const ListingCard = () => {
                                 </div>
                                 <p className="mb-0 fw-bold ms-2">{listing.garage}</p>
                             </div>
-                            <button type="button" className="detail-btn d-inline-flex align-items-center">
+                            <Link to="" className="detail-btn d-inline-flex align-items-center text-decoration-none">
                                 Detail
                                 <img src={listing.detailImageSrc} alt="detail" className='ms-2' />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
