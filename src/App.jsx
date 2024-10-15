@@ -64,6 +64,7 @@ import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
 import BookDirect from "./Components/Website/BookDirect";
 import UnifiedInbox from "./Components/Website/UnifiedInbox";
 import Smartdevices from "./Components/Website/SmartDevices";
+import SimplePrice from "./Components/Website/SimplePrice";
 function App() {
   return (
    <div>
@@ -119,6 +120,7 @@ function App() {
           <Route path="/direct-booking" element={<BookDirect />} />
           <Route path="/unified-inbox" element={<UnifiedInbox />} />
           <Route path="/smart-devices" element={<Smartdevices />} />
+          <Route path="/simple-price" element={<SimplePrice />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
