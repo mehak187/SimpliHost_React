@@ -25,7 +25,7 @@ import phoneverification from "../assets/img/phoneverification-pic.svg";
 import emailconfirmation from "../assets/img/emailconfirmation-pic.svg";
 import wellcome from "../assets/img/wellcome-pic.svg";
 import { FaBars } from "react-icons/fa";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation  } from "react-router-dom";
 
 function WebLayout() {
   const inputRefs = useRef([]);
@@ -36,264 +36,113 @@ function WebLayout() {
       inputRefs.current[index + 1].focus();
     }
   };
+  const location = useLocation();
+  
+  const isActive = (path) => location.pathname === path;
+
   return (
     <>
       <header className="bg-grey">
-        <nav className="navbar web-nav py-3 navbar-expand-lg simplihost-navbar bg-body-tertiary">
-          <div className="container custom-padd">
-            <Link className="navbar-brand" to="/">
-              <img src={logo} alt="logo" className="simplhostnnav-logo" />
-            </Link>
-            <button
-              className="navbar-toggler focus-none pe-0 me-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <FaBars className="navbar-toggler-icon text-white opacity-hover" />
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav  me-lg-3 ms-auto mb-2 mb-lg-0">
-                <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link active" aria-current="page" to="/">
-                    Home
+      <nav className="navbar web-nav py-3 navbar-expand-lg simplihost-navbar bg-body-tertiary">
+      <div className="container custom-padd">
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="logo" className="simplhostnnav-logo" />
+        </Link>
+        <button
+          className="navbar-toggler focus-none pe-0 me-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <FaBars className="navbar-toggler-icon text-white opacity-hover" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-lg-3 ms-auto mb-2 mb-lg-0">
+            <li className="nav-item mx-1 mx-xl-2">
+              <Link className={`nav-link ${isActive('/') ? 'active' : ''}`} to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item mx-1 mx-xl-2">
+              <Link className={`nav-link ${isActive('/listings') ? 'active' : ''}`} to="/listings">
+                Listings
+              </Link>
+            </li>
+            <li className="nav-item d-flex flex-wrap dropdown mx-1 mx-xl-2">
+              <Link to="/feature" className={`nav-link pe-1 pe-lg-0 ${isActive('/feature') ? 'active' : ''}`}>
+                Feature
+              </Link>
+              <p
+                className="nav-link mb-0 dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></p>
+              <ul className="dropdown-menu py-0">
+                {/* Dropdown items go here */}
+              </ul>
+            </li>
+            <li className="nav-item mx-1 mx-xl-2">
+              <Link className={`nav-link ${isActive('/pricing') ? 'active' : ''}`} to="/pricing">
+                Pricing
+              </Link>
+            </li>
+            <li className="nav-item dropdown mx-1 mx-xl-2">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul className="dropdown-menu py-0">
+                <li>
+                  <Link className={`dropdown-item py-2 border-bottom border-1 fw-semi ${isActive('/resources1') ? 'active' : ''}`} to="/resources1">
+                    FAQS
                   </Link>
                 </li>
-                <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link" to="/listings">
-                    Listings
+                <li>
+                  <Link className={`dropdown-item py-2 border-bottom border-1 fw-semi ${isActive('/resources2') ? 'active' : ''}`} to="/resources2">
+                    Success Stories
                   </Link>
                 </li>
-                <li className="nav-item  d-flex flex-wrap dropdown mx-1 mx-xl-2">
-                  <Link to="feature" className="nav-link pe-1 pe-lg-0">
-                    Feature
-                  </Link>
-                  <p
-                    className="nav-link mb-0 dropdown-toggle"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  ></p>
-                  <ul className="dropdown-menu py-0">
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/cohosting"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature1} className="" alt="feature1" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature1Active}
-                            className=""
-                            alt="feature1"
-                          />
-                        </div>
-                        <p className="mb-0">CoHosting</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/smart-devices"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature2} className="" alt="feature2" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature2Active}
-                            className=""
-                            alt="feature2"
-                          />
-                        </div>
-                        <p className="mb-0">Smart Devices Integration</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/unified-inbox"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature3} className="" alt="feature3" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature3Active}
-                            className=""
-                            alt="feature3"
-                          />
-                        </div>
-                        <p className="mb-0">Unified Inbox</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/inventory-management"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature4} className="" alt="feature4" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature4Active}
-                            className=""
-                            alt="feature4"
-                          />
-                        </div>
-                        <p className="mb-0">Inventory Management</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/maintenance-tracking"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature5} className="" alt="feature5" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature5Active}
-                            className=""
-                            alt="feature5"
-                          />
-                        </div>
-                        <p className="mb-0">Maintenance Tracking</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/task-and-checklist"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature6} className="" alt="feature6" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature6Active}
-                            className=""
-                            alt="feature6"
-                          />
-                        </div>
-                        <p className="mb-0">Tasks and Checklists</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/automation"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature7} className="" alt="feature7" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature7Active}
-                            className=""
-                            alt="feature7"
-                          />
-                        </div>
-                        <p className="mb-0">Automations</p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                        to="/direct-booking"
-                      >
-                        <div className="feature-img me-2 feature">
-                          <img src={feature8} className="" alt="feature8" />
-                        </div>
-                        <div className="feature-img me-2 feature-active">
-                          <img
-                            src={feature8Active}
-                            className=""
-                            alt="feature8"
-                          />
-                        </div>
-                        <p className="mb-0">Direct Booking</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link" to="/pricing">
-                    Pricing
-                  </Link>
-                </li>
-                <li className="nav-item  dropdown mx-1 mx-xl-2">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Resources
-                  </a>
-                  <ul className="dropdown-menu py-0">
-                    <li>
-                      <Link
-                        className="dropdown-item py-2 border-bottom border-1 fw-semi"
-                        to="/resources1"
-                      >
-                        FAQS
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item py-2 border-bottom border-1 fw-semi"
-                        to="/resources2"
-                      >
-                        Success Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item py-2 fw-semi"
-                        to="/resources3"
-                      >
-                        Help Center
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item  mx-1 mx-xl-2">
-                  <Link className="nav-link" to="/contact-us">
-                    Contact
+                <li>
+                  <Link className={`dropdown-item py-2 fw-semi ${isActive('/resources3') ? 'active' : ''}`} to="/resources3">
+                    Help Center
                   </Link>
                 </li>
               </ul>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#loginModal"
-                className="simplihostlogin-btn me-2 px-3 px-lg-2 px-xl-4 py-2"
-                type="button"
-              >
-                Login
-              </button>
-              <button
-                data-bs-toggle="modal"
-                data-bs-target="#signupModal"
-                className="simplihosttrail-btn px-2 px-xl-4 py-2"
-                type="button"
-              >
-                Start your Free Trial
-              </button>
-            </div>
-          </div>
-        </nav>
+            </li>
+            <li className="nav-item mx-1 mx-xl-2">
+              <Link className={`nav-link ${isActive('/contact-us') ? 'active' : ''}`} to="/contact-us">
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            className="simplihostlogin-btn me-2 px-3 px-lg-2 px-xl-4 py-2"
+            type="button"
+          >
+            Login
+          </button>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+            className="simplihosttrail-btn px-2 px-xl-4 py-2"
+            type="button"
+          >
+            Start your Free Trial
+          </button>
+        </div>
+      </div>
+    </nav>
       </header>
       <Outlet />
       <section className="footer">

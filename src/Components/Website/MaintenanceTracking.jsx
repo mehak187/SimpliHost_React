@@ -41,7 +41,7 @@ function MaintenanceTracking() {
         title="Stay Ahead with Smart Maintenance!"
         checklistItems={checklistItems}
         imgSrc={automationtic}
-        imgclass="tic-img"
+        imgclassName="tic-img"
         description="Managing property maintenance can be a headache, but not with our Maintenance Tracking feature. Whether it's draining and cleaning the hot tub, changing air filters, or ensuring the gutters are clean, our system keeps you on track. With automated tasks and detailed checklists, you’ll never miss a beat. Real-time reports and custom alerts ensure you stay ahead of maintenance issues, preventing problems before they arise. Simplify your life and keep your properties in pristine condition effortlessly!"
       />
       <WhySimplihost />

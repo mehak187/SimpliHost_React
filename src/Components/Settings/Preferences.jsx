@@ -88,43 +88,43 @@ function Preferences() {
               </h3>
               <div className="d-flex flex-wrap me-2 align-items-center">
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Pricing</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Reservations</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Cleaning</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" />
                   </div>
                   <p className="mb-0">Inspections</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Maintenance</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Admin</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Locks</p>
@@ -137,43 +137,43 @@ function Preferences() {
               </h3>
               <div className="d-flex flex-wrap me-2 align-items-center">
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Date</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Property Group</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Property</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" />
                   </div>
                   <p className="mb-0">City</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Maintenance</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Admin</p>
                 </div>
                 <div className="d-flex me-4  my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Locks</p>
@@ -187,55 +187,55 @@ function Preferences() {
               <h5 className="fs-6 fw-semi text-blue">Filters Details</h5>
               <div className="d-flex flex-wrap align-items-center">
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Select All</p>
                 </div>
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Pricing</p>
                 </div>
                 
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  defaultChecked/>
                   </div>
                   <p className="mb-0">Reservations</p>
                 </div>
                 
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Cleaning</p>
                 </div>
                 
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Inspections</p>
                 </div>
                 
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Maintenance</p>
                 </div>
                 
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Admin</p>
                 </div>
                 
                 <div className="d-flex me-4 my-2 align-items-center">
-                  <div class="checkbox-wrapper-13 me-2">
+                  <div className="checkbox-wrapper-13 me-2">
                     <input type="checkbox"  />
                   </div>
                   <p className="mb-0">Locks</p>

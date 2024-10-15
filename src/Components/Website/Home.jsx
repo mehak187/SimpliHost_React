@@ -70,7 +70,7 @@ function Home() {
   ];
   return (
     <>
-      <section class="hero-section py-5">
+      <section className="hero-section py-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

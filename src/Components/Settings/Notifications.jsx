@@ -88,7 +88,7 @@ function Notifications() {
                   {data.title}
                 </td>
                 <td className="small text-black">
-                  <div class="checkbox-wrapper-13">
+                  <div className="checkbox-wrapper-13">
                     <input
                       type="checkbox"
                       defaultChecked={data.app === "checked"}
@@ -96,7 +96,7 @@ function Notifications() {
                   </div>
                 </td>
                 <td className="small text-black">
-                  <div class="checkbox-wrapper-13">
+                  <div className="checkbox-wrapper-13">
                     <input
                       type="checkbox"
                       defaultChecked={data.email === "checked"}
@@ -104,7 +104,7 @@ function Notifications() {
                   </div>
                 </td>
                 <td className="small text-black">
-                  <div class="checkbox-wrapper-13">
+                  <div className="checkbox-wrapper-13">
                     <input
                       type="checkbox"
                       defaultChecked={data.sms === "checked"}

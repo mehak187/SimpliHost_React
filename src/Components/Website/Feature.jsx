@@ -23,19 +23,19 @@ import BrandsSection from "./BrandsSection";
 function Feature() {
   const FeatureCard = (props) => {
     return (
-      <div class="col-lg-3 col-md-4 col-sm-6  mb-4">
-        <div class="bg-grey p-4 rounded-5 h-100 d-flex flex-column">
-          <div class="bg-yellow d-flex justify-content-center align-items-center p-3 rounded-3 coreF-card1 mb-4">
-            <img src={props.img} alt="pic" class="" />
+      <div className="col-lg-3 col-md-4 col-sm-6  mb-4">
+        <div className="bg-grey p-4 rounded-5 h-100 d-flex flex-column">
+          <div className="bg-yellow d-flex justify-content-center align-items-center p-3 rounded-3 coreF-card1 mb-4">
+            <img src={props.img} alt="pic" className="" />
           </div>
-          <div class="mb-5">
-            <h5 class="mb-3 fw-semi text-capitalize">{props.name}</h5>
-            <p class="mb-0">{props.des}</p>
+          <div className="mb-5">
+            <h5 className="mb-3 fw-semi text-capitalize">{props.name}</h5>
+            <p className="mb-0">{props.des}</p>
           </div>
-          <div class="text-center mt-auto">
+          <div className="text-center mt-auto">
             <Link
               to={props.link}
-              class="w-100 d-block text-white opacity-hover text-decoration-none border-0 explore-btn w-100"
+              className="w-100 d-block text-white opacity-hover text-decoration-none border-0 explore-btn w-100"
             >
               Learn More
             </Link>
@@ -115,11 +115,11 @@ function Feature() {
   ];
   return (
     <div>
-      <section class="fhero-sec pt-5 bg-grey">
-        <div class="container">
-          <div class="feature-div mb-4">
-            <h1 class="fw-bold mb-4">Feature-Packed, No Extras Needed!</h1>
-            <p class="mb-0 feature-para">
+      <section className="fhero-sec pt-5 bg-grey">
+        <div className="container">
+          <div className="feature-div mb-4">
+            <h1 className="fw-bold mb-4">Feature-Packed, No Extras Needed!</h1>
+            <p className="mb-0 feature-para">
               Tired of tedious tasks? Our platform automates your daily to-dos,
               freeing up your time and reducing those pesky manual mistakes.
               It's the hero you never knew you needed, streamlining operations
@@ -131,16 +131,16 @@ function Feature() {
         </div>
       </section>
       <BrandsSection />
-      <section class="vacation-sec py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-3 mb-md-0">
-                <h2 class="fw-bold mb-4">
+      <section className="vacation-sec py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="mb-3 mb-md-0">
+                <h2 className="fw-bold mb-4">
                   The vacation rental industry’s leading property management
                   system
                 </h2>
-                <p class="mb-0 vacation-para">
+                <p className="mb-0 vacation-para">
                   Wave goodbye to the grind and hello to hassle-free automation
                   with SimpliHost! Cut down on repetitive tasks, slash errors,
                   and tailor tech that fits just right. Ready to kick back while
@@ -150,49 +150,49 @@ function Feature() {
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div class="bg-blue p-3 rounded-4 h-100">
-                    <div class="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={globe} alt="pic" class="vacation-cardPic" />
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                  <div className="bg-blue p-3 rounded-4 h-100">
+                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
+                      <img src={globe} alt="pic" className="vacation-cardPic" />
                     </div>
-                    <div class="mt-3 text-white">
-                      <h5 class="fw-semi">50</h5>
-                      <p class="mb-0">Countries Simplihost Operates in</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div class="bg-green p-3 rounded-4 h-100">
-                    <div class="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={seting} alt="pic" class="vacation-cardPic" />
-                    </div>
-                    <div class="mt-3 text-white">
-                      <h5 class="fw-semi">50</h5>
-                      <p class="mb-0">Number of integrations</p>
+                    <div className="mt-3 text-white">
+                      <h5 className="fw-semi">50</h5>
+                      <p className="mb-0">Countries Simplihost Operates in</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div class="bg-yellow p-3 rounded-4 h-100">
-                    <div class="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={suitcase} alt="pic" class="vacation-cardPic" />
+                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                  <div className="bg-green p-3 rounded-4 h-100">
+                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
+                      <img src={seting} alt="pic" className="vacation-cardPic" />
                     </div>
-                    <div class="mt-3 text-white">
-                      <h5 class="fw-semi">50</h5>
-                      <p class="mb-0">Bookings Per Month</p>
+                    <div className="mt-3 text-white">
+                      <h5 className="fw-semi">50</h5>
+                      <p className="mb-0">Number of integrations</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div class="bg-orange p-3 rounded-4 h-100">
-                    <div class="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={heart} alt="pic" class="vacation-cardPic" />
+                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                  <div className="bg-yellow p-3 rounded-4 h-100">
+                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
+                      <img src={suitcase} alt="pic" className="vacation-cardPic" />
                     </div>
-                    <div class="mt-3 text-white">
-                      <h5 class="fw-semi">50</h5>
-                      <p class="mb-0">Preferred Partners</p>
+                    <div className="mt-3 text-white">
+                      <h5 className="fw-semi">50</h5>
+                      <p className="mb-0">Bookings Per Month</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                  <div className="bg-orange p-3 rounded-4 h-100">
+                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
+                      <img src={heart} alt="pic" className="vacation-cardPic" />
+                    </div>
+                    <div className="mt-3 text-white">
+                      <h5 className="fw-semi">50</h5>
+                      <p className="mb-0">Preferred Partners</p>
                     </div>
                   </div>
                 </div>
@@ -201,10 +201,10 @@ function Feature() {
           </div>
         </div>
       </section>
-      <section class="coreFeature">
-        <div class="container">
-          <h2 class="text-center mb-4 fw-bold">Core Features</h2>
-          <div class="row">
+      <section className="coreFeature">
+        <div className="container">
+          <h2 className="text-center mb-4 fw-bold">Core Features</h2>
+          <div className="row">
             <FeatureCard
               name="Unified Inbox"
               des="A single destination for guest communication synched with your
