@@ -65,6 +65,8 @@ import UnifiedInbox from "./Components/Website/UnifiedInbox";
 import Smartdevices from "./Components/Website/SmartDevices";
 import SimplePrice from "./Components/Website/SimplePrice";
 import ContactUs from "./Components/Website/ContactUs";
+import ListingDetails from "./Components/Website/ListingDetails";
+
 function App() {
   return (
    <div>
@@ -122,6 +124,7 @@ function App() {
           <Route path="/smart-devices" element={<Smartdevices />} />
           <Route path="/simple-price" element={<SimplePrice />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/listing-details" element={<ListingDetails />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
