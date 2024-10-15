@@ -6,7 +6,7 @@ import simplest3 from "../../assets/img/simplies3.svg";
 function WhySimplihost() {
   return (
     <div>
-      <section className="simplehost py-5">
+      <section className="simplehost py-4">
         <div className="container">
           <div className="row py-4">
             <div className="col-lg-10 mx-auto">

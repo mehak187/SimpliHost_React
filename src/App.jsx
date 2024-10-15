@@ -48,7 +48,6 @@ import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators"
 import WebLayout from "./Layouts/WebLayout";
 import Home from "./Components/Website/Home";
 import Listings from "./Components/Website/Listings";
-import Pricing from "./Components/Properties/Pricing";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
@@ -65,6 +64,8 @@ import BookDirect from "./Components/Website/BookDirect";
 import UnifiedInbox from "./Components/Website/UnifiedInbox";
 import Smartdevices from "./Components/Website/SmartDevices";
 import ChecklistTabs from "./Components/ChecklistArrival/ChecklistTabs";
+import SimplePrice from "./Components/Website/SimplePrice";
+import ContactUs from "./Components/Website/ContactUs";
 function App() {
   return (
    <div>
@@ -111,7 +112,7 @@ function App() {
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/listings" element={<Listings />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/pricing" element={<SimplePrice />} />
           <Route path="/feature" element={<Feature />} />
           <Route path="/task-and-checklist" element={<TaskandChecklist />} />
           <Route path="/inventory-management" element={<InventoryManagement />} />
@@ -121,6 +122,8 @@ function App() {
           <Route path="/direct-booking" element={<BookDirect />} />
           <Route path="/unified-inbox" element={<UnifiedInbox />} />
           <Route path="/smart-devices" element={<Smartdevices />} />
+          <Route path="/simple-price" element={<SimplePrice />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />

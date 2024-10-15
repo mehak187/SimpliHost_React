@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import hero from "../../assets/img/climatehero.svg";
+import hero from "../../assets/img/climatehero.png";
 import platform1 from "../../assets/img/platform1.svg";
 import platform2 from "../../assets/img/platform2.svg";
 import FaqSection from "./FaqSection";
@@ -23,9 +23,9 @@ function SmartDevices() {
 
   return (
     <div>
-      <section class="commhero-sec pt-5 bg-grey d-flex align-items-center">
+      <section class="commhero-sec bg-grey d-flex align-items-center">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-center pt-5">
             <div class="col-lg-6">
               <div class="">
                 <h1 class="fw-bold">
@@ -42,7 +42,7 @@ function SmartDevices() {
               </div>
             </div>
             <div class="col-6 d-lg-block d-none">
-              <div class="mb-5 mb-lg-0">
+              <div class="mb-5 mb-lg-0 ps-lg-5">
                 <img src={hero} alt="pic" class="w-100" />
               </div>
             </div>
@@ -52,9 +52,10 @@ function SmartDevices() {
       <BrandsSection />
       <section class="effort-sec py-5">
         <div class="container">
-          <div class="text-center">
-            <h2 class="fw-bold">
-              One <span class="litblue">SimpliHost</span> platform. Amazing A
+          <div className="row justify-content-center">
+          <div class="d-flex flex-column align-items-center col-xl-7 col-sm-9 col-md-8 col-lg-7">
+            <h2 class="fw-bold text-center">
+              One <span class="litblue">SimpliHost</span> platform.<br></br> Amazing A
               world of possibilities.
             </h2>
             <div>
@@ -64,6 +65,7 @@ function SmartDevices() {
               <img src={platform2} alt="pic" class="img-fluid" />
             </div>
           </div>
+          </div>
         </div>
       </section>
       <GuestSection
@@ -72,6 +74,7 @@ with Our Smart Automation!"
         description="At SimpliHost, we pack a punch with our ever-growing lineup of over 100 smart devices. From unlocking doors without a key to setting the perfect cozy vibe before your guests arrive, we’ve got it all covered. Why juggle when you can automate? Dive into our world of smart locks and thermostats where managing your properties is as easy as pie. Get ready to scale, grow, and impress with every click. With SimpliHost, you’re not just managing properties—you’re mastering the art of smart hosting!"
         checklistItems={checklistItems}
         imgSrc={automationtic}
+        imgclass="tic-img"
       />
       <CheckoutFeatures />
       <Sliderr />

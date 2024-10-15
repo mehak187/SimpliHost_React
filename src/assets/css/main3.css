@@ -224,3 +224,126 @@ tbody, td, tfoot, th, thead, tr {
 .p-link{
     margin:0 5px;
 }
+.buttonbg{
+    background-color: #E4E6F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+.bluelink{
+    width: 200px;
+    text-align: center;
+    background-color:#3551B6;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.whitelink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    background-color:#fff;
+    color: #000;
+    font-weight: 600;
+    border: solid 1px #3551B6;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.whitelink span{
+    background-color:#32F0CD;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.pricing-slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+  }
+  
+  .pricing-card {
+    background: white;
+    border: 2px solid #dfe3e8;
+    border-radius: 30px;
+    padding: 40px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider-container {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .slider-input {
+    width: 100%;
+    appearance: none;
+    height: 25px;
+    background: #3551B6;
+    border-radius: 20px;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .slider-input::-webkit-slider-thumb {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #3551B6;
+    cursor: pointer;
+  }
+  
+  .slider-input::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #3551B6;
+    cursor: pointer;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .pricing-info {
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  
+  .property-input {
+    width: 60px;
+    border: 2px solid #dfe3e8;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .signup-btn1 {
+    background-color: #3551B6;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
