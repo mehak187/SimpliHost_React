@@ -18,142 +18,120 @@ import Sliderr from "./Sliderr";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const features = [
+    {
+      id: 1,
+      title: "Unified Inbox",
+      image: feature1,
+      alt: "Unified Inbox",
+    },
+    {
+      id: 2,
+      title: "Smart Devices Integration",
+      image: smartdevice,
+      alt: "Smart Devices Integration",
+    },
+    {
+      id: 3,
+      title: "Tasks and Checklists",
+      image: task,
+      alt: "Tasks and Checklists",
+    },
+    {
+      id: 4,
+      title: "Automated Guest Messaging",
+      image: automatedguest,
+      alt: "Automated Guest Messaging",
+    },
+    {
+      id: 5,
+      title: "Maintenance Tracking",
+      image: maintance,
+      alt: "Maintenance Tracking",
+    },
+    {
+      id: 6,
+      title: "Inventory Management",
+      image: inventery,
+      alt: "Inventory Management",
+    },
+    {
+      id: 7,
+      title: "Automations",
+      image: automation,
+      alt: "Automations",
+    },
+    {
+      id: 8,
+      title: "Direct Booking",
+      image: directbooking,
+      alt: "Direct Booking",
+    },
+  ];
   return (
     <>
-    <section class="hero-section py-5">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div>
-              <h1 className="fw-bold hero-text">
-                <span className="green-color">Simplify</span> Your Rental Game!
-                All-In-One, from Messaging to Sparkling Homes!
-              </h1>
-              <p className="mb-0 hero-text">
-                Say goodbye to chaos and hello to simplicity! With SimpliHost,
-                managing guests, cleaners, maintenance, and everything in
-                between is a breeze. Seamlessly automate your rental operations
-                and get back to doing what you love!{" "}
-              </p>
-              <Link to="#" className="hero-btn text-black opacity-hover text-decoration-none d-inline-block fw-semi mt-3">
-                Try for free!
-              </Link>
-              <p className="mb-0 mt-3">
-                Try SimpliHost for free for 30 days. No credit card required.
-              </p>
+      <section class="hero-section py-5">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div>
+                <h1 className="fw-bold hero-text">
+                  <span className="green-color">Simplify</span> Your Rental
+                  Game! All-In-One, from Messaging to Sparkling Homes!
+                </h1>
+                <p className="mb-0 hero-text">
+                  Say goodbye to chaos and hello to simplicity! With SimpliHost,
+                  managing guests, cleaners, maintenance, and everything in
+                  between is a breeze. Seamlessly automate your rental
+                  operations and get back to doing what you love!{" "}
+                </p>
+                <Link
+                  to="#"
+                  className="hero-btn text-black opacity-hover text-decoration-none d-inline-block fw-semi mt-3"
+                >
+                  Try for free!
+                </Link>
+                <p className="mb-0 mt-3">
+                  Try SimpliHost for free for 30 days. No credit card required.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-6 mt-0 mt-lg-0">
-            <div className="hero-main-pic">
-              <img src={heroimg} alt="hero-pic" className="w-100" />
+            <div className="col-lg-6 mt-0 mt-lg-0">
+              <div className="hero-main-pic">
+                <img src={heroimg} alt="hero-pic" className="w-100" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
       <section className="feature py-5">
         <div className="container">
           <div className="row">
             <h3 className="blue-color fw-bold text-center">Features</h3>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img src={feature1} alt="feature1" className="p-3 w-100" />
+
+            {features.map((feature) => (
+              <div
+                key={feature.id}
+                className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5"
+              >
+                <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
+                  <div className="featurecard-img">
+                    <img
+                      src={feature.image}
+                      alt={feature.alt}
+                      className="p-3 w-100"
+                    />
+                  </div>
+                  <p className="mb-0 fs-5 fw-semi text-center mt-3">
+                    {feature.title}
+                  </p>
                 </div>
-                <p className="mb-0 fs-5 fw-semi text-center mt-3">
-                  Unified Inbox
-                </p>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img
-                    src={smartdevice}
-                    alt="Smart-device"
-                    className="p-3 w-100"
-                  />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Smart Devices Integration
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img src={task} alt="Task" className="p-3 w-100" />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Tasks and Checklists
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img
-                    src={automatedguest}
-                    alt="Automation"
-                    className="p-3 w-100"
-                  />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Automated Guest Messaging
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img src={maintance} alt="feature1" className="p-3 w-100" />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Maintenance Tracking
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img
-                    src={inventery}
-                    alt="Smart-device"
-                    className="p-3 w-100"
-                  />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Inventory Management
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img src={automation} alt="Task" className="p-3 w-100" />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Automations
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 mt-3 mt-sm-5">
-              <div className="featurecard-main p-3 d-flex flex-column align-items-center rounded-4 h-100">
-                <div className="featurecard-img">
-                  <img
-                    src={directbooking}
-                    alt="Automation"
-                    className="p-3 w-100"
-                  />
-                </div>
-                <p className="mb-0 fs-5 fw-semi mt-3 text-center">
-                  Direct Booking
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
+
       <section className="feature2 custom-feature position-relative py-5">
         <div className="container">
           <div className="row align-items-center position-relative">
@@ -169,7 +147,7 @@ function Home() {
             <div className="col-xl-7 mt-3 mt-xl-0">
               <div className="row">
                 <div className="col-xl-5 col-sm-6">
-                  <div className="featurecard-main2 d-flex align-items-center  py-2 px-3 rounded-3 h-100">
+                  <div className="featurecard-main2 position-relative d-flex align-items-center  py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={guestmessage} className="w-100 p-2" />
                     </div>
@@ -177,7 +155,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-xl-5 col-sm-6 mt-3 mt-sm-0">
-                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-3 h-100">
+                  <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={cleaningtourner} className="w-100 p-2" />
                     </div>
@@ -185,7 +163,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3 ms-0 ms-xl-4">
-                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-3 h-100">
+                  <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={maintanceitem} className="w-100 p-2" />
                     </div>
@@ -193,7 +171,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3">
-                  <div className="featurecard-main2 d-flex align-items-center py-2 px-3 rounded-3 h-100">
+                  <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
                       <img src={smartdevice2} className="w-100 p-2" />
                     </div>
@@ -265,8 +243,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <WhySimplihost/>
-      <Sliderr/>
+      <WhySimplihost />
+      <Sliderr />
     </>
   );
 }

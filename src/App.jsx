@@ -55,6 +55,15 @@ import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
 import ConnectModal from "./Components/Modals/ConnectModal";
 import AddProperty from "./Components/Modals/AddProperty";
+import Feature from "./Components/Website/Feature";
+import TaskandChecklist from "./Components/Website/TaskandChecklist";
+import InventoryManagement from "./Components/Website/InventoryManagement";
+import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
+import Supercharge from "./Components/Website/Supercharge";
+import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
+import BookDirect from "./Components/Website/BookDirect";
+import UnifiedInbox from "./Components/Website/UnifiedInbox";
+import Smartdevices from "./Components/Website/SmartDevices";
 function App() {
   return (
    <div>
@@ -96,12 +105,20 @@ function App() {
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
           <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
           <Route path="admin/add-property-tags" element={<AddPropertyTags />} />
-          AddChecklistCategory
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/Listings" element={<Listings />} />
-          <Route path="/Pricing" element={<Pricing />} />
+          <Route path="/listings" element={<Listings />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/feature" element={<Feature />} />
+          <Route path="/task-and-checklist" element={<TaskandChecklist />} />
+          <Route path="/inventory-management" element={<InventoryManagement />} />
+          <Route path="/maintenance-tracking" element={<MaintenanceTracking />} />
+          <Route path="/cohosting" element={<Supercharge />} />
+          <Route path="/automation" element={<TaskswithAutomation />} />
+          <Route path="/direct-booking" element={<BookDirect />} />
+          <Route path="/unified-inbox" element={<UnifiedInbox />} />
+          <Route path="/smart-devices" element={<Smartdevices />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
