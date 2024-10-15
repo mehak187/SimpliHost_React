@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 
 function PricingSlider() {
-  const [properties, setProperties] = useState(25); // Default to 25
-
-  // Formula for pricing (e.g., $12 per property)
+  const [properties, setProperties] = useState(25);
   const pricePerProperty = 12;
   const price = properties * pricePerProperty;
 
