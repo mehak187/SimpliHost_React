@@ -12,7 +12,7 @@ function PricingSlider() {
   return (
     <div className="pricing-slider-container">
       <div className="pricing-card">
-        <h2 className="text-center">Everything You Want, All Included!</h2>
+        <h2 className="text-center fw-semi text-blue">Everything You Want, All Included!</h2>
         <p className="text-center">Only pay for what you need. Our pricing scales as you grow.</p>
         
         <div className="slider-container">
@@ -29,7 +29,7 @@ function PricingSlider() {
             max="100" 
             value={properties} 
             onChange={handleSliderChange} 
-            className="slider-input"
+            className="slider-input text-blue"
           />
 
         </div>
@@ -39,18 +39,19 @@ function PricingSlider() {
             For&nbsp;
             <input 
               type="number" 
-              className="property-input" 
+              className="property-input text-blue fw-semi" 
               value={properties} 
               onChange={(e) => setProperties(Number(e.target.value))} 
               min="0" 
               max="100"
             />
-            &nbsp;properties, your pricing is <strong>${price}</strong> per month.
+            &nbsp;properties, your pricing is <strong className="text-blue">${price}</strong> per month.
           </p>
         </div>
 
         <div className="text-center">
-          <button className="signup-btn1">Sign Up Now!</button>
+          <button className="signup-btn1"    data-bs-toggle="modal"
+              data-bs-target="#signupModal">Sign Up Now!</button>
         </div>
       </div>
     </div>

@@ -48,7 +48,6 @@ import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators"
 import WebLayout from "./Layouts/WebLayout";
 import Home from "./Components/Website/Home";
 import Listings from "./Components/Website/Listings";
-import Pricing from "./Components/Properties/Pricing";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
@@ -111,7 +110,7 @@ function App() {
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/listings" element={<Listings />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/pricing" element={<SimplePrice />} />
           <Route path="/feature" element={<Feature />} />
           <Route path="/task-and-checklist" element={<TaskandChecklist />} />
           <Route path="/inventory-management" element={<InventoryManagement />} />
