@@ -8,13 +8,13 @@ import furniture2img from "../../assets/img/furniture2.svg";
 import carimg from "../../assets/img/furnished-car.svg";
 import furniture4 from "../../assets/img/furniture4.svg";
 import Slider from 'react-slick';
-import Left from "../../assets/img/Left.svg";
+import Left from "../../assets/img/arrow_left.png";
 import rightarrow from "../../assets/img/arrow_right.png";
+import { FaHeart } from "react-icons/fa";
 
 const listings = [
     {
         imageSrc: PCI,
-        heartSrc: 'path_to_heart_image',
         leftArrowSrc: 'path_to_left_arrow_image',
         rightArrowSrc: 'path_to_right_arrow_image',
         flowerSrc: FurnishFlower,
@@ -28,7 +28,6 @@ const listings = [
     },
     {
         imageSrc: PCI,
-        heartSrc: 'path_to_heart_image',
         leftArrowSrc: 'path_to_left_arrow_image',
         rightArrowSrc: 'path_to_right_arrow_image',
         flowerSrc: FurnishFlower,
@@ -42,7 +41,6 @@ const listings = [
     },
     {
         imageSrc: PCI,
-        heartSrc: 'path_to_heart_image',
         leftArrowSrc: 'path_to_left_arrow_image',
         rightArrowSrc: 'path_to_right_arrow_image',
         flowerSrc: FurnishFlower,
@@ -56,7 +54,6 @@ const listings = [
     },
     {
         imageSrc: PCI,
-        heartSrc: 'path_to_heart_image',
         leftArrowSrc: 'path_to_left_arrow_image',
         rightArrowSrc: 'path_to_right_arrow_image',
         flowerSrc: FurnishFlower,
@@ -81,12 +78,12 @@ const ListingCard = () => {
         slidesToScroll: 1,
         prevArrow: (
             <div className="slider-arrow slider-prev">
-                <img src={Left} alt="left" className="w-100" />
+                <img src={Left} alt="left" className="ar-img" />
             </div>
         ),
         nextArrow: (
             <div className="slider-arrow slider-next">
-                <img src={rightarrow} alt="right" className="w-100" />
+                <img src={rightarrow} alt="right" className="ar-img" />
             </div>
         ),
         responsive: [
@@ -117,7 +114,7 @@ const ListingCard = () => {
                             <img src={listing.imageSrc} alt="furnished" className="w-100" />
                         </div>
                         <div className="furnishedover-size">
-                            <img src={listing.heartSrc} alt="Furnished" className="w-100 p-2" />
+                            <FaHeart/>
                         </div>
                         {/* <div className="furnished-leftarrow">
                             <img src={listing.leftArrowSrc} alt="left-arrow" className="w-100 p-2" />
