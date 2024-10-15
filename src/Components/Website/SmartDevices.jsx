@@ -23,9 +23,9 @@ function SmartDevices() {
 
   return (
     <div>
-      <section class="commhero-sec pt-5 bg-grey d-flex align-items-center">
+      <section class="commhero-sec bg-grey d-flex align-items-center">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-center pt-5">
             <div class="col-lg-6">
               <div class="">
                 <h1 class="fw-bold">
@@ -52,9 +52,10 @@ function SmartDevices() {
       <BrandsSection />
       <section class="effort-sec py-5">
         <div class="container">
-          <div class="text-center">
-            <h2 class="fw-bold">
-              One <span class="litblue">SimpliHost</span> platform. Amazing A
+          <div className="row justify-content-center">
+          <div class="d-flex flex-column align-items-center col-xl-7 col-sm-9 col-md-8 col-lg-7">
+            <h2 class="fw-bold text-center">
+              One <span class="litblue">SimpliHost</span> platform.<br></br> Amazing A
               world of possibilities.
             </h2>
             <div>
@@ -63,6 +64,7 @@ function SmartDevices() {
             <div>
               <img src={platform2} alt="pic" class="img-fluid" />
             </div>
+          </div>
           </div>
         </div>
       </section>

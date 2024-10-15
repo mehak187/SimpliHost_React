@@ -32,7 +32,7 @@ function WebLayout() {
     <>
       <header className="bg-grey">
       <nav className="navbar web-nav py-3 navbar-expand-lg simplihost-navbar bg-body-tertiary">
-        <div className="container-fluid custom-padd">
+        <div className="container custom-padd">
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="logo" className="simplhostnnav-logo" />
           </Link>

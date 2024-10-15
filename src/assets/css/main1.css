@@ -578,6 +578,9 @@
   .simplihost-navbar .dropdown-menu {
     width: 100%;
   }
+  .container {
+    max-width: 100% !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .searchform-group {

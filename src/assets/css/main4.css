@@ -872,9 +872,7 @@
     border: none;
     border-radius: 5px;
 }
-.custom-padd {
-    padding: 0 150px
-}
+
 .font-custom{
     font-weight: 400px;
 }
@@ -917,11 +915,7 @@
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 } */
-@media screen and (max-width:1400px){
-    .custom-padd {
-        padding: 0 40px
-    }  
-}
+
 @media screen and (max-width: 1200px) {
     .hero-main-pic::before {
         left: 50px;
