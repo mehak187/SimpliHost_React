@@ -38,8 +38,8 @@ function SimplePrice() {
               </p>
             </div>
             <div className="buttonbg mt-5">
-              <Link className="bluelink">Monthly</Link>
-              <Link className="whitelink">Annual <span>Save 20%</span></Link>
+              <Link className="bluelink text-white">Monthly</Link>
+              <Link className="whitelink text-black">Annual <span>Save 20%</span></Link>
             </div>
           </div>
         </div>
@@ -130,8 +130,9 @@ function SimplePrice() {
                     </p>
                     <div className=" mt-auto">
                       <a
-                        href="#"
-                        className="text-decoration-none fullyfeature-btn d-block text-center fw-semi"
+                          data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+                        className="text-decoration-none pointer text-white fullyfeature-btn d-block text-center fw-semi"
                       >
                         Sign Up Now
                       </a>

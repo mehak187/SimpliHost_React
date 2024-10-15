@@ -116,12 +116,6 @@ const ListingCard = () => {
                         <div className="furnishedover-size">
                             <FaHeart/>
                         </div>
-                        {/* <div className="furnished-leftarrow">
-                            <img src={listing.leftArrowSrc} alt="left-arrow" className="w-100 p-2" />
-                        </div>
-                        <div className="furnished-rightarrow">
-                            <img src={listing.rightArrowSrc} alt="right-arrow" className="w-100 p-2" />
-                        </div> */}
                         <div className="d-flex align-items-center mt-3">
                             <div className="furnished-flower">
                                 <img src={listing.flowerSrc} alt="furnished-flower" className="w-100" />
