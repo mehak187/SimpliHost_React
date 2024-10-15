@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/img/simplihost-navbar.svg"
+import logo from "../assets/img/simplihost-navbar.svg";
 import feature1 from "../assets/img/feature1.png";
 import feature1Active from "../assets/img/feature1Active.png";
 import feature2 from "../assets/img/feature2.png";
@@ -16,6 +16,14 @@ import feature7 from "../assets/img/feature7.png";
 import feature7Active from "../assets/img/feature7Active.png";
 import feature8 from "../assets/img/feature8.png";
 import feature8Active from "../assets/img/feature8Active.png";
+import loginpic from "../assets/img/loginpic.svg";
+import googlesignin from "../assets/img/googlesignin.svg";
+import signinfacebook from "../assets/img/signinfacebook.svg";
+import emailverfication from "../assets/img/emailverfication.svg";
+import callverification from "../assets/img/callverification.svg";
+import phoneverification from "../assets/img/phoneverification-pic.svg";
+import emailconfirmation from "../assets/img/emailconfirmation-pic.svg";
+import wellcome from "../assets/img/wellcome-pic.svg";
 import { FaBars } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
 
@@ -36,7 +44,7 @@ function WebLayout() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-           <FaBars className="navbar-toggler-icon text-white opacity-hover" />
+            <FaBars className="navbar-toggler-icon text-white opacity-hover" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav  me-lg-3 ms-auto mb-2 mb-lg-0">
@@ -51,18 +59,15 @@ function WebLayout() {
                 </Link>
               </li>
               <li className="nav-item  d-flex flex-wrap dropdown mx-1 mx-xl-2">
-                <Link to="feature"
-                  className="nav-link pe-1 pe-lg-0"
-                >
+                <Link to="feature" className="nav-link pe-1 pe-lg-0">
                   Feature
                 </Link>
-                <p 
+                <p
                   className="nav-link mb-0 dropdown-toggle"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                >
-                  </p>
+                ></p>
                 <ul className="dropdown-menu py-0">
                   <li>
                     <Link
@@ -176,7 +181,6 @@ function WebLayout() {
                       <p className="mb-0">Direct Booking</p>
                     </Link>
                   </li>
-              
                 </ul>
               </li>
               <li className="nav-item  mx-1 mx-xl-2">
@@ -228,12 +232,16 @@ function WebLayout() {
               </li>
             </ul>
             <button
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
               className="simplihostlogin-btn me-2 px-3 px-lg-2 px-xl-4 py-2"
               type="button"
             >
               Login
             </button>
             <button
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
               className="simplihosttrail-btn px-2 px-xl-4 py-2"
               type="button"
             >
@@ -493,6 +501,563 @@ function WebLayout() {
           </div>
         </div>
       </section>
+      <div
+        className="modal fade"
+        id="loginModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header d-flex justify-content-between align-items-center">
+              <div />
+              <h1 className="modal-title fs-4 fw-bold" id="exampleModalLabel">
+                Welcome back!
+              </h1>
+              <div>
+                <button
+                  type="button"
+                  className="btn-close modal-close focus-none"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                />
+              </div>
+            </div>
+            <div className="modal-body">
+              <form>
+                <div className="login-size mx-auto">
+                  <img
+                    src={loginpic}
+                    alt="Login-pic"
+                    className="rounded-circle"
+                  />
+                </div>
+                <p className="mb-0 fw-bold fs-4 text-center mt-3">Login</p>
+                <div className="mt-3">
+                  <label htmlFor="email" className="form-label fw-bold">
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control focus-none p-2 siminput-bg"
+                    id="email"
+                    placeholder="Type Here"
+                  />
+                </div>
+                <div className="mt-2">
+                  <label htmlFor="password" className="form-label fw-bold">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control focus-none p-2 siminput-bg"
+                    id="password"
+                    placeholder="Type Here"
+                  />
+                </div>
+                <div className="d-sm-flex justify-content-between mt-3">
+                  <div className="mb-3 d-flex align-items-center">
+                    <input
+                      type="checkbox"
+                      id="rememberPassword"
+                      className="custom-checkboxlogin"
+                    />
+                    <label htmlFor="rememberPassword" className="ms-2 fw-semi">
+                      Remember Password
+                    </label>
+                  </div>
+                  <div>
+                    <a href="#" className="text-decoration-none">
+                      Forget Password
+                    </a>
+                  </div>
+                </div>
+                <div className="my-3">
+                  <button type="submit" className="login-btn w-100 fw-bold">
+                    Log In
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="signupModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content">
+            <div className="modal-header d-sm-flex justify-content-between align-items-center">
+              <div />
+              <h1 className="modal-title fs-4 fw-bold" id="exampleModalLabel">
+                Welcome To SimpliHost👋
+              </h1>
+              <div>
+                <button
+                  type="button"
+                  className="btn-close modal-close focus-none"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                />
+              </div>
+            </div>
+            <div className="modal-body">
+              <form>
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="mt-3">
+                      <label htmlFor="fname" className="form-label fw-bold">
+                        First Name
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control focus-none p-2 siminput-bg"
+                        id="fname"
+                        placeholder="Type Here"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="mt-3">
+                      <label htmlFor="lname" className="form-label fw-bold">
+                        Last Name
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control focus-none p-2 siminput-bg"
+                        id="lname"
+                        placeholder="Type Here"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="mt-3">
+                      <label htmlFor="pnumber" className="form-label fw-bold">
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        className="form-control focus-none p-2 siminput-bg"
+                        id="pnumber"
+                        placeholder="Type Here"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="mt-3">
+                      <label htmlFor="semail" className="form-label fw-bold">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        className="form-control focus-none p-2 siminput-bg"
+                        id="semail"
+                        placeholder="Type Here"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="mt-3">
+                      <label htmlFor="spassword" className="form-label fw-bold">
+                        Password
+                      </label>
+                      <input
+                        type="password"
+                        className="form-control focus-none p-2 siminput-bg"
+                        id="spassword"
+                        placeholder="Type Here"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="mt-3">
+                      <label
+                        htmlFor="srpassword"
+                        className="form-label fw-bold"
+                      >
+                        Re-Enter Password
+                      </label>
+                      <input
+                        type="password"
+                        className="form-control focus-none p-2 siminput-bg"
+                        id="srpassword"
+                        placeholder="Type Here"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-12 mt-3">
+                    <div className="mb-3 d-flex align-items-center">
+                      <input
+                        type="checkbox"
+                        id="agree"
+                        className="custom-checkboxlogin"
+                      />
+                      <label htmlFor="agree" className="ms-2 fw-semi">
+                        I agree to the Terms of Service and Privacy Policy.
+                      </label>
+                    </div>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      className="signup-btn fw-semi"
+                      data-bs-toggle="modal"
+                      data-bs-target="#selectverificationModal"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                  <div className="d-flex justify-content-center mt-3">
+                    <button
+                      type="button"
+                      className="signingoogle-btn fw-semi d-flex align-items-center justify-content-center"
+                    >
+                      <div className="signin-icon">
+                        <img
+                          src={googlesignin}
+                          alt="google-pic"
+                          className="me-3"
+                        />
+                      </div>
+                      Sign In with Google
+                    </button>
+                  </div>
+                  <div className="d-flex justify-content-center mt-3">
+                    <button
+                      type="button"
+                      className="signinfacebook-btn fw-semi d-flex align-items-center justify-content-center"
+                    >
+                      <div className="signin-icon">
+                        <img
+                          src={signinfacebook}
+                          alt="google-pic"
+                          className="me-3"
+                        />
+                      </div>
+                      Sign In with facebook
+                    </button>
+                  </div>
+                  <p className="mb-0 mt-2 text-center">
+                    Do you have an account?
+                    <span className="ms-2">
+                      <a href="#" className="text-decoration-none">
+                        Sign up
+                      </a>
+                    </span>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="selectverificationModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header d-flex justify-content-between align-items-center">
+              <h1
+                className="modal-title fs-4 fw-bold blue-color"
+                id="exampleModalLabel"
+              >
+                Select Verification
+              </h1>
+              <button
+                type="button"
+                className="btn-close modal-close focus-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body">
+              <form>
+                <div className="d-flex align-items-center justify-content-between verfication-bg p-2">
+                  <div className="d-flex align-items-center">
+                    <div className="verficationpic-size">
+                      <img
+                        src={emailverfication}
+                        alt="Email"
+                        className="w-100 p-2"
+                      />
+                    </div>
+                    <div className="ms-2">
+                      <p className="mb-0 fw-bold">Email</p>
+                      <p className="mb-0 color-black">
+                        Select Email Verification
+                      </p>
+                    </div>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input focus-none"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                  </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-between verfication-bg p-2 mt-2">
+                  <div className="d-flex align-items-center">
+                    <div className="verficationpic-size">
+                      <img
+                        src={callverification}
+                        alt="Email"
+                        className="w-100 p-2"
+                      />
+                    </div>
+                    <div className="ms-2">
+                      <p className="mb-0 fw-bold">Phone</p>
+                      <p className="mb-0 color-black">
+                        Select Phone Call Verification
+                      </p>
+                    </div>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input focus-none"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                  </div>
+                </div>
+                <div className="mt-3">
+                  <button
+                    type="button"
+                    className="login-btn w-100 fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#textconfirmationModal"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="textconfirmationModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header d-flex justify-content-between align-items-center">
+              <div />
+              <div>
+                <h1
+                  className="modal-title fs-4 fw-bold blue-color"
+                  id="exampleModalLabel"
+                >
+                  Identify Verification
+                </h1>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  className="btn-close modal-close focus-none"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                />
+              </div>
+            </div>
+            <div className="modal-body">
+              <form>
+                <div className="confirmation-size mx-auto">
+                  <img
+                    src={phoneverification}
+                    alt="Verification"
+                    className="w-100 p-4"
+                  />
+                </div>
+                <p className="mb-0 fw-bold fs-4 text-center mt-2">
+                  Text Confirmation
+                </p>
+                <p className="mb-0 color-black text-center mt-2">
+                  A code was sent to xxx-xxx-2121
+                </p>
+                <div className="d-flex justify-content-center mt-5">
+                  <input type="text" className="inbox-size" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                </div>
+                <div className="d-flex justify-content-center mt-5">
+                  <button type="submit" className="send-btn blue-color fw-semi">
+                    Send again
+                  </button>
+                </div>
+                <div className="mt-3">
+                  <button
+                    type="button"
+                    className="login-btn w-100 fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#emailconfirmationModal"
+                  >
+                    Done
+                  </button>
+                </div>
+                <p className="mb-0 mt-3 text-center fw-semi">
+                  Having problems?
+                  <span className="ms-2">
+                    <a href="#" className="text-decoration-none">
+                      Let us help and contact us!
+                    </a>
+                  </span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="emailconfirmationModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header d-flex justify-content-between align-items-center">
+              <div />
+              <div>
+                <h1
+                  className="modal-title fs-4 fw-bold blue-color"
+                  id="exampleModalLabel"
+                >
+                  Identify Verification
+                </h1>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  className="btn-close modal-close focus-none"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                />
+              </div>
+            </div>
+            <div className="modal-body">
+              <form>
+                <div className="confirmation-size mx-auto">
+                  <img
+                    src={emailconfirmation}
+                    alt="Verification"
+                    className="w-100 p-3"
+                  />
+                </div>
+                <p className="mb-0 fw-bold fs-4 text-center mt-2">
+                  Email Confirmation
+                </p>
+                <p className="mb-0 color-black text-center mt-2">
+                  A code was sent to miona.alshlowi@gmail.com
+                </p>
+                <div className="d-flex justify-content-center mt-5">
+                  <input type="text" className="inbox-size" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                  <input type="text" className="inbox-size ms-2" />
+                </div>
+                <div className="d-flex justify-content-center mt-5">
+                  <button type="submit" className="send-btn blue-color fw-semi">
+                    Send again
+                  </button>
+                </div>
+                <div className="mt-3">
+                  <button
+                    type="button"
+                    className="login-btn w-100 fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#wellcomeModal"
+                  >
+                    Done
+                  </button>
+                </div>
+                <p className="mb-0 mt-3 text-center fw-semi">
+                  Having problems?
+                  <span className="ms-2">
+                    <a href="#" className="text-decoration-none">
+                      Let us help and contact us!
+                    </a>
+                  </span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="wellcomeModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header d-flex justify-content-between align-items-center">
+              <div />
+              <div>
+                <h1
+                  className="modal-title fs-4 fw-bold blue-color"
+                  id="exampleModalLabel"
+                >
+                  Create your account
+                </h1>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  className="btn-close modal-close focus-none"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                />
+              </div>
+            </div>
+            <div className="modal-body">
+              <div className="simplihost-size mx-auto">
+                <img
+                  src={wellcome}
+                  alt="Well-come"
+                  className="w-100"
+                />
+              </div>
+              <p className="mb-0 fw-bold fs-4 text-center mt-3">
+                Welcome to simpliHost
+              </p>
+              <p className="mb- mt-3 text-center">
+                Woohoo! You’re on your way to saving time and money. Let's get
+                started and make property management a breeze!
+              </p>
+              <form>
+                <div className="mt-4">
+                  <button type="submit" className="login-btn w-100 fw-bold">
+                    Continue
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
