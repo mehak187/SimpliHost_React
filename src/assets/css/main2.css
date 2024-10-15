@@ -555,9 +555,12 @@ input:focus {
 }
 
 .ar-img{
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    z-index: 2;
 }
 .css-1sfmumn-MuiButtonGroup-root .MuiButtonGroup-firstButton, .css-1sfmumn-MuiButtonGroup-root .MuiButtonGroup-middleButton{
     border-color: #fff !important;
@@ -608,6 +611,16 @@ input:focus {
     border: 0px;
     padding: 4px;
     border-radius: 4px;
+}
+
+.slides .slick-prev img{
+    position: absolute;
+    left: -14px
+}
+
+.slides .slick-next img{
+    position: absolute;
+    right: -14px;
 }
 @media screen and (max-width: 1200px) {
     .filter-col {

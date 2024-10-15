@@ -20,16 +20,16 @@ function GettingStart() {
             </div>
             <div className='container pt-5 pb-4'>
                 <div className="row align-items-center">
-                    <div className="col-lg-6">
+                    <div className="col-md-6">
                         <h2 className='step-font'>Getting Started with
                             <span className='ms-1 lblue d-inline-flex'>SimpliHost</span> is a Breeze!</h2>
                         <p className='fw-normal lh-2 mt-3'>In the next steps, we’ll gather all the important details about
                             your property, like its type, location, and capacity. We’ll
                             make sure you're set up and ready to welcome guests in no time!</p>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-md-6">
                         <div>
-                            <img src={Steps} alt="" className='step-img' />
+                            <img src={Steps} alt="Steps" className='step-img' />
                         </div>
                     </div>
                 </div>

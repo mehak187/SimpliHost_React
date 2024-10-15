@@ -63,6 +63,7 @@ import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
 import BookDirect from "./Components/Website/BookDirect";
 import UnifiedInbox from "./Components/Website/UnifiedInbox";
 import Smartdevices from "./Components/Website/SmartDevices";
+import ChecklistTabs from "./Components/ChecklistArrival/ChecklistTabs";
 import SimplePrice from "./Components/Website/SimplePrice";
 import ContactUs from "./Components/Website/ContactUs";
 import ListingDetails from "./Components/Website/ListingDetails";
@@ -108,6 +109,7 @@ function App() {
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
           <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
           <Route path="admin/add-property-tags" element={<AddPropertyTags />} />
+          <Route path="admin/checklistTab" element={<ChecklistTabs />} />
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
