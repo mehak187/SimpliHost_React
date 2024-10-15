@@ -1,4 +1,6 @@
 import React from "react";
+import { FaPlus } from "react-icons/fa6";
+
 
 const faqs = [
   {
@@ -25,19 +27,19 @@ const faqs = [
 
 function FaqSection() {
   return (
-    <section className="accordian-sec py-5">
+    <section className="accordian-sec py-4 py-lg-5">
       <div className="container">
         <div className="row accrdin-main rounded-4 py-3 px-1 bg-green">
           <div className="col-lg-8">
             <div className="p-4 rounded-4 bg-white">
-              <h3 className="fw-semi">Frequently asked questions</h3>
+              <h3 className="fw-bold">Frequently asked questions</h3>
               <p className="mb-4 fw-semi">About Simplihost Property Management Platform</p>
               <div className="accordion accordion-flush custom-accordion" id="accordionFlushExample">
                 {faqs.map((faq, index) => (
                   <div key={index} className="accordion-item mb-3">
                     <h2 className="accordion-header">
                       <button
-                        className="accordion-button collapsed fw-semi"
+                        className="accordion-button px-3 px-md-4 collapsed fw-semi"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#flush-collapse${index}`}
@@ -45,7 +47,9 @@ function FaqSection() {
                         aria-controls={`flush-collapse${index}`}
                       >
                         {faq.question}
-                        <i className="fas fa-plus ms-auto" />
+                        <FaPlus className="icon text-black fs-5 ms-auto"/>
+                        {/* <i className="fas fa-plus" /> */}
+
                       </button>
                     </h2>
                     <div
@@ -53,7 +57,7 @@ function FaqSection() {
                       className="accordion-collapse collapse"
                       data-bs-parent="#accordionFlushExample"
                     >
-                      <div className="accordion-body pt-0">{faq.answer}</div>
+                      <div className="accordion-body px-3 px-md-4 pt-0">{faq.answer}</div>
                     </div>
                   </div>
                 ))}

@@ -2,7 +2,7 @@ import React from "react";
 
 function GotbackSection() {
   return (
-    <section className="gotBack-sec py-5 mt-5">
+    <section className="gotBack-sec py-4 py-lg-5 mt-5">
       <div className="container">
         <div className="row align-items-center py-5">
           <div className="col-lg-6">
@@ -13,8 +13,7 @@ function GotbackSection() {
                 to answer your inquiries, investigate your queries, and they
                 genuinely want to provide you with a better experience. Simply
                 reach out to us via email (
-                <a href="#" className="">
-                  simplihost@gmail.com
+                <a href="mailto:simplihost@gmail.com" target="_blank" className="">simplihost@gmail.com
                 </a>
                 ) or click the button below to start chatting now.
               </p>
@@ -28,7 +27,7 @@ function GotbackSection() {
                     <h5 className="fw-semi">Average Customer Service Rating</h5>
                   </div>
                   <div className="bg-exsky p-4 rounded-4 text-center">
-                    <h3 className="fw-bold litblue">+95%</h3>
+                    <h3 className="fw-extra-bold litblue">+95%</h3>
                   </div>
                 </div>
               </div>
@@ -40,7 +39,7 @@ function GotbackSection() {
                     </h5>
                   </div>
                   <div className="bg-exsky p-4 rounded-4 text-center">
-                    <h3 className="fw-bold litblue">24/7</h3>
+                    <h3 className="fw-extra-bold litblue">24/7</h3>
                   </div>
                 </div>
               </div>

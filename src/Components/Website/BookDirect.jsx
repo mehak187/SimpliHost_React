@@ -41,6 +41,7 @@ function BookDirect() {
         title="Why SimpliHost Direct Bookings Will Wow You!"
         checklistItems={checklistItems}
         imgSrc={automationtic}
+        imgclass="tic-img"
         description="Direct booking with SimpliHost means more money in your  pocket—no more sharing hard-earned profits with third parties! Build stronger, direct relationships with your guests and showcase  your brand without any distractions. Enjoy the freedom to set  your own cancellation and refund policies, offer discount coupons  to guests, and gain valuable insights from guest interactions.  Plus, get paid faster and boost guest loyalty with personalized  offers. It's all about more control, better data, and keeping  every penny you earn!"
       />
       <WhySimplihost />

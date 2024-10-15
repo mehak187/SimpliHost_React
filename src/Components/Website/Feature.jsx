@@ -201,7 +201,7 @@ function Feature() {
           </div>
         </div>
       </section>
-      <section class="coreFeature py-5">
+      <section class="coreFeature">
         <div class="container">
           <h2 class="text-center mb-4 fw-bold">Core Features</h2>
           <div class="row">
@@ -304,7 +304,7 @@ function Feature() {
       <section className="onboarding-sec py-5">
         <div className="container">
           <div className="row">
-            <h2 className="fw-bold text-center mb-5">Onboarding & Support</h2>
+            <h2 className="fw-bold text-center mb-4">Onboarding & Support</h2>
             {supportItems.map((item, index) => (
               <div key={index} className="col-lg-4 col-sm-6 mb-4">
                 <div className="my-shadow p-4 rounded-4 onboarding-card h-100 d-flex flex-column">
@@ -318,12 +318,12 @@ function Feature() {
                     <p className="mb-0">{item.description}</p>
                   </div>
                   <div className="mt-auto">
-                    <button
+                    <Link href="#"
                       type="button"
-                      className="border-0 explore-btn mt-2 rounded-5 leran-btn fw-semi"
+                      className="border-0 text-decoration-none explore-btn mt-2 rounded-5 leran-btn opacity-hover fw-semi"
                     >
                       Learn More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
