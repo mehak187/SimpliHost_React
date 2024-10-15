@@ -16,7 +16,7 @@ import feature7 from "../assets/img/feature7.png";
 import feature7Active from "../assets/img/feature7Active.png";
 import feature8 from "../assets/img/feature8.png";
 import feature8Active from "../assets/img/feature8Active.png";
-
+import { FaBars } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
 
 function WebLayout() {
@@ -28,7 +28,7 @@ function WebLayout() {
             <img src={logo} alt="logo" className="simplhostnnav-logo" />
           </Link>
           <button
-            className="navbar-toggler focus-none"
+            className="navbar-toggler focus-none pe-0 me-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -36,23 +36,23 @@ function WebLayout() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" />
+           <FaBars className="navbar-toggler-icon text-white opacity-hover" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item mx-xl-3">
+            <ul className="navbar-nav  me-lg-3 ms-auto mb-2 mb-lg-0">
+              <li className="nav-item  mx-1 mx-xl-2">
                 <Link className="nav-link active" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-item mx-1 mx-xl-3">
+              <li className="nav-item  mx-1 mx-xl-2">
                 <Link className="nav-link" to="/listings">
                   Listings
                 </Link>
               </li>
-              <li className="nav-item d-flex align-items-center dropdown mx-1 mx-xl-3">
+              <li className="nav-item  d-flex flex-wrap dropdown mx-1 mx-xl-2">
                 <Link to="feature"
-                  className="nav-link"
+                  className="nav-link pe-1 pe-lg-0"
                 >
                   Feature
                 </Link>
@@ -67,7 +67,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/cohosting"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature1} className="" alt="feature1" />
@@ -75,13 +75,13 @@ function WebLayout() {
                       <div className="feature-img me-2 feature-active">
                         <img src={feature1Active} className="" alt="feature1" />
                       </div>
-                      <p className="mb-0">Unified Inbox</p>
+                      <p className="mb-0">CoHosting</p>
                     </Link>
                   </li>
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/smart-devices"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature2} className="" alt="feature2" />
@@ -95,7 +95,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/unified-inbox"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature3} className="" alt="feature3" />
@@ -109,7 +109,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/inventory-management"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature4} className="" alt="feature4" />
@@ -123,7 +123,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="//maintenance-tracking"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature5} className="" alt="feature5" />
@@ -137,7 +137,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/task-and-checklist"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature6} className="" alt="feature6" />
@@ -151,7 +151,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/automation"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature7} className="" alt="feature7" />
@@ -165,7 +165,7 @@ function WebLayout() {
                   <li>
                     <Link
                       className="dropdown-item d-flex align-items-center py-2 border-bottom border-1 fw-semi"
-                      to="/feature1"
+                      to="/direct-booking"
                     >
                       <div className="feature-img me-2 feature">
                         <img src={feature8} className="" alt="feature8" />
@@ -179,12 +179,12 @@ function WebLayout() {
               
                 </ul>
               </li>
-              <li className="nav-item mx-1 mx-xl-3">
+              <li className="nav-item  mx-1 mx-xl-2">
                 <Link className="nav-link" to="/pricing">
                   Pricing
                 </Link>
               </li>
-              <li className="nav-item dropdown mx-1 mx-xl-3">
+              <li className="nav-item  dropdown mx-1 mx-xl-2">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -221,7 +221,7 @@ function WebLayout() {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item mx-1 mx-xl-3">
+              <li className="nav-item  mx-1 mx-xl-2">
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
@@ -327,7 +327,15 @@ function WebLayout() {
                       </li>
                       <li>
                         <Link
-                          to="/tasks-checklists"
+                          to="/cohosting"
+                          className="text-decoration-none white-color"
+                        >
+                          CoHosting
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/task-and-checklist"
                           className="text-decoration-none white-color"
                         >
                           Tasks and Checklists
@@ -343,7 +351,7 @@ function WebLayout() {
                       </li>
                       <li>
                         <Link
-                          to="/maintenance"
+                          to="/maintenance-tracking"
                           className="text-decoration-none white-color"
                         >
                           Maintenance
@@ -351,7 +359,7 @@ function WebLayout() {
                       </li>
                       <li>
                         <Link
-                          to="/inventory"
+                          to="/inventory-management"
                           className="text-decoration-none white-color"
                         >
                           Inventory Management

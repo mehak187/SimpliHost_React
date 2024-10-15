@@ -508,6 +508,26 @@
   position: relative;
 }
 
+.simplihost-navbar .navbar-toggler {
+  box-shadow: none ;
+  border: none;
+}
+
+.potential-box:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  left: 0
+  
+}
+.potential-box1:before {
+  background: url("../img/potential1.png") no-repeat;
+  background-size: 28%;
+  background-position:left top;
+}
+
 @media screen and (max-width: 992px) {
   .bell {
     width: 50px;
@@ -515,6 +535,9 @@
 
   .border-tab-0:before {
     width: 0px;
+  }
+  .simplihost-navbar .dropdown-menu {
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
