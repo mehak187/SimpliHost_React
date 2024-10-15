@@ -289,7 +289,7 @@ function Feature() {
               </h2>
               <div className="row">
                 {potentials.map((potential, index) => (
-                  <div key={index} className="col-md-4 col-sm-6 mb-4">
+                  <div key={index} className="col-md-4 col-sm-6 mb-4 position-relative potential-box">
                     <div className="trans-shadow p-4 rounded-4 h-100">
                       <h5 className="fw-semi">{potential.title}</h5>
                       <p className="mb-0">{potential.description}</p>
