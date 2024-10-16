@@ -67,11 +67,22 @@ import ChecklistTabs from "./Components/ChecklistArrival/ChecklistTabs";
 import SimplePrice from "./Components/Website/SimplePrice";
 import ContactUs from "./Components/Website/ContactUs";
 import ListingDetails from "./Components/Website/ListingDetails";
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 function App() {
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
   return (
    <div>
      <BrowserRouter>
+     <ScrollToTop />
       <Routes>
         <Route element={<Main />}>
           <Route path="admin/dashboard" element={<Dashboard />} />

@@ -563,7 +563,13 @@
   background-size: 28%;
   background-position:left top;
 }
-
+.fixed-text {
+  height: 100px;
+  overflow: auto;
+}
+.fixed-heading {
+    min-height: 45px;
+}
 @media screen and (max-width: 992px) {
   .bell {
     width: 50px;

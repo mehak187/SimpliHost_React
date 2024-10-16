@@ -274,7 +274,7 @@ function WebLayout() {
                 <li className="nav-item  dropdown mx-1 mx-xl-2">
                   <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -337,7 +337,7 @@ function WebLayout() {
         </nav>
       </header>
       <Outlet />
-      <section className="footer">
+      <footer className="footer">
         <div className="footer py-5 border-bottom">
           <div className="container">
             <div className="row">
@@ -361,7 +361,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/home"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Home
                         </Link>
@@ -369,7 +369,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/listing"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Listing
                         </Link>
@@ -377,7 +377,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/feature"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Feature
                         </Link>
@@ -385,15 +385,15 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/pricing"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Pricing
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/contact"
-                          className="text-decoration-none white-color"
+                          to="/contact-us"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Contact Us
                         </Link>
@@ -406,7 +406,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/unified-inbox"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Unified inbox
                         </Link>
@@ -414,7 +414,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/smart-devices"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Smart Devices Integration
                         </Link>
@@ -422,7 +422,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/cohosting"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           CoHosting
                         </Link>
@@ -430,7 +430,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/task-and-checklist"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Tasks and Checklists
                         </Link>
@@ -438,7 +438,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/guest-messaging"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Automated Guest Messaging
                         </Link>
@@ -446,7 +446,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/maintenance-tracking"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Maintenance
                         </Link>
@@ -454,7 +454,7 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/inventory-management"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Inventory Management
                         </Link>
@@ -462,18 +462,18 @@ function WebLayout() {
                       <li>
                         <Link
                           to="/automation"
-                          className="text-decoration-none white-color"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Automation
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to="/direct-booking"
-                          className="text-decoration-none white-color"
+                        <a
+                          href="/direct-booking"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Direct Booking
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -482,32 +482,32 @@ function WebLayout() {
                     <ul className="list-unstyled footer-list">
                       <li>
                         <Link
-                          to="/find-property"
-                          className="text-decoration-none white-color"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Find a property
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/how-to-host"
-                          className="text-decoration-none white-color"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           How To Host?
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/wishlist"
-                          className="text-decoration-none white-color"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Wishlist
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/why-us"
-                          className="text-decoration-none white-color"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           Why Us?
                         </Link>
@@ -517,11 +517,18 @@ function WebLayout() {
                   <div className="col-lg-3 col-md-4 col-sm-6 mt-4 mt-lg-0">
                     <p className="mb-0 fw-bold">CONTACT INFO</p>
                     <ul className="list-unstyled footer-list">
-                      <li>Phone: 123456789</li>
                       <li>
                         <Link
-                          href="mailto:company@email.com"
-                          className="text-decoration-none white-color"
+                          to="tel:123456789" target="_blank"
+                          className="text-decoration-none text-white opacity-hover"
+                        >
+                          Phone: 123456789
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="mailto:company@email.com" target="_blank"
+                          className="text-decoration-none text-white opacity-hover"
                         >
                           company@email.com
                         </Link>
@@ -529,32 +536,32 @@ function WebLayout() {
                       <li>Location: 100 Smart Street, LA, USA</li>
                       <li>
                         <Link
-                          href="#"
-                          className="text-decoration-none white-color f-size"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover f-size"
                         >
                           <i className="fa-brands fa-square-facebook" />
                         </Link>
                         <Link
-                          href="#"
-                          className="text-decoration-none white-color f-size ms-3"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover f-size ms-3"
                         >
                           <i className="fa-brands fa-twitter" />
                         </Link>
                         <Link
-                          href="#"
-                          className="text-decoration-none white-color f-size ms-3"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover f-size ms-3"
                         >
                           <i className="fa-brands fa-instagram" />
                         </Link>
                         <Link
-                          href="#"
-                          className="text-decoration-none white-color f-size ms-3"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover f-size ms-3"
                         >
                           <i className="fa-brands fa-youtube" />
                         </Link>
                         <Link
-                          href="#"
-                          className="text-decoration-none white-color f-size ms-3"
+                          to="#"
+                          className="text-decoration-none text-white opacity-hover f-size ms-3"
                         >
                           <i className="fa-brands fa-linkedin" />
                         </Link>
@@ -586,7 +593,7 @@ function WebLayout() {
             </div>
           </div>
         </div>
-      </section>
+      </footer>
       <div
         className="modal fade"
         id="loginModal"
@@ -654,7 +661,7 @@ function WebLayout() {
                     </label>
                   </div>
                   <div>
-                    <Link href="#" className="text-decoration-none">
+                    <Link to="#" className="text-decoration-none">
                       Forget Password
                     </Link>
                   </div>
@@ -1009,7 +1016,7 @@ function WebLayout() {
                 <p className="mb-0 mt-3 text-center fw-semi">
                   Having problems?
                   <span className="ms-2">
-                    <Link href="#" className="text-decoration-none">
+                    <Link to="#" className="text-decoration-none">
                       Let us help and contact us!
                     </Link>
                   </span>
@@ -1092,7 +1099,7 @@ function WebLayout() {
                 <p className="mb-0 mt-3 text-center fw-semi">
                   Having problems?
                   <span className="ms-2">
-                    <Link href="#" className="text-decoration-none">
+                    <Link to="#" className="text-decoration-none">
                       Let us help and contact us!
                     </Link>
                   </span>
