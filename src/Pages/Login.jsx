@@ -14,7 +14,7 @@ function Login() {
               <div className="col-xl-7 col-lg-9 col-11 mx-auto h-100">
                 <div className="d-flex flex-column justify-content-between h-100">
                   <div>
-                    <form action="">
+                    <form action="/admin/dashboard">
                       <div className="mt-3">
                         <h2 className="fw-bold yel-clr">Welcome Back 👋</h2>
                         <p className="small mb-0">
