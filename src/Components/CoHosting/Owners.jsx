@@ -118,10 +118,10 @@ function Owners() {
                     >
                       <FaEye className="fs-5" />
                     </Link>
-                    <Link to="/admin/edit-inventory" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <IoPencil className=" fs-5" />
                     </Link>
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <HiTrash className=" fs-5" />
                     </Link>
                   </div>

@@ -172,10 +172,10 @@ function Properties() {
                       <Link to="#" className="mx-1 tblicon">
                         <TbCopy className="fs-5" />
                       </Link>
-                      <Link to="/manager_detail" className="mx-1 tblicon">
+                      <Link to="#" className="mx-1 tblicon">
                         <IoPencil className="fs-5" />
                       </Link>
-                      <Link to="/delete_task" className="mx-1 tblicon">
+                      <Link to="#" className="mx-1 tblicon">
                         <HiTrash className="fs-5" />
                       </Link>
                     </div>

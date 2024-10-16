@@ -6,7 +6,7 @@ function APIAccess() {
     <>
       <div className="d-flex justify-content-between align-items-center mt-3">
         <h3 className="fs-5  text-capitalize text-black fw-semi">API Access</h3>
-        <Link className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">
+        <Link to="#" className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2">
           Add Token
         </Link>
       </div>

@@ -25,7 +25,7 @@ function Security() {
               <label htmlFor="forget" className="fw-semi w-100">
                 Forgot your password
               </label>
-              <Link to="" className="text-decoration-none d-inline-block mt-1">
+              <Link to="#" className="text-decoration-none d-inline-block mt-1">
                 Reset password via email
               </Link>
             </div>

@@ -121,7 +121,7 @@ function ConnectModal() {
                                             </div>
                                         </div>
                                         <div>
-                                            <Link to='' className='bg-lblue py-2 min-wd text-dark rounded-3 text-decoration-none fw-semi'>Automation</Link>
+                                            <Link to='#' className='bg-lblue py-2 min-wd text-dark rounded-3 text-decoration-none fw-semi'>Automation</Link>
                                         </div>
                                     </div>
                                 </div>
