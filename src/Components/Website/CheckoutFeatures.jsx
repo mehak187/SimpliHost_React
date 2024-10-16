@@ -16,6 +16,7 @@ const features = [
     description: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
     buttonColor: "bg-orange",
     cardColor: "bg-exxOrange",
+    link:"/inventory-management"
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const features = [
     description: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
     buttonColor: "bg-yellow",
     cardColor: "bg-exxYellow",
+    link:"/task-and-checklist"
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const features = [
     description: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
     buttonColor: "bg-dgreen",
     cardColor: "bg-exxGreen",
+    link:"/smart-devices"
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const features = [
     description: "A single destination for guest communication synched with your listing data across all channels.",
     buttonColor: "bg-blue",
     cardColor: "bg-exxBlue",
+    link:"/unified-inbox"
   },
 ];
 
@@ -47,9 +51,10 @@ function CheckoutFeatures() {
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 1024,
@@ -65,7 +70,6 @@ function CheckoutFeatures() {
       },
     ],
   };
-
   return (
     <section className="commCards-sec py-5 bg-exxxSky">
       <div className="container">
@@ -78,12 +82,12 @@ function CheckoutFeatures() {
                   <img src={feature.image} alt={feature.title} />
                 </div>
                 <div className="flex-grow-1 mb-5">
-                  <h5 className="mb-3 text-center text-sm-start fw-semi">{feature.title}</h5>
-                  <p className="mb-0 text-center text-sm-start">{feature.description}</p>
+                  <h5 className="mb-0 text-center text-sm-start fixed-heading fw-semi">{feature.title}</h5>
+                  <p className="mb-0 mt-1 text-center text-sm-start fixed-text">{feature.description}</p>
                 </div>
                 <div className="text-center mt-auto">
                   <Link
-                    to="#"
+                    to={feature.link}
                     className={`border-0 commCard-btn d-block text-decoration-none shadow text-white fw-semi ${feature.buttonColor} w-100`}
                   >
                     Learn More
