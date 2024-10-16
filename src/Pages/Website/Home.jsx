@@ -13,10 +13,10 @@ import guestmessage from "../../assets/img/guestmessage.svg";
 import cleaningtourner from "../../assets/img/cleaningtourner.svg";
 import maintanceitem from "../../assets/img/maintanceitem.svg";
 import smartdevice2 from "../../assets/img/smartdevice2.svg";
-import WhySimplihost from "./WhySimplihost";
-import Sliderr from "./Sliderr";
+import WhySimplihost from "../../Components/Website/WhySimplihost";
+import Sliderr from "../../Components/Website/Sliderr";
 import { Link } from "react-router-dom";
-import PricingMadeSimple from "./PricingMadeSimple";
+import PricingMadeSimple from "../../Components/Website/PricingMadeSimple";
 
 function Home() {
   const features = [

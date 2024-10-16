@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import hero from "../../assets/img/climatehero.png";
 import platform1 from "../../assets/img/platform1.svg";
 import platform2 from "../../assets/img/platform2.svg";
-import FaqSection from "./FaqSection";
-import GotbackSection from "./GotbackSection";
-import BrandsSection from "./BrandsSection";
-import GuestSection from "./GuestSection";
+import GotbackSection from "../../Components//Website/GotbackSection";
+import BrandsSection from "../../Components//Website/BrandsSection";
+import GuestSection from "../../Components//Website/GuestSection";
 import automationtic from "../../assets/img/automation-tic.svg";
-import CheckoutFeatures from "./CheckoutFeatures";
-import Sliderr from "./Sliderr";
+import CheckoutFeatures from "../../Components//Website/CheckoutFeatures";
+import Sliderr from "../../Components//Website/Sliderr";
+import FaqSection from "../../Components/Website/FaqSection";
 
 function SmartDevices() {
   const checklistItems = [
