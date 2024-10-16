@@ -32,12 +32,12 @@ function Pricing() {
         <div className="container">
           <div className="d-flex flex-column align-items-center justify-content-center">
             <div className="text-center">
-              <h1 className="fw-bold">All Features, One Simple Price!</h1>
+              <h1 className="fw-bold">All Features,<br></br> One Simple Price!</h1>
               <p className="mb-0 comm-para">
                 You take care of the guests, we take care of the rest!
               </p>
             </div>
-            <div className="buttonbg mt-5">
+            <div className="buttonbg d-flex py-3 px-3 p-sm-1 flex-column flex-sm-row mt-5">
               <Link className="bluelink text-white">Monthly</Link>
               <Link className="whitelink text-black">
                 Annual <span>Save 20%</span>

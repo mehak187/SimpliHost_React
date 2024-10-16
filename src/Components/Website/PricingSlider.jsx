@@ -11,7 +11,8 @@ function PricingSlider() {
 
   return (
     <div className="pricing-slider-container">
-      <div className="pricing-card">
+     <div className="container">
+     <div className="pricing-card">
         <h2 className="text-center fw-semi text-blue">
           Everything You Want, All Included!
         </h2>
@@ -63,6 +64,7 @@ function PricingSlider() {
           </button>
         </div>
       </div>
+     </div>
     </div>
   );
 }
