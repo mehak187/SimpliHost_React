@@ -26,7 +26,6 @@ function HouseRules() {
                                 <Switch {...label} />
                             </div>
 
-                            {/* Counter for Bedrooms */}
                             <RoomCounter label="Maximum number of pets allowed" count={bedroomCount} setCount={setBedroomCount} />
 
                             <div className='d-flex align-items-center justify-content-between border bg-lgrey rounded-3 p-2 mb-2'>
@@ -57,7 +56,6 @@ function HouseRules() {
                                 </div>
                             </div>
 
-                            {/* Counter for Beds */}
                             <RoomCounter label="Max Number of Guests" count={bedCount} setCount={setBedCount} />
 
                             <div className='d-flex align-items-center justify-content-between border bg-lgrey rounded-3 p-2 mb-2'>

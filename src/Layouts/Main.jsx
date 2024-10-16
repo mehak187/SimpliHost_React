@@ -30,30 +30,21 @@ import logoMin from "../assets/img/logo-min.png";
 import slideMax from "../assets/img/slide-max.png";
 
 function Main() {
-  const location = useLocation(); // Call useLocation at the top
-
+  const location = useLocation();
   function isActive(route) {
     return location.pathname.startsWith(route) ? "active" : "";
   }
   const [isMinimized, setIsMinimized] = useState(false);
-
-  // Check the window width on initial load
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setIsMinimized(true); // Add min-sidebar class if screen width is below 768px
+        setIsMinimized(true);
       } else {
-        setIsMinimized(false); // Remove min-sidebar class for larger screens
+        setIsMinimized(false);
       }
     };
-
-    // Run the function initially
     handleResize();
-
-    // Attach event listener to handle window resize
     window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -110,7 +101,7 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    to="admin/inbox"
+                    // to="admin/inbox"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
                       "/admin/inbox"
                     )}`}
@@ -135,15 +126,15 @@ function Main() {
                   </Link>
                 </li>
                 <li>
-                    <Link
+                  <Link
                     to="/admin/properties"
                     className={`sidelink d-flex align-items-center text-white ${
-                      isActive("/admin/properties") || isActive("/admin/add-property-tags")
+                      isActive("/admin/properties") ||
+                      isActive("/admin/add-property-tags")
                         ? "active"
                         : ""
                     }`}
                   >
-                    
                     <div className="d-flex align-items-center">
                       <img src={properties} alt="" className="sideicon" />
                       <p className="mb-0">Properties</p>
@@ -279,7 +270,7 @@ function Main() {
                   <Link
                     to="admin/users"
                     className={`sidelink d-flex align-items-center text-white ${
-                      isActive("/admin/users")||
+                      isActive("/admin/users") ||
                       isActive("/admin/user-details")
                         ? "active"
                         : ""
@@ -305,10 +296,10 @@ function Main() {
                   </Link>
                 </li>
                 <li>
-                <Link
+                  <Link
                     to="admin/settings"
                     className={`sidelink d-flex align-items-center text-white ${
-                      isActive("/admin/settings")||
+                      isActive("/admin/settings") ||
                       isActive("/admin/add-checklist-category")
                         ? "active"
                         : ""
@@ -320,18 +311,6 @@ function Main() {
                     </div>
                   </Link>
                 </li>
-
-                {/* <li>
-                  <Link
-                    to="/employees"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(["/employees", "/add_employee", "/edit_employee",, "/employee_detail"])}`}
-                  >
-                    <div className="d-flex align-items-center">
-                      <FaUsers className="sideicon" />
-                      <p className="mb-0">Employees</p>
-                    </div>
-                  </Link>
-                </li> */}
               </ul>
             </div>
           </div>
@@ -366,11 +345,17 @@ function Main() {
                       className="border-0 focus-none ps-2"
                     />
                   </div>
-                  <Link to='admin/Notifications'className="not-main rounded-circle new-not position-relative  me-2">
+                  <Link
+                    to="admin/Notifications"
+                    className="not-main rounded-circle new-not position-relative  me-2"
+                  >
                     <IoIosNotifications className="fs-4 d-flex align-items-center not-icon" />
                   </Link>
                   <div className="d-flex justify-content-between w-100 align-items-center">
-                    <Link to="admin/profile" className="mb-0 text-decoration-none d-flex align-items-center">
+                    <Link
+                      to="admin/profile"
+                      className="mb-0 text-decoration-none d-flex align-items-center"
+                    >
                       <div className="">
                         <img src={profile} alt="" className="profile" />
                       </div>
@@ -386,7 +371,6 @@ function Main() {
               </div>
             </div>
           </div>
-
           <div className="right-bottom">
             <div className="content">
               <div className="container-fluid h-100">

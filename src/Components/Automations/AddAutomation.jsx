@@ -105,7 +105,6 @@ function AddAutomation() {
                                         toggleOpen={() => setIsWhenOpen(!isWhenOpen)}
                                         onSelectAction={handleSelectActionWhen}
                                     />
-                                    {/* Notification div for "When this happens" */}
                                     {isNotificationOpenWhen && (
                                         <div ref={notificationRefWhen} className='bg-white border shadow rounded-3 p-3 mt-3 max position-relative top-0 start-0 z-index-10'>
                                             <h6 className='fw-semi'>When would you like to send the notification for?</h6>
@@ -168,7 +167,6 @@ function AddAutomation() {
                                         toggleOpen={() => setIsThenOpen(!isThenOpen)}
                                         onSelectAction={handleSelectActionThen}
                                     />
-                                    {/* Notification div for "Then do this" */}
                                     {isNotificationOpenThen && (
                                         <div ref={notificationRefThen} className='bg-white border shadow rounded-3 p-3 mt-3 w-100 position-relative top-0 start-0 z-index-10'>
                                             <input type="date" className='form-control' />

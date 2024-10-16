@@ -519,7 +519,8 @@ function WebLayout() {
                     <ul className="list-unstyled footer-list">
                       <li>
                         <Link
-                          to="tel:123456789" target="_blank"
+                          to="tel:123456789"
+                          target="_blank"
                           className="text-decoration-none text-white opacity-hover"
                         >
                           Phone: 123456789
@@ -527,7 +528,8 @@ function WebLayout() {
                       </li>
                       <li>
                         <Link
-                          to="mailto:company@email.com" target="_blank"
+                          to="mailto:company@email.com"
+                          target="_blank"
                           className="text-decoration-none text-white opacity-hover"
                         >
                           company@email.com
