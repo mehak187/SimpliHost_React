@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 const StatCard = ({ title, value, image }) => {
   return (
     <div className='col-xl-3 col-lg-4 col-sml-6 mb-3'>
-      <div className='bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between'>
+      <div className='bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border'>
         <div>
           <p className='mb-0 small'>{title}</p>
           <h4 className='fw-semibold'>{value}</h4>
@@ -41,18 +41,18 @@ function Favorite() {
   return (
     <div>
       <div className="d-sm-flex align-items-center justify-content-between">
-        <div className='d-flex align-items-center'>
+        <div className='d-sm-flex align-items-center'>
           <div>
             <h4 className="fw-semibold d-flex">
               Dashboard <CiStar />
           </h4>
           </div>
-          <div className='mx-2'>
+          <div className='mx-sm-2 w-100'>
             <QuickFilter/>
           </div>
         </div>
-        <div className="dropdown">
-          <button className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div className="dropdown mt-sm-0 mt-2">
+          <button className="bg-white border py-2 w-100 px-3 rounded-2 dropdown-toggle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
@@ -69,13 +69,24 @@ function Favorite() {
       <div className="row">
         <div className="col-lg-8">
           <div className='bg-white shadow p-2 rounded-3 main-canvas'>
-            <div className='d-flex align-items-center justify-content-between'>
+            <div className='d-sm-flex align-items-center justify-content-between mb-3'>
               <div>
                  <h5 className='fw-semi'>Property Sales Details</h5>
               </div>
-              <div>
+              <div className='d-flex justify-content-end'>
                 <select name="" className='form-select shadow-none' id="">
-                  <option value="">October</option>
+                  <option value="">January</option>
+                  <option value="">February</option>
+                  <option value="">March</option>
+                  <option value="">April</option>
+                  <option value="">May</option>
+                  <option value="">June</option>
+                  <option value="">July</option>
+                  <option value="">August</option>
+                  <option value="">September</option>
+                  <option value="" selected>October</option>
+                  <option value="">November</option>
+                  <option value="">December</option>
                 </select>
               </div>
             </div>

@@ -88,7 +88,7 @@ function QuickFilter() {
     <div>
       <div className="dropdown">
         <button
-          className="bg-white border py-2 px-3 rounded-3 dropdown-toggle d-flex align-items-center justify-content-between"
+          className="bg-white border w-100 py-2 px-3 rounded-3 dropdown-toggle d-flex align-items-center justify-content-center"
           type="button"
           onClick={() => setShowModal(true)} // Open modal
         >

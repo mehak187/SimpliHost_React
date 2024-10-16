@@ -45,7 +45,7 @@ function Taxes() {
           </div>
         </div>
         <div className="dropdown">
-          <button className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button className="bg-white border w-100 py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">

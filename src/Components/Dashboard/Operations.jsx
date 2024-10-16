@@ -23,7 +23,7 @@ import { BsStarFill } from 'react-icons/bs';
 
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -35,7 +35,7 @@ const StatCard = ({ title, value, image }) => (
 
 const Maintenance = ({ title, value, image }) => (
   <div className="col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -47,7 +47,7 @@ const Maintenance = ({ title, value, image }) => (
 
 const Inventory = ({ title, value, image }) => (
   <div className="col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -59,7 +59,7 @@ const Inventory = ({ title, value, image }) => (
 
 const Invoice = ({ title, value, image }) => (
   <div className="col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -71,7 +71,7 @@ const Invoice = ({ title, value, image }) => (
 
 const Messaging = ({ title, value, image }) => (
   <div className="col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -127,7 +127,7 @@ function Operations() {
           </div>
         </div>
         <div className="dropdown">
-          <button className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button className="bg-white border py-2 px-3 w-100 justify-content-center rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">
