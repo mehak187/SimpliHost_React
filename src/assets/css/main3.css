@@ -122,13 +122,11 @@ input:checked+.slider:before {
     height: 100%;
     overflow: auto;
     padding: 0 10px;
-
 }
 
 .notif {
     background: #EBEBEB;
     border-radius: 15px;
-
 }
 
 .comimg {
@@ -149,27 +147,28 @@ input:checked+.slider:before {
     margin-right: 15px;
 }
 
-.cannedinput{
+.cannedinput {
     margin: 0 5px;
     border-radius: 5px;
-    background:#F7F7F7;
+    background: #F7F7F7;
     border: solid 1px #ccbcbc;
 }
 
-.greenbtn{
+.greenbtn {
     background: var(--green);
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
-    font-weight:bold;
+    font-weight: bold;
     margin-top: 5px;
 }
 
-.p-datepicker table td.p-datepicker-today > span {
+.p-datepicker table td.p-datepicker-today>span {
     background: var(--green) !important;
     color: #fff !important;
     border-color: transparent;
 }
+
 .p-inputtext {
     color: #4b5563;
     background: transparent;
@@ -179,6 +178,7 @@ input:checked+.slider:before {
     border-radius: 6px;
     outline-color: transparent;
 }
+
 .p-button {
     color: #000;
     background: #D5D5D5;
@@ -186,14 +186,21 @@ input:checked+.slider:before {
     padding: 8px !important;
     border-radius: 6px;
 }
-.impdate{
+
+.impdate {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     background-color: #F3F3F5;
     border: solid 1px #D5D5D5;
 }
-tbody, td, tfoot, th, thead, tr {
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
     border-color: inherit;
     text-align: center;
     border-style: solid;
@@ -201,40 +208,39 @@ tbody, td, tfoot, th, thead, tr {
     padding: 10px 15px;
 }
 
-
-
 .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
     background: #ffffff;
     padding: 10px;
-
 }
-
 
 .p-datepicker .p-datepicker-header {
     padding: 20px;
     color: #000;
     font-weight: 600;
-    border-bottom:none !important;
+    border-bottom: none !important;
 }
 
 .p-datepicker-header {
     justify-content: space-around !important;
-    padding:15px !important;
+    padding: 15px !important;
 }
-.p-link{
-    margin:0 5px;
+
+.p-link {
+    margin: 0 5px;
 }
-.buttonbg{
+
+.buttonbg {
     background-color: #E4E6F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
 }
-.bluelink{
+
+.bluelink {
     width: 200px;
     text-align: center;
-    background-color:#3551B6;
+    background-color: #3551B6;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -242,12 +248,13 @@ tbody, td, tfoot, th, thead, tr {
     border-radius: 50px;
     margin: 10px;
 }
-.whitelink{
+
+.whitelink {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    background-color:#fff;
+    background-color: #fff;
     color: #000;
     font-weight: 600;
     border: solid 1px #3551B6;
@@ -256,8 +263,9 @@ tbody, td, tfoot, th, thead, tr {
     border-radius: 50px;
     margin: 10px;
 }
-.whitelink span{
-    background-color:#32F0CD;
+
+.whitelink span {
+    background-color: #32F0CD;
     padding: 5px 10px;
     border-radius: 50px;
     margin-left: 10px;
@@ -268,9 +276,9 @@ tbody, td, tfoot, th, thead, tr {
     justify-content: center;
     align-items: center;
     margin-top: -60px;
-  }
-  
-  .pricing-card {
+}
+
+.pricing-card {
     background: white;
     border: 2px solid #dfe3e8;
     border-radius: 30px;
@@ -278,14 +286,14 @@ tbody, td, tfoot, th, thead, tr {
     width: 60%;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .slider-container {
+}
+
+.slider-container {
     position: relative;
     margin: 20px 0;
-  }
-  
-  .slider-input {
+}
+
+.slider-input {
     width: 100%;
     appearance: none;
     height: 25px;
@@ -293,9 +301,9 @@ tbody, td, tfoot, th, thead, tr {
     border-radius: 20px;
     outline: none;
     transition: background 0.3s ease-in-out;
-  }
-  
-  .slider-input::-webkit-slider-thumb {
+}
+
+.slider-input::-webkit-slider-thumb {
     appearance: none;
     width: 40px;
     height: 40px;
@@ -303,41 +311,41 @@ tbody, td, tfoot, th, thead, tr {
     background: white;
     border: 3px solid #3551B6;
     cursor: pointer;
-  }
-  
-  .slider-input::-moz-range-thumb {
+}
+
+.slider-input::-moz-range-thumb {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: white;
     border: 3px solid #3551B6;
     cursor: pointer;
-  }
-  
-  .slider-labels {
+}
+
+.slider-labels {
     display: flex;
     justify-content: space-between;
-    margin:10px;
+    margin: 10px;
     font-weight: 500;
     color: #333;
-  }
-  
-  .pricing-info {
+}
+
+.pricing-info {
     font-size: 22px;
     margin-top: 30px;
     font-weight: 600;
-  }
-  
-  .property-input {
+}
+
+.property-input {
     width: 60px;
     border: 2px solid #dfe3e8;
     border-radius: 5px;
     padding: 5px;
     text-align: center;
     font-size: 18px;
-  }
-  
-  .signup-btn1 {
+}
+
+.signup-btn1 {
     background-color: #3551B6;
     color: white;
     font-weight: 600;
@@ -345,5 +353,4 @@ tbody, td, tfoot, th, thead, tr {
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
+}
