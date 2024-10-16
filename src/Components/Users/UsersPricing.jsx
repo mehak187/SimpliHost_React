@@ -9,7 +9,6 @@ function UsersPricing() {
       Role: "Owner",
       Type: "checked",
       propertyCollection: propertyCollection,
-
     },
     {
       id: 1,
@@ -73,7 +72,11 @@ function UsersPricing() {
               {DataCollection.map((data, index) => (
                 <tr className="align-middle" key={data.id}>
                   <td className="small text-black text-capitalize fw-semi">
-                    <img src={propertyCollection} alt="propertyCollection" className="me-2"/>
+                    <img
+                      src={propertyCollection}
+                      alt="propertyCollection"
+                      className="me-2"
+                    />
                     {data.Properties}
                   </td>
                   <td className="small text-black"> {data.Role} </td>
@@ -94,7 +97,10 @@ function UsersPricing() {
                   </td>
                   <td className="small d-flex align-items-end  text-black">
                     <div>
-                      <input type="text" className="me-2 border-0 border-bottom border-2 border-dark bg-transparent" />
+                      <input
+                        type="text"
+                        className="me-2 border-0 border-bottom border-2 border-dark bg-transparent"
+                      />
                     </div>
                     <div>
                       <div className="checkbox-wrapper-13">
@@ -104,7 +110,6 @@ function UsersPricing() {
                           defaultChecked={data.sms === "checked"}
                         />
                         <label htmlFor="project">Per project</label>
-                        
                       </div>
                       <div className="checkbox-wrapper-13 mt-2">
                         <input

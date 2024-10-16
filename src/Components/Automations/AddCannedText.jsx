@@ -36,9 +36,10 @@ function AddCannedText() {
                   />
                 </div>
                 <div className="mt-4">
-                    <div className="d-flex">
-                    </div>
-                        <h4 className="fw-semi mt-4 border-bottom border-3 mb-3">Message</h4>
+                  <div className="d-flex"></div>
+                  <h4 className="fw-semi mt-4 border-bottom border-3 mb-3">
+                    Message
+                  </h4>
                   <div className="mt-2">
                     Hello{" "}
                     <input
@@ -77,7 +78,7 @@ function AddCannedText() {
                       className="focus-none cannedinput"
                       placeholder="Check-Out Date"
                     />
-                     (
+                    (
                     <input
                       type="text"
                       className="focus-none cannedinput"

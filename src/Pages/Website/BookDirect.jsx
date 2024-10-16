@@ -46,9 +46,9 @@ function BookDirect() {
       />
       <WhySimplihost />
       <Sliderr />
-      <FaqSection/>
-      <CheckoutFeatures/>
-      <GotbackSection/>
+      <FaqSection />
+      <CheckoutFeatures />
+      <GotbackSection />
     </div>
   );
 }

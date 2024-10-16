@@ -42,7 +42,6 @@ function Taxes() {
     },
   ];
 
-
   return (
     <div>
       <FilterRow />
@@ -52,9 +51,15 @@ function Taxes() {
             <tr className="align-middle">
               <th className="small fw-semi text-black text-nowrap">Tax Type</th>
               <th className="small fw-semi text-black text-nowrap">Tax Name</th>
-              <th className="small fw-semi text-black text-nowrap">Percentage</th>
-              <th className="small fw-semi text-black text-nowrap">Auto Send Frequency</th>
-              <th className="small fw-semi text-black text-nowrap">Collected by</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Percentage
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Auto Send Frequency
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Collected by
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
@@ -63,7 +68,9 @@ function Taxes() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.TaxType}</td>
                 <td className="small text-black">{data.TaxName}</td>
-                <td className="small text-black text-nowrap">{data.Percentage}</td>
+                <td className="small text-black text-nowrap">
+                  {data.Percentage}
+                </td>
                 <td className="small text-black">{data.ASFrequency}</td>
                 <td className="small text-black">{data.Collectedby}</td>
                 <td className="small text-black">
@@ -92,5 +99,3 @@ function Taxes() {
 }
 
 export default Taxes;
-
-

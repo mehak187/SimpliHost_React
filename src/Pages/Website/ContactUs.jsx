@@ -10,26 +10,24 @@ function ContactUs() {
   return (
     <div>
       <section className="commhero-sec py-5 pt-lg-5 pb-lg-0 bg-grey d-flex align-items-center">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="">
-              <h1 className="fw-bold">
-              Still Have Questions? We got you!
-              </h1>
-              <p className="mb-0 comm-para">
-              Select one of the options below to get in touch.
-              </p>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="">
+                <h1 className="fw-bold">Still Have Questions? We got you!</h1>
+                <p className="mb-0 comm-para">
+                  Select one of the options below to get in touch.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-6 col-xl-5 offset-xl-1 d-lg-block d-none">
-            <div className="mb-5 mb-lg-0">
-              <img src={contact} alt="About Hero" className="" />
+            <div className="col-lg-6 col-xl-5 offset-xl-1 d-lg-block d-none">
+              <div className="mb-5 mb-lg-0">
+                <img src={contact} alt="About Hero" className="" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
       <section className="guest-sec py-5">
         <div className="container">
           <div className="row">
@@ -61,7 +59,11 @@ function ContactUs() {
                   </div>
                 </div>
                 <div className="mt-4 mt-md-0">
-                  <Link to="#" type="button" className="explore-btn text-white opacity-hover fw-semi text-decoration-none">
+                  <Link
+                    to="#"
+                    type="button"
+                    className="explore-btn text-white opacity-hover fw-semi text-decoration-none"
+                  >
                     Start Chat
                   </Link>
                 </div>
@@ -80,11 +82,7 @@ function ContactUs() {
                 <div className="col-md-6">
                   <div className="d-flex align-items-center bg-white p-4 rounded-4 mt-5">
                     <div className="bg-yellow p-3 rounded-4 coreF-card1 d-flex align-items-center justify-content-center">
-                      <img
-                        src={phone}
-                        alt="pic"
-                        className=""
-                      />
+                      <img src={phone} alt="pic" className="" />
                     </div>
                     <div className="ms-3">
                       <h5 className="mb-0 fw-bold">Request a call</h5>

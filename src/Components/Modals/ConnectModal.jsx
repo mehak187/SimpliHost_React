@@ -20,7 +20,7 @@ function ConnectModal() {
                 </button>
             </div>
 
-            {showModal && ( // Conditional rendering of modal and backdrop
+            {showModal && ( 
                 <>
                     <div className="custom-backdrop" onClick={() => setShowModal(false)}></div>
                     <div className="modal modal-xl d-block" tabIndex="-1">

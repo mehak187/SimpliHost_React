@@ -7,12 +7,8 @@ function CommonHero({ title, description, imgSrc, imgAlt }) {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="">
-              <h1 className="fw-bold">
-                {title}
-              </h1>
-              <p className="mb-0 comm-para">
-                {description}
-              </p>
+              <h1 className="fw-bold">{title}</h1>
+              <p className="mb-0 comm-para">{description}</p>
             </div>
           </div>
           <div className="col-lg-6 col-xl-5 offset-xl-1 d-lg-block d-none">

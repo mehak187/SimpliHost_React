@@ -31,7 +31,7 @@ function DetailsFiles() {
       File: "#",
     },
   ];
- 
+
   return (
     <div>
       <div className="table-responsive default-table mt-3">
@@ -49,21 +49,21 @@ function DetailsFiles() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black text-nowrap">{data.Name}</td>
                 <td className="small text-black">
-                  <Link to={data.File} target="_blank" className="d-flex text-decoration-none align-items-center">
-                    <img
-                      src={file}
-                      alt="property-img"
-                      className=" me-2 "
-                    />
+                  <Link
+                    to={data.File}
+                    target="_blank"
+                    className="d-flex text-decoration-none align-items-center"
+                  >
+                    <img src={file} alt="property-img" className=" me-2 " />
                   </Link>
                 </td>
                 <td className="small text-black">
-                  <Link to={data.URL} target="_blank" className="d-flex text-decoration-none align-items-center">
-                    <img
-                      src={url}
-                      alt="property-img"
-                      className=" me-2 "
-                    />
+                  <Link
+                    to={data.URL}
+                    target="_blank"
+                    className="d-flex text-decoration-none align-items-center"
+                  >
+                    <img src={url} alt="property-img" className=" me-2 " />
                   </Link>
                 </td>
                 <td className="small text-black">
@@ -88,5 +88,4 @@ function DetailsFiles() {
   );
 }
 
-export default DetailsFiles
-
+export default DetailsFiles;

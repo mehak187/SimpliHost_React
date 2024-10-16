@@ -24,7 +24,7 @@ function OwnerDetailBox() {
             className="rounded-3 text-black text-decoration-none px-3 py-2 edit-bg"
           >
             <span className="small me-2">Edit info</span>
-                      <IoPencil className=" fs-6" />
+            <IoPencil className=" fs-6" />
           </Link>
         </div>
         <div className="row px-3">

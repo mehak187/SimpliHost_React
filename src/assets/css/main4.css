@@ -22,7 +22,7 @@
     line-height: 1.7;
 }
 
-.paratext-color{
+.paratext-color {
     color: rgba(23, 23, 23, 1);
 }
 
@@ -828,11 +828,11 @@
     border: none;
 }
 
-.simplhostnnav-logo{
+.simplhostnnav-logo {
     max-width: 150px;
 }
 
-.dropdownpic-size{
+.dropdownpic-size {
     width: 15px;
     height: 15px;
     display: flex;
@@ -840,7 +840,7 @@
     align-items: center;
 }
 
-.reverse-btn{
+.reverse-btn {
     background-color: var(--blue);
     color: white;
     border: none;
@@ -920,8 +920,8 @@
 @media screen and (max-width:576px) {
     .custom-padd {
         padding: 0 10px
-    }  
-    
+    }
+
     .detail-btn {
         padding: 5px 12px;
         background-color: var(--blue);

@@ -234,7 +234,11 @@ function Feature() {
                   <div key={index} className="col-xl-3 col-lg-4 col-sm-6 mb-3">
                     <div className={`${stat.bgColor} p-3 rounded-4 h-100`}>
                       <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                        <img src={stat.imgSrc} alt="pic" className="vacation-cardPic" />
+                        <img
+                          src={stat.imgSrc}
+                          alt="pic"
+                          className="vacation-cardPic"
+                        />
                       </div>
                       <div className="mt-3 text-white">
                         <h5 className="fw-semi">{stat.title}</h5>
@@ -276,7 +280,10 @@ function Feature() {
               </h2>
               <div className="row">
                 {potentials.map((potential, index) => (
-                  <div key={index} className="col-md-4 col-sm-6 mb-4 position-relative potential-box">
+                  <div
+                    key={index}
+                    className="col-md-4 col-sm-6 mb-4 position-relative potential-box"
+                  >
                     <div className="trans-shadow p-4 rounded-4 h-100">
                       <h5 className="fw-semi">{potential.title}</h5>
                       <p className="mb-0">{potential.description}</p>
@@ -305,7 +312,8 @@ function Feature() {
                     <p className="mb-0">{item.description}</p>
                   </div>
                   <div className="mt-auto">
-                    <Link href="#"
+                    <Link
+                      href="#"
                       type="button"
                       className="border-0 text-decoration-none explore-btn mt-2 rounded-5 leran-btn opacity-hover fw-semi"
                     >

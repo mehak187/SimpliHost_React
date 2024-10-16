@@ -64,6 +64,7 @@ body {
 .text-blue {
     color: var(--blue);
 }
+
 .text-blue2 {
     color: #303C6C;
 }
@@ -137,6 +138,7 @@ textarea {
 .opacity-hover:hover {
     opacity: 0.8;
 }
+
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -359,14 +361,17 @@ template
     .min-sidebar .logodiv {
         padding: 0 12px;
     }
+
     .sidebar-adjuster {
         right: -17px;
         top: 16px;
         width: 30px;
     }
+
     .right-bottom {
         padding: 18px 8px;
     }
+
     .right-top {
         padding: 0px 20px;
     }

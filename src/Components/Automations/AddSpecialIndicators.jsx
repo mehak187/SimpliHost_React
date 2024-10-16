@@ -13,7 +13,7 @@ function AddSpecialIndicators() {
               <div className="row">
                 <div className="col-12 mt-3">
                   <label htmlFor="Name" className="fw-semi">
-                  Special Indicator Name
+                    Special Indicator Name
                   </label>
                   <br />
                   <input
@@ -40,7 +40,7 @@ function AddSpecialIndicators() {
                 </div>
                 <div className="col-12 mt-3">
                   <label htmlFor="Trigger" className="fw-semi">
-                  Default Special Instructions
+                    Default Special Instructions
                   </label>
                   <br />
                   <input

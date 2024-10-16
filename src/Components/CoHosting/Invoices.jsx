@@ -73,13 +73,13 @@ function Invoices() {
                   {data.InvoiceNumber}
                 </td>
                 <td className="small text-black">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={data.Owner}
-                    alt="property-img"
-                    className="img-fluid me-2 owner-img"
-                  />
-                  {data.OwnerName}
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Owner}
+                      alt="property-img"
+                      className="img-fluid me-2 owner-img"
+                    />
+                    {data.OwnerName}
                   </div>
                 </td>
                 <td className="small text-black">{data.Amount}</td>

@@ -26,7 +26,6 @@ import QuickFilter from './Common/QuickFilter';
 import { Link } from 'react-router-dom';
 import { BiSolidFileExport } from 'react-icons/bi';
 
-// Reusable StatCard component
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
     <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
@@ -39,7 +38,6 @@ const StatCard = ({ title, value, image }) => (
   </div>
 );
 
-// Reusable RevenueCard component
 const RevenueCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
     <div className="bg-white p-2 rounded-3 shadow d-flex align-items-center justify-content-between border">
