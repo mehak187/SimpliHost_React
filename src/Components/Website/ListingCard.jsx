@@ -100,6 +100,7 @@ const ListingCard = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: false,
                 },
             },
         ],
@@ -108,61 +109,63 @@ const ListingCard = () => {
     return (
         <div className='slides'>
             <Slider {...settings}>
-            {listings.map((listing, index) => (
-                <div className="col-12 mt-4 mx-auto px-4 py-5" key={index}>
-                    <div className="p-3 furnished-shadow rounded-3">
-                        <div className="furnished-siz">
-                            <img src={listing.imageSrc} alt="furnished" className="w-100" />
-                        </div>
-                        <div className="furnishedover-size">
-                            <FaHeart/>
-                        </div>
-                        <div className="d-flex align-items-center mt-3">
-                            <div className="furnished-flower">
-                                <img src={listing.flowerSrc} alt="furnished-flower" className="w-100" />
+                {listings.map((listing, index) => (
+                    <div className="col-12 mt-4 mx-auto px-sm-4 px-2 py-5" key={index}>
+                        <div className="p-3 furnished-shadow rounded-3">
+                            <div className="furnished-siz">
+                                <img src={listing.imageSrc} alt="furnished" className="w-100" />
                             </div>
-                            <p className="mb-0 fs-6 fw-bold ms-2">{listing.title}</p>
-                        </div>
-                        <div className="d-flex align-items-center mt-3">
-                            <div className="">
-                                <img src={locationimg} alt="location" className="w-100" />
+                            <div className="furnishedover-size">
+                                <FaHeart />
                             </div>
-                            <p className="mb-0 light-black ms-2 ex-small">{listing.location}</p>
-                        </div>
-                        <div className="d-flex mt-3 justify-content-between">
-                            <div className="d-flex align-items-center">
-                                <div className="furniture-size">
-                                    <img src={bedimg} alt="Furniture" className="w-100" />
+                            <div className="d-flex align-items-center mt-3">
+                                <div className="furnished-flower">
+                                    <img src={listing.flowerSrc} alt="furnished-flower" className="w-100" />
                                 </div>
-                                <p className="mb-0 fw-bold ms-2">{listing.beds}</p>
+                                <p className="mb-0 fs-6 fw-bold ms-2">{listing.title}</p>
                             </div>
-                            <div className="d-flex align-items-center ms-1">
-                                <div className="furniture-size">
-                                    <img src={furniture2img} alt="Furniture" className="w-100" />
+                            <div className="d-flex align-items-center mt-3">
+                                <div className="">
+                                    <img src={locationimg} alt="location" className="w-100" />
                                 </div>
-                                <p className="mb-0 fw-bold ms-2">{listing.baths}</p>
+                                <p className="mb-0 light-black ms-2 ex-small">{listing.location}</p>
                             </div>
-                            <div className="d-flex align-items-center ms-1">
-                                <div className="furniture-size">
-                                    <img src={carimg} alt="Furniture" className="w-100" />
+                            <div className="d-flex justify-content-between mt-3">
+                                <div className='d-flex align-items-center'>
+                                    <div className="d-flex align-items-center">
+                                        <div className="furniture-size">
+                                            <img src={bedimg} alt="bed" className="sm-img" />
+                                        </div>
+                                        <p className="mb-0 fw-bold ms-2">{listing.beds}</p>
+                                    </div>
+                                    <div className="d-flex align-items-center ms-1">
+                                        <div className="furniture-size">
+                                            <img src={furniture2img} alt="Furniture" className="sm-img" />
+                                        </div>
+                                        <p className="mb-0 fw-bold ms-2">{listing.baths}</p>
+                                    </div>
+                                    <div className="d-flex align-items-center ms-1">
+                                        <div className="furniture-size">
+                                            <img src={carimg} alt="car" className="sm-img" />
+                                        </div>
+                                        <p className="mb-0 fw-bold ms-2">{listing.cars}</p>
+                                    </div>
+                                    <div className="d-flex align-items-center ms-1">
+                                        <div className="furniture-size">
+                                            <img src={furniture4} alt="Furniture" className="sm-img" />
+                                        </div>
+                                        <p className="mb-0 fw-bold ms-2">{listing.garage}</p>
+                                    </div>
                                 </div>
-                                <p className="mb-0 fw-bold ms-2">{listing.cars}</p>
+                                <Link to="" className="detail-btn text-white d-inline-flex align-items-center text-decoration-none">
+                                    Detail
+                                    <img src={listing.detailImageSrc} alt="detail" className='ms-2' />
+                                </Link>
                             </div>
-                            <div className="d-flex align-items-center ms-1">
-                                <div className="furniture-size">
-                                    <img src={furniture4} alt="Furniture" className="w-100" />
-                                </div>
-                                <p className="mb-0 fw-bold ms-2">{listing.garage}</p>
-                            </div>
-                            <Link to="" className="detail-btn d-inline-flex align-items-center text-decoration-none">
-                                Detail
-                                <img src={listing.detailImageSrc} alt="detail" className='ms-2' />
-                            </Link>
                         </div>
                     </div>
-                </div>
-            ))}
-        </Slider>
+                ))}
+            </Slider>
         </div>
     );
 };
