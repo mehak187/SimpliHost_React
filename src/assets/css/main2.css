@@ -336,6 +336,10 @@ input:focus {
     color: rgba(219, 127, 91, 1);
 }
 
+.bg-lred{
+    background-color: #ffb3b3;
+}
+
 .bg-red2 {
     background-color: rgba(193, 53, 21, 0.3);
     color: #C13515;
@@ -634,7 +638,6 @@ input:focus {
         width: calc(50% - 12px);
         margin: 6px 6px;
     }
-
     .shadow-custom {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         border-radius: 12px;
@@ -666,8 +669,11 @@ input:focus {
     .slides .slick-prev img{
         display: none;
     }
-    
     .slides .slick-next img{
         display: none;
+    }
+    .main-tabs .nav-tabs .nav-link {
+        padding: 4px 8px;
+        font-size: 15px;
     }
 }

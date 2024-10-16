@@ -184,7 +184,7 @@ function AddAutomation() {
                     <button className='bg-lgrey border rounded-2 py-2 px-4 w-100 text-dark'>Cancel</button>
                 </div>
                 <div className='ms-sm-2 mt-sm-0 mt-3'>
-                    <button className='bg-blue text-white border-blue w-100 rounded-2 py-2 px-4 '>Create Automation</button>
+                    <button type='submit' className='bg-blue text-white border-blue w-100 rounded-2 py-2 px-4 '>Create Automation</button>
                 </div>
             </div>
         </div>

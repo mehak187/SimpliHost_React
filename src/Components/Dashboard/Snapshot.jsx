@@ -29,7 +29,7 @@ import { BiSolidFileExport } from 'react-icons/bi';
 // Reusable StatCard component
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -42,7 +42,7 @@ const StatCard = ({ title, value, image }) => (
 // Reusable RevenueCard component
 const RevenueCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-    <div className="bg-white p-2 rounded-3 shadow d-flex align-items-center justify-content-between">
+    <div className="bg-white p-2 rounded-3 shadow d-flex align-items-center justify-content-between border">
       <div>
         <p className="mb-0 small">{title}</p>
         <h6 className="fw-semibold fs-4">{value}</h6>
@@ -79,18 +79,18 @@ function Snapshot() {
   return (
     <div>
       <div className="d-sm-flex align-items-center justify-content-between">
-        <div className='d-flex align-items-center'>
+        <div className='d-sm-flex align-items-center'>
           <div>
             <h4 className="fw-semibold">
               Snapshot Dashboard <CiStar />
           </h4>
           </div>
-          <div className='mx-2'>
+          <div className='mx-sm-2'>
             <QuickFilter/>
           </div>
         </div>
-        <div className="dropdown">
-          <button className="bg-white border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div className="dropdown mt-sm-0 mt-2">
+          <button className="bg-white w-100 border py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <GrUpload className="me-2" />Export
           </button>
           <ul className="dropdown-menu">

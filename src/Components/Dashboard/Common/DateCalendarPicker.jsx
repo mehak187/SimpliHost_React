@@ -11,8 +11,8 @@ const DateCalendarPicker = () => {
             <div>
                 <FaCalendarAlt className='bg-lblue text-blue p-2 rounded-3 fs-3'/>
             </div>
-            <div>
-                <Flatpickr className='border-0 ms-2'
+            <div className='w-100'>
+                <Flatpickr className='border-0 ms-2 w-100'
                     value={dateRange}
                     onChange={(date) => setDateRange(date)}
                     options={{
