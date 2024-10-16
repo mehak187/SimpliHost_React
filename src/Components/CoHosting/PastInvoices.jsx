@@ -95,4 +95,4 @@ function PastInvoices() {
   );
 }
 
-export default PastInvoices
+export default PastInvoices;

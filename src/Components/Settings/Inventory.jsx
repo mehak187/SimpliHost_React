@@ -44,7 +44,7 @@ function Inventory() {
                           <option value="20">20</option>
                           <option value="30">30</option>
                         </select>
-                      <img src={info} alt="info" className="img-fluid" />
+                        <img src={info} alt="info" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -59,12 +59,13 @@ function Inventory() {
                         <span className="slider round"></span>
                       </label>
                     </div>
-                   <div className="d-flex align-items-center">
-                   <p className="mb-0 my-lg-0 me-2 d-flex align-items-center text-black me-lg-3 me-0 ps-lg-3">
-                   Allow for Inventory to be scheduled on back-to-back reservations?
-                    </p>
-                    <img src={info} alt="info" className="img-fluid" />
-                   </div>
+                    <div className="d-flex align-items-center">
+                      <p className="mb-0 my-lg-0 me-2 d-flex align-items-center text-black me-lg-3 me-0 ps-lg-3">
+                        Allow for Inventory to be scheduled on back-to-back
+                        reservations?
+                      </p>
+                      <img src={info} alt="info" className="img-fluid" />
+                    </div>
                   </div>
                 </div>
               </div>

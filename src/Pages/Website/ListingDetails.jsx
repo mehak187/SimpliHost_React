@@ -10,11 +10,7 @@ function ListingDetails() {
           <div className="d-sm-flex d-row justify-content-between align-items-center">
             <div className="d-flex align-items-center">
               <div className="furnished-flower">
-                <img
-                  src={futnished}
-                  alt="Flower"
-                  className="w-100"
-                />
+                <img src={futnished} alt="Flower" className="w-100" />
               </div>
               <div className="ms-3">
                 <p className="mb-0 light-black">Listed By:</p>

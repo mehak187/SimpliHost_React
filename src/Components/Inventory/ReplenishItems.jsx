@@ -27,7 +27,6 @@ function ReplenishItems() {
           Status: "Out of Stock",
           Tracking: "High/Med/Low",
         },
-        // ... more items
       ];
     
       const [counts, setCounts] = useState(

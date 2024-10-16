@@ -46,9 +46,9 @@ function TaskswithAutomation() {
       />
       <WhySimplihost />
       <Sliderr />
-      <FaqSection/>
-      <CheckoutFeatures/>
-      <GotbackSection/>
+      <FaqSection />
+      <CheckoutFeatures />
+      <GotbackSection />
     </div>
   );
 }

@@ -33,7 +33,6 @@ function Properties() {
       Properties: property,
       DateCreated: "08/09/2024",
     },
-    
   ];
   return (
     <div>
@@ -87,7 +86,7 @@ function Properties() {
                         <p className="mb-0 me-2 text-black">
                           Auto Schedule Maintenance Items
                         </p>
-                        <img src={info} alt="info" className="img-fluid"/>
+                        <img src={info} alt="info" className="img-fluid" />
                       </div>
                     </div>
                   </div>
@@ -113,7 +112,7 @@ function Properties() {
       </div>
       <div>
         <div className="d-flex flex-wrap align-items-center justify-content-between mt-4">
-            <h2 className="fs-5 my-2 me-3 text-black fw-bold ">Property Tags</h2>
+          <h2 className="fs-5 my-2 me-3 text-black fw-bold ">Property Tags</h2>
           <div className="d-flex flex-wrap">
             <div className="border-grey me-3  my-2 h-100 d-flex custom-rounded">
               <input
@@ -143,17 +142,19 @@ function Properties() {
             <thead className="">
               <tr className="align-middle border-bottom-0">
                 <th className="small fw-semi text-black text-nowrap">Name</th>
-                <th className="small fw-semi text-black text-nowrap">Properties</th>
-                <th className="small fw-semi text-black text-nowrap">Date Created</th>
+                <th className="small fw-semi text-black text-nowrap">
+                  Properties
+                </th>
+                <th className="small fw-semi text-black text-nowrap">
+                  Date Created
+                </th>
                 <th className="small fw-semi text-black text-nowrap">Action</th>
               </tr>
             </thead>
             <tbody>
               {DataCollection.map((data) => (
                 <tr key={data.id} className="align-middle">
-                    <td className="small text-black text-nowrap">
-                    {data.Name}
-                  </td>
+                  <td className="small text-black text-nowrap">{data.Name}</td>
                   <td className="small text-black">
                     <div className="d-flex align-items-center justify-content-center">
                       <img
@@ -168,9 +169,9 @@ function Properties() {
                   </td>
                   <td className="small text-black">
                     <div className="d-flex">
-                    <Link to="#" className="mx-1 tblicon">
-                      <TbCopy className="fs-5"/>
-                    </Link>
+                      <Link to="#" className="mx-1 tblicon">
+                        <TbCopy className="fs-5" />
+                      </Link>
                       <Link to="/manager_detail" className="mx-1 tblicon">
                         <IoPencil className="fs-5" />
                       </Link>

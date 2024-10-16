@@ -70,7 +70,7 @@ function GuestCodes() {
   };
   return (
     <div>
-      <FilterRow  searchName="Guest Code" btnName="Add Guest Code" btnLink="#"/>
+      <FilterRow searchName="Guest Code" btnName="Add Guest Code" btnLink="#" />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
@@ -111,14 +111,14 @@ function GuestCodes() {
                   {data.status}
                 </td>
                 <td className="small text-black">
-                 <div className="d-flex align-items-center">
-                 <img
-                    src={data.Property}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
-                  {data.PropertyName}
-                 </div>
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Property}
+                      alt="property-img"
+                      className="img-fluid me-2 property-img"
+                    />
+                    {data.PropertyName}
+                  </div>
                 </td>
                 <td className="small fw-semi">
                   <div className="d-flex align-items-center">

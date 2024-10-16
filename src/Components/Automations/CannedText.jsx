@@ -37,49 +37,49 @@ function CannedText() {
   ];
   return (
     <div>
-    <FilterRow searchName="automation" btnName="Add Canned Text" btnLink="/admin/add-canned-text"/>
-    <div className="table-responsive default-table mt-3">
-      <table className="table">
-        <thead className="">
-          <tr className="align-middle">
-            <th className="small fw-semi text-black text-nowrap">Name</th>
-            <th className="small fw-semi text-black text-nowrap">Shortcut</th>
-            <th className="small fw-semi text-black text-nowrap">Message</th>
-            <th className="small fw-semi text-black text-nowrap">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {DataCollection.map((data) => (
-            <tr key={data.id} className="align-middle">
-              <td className="small text-black text-nowrap">
-                {data.Name}
-              </td>
-              <td className="small text-black text-nowrap">
-                {data.Shortcut}
-              </td>
-              <td className="small text-black text-nowrap">
-                {data.Message}
-              </td>
-              <td className="small text-black">
-                <div className="d-flex justify-content-center">
-                <Link to="#" className="mx-1 tblicon">
-                      <TbCopy className="fs-5"/>
-                    </Link>
-                  <Link to="#" className="mx-1 tblicon">
-                    <IoPencil className=" fs-5" />
-                  </Link>
-                  <Link to="#" className="mx-1 tblicon">
-                    <HiTrash className=" fs-5" />
-                  </Link>
-                </div>
-              </td>
+      <FilterRow
+        searchName="automation"
+        btnName="Add Canned Text"
+        btnLink="/admin/add-canned-text"
+      />
+      <div className="table-responsive default-table mt-3">
+        <table className="table">
+          <thead className="">
+            <tr className="align-middle">
+              <th className="small fw-semi text-black text-nowrap">Name</th>
+              <th className="small fw-semi text-black text-nowrap">Shortcut</th>
+              <th className="small fw-semi text-black text-nowrap">Message</th>
+              <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {DataCollection.map((data) => (
+              <tr key={data.id} className="align-middle">
+                <td className="small text-black text-nowrap">{data.Name}</td>
+                <td className="small text-black text-nowrap">
+                  {data.Shortcut}
+                </td>
+                <td className="small text-black text-nowrap">{data.Message}</td>
+                <td className="small text-black">
+                  <div className="d-flex justify-content-center">
+                    <Link to="#" className="mx-1 tblicon">
+                      <TbCopy className="fs-5" />
+                    </Link>
+                    <Link to="#" className="mx-1 tblicon">
+                      <IoPencil className=" fs-5" />
+                    </Link>
+                    <Link to="#" className="mx-1 tblicon">
+                      <HiTrash className=" fs-5" />
+                    </Link>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
-export default CannedText
+export default CannedText;

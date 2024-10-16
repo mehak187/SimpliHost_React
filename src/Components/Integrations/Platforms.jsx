@@ -12,41 +12,40 @@ function Platforms() {
   const DataCollection = [
     {
       id: 1,
-      Platform:platform,
+      Platform: platform,
       Email: "bethexample@gmail.com",
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Platform:platform,
+      Platform: platform,
       Email: "bethexample@gmail.com",
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Platform:platform,
+      Platform: platform,
       Email: "bethexample@gmail.com",
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Platform:platform,
+      Platform: platform,
       Email: "bethexample@gmail.com",
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
-  
   ];
   return (
     <div>
@@ -55,11 +54,9 @@ function Platforms() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
+              <th className="small fw-semi text-black text-nowrap">Platform</th>
               <th className="small fw-semi text-black text-nowrap">
-               Platform
-              </th>
-              <th className="small fw-semi text-black text-nowrap">
-               Email Address
+                Email Address
               </th>
               <th className="small fw-semi text-black text-nowrap">
                 Name on Account
@@ -67,7 +64,9 @@ function Platforms() {
               <th className="small fw-semi text-black text-nowrap">
                 Number of Listings
               </th>
-              <th className="small fw-semi text-black text-nowrap">Properties</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Properties
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
@@ -75,34 +74,38 @@ function Platforms() {
             {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={data.Platform}
-                    alt="property-img"
-                    className="img-fluid me-2 platform-img"
-                  />
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Platform}
+                      alt="property-img"
+                      className="img-fluid me-2 platform-img"
+                    />
                   </div>
                 </td>
                 <td className="small text-black">{data.Email}</td>
                 <td className="small text-black">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={data.Owner}
-                    alt="property-img"
-                    className="img-fluid me-2 owner-img"
-                  />
-                  {data.OwnerName}
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Owner}
+                      alt="property-img"
+                      className="img-fluid me-2 owner-img"
+                    />
+                    {data.OwnerName}
                   </div>
                 </td>
-                
+
                 <td className="small text-black">{data.Listings}</td>
                 <td className="small text-black">
-                <div className="d-flex align-items-center justify-content-center">{data.property}
+                  <div className="d-flex align-items-center justify-content-center">
+                    {data.property}
                   </div>
                 </td>
                 <td className="small text-black">
                   <div className="d-flex justify-content-center">
-                    <Link to="/admin/co-hosting-details" className="mx-1 tblicon">
+                    <Link
+                      to="/admin/co-hosting-details"
+                      className="mx-1 tblicon"
+                    >
                       <FaEye className="fs-5" />
                     </Link>
                     <Link to="/admin/edit-inventory" className="mx-1 tblicon">
@@ -122,4 +125,4 @@ function Platforms() {
   );
 }
 
-export default Platforms
+export default Platforms;

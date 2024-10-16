@@ -29,17 +29,25 @@ function Subscription() {
       Properties: property,
     },
   ];
-  
+
   return (
     <div className="h-100 d-flex flex-column">
-      <h2 className="fs-5 mb-0 text-black fw-semi mt-3">Subscription Setting</h2>
+      <h2 className="fs-5 mb-0 text-black fw-semi mt-3">
+        Subscription Setting
+      </h2>
       <div className="table-responsive default-table mt-4">
         <table className="table w-100">
           <thead className="w-100">
             <tr className="align-middle border-bottom-0">
-              <th className="small fw-semi text-black text-nowrap">Current Plan</th>
-              <th className="small fw-semi text-black text-nowrap">Current Users</th>
-              <th className="small fw-semi text-black text-nowrap">Total Active Properties</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Current Plan
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Current Users
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Total Active Properties
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -53,24 +61,28 @@ function Subscription() {
                 </td>
                 <td className="small text-black">
                   <div className="d-flex align-items-center">
-                  <img
-                    src={data.Properties}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
+                    <img
+                      src={data.Properties}
+                      alt="property-img"
+                      className="img-fluid me-2 property-img"
+                    />
                   </div>
                 </td>
-              
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <div className="mt-4">
-      <Link to="#" className='graybutton text-decoration-none rounded-2 me-4 text-black'>Cancel Plan</Link>
+        <Link
+          to="#"
+          className="graybutton text-decoration-none rounded-2 me-4 text-black"
+        >
+          Cancel Plan
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default Subscription
+export default Subscription;

@@ -13,37 +13,41 @@ const features = [
     id: 1,
     image: cf4,
     title: "Inventory Management",
-    description: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
+    description:
+      "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
     buttonColor: "bg-orange",
     cardColor: "bg-exxOrange",
-    link:"/inventory-management"
+    link: "/inventory-management",
   },
   {
     id: 2,
     image: cf2,
     title: "Checklists for Cleaning Operations",
-    description: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
+    description:
+      "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
     buttonColor: "bg-yellow",
     cardColor: "bg-exxYellow",
-    link:"/task-and-checklist"
+    link: "/task-and-checklist",
   },
   {
     id: 3,
     image: cf1,
     title: "Smart Devices Integration",
-    description: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
+    description:
+      "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests and more based on easy-to-create rules.",
     buttonColor: "bg-dgreen",
     cardColor: "bg-exxGreen",
-    link:"/smart-devices"
+    link: "/smart-devices",
   },
   {
     id: 4,
     image: cf,
     title: "Unified Inbox",
-    description: "A single destination for guest communication synched with your listing data across all channels.",
+    description:
+      "A single destination for guest communication synched with your listing data across all channels.",
     buttonColor: "bg-blue",
     cardColor: "bg-exxBlue",
-    link:"/unified-inbox"
+    link: "/unified-inbox",
   },
 ];
 
@@ -73,17 +77,27 @@ function CheckoutFeatures() {
   return (
     <section className="commCards-sec py-5 bg-exxxSky">
       <div className="container">
-        <h2 className="fw-bold text-center mb-5">Check out these other features</h2>
+        <h2 className="fw-bold text-center mb-5">
+          Check out these other features
+        </h2>
         <Slider {...sliderSettings}>
           {features.map((feature) => (
             <div className="px-3" key={feature.id}>
-              <div className={`d-flex flex-column align-items-stretch ${feature.cardColor} p-4 rounded-5 h-100 shadow-cus`}>
-                <div className={`${feature.buttonColor} d-flex justify-content-center mx-auto mx-sm-0 align-items-center p-3 rounded-3 coreF-card1 mb-4`}>
+              <div
+                className={`d-flex flex-column align-items-stretch ${feature.cardColor} p-4 rounded-5 h-100 shadow-cus`}
+              >
+                <div
+                  className={`${feature.buttonColor} d-flex justify-content-center mx-auto mx-sm-0 align-items-center p-3 rounded-3 coreF-card1 mb-4`}
+                >
                   <img src={feature.image} alt={feature.title} />
                 </div>
                 <div className="flex-grow-1 mb-5">
-                  <h5 className="mb-0 text-center text-sm-start fixed-heading fw-semi">{feature.title}</h5>
-                  <p className="mb-0 mt-1 text-center text-sm-start fixed-text">{feature.description}</p>
+                  <h5 className="mb-0 text-center text-sm-start fixed-heading fw-semi">
+                    {feature.title}
+                  </h5>
+                  <p className="mb-0 mt-1 text-center text-sm-start fixed-text">
+                    {feature.description}
+                  </p>
                 </div>
                 <div className="text-center mt-auto">
                   <Link

@@ -13,49 +13,49 @@ function Amenity() {
       id: 1,
       ChecklistName: "Green Back Home Cleaning",
       Type: "Cleaning",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
     {
       id: 2,
       ChecklistName: "Green Back Home Inspection",
       Type: "Inspection",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
     {
       id: 3,
       ChecklistName: "Green Back Home Maintenance",
       Type: "Maintenance",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
     {
       id: 4,
       ChecklistName: "Green Back Home Pet",
       Type: "Pet",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
     {
       id: 5,
       ChecklistName: "Green Back Home Amenity",
       Type: "Amenity",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
     {
       id: 6,
       ChecklistName: "Green Back Home Seasonal",
       Type: "Seasonal",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
     {
       id: 7,
       ChecklistName: "Green Back Home Admin",
       Type: "Admin",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       NoOfItems: "30",
     },
   ];
@@ -67,10 +67,16 @@ function Amenity() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Checklist Name</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Checklist Name
+              </th>
               <th className="small fw-semi text-black text-nowrap">Type</th>
-              <th className="small fw-semi text-black text-nowrap">Properties</th>
-              <th className="small fw-semi text-black text-nowrap">Number of Items</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Properties
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Number of Items
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
@@ -84,16 +90,16 @@ function Amenity() {
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="#" className="mx-1 tblicon">
-                      <TbCopy className="fs-5"/>
+                      <TbCopy className="fs-5" />
                     </Link>
                     <Link to="" className="mx-1 tblicon">
-                      <IoPencil className="fs-5"/>
+                      <IoPencil className="fs-5" />
                     </Link>
                     <Link to="" className="mx-1 tblicon">
-                      <HiFolderDownload className="fs-5"/>
+                      <HiFolderDownload className="fs-5" />
                     </Link>
                     <Link to="" className="mx-1 tblicon">
-                      <HiTrash className="fs-5"/>
+                      <HiTrash className="fs-5" />
                     </Link>
                   </div>
                 </td>

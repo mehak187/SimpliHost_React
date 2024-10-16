@@ -1,4 +1,3 @@
-// LineChart.js
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import {
@@ -32,7 +31,7 @@ const LineGraph = () => {
         fill: true,
         backgroundColor: '#fff3f3',
         borderColor: '#FD6363',
-        tension: 0, // Adjust this value to control the curve
+        tension: 0,
       },
     ],
   };
@@ -56,12 +55,12 @@ const LineGraph = () => {
     scales: {
       x: {
         grid: {
-          display: false, // Hides the X grid lines
+          display: false,
         },
       },
       y: {
         grid: {
-          display: true, // Hides the Y grid lines
+          display: true,
         },
         beginAtZero: true,
       },

@@ -75,7 +75,6 @@ function Preferences() {
                   </select>
                 </div>
               </div>
-             
             </div>
           </div>
           <h2 className="fs-6 mt-4 bg-white mb-0 text-black py-4 setting-shadow  px-3 rounded-3 text-blue2 fw-bold">
@@ -188,206 +187,247 @@ function Preferences() {
               <div className="d-flex flex-wrap align-items-center">
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Select All</p>
                 </div>
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Pricing</p>
                 </div>
-                
+
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  defaultChecked/>
+                    <input type="checkbox" defaultChecked />
                   </div>
                   <p className="mb-0">Reservations</p>
                 </div>
-                
+
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Cleaning</p>
                 </div>
-                
+
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Inspections</p>
                 </div>
-                
+
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Maintenance</p>
                 </div>
-                
+
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Admin</p>
                 </div>
-                
+
                 <div className="d-flex me-4 my-2 align-items-center">
                   <div className="checkbox-wrapper-13 me-2">
-                    <input type="checkbox"  />
+                    <input type="checkbox" />
                   </div>
                   <p className="mb-0">Locks</p>
                 </div>
-                
               </div>
               <div className="row mt-4">
                 <div className="col-xxl-3 my-2 col-xl-4 col-lg-6">
                   <div className="border border-1 px-2 py-3 setting-bg rounded-3 filter-det">
-                  <div className="filter-det-box px-2">
-                    <h6 className="fs-6 fw-semi text-blue">Date</h6>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Today</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xxl-3 my-2 col-xl-4 col-lg-6">
-                  <div className="border border-1 px-2 py-3 setting-bg rounded-3 filter-det">
-                  <div className="filter-det-box px-2">
-                    <h6 className="fs-6 fw-semi text-blue">Property Group</h6>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Owner # 1 Group</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-                <div className="col-xxl-3 my-2 col-xl-4 col-lg-6">
-                  <div className="border border-1 px-2 py-3 setting-bg rounded-3 filter-det">
-                  <div className="filter-det-box px-2">
-                    <h6 className="fs-6 fw-semi text-blue">Property</h6>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">401 N Garden</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">401 N Garden</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">401 N Garden</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
+                    <div className="filter-det-box px-2">
+                      <h6 className="fs-6 fw-semi text-blue">Date</h6>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">Today</p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-xxl-3 my-2 col-xl-4 col-lg-6">
                   <div className="border border-1 px-2 py-3 setting-bg rounded-3 filter-det">
                     <div className="filter-det-box px-2">
-                    <h6 className="fs-6 fw-semi text-blue">City</h6>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
+                      <h6 className="fs-6 fw-semi text-blue">Property Group</h6>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Owner # 1 Group
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
                     </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
+                  </div>
+                </div>
+                <div className="col-xxl-3 my-2 col-xl-4 col-lg-6">
+                  <div className="border border-1 px-2 py-3 setting-bg rounded-3 filter-det">
+                    <div className="filter-det-box px-2">
+                      <h6 className="fs-6 fw-semi text-blue">Property</h6>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          401 N Garden
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          401 N Garden
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          401 N Garden
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
                     </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
-                    <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
-                      <p className="mb-0 text-center text-sm-center">Lake City</p>
-                      <p className="mb-0 text-center text-sm-center">01</p>
-                    </div>
+                  </div>
+                </div>
+                <div className="col-xxl-3 my-2 col-xl-4 col-lg-6">
+                  <div className="border border-1 px-2 py-3 setting-bg rounded-3 filter-det">
+                    <div className="filter-det-box px-2">
+                      <h6 className="fs-6 fw-semi text-blue">City</h6>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
+                      <div className="border my-2 py-2 px-3 border-1 rounded-3 d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p className="mb-0 text-center text-sm-center">
+                          Lake City
+                        </p>
+                        <p className="mb-0 text-center text-sm-center">01</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -395,19 +435,19 @@ function Preferences() {
             </div>
           </div>
           <div className="col-12 mt-5">
-                <div className="d-flex align-items-center">
-                  <input
-                    type="reset"
-                    className="graybutton rounded-2 me-4 text-black"
-                    value="Cancel"
-                  />
-                  <input
-                    type="submit"
-                    className="bluebutton rounded-2 text-white"
-                    value="Save"
-                  />
-                </div>
-              </div>
+            <div className="d-flex align-items-center">
+              <input
+                type="reset"
+                className="graybutton rounded-2 me-4 text-black"
+                value="Cancel"
+              />
+              <input
+                type="submit"
+                className="bluebutton rounded-2 text-white"
+                value="Save"
+              />
+            </div>
+          </div>
         </form>
       </div>
     </div>

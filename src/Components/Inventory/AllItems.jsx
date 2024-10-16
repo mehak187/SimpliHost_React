@@ -12,7 +12,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -21,7 +21,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -30,7 +30,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -39,7 +39,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -48,7 +48,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -57,7 +57,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -66,7 +66,7 @@ function AllItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Tracking: "High/Med/Low",
     },
@@ -79,10 +79,16 @@ function AllItems() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Item Name</th>
-              <th className="small fw-semi text-black text-nowrap">Description</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Item Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Description
+              </th>
               <th className="small fw-semi text-black text-nowrap">Type</th>
-              <th className="small fw-semi text-black text-nowrap">Properties</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Properties
+              </th>
               <th className="small fw-semi text-black text-nowrap">Size</th>
               <th className="small fw-semi text-black text-nowrap">Tracking</th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
@@ -100,10 +106,10 @@ function AllItems() {
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="/admin/edit-inventory" className="mx-1 tblicon">
-                      <IoPencil  className=" fs-5"/>
+                      <IoPencil className=" fs-5" />
                     </Link>
                     <Link to="" className="mx-1 tblicon">
-                      <HiTrash  className=" fs-5"/>
+                      <HiTrash className=" fs-5" />
                     </Link>
                   </div>
                 </td>
@@ -117,8 +123,3 @@ function AllItems() {
 }
 
 export default AllItems;
-
-
-
-
-

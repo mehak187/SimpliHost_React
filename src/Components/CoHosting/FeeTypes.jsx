@@ -16,7 +16,7 @@ function FeeTypes() {
       FeeType: "Simple",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: <GroupImage/>,
+      Property: <GroupImage />,
     },
     {
       id: 1,
@@ -24,7 +24,7 @@ function FeeTypes() {
       FeeType: "Simple",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: <GroupImage/>,
+      Property: <GroupImage />,
     },
     {
       id: 1,
@@ -32,7 +32,7 @@ function FeeTypes() {
       FeeType: "Simple",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: <GroupImage/>,
+      Property: <GroupImage />,
     },
   ];
   const getStatusClass = (status) => {
@@ -63,18 +63,16 @@ function FeeTypes() {
                 <td className="small text-black text-nowrap">{data.FeeName}</td>
                 <td className="small text-black text-nowrap">{data.FeeType}</td>
                 <td className="small text-black">
-                <div className="d-flex align-items-center">
-                <img
-                    src={data.Owner}
-                    alt="property-img"
-                    className="img-fluid me-2 owner-img"
-                  />
-                  {data.OwnerName}
-                </div>
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Owner}
+                      alt="property-img"
+                      className="img-fluid me-2 owner-img"
+                    />
+                    {data.OwnerName}
+                  </div>
                 </td>
-                <td className="small text-black">
-                  {data.Property}
-                </td>
+                <td className="small text-black">{data.Property}</td>
                 <td className="small text-black">
                   <div className="d-flex justify-content-center">
                     <Link to="#" className="mx-1 tblicon">

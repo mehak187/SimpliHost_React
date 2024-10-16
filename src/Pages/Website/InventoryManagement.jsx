@@ -47,9 +47,9 @@ function InventoryManagement() {
       />
       <WhySimplihost />
       <Sliderr />
-      <FaqSection/>
-      <CheckoutFeatures/>
-      <GotbackSection/>
+      <FaqSection />
+      <CheckoutFeatures />
+      <GotbackSection />
     </div>
   );
 }

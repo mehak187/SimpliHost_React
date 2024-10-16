@@ -49,13 +49,13 @@ function History() {
   const getStatusClass = (status) => {
     switch (status) {
       case "Not Started":
-        return "text-primary"; // Blue for Not Started
+        return "text-primary";
       case "In Progress":
-        return "text-warning"; // Yellow for In Progress
+        return "text-warning";
       case "Overdue":
-        return "text-danger"; // Red for Overdue
+        return "text-danger";
       case "Completed":
-        return "text-success"; // Green for Completed
+        return "text-success";
       default:
         return "";
     }
@@ -68,11 +68,19 @@ function History() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Task Name</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Task Name
+              </th>
               <th className="small fw-semi text-black text-nowrap">Property</th>
-              <th className="small fw-semi text-black text-nowrap">Task Type</th>
-              <th className="small fw-semi text-black text-nowrap">Assigned To</th>
-              <th className="small fw-semi text-black text-nowrap">Completed Date</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Task Type
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Assigned To
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Completed Date
+              </th>
               <th className="small fw-semi text-black text-nowrap">Status</th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
@@ -82,7 +90,9 @@ function History() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.taskname}</td>
                 <td className="small text-black">{data.property}</td>
-                <td className="small text-black text-nowrap">{data.tasktype}</td>
+                <td className="small text-black text-nowrap">
+                  {data.tasktype}
+                </td>
                 <td className="small text-black">{data.assignedTo}</td>
                 <td className="small text-black">{data.completedDate}</td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>
@@ -91,7 +101,7 @@ function History() {
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="#" className="mx-1 tblicon">
-                     <img src={action} alt="action" className="img-fluid"/>
+                      <img src={action} alt="action" className="img-fluid" />
                     </Link>
                   </div>
                 </td>
@@ -104,4 +114,4 @@ function History() {
   );
 }
 
-export default History
+export default History;

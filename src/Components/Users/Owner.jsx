@@ -10,69 +10,69 @@ function Owner() {
   const DataCollection = [
     {
       id: 1,
-      Owner:owner,
+      Owner: owner,
       FirstName: "John",
       LastName: "Doe",
       PrimaryRole: "Owner",
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Active",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Owner:owner,
+      Owner: owner,
       FirstName: "John",
       LastName: "Doe",
       PrimaryRole: "Owner",
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Active",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Owner:owner,
+      Owner: owner,
       FirstName: "John",
       LastName: "Doe",
       PrimaryRole: "Owner",
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Deleted",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Owner:owner,
+      Owner: owner,
       FirstName: "John",
       LastName: "Doe",
       PrimaryRole: "Owner",
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Inactive",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
-      Owner:owner,
+      Owner: owner,
       FirstName: "John",
       LastName: "Doe",
       PrimaryRole: "Owner",
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Deleted",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
   ];
 
   const getStatusClass = (status) => {
     switch (status) {
       case "Inactive":
-        return "text-warning"; // Yellow for In Inactive
+        return "text-warning";
       case "Deleted":
-        return "text-danger"; // Red for Deleted
+        return "text-danger";
       case "Active":
-        return "text-success"; // Green for Active
+        return "text-success";
       default:
         return "";
     }
@@ -85,10 +85,18 @@ function Owner() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">First Name</th>
-              <th className="small fw-semi text-black text-nowrap">Last Name</th>
-              <th className="small fw-semi text-black text-nowrap">Primary Role</th>
-              <th className="small fw-semi text-black text-nowrap">Phone Number</th>
+              <th className="small fw-semi text-black text-nowrap">
+                First Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Last Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Primary Role
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Phone Number
+              </th>
               <th className="small fw-semi text-black text-nowrap">Email</th>
               <th className="small fw-semi text-black text-nowrap">Status</th>
               <th className="small fw-semi text-black text-nowrap">Property</th>
@@ -107,19 +115,26 @@ function Owner() {
                   {data.FirstName}
                 </td>
                 <td className="small text-black">{data.LastName}</td>
-                <td className="small text-black text-nowrap">{data.PrimaryRole}</td>
+                <td className="small text-black text-nowrap">
+                  {data.PrimaryRole}
+                </td>
                 <td className="small text-black">{data.PhoneNumber}</td>
                 <td className="small text-black">{data.Email}</td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>
                   {data.status}
-                </td>                <td className="small text-black"><div className="d-flex align-items-center justify-content-center">{data.property}</div></td>
+                </td>{" "}
+                <td className="small text-black">
+                  <div className="d-flex align-items-center justify-content-center">
+                    {data.property}
+                  </div>
+                </td>
                 <td className="small text-black">
                   <div className="d-flex justify-content-center">
                     <Link to="/admin/edit-inventory" className="mx-1 tblicon">
-                      <IoPencil  className=" fs-5"/>
+                      <IoPencil className=" fs-5" />
                     </Link>
                     <Link to="" className="mx-1 tblicon">
-                      <HiTrash  className=" fs-5"/>
+                      <HiTrash className=" fs-5" />
                     </Link>
                   </div>
                 </td>
@@ -133,10 +148,3 @@ function Owner() {
 }
 
 export default Owner;
-
-
-
-
-
-
-

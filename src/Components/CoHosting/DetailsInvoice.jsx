@@ -16,26 +16,26 @@ function DetailsInvoice() {
       status: "Open",
     },
     {
-        id: 1,
-        Properties: Property,
-        FeeType: "123 456 789",
-        Balance: "$3,000.00",
-        status: "Paid",
-      },
-      {
-        id: 1,
-        Properties: Property,
-        FeeType: "123 456 789",
-        Balance: "$3,000.00",
-        status: "Overdue",
-      },
-      {
-        id: 1,
-        Properties: Property,
-        FeeType: "123 456 789",
-        Balance: "$3,000.00",
-        status: "Open",
-      },
+      id: 1,
+      Properties: Property,
+      FeeType: "123 456 789",
+      Balance: "$3,000.00",
+      status: "Paid",
+    },
+    {
+      id: 1,
+      Properties: Property,
+      FeeType: "123 456 789",
+      Balance: "$3,000.00",
+      status: "Overdue",
+    },
+    {
+      id: 1,
+      Properties: Property,
+      FeeType: "123 456 789",
+      Balance: "$3,000.00",
+      status: "Open",
+    },
   ];
   const getStatusClass = (status) => {
     switch (status) {
@@ -49,12 +49,18 @@ function DetailsInvoice() {
   };
   return (
     <div>
-      <FilterRow searchName="Invoice" btnName="Create Invoice" btnLink="/admin/add-invoice" />
+      <FilterRow
+        searchName="Invoice"
+        btnName="Create Invoice"
+        btnLink="/admin/add-invoice"
+      />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Properties</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Properties
+              </th>
               <th className="small fw-semi text-black text-nowrap">Fee Type</th>
               <th className="small fw-semi text-black text-nowrap">Balance</th>
               <th className="small fw-semi text-black text-nowrap">Status</th>
@@ -65,7 +71,7 @@ function DetailsInvoice() {
             {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
                 <td className="small text-black text-nowrap">
-                <img
+                  <img
                     src={data.Properties}
                     alt="property-img"
                     className="img-fluid me-2 property-img"
@@ -102,4 +108,3 @@ function DetailsInvoice() {
 }
 
 export default DetailsInvoice;
-

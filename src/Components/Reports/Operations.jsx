@@ -42,7 +42,6 @@ function Operations() {
     },
   ];
 
-
   return (
     <div>
       <FilterRow />
@@ -50,11 +49,21 @@ function Operations() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Report Name</th>
-              <th className="small fw-semi text-black text-nowrap">Report Type</th>
-              <th className="small fw-semi text-black text-nowrap">Percentage</th>
-              <th className="small fw-semi text-black text-nowrap">Auto Send Frequency</th>
-              <th className="small fw-semi text-black text-nowrap">Collected by</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Report Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Report Type
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Percentage
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Auto Send Frequency
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Collected by
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
@@ -63,7 +72,9 @@ function Operations() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.ReportName}</td>
                 <td className="small text-black">{data.ReportType}</td>
-                <td className="small text-black text-nowrap">{data.Percentage}</td>
+                <td className="small text-black text-nowrap">
+                  {data.Percentage}
+                </td>
                 <td className="small text-black">{data.ASFrequency}</td>
                 <td className="small text-black">{data.Collectedby}</td>
                 <td className="small text-black">
@@ -92,5 +103,3 @@ function Operations() {
 }
 
 export default Operations;
-
-
