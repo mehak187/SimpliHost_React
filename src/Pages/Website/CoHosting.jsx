@@ -1,18 +1,18 @@
 import React from "react";
-import CommonHero from "./CommonHero";
+import CommonHero from "../../Components/Website/CommonHero";
 import madness1 from "../../assets/img/invoice-p1.svg";
 import invoice from "../../assets/img/invoice-p1.png";
 import sChargehero from "../../assets/img/sChargehero.svg";
 import automationtic from "../../assets/img/automation-tic.svg";
-import CommonMid from "./CommonMid";
-import WhySimplihost from "./WhySimplihost";
-import Sliderr from "./Sliderr";
-import GuestSection from "./GuestSection";
-import FaqSection from "./FaqSection";
-import CheckoutFeatures from "./CheckoutFeatures";
-import GotbackSection from "./GotbackSection";
+import CommonMid from "../../Components/Website/CommonMid";
+import WhySimplihost from "../../Components/Website/WhySimplihost";
+import Sliderr from "../../Components/Website/Sliderr";
+import GuestSection from "../../Components/Website/GuestSection";
+import FaqSection from "../../Components/Website/FaqSection";
+import CheckoutFeatures from "../../Components/Website/CheckoutFeatures";
+import GotbackSection from "../../Components/Website/GotbackSection";
 
-function Supercharge() {
+function CoHosting() {
   const checklistItems = [
     "Easy Invoicing",
     "Controlled Access",
@@ -53,4 +53,4 @@ function Supercharge() {
   );
 }
 
-export default Supercharge;
+export default CoHosting;

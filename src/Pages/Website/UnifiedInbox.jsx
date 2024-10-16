@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import hero from "../../assets/img/commhero-pic.svg";
 import effortless from "../../assets/img/effortless-pic.svg";
-import FaqSection from "./FaqSection";
-import GotbackSection from "./GotbackSection";
-import BrandsSection from "./BrandsSection";
-import GuestSection from "./GuestSection";
+import FaqSection from "../../Components/Website/FaqSection";
+import GotbackSection from "../../Components/Website/GotbackSection";
+import BrandsSection from "../../Components/Website/BrandsSection";
+import GuestSection from "../../Components/Website/GuestSection";
 import dot from "../../assets/img/dot.png";
 import filter from "../../assets/img/filtr.svg";
 import document from "../../assets/img/docomnt.svg";
 import text from "../../assets/img/text.svg";
 
-import CheckoutFeatures from "./CheckoutFeatures";
-import Sliderr from "./Sliderr";
+import CheckoutFeatures from "../../Components/Website/CheckoutFeatures";
+import Sliderr from "../../Components/Website/Sliderr";
 
 
 function UnifiedInbox() {

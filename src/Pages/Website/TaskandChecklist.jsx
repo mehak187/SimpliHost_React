@@ -1,16 +1,16 @@
 import React from "react";
-import CommonHero from "./CommonHero";
+import CommonHero from "../../Components/Website/CommonHero";
 import stuffpic1 from "../../assets/img/stuffpic1.svg";
 import stuffpic2 from "../../assets/img/stuffpic2.svg";
 import aroundcircle from "../../assets/img/conquregero.svg";
 import automationtic from "../../assets/img/automation-tic.svg";
-import CommonMid from "./CommonMid";
-import WhySimplihost from "./WhySimplihost";
-import Sliderr from "./Sliderr";
-import GuestSection from "./GuestSection";
-import FaqSection from "./FaqSection";
-import CheckoutFeatures from "./CheckoutFeatures";
-import GotbackSection from "./GotbackSection";
+import CommonMid from "../../Components/Website/CommonMid";
+import WhySimplihost from "../../Components/Website/WhySimplihost";
+import Sliderr from "../../Components/Website/Sliderr";
+import GuestSection from "../../Components/Website/GuestSection";
+import FaqSection from "../../Components/Website/FaqSection";
+import CheckoutFeatures from "../../Components/Website/CheckoutFeatures";
+import GotbackSection from "../../Components/Website/GotbackSection";
 
 function TaskandChecklist() {
   const checklistItems = [

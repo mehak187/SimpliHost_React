@@ -15,10 +15,10 @@ import cf8 from "../../assets/img/cf-8.svg";
 import support1 from "../../assets/img/msg-pic.svg";
 import support2 from "../../assets/img/cut-heart.svg";
 import support3 from "../../assets/img/handuser.svg";
-import FaqSection from "./FaqSection";
-import GotbackSection from "./GotbackSection";
-import WhySimplihost from "./WhySimplihost";
-import BrandsSection from "./BrandsSection";
+import FaqSection from "../../Components/Website/FaqSection";
+import GotbackSection from "../../Components/Website/GotbackSection";
+import WhySimplihost from "../../Components/Website/WhySimplihost";
+import BrandsSection from "../../Components/Website/BrandsSection";
 
 function Feature() {
   const FeatureCard = (props) => {

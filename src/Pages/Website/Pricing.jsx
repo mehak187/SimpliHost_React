@@ -1,8 +1,8 @@
 import React from "react";
-import GotbackSection from "./GotbackSection";
-import Sliderr from "./Sliderr";
+import GotbackSection from "../../Components/Website/GotbackSection";
+import Sliderr from "../../Components/Website/Sliderr";
 import { Link } from "react-router-dom";
-import PricingSlider from "./PricingSlider";
+import PricingSlider from "../../Components/Website/PricingSlider";
 import imglogo1 from "../../assets/img/logo-p1.svg";
 import imglogo2 from "../../assets/img/logo-p2.svg";
 import imglogo3 from "../../assets/img/logo-p3.svg";
@@ -12,9 +12,9 @@ import imglogo6 from "../../assets/img/logo-p6.svg";
 import imglogo7 from "../../assets/img/logo-p7.svg";
 import imglogo8 from "../../assets/img/logo-8.svg";
 import imglogo9 from "../../assets/img/logo-p9.svg";
-import PricingMadeSimple from "./PricingMadeSimple";
+import PricingMadeSimple from "../../Components/Website/PricingMadeSimple";
 
-function SimplePrice() {
+function Pricing() {
   const logoImages = [
     imglogo1,
     imglogo2,
@@ -90,4 +90,4 @@ function SimplePrice() {
   );
 }
 
-export default SimplePrice;
+export default Pricing;

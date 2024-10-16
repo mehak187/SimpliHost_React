@@ -45,28 +45,28 @@ import AddOperationsCodes from "./Components/SmartDevices/AddOperationsCodes";
 import AddSmartDevice from "./Components/SmartDevices/AddSmartDevice";
 import AddCannedText from "./Components/Automations/AddCannedText";
 import AddSpecialIndicators from "./Components/Automations/AddSpecialIndicators";
-import WebLayout from "./Layouts/WebLayout";
-import Home from "./Components/Website/Home";
-import Listings from "./Components/Website/Listings";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
 import ConnectModal from "./Components/Modals/ConnectModal";
 import AddProperty from "./Components/Modals/AddProperty";
-import Feature from "./Components/Website/Feature";
-import TaskandChecklist from "./Components/Website/TaskandChecklist";
-import InventoryManagement from "./Components/Website/InventoryManagement";
-import MaintenanceTracking from "./Components/Website/MaintenanceTracking";
-import Supercharge from "./Components/Website/Supercharge";
-import TaskswithAutomation from "./Components/Website/TaskswithAutomation";
-import BookDirect from "./Components/Website/BookDirect";
-import UnifiedInbox from "./Components/Website/UnifiedInbox";
-import Smartdevices from "./Components/Website/SmartDevices";
 import ChecklistTabs from "./Components/ChecklistArrival/ChecklistTabs";
-import SimplePrice from "./Components/Website/SimplePrice";
-import ContactUs from "./Components/Website/ContactUs";
-import ListingDetails from "./Components/Website/ListingDetails";
+import WebLayout from "./Layouts/WebLayout";
+import Home from "./Pages/Website/Home";
+import Listings from "./Pages/Website/Listings";
+import Feature from "./Pages/Website/Feature";
+import TaskandChecklist from "./Pages/Website/TaskandChecklist";
+import InventoryManagement from "./Pages/Website/InventoryManagement";
+import MaintenanceTracking from "./Pages/Website/MaintenanceTracking";
+import CoHostingPage from "./Pages/Website/CoHosting";
+import TaskswithAutomation from "./Pages/Website/TaskswithAutomation";
+import BookDirect from "./Pages/Website/BookDirect";
+import UnifiedInbox from "./Pages/Website/UnifiedInbox";
+import Smartdevices from "./Pages/Website/SmartDevices";
+import Pricing from "./Pages/Website/Pricing";
+import ContactUs from "./Pages/Website/ContactUs";
+import ListingDetails from "./Pages/Website/ListingDetails";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 function App() {
@@ -125,17 +125,17 @@ function App() {
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/listings" element={<Listings />} />
-          <Route path="/pricing" element={<SimplePrice />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/feature" element={<Feature />} />
-          <Route path="/task-and-checklist" element={<TaskandChecklist />} />
+         <Route path="/task-and-checklist" element={<TaskandChecklist />} />
           <Route path="/inventory-management" element={<InventoryManagement />} />
           <Route path="/maintenance-tracking" element={<MaintenanceTracking />} />
-          <Route path="/cohosting" element={<Supercharge />} />
+          <Route path="/cohosting" element={<CoHostingPage />} />
           <Route path="/automation" element={<TaskswithAutomation />} />
           <Route path="/direct-booking" element={<BookDirect />} />
           <Route path="/unified-inbox" element={<UnifiedInbox />} />
           <Route path="/smart-devices" element={<Smartdevices />} />
-          <Route path="/simple-price" element={<SimplePrice />} />
+          <Route path="/simple-price" element={<Pricing />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/listing-details" element={<ListingDetails />} />
         </Route>

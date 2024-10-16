@@ -1,5 +1,4 @@
 import React from "react";
-import CommonHero from "./CommonHero";
 import { Link } from "react-router-dom";
 import contact from "../../assets/img/contact.png";
 import Line from "../../assets/img/Line.svg";
