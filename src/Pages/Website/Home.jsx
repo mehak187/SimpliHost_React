@@ -87,8 +87,8 @@ function Home() {
                   operations and get back to doing what you love!{" "}
                 </p>
                 <Link
-                    data-bs-toggle="modal"
-data-bs-target="#loginModal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
                   className="hero-btn text-black opacity-hover text-decoration-none d-inline-block fw-semi mt-3"
                 >
                   Try for free!
@@ -139,7 +139,11 @@ data-bs-target="#loginModal"
           <div className="row align-items-center position-relative">
             <div className="col-xl-5 col-md-6 mx-auto">
               <div>
-                <img src={featureproperty}  alt="Property" className="img-fluid"/>
+                <img
+                  src={featureproperty}
+                  alt="Property"
+                  className="img-fluid"
+                />
               </div>
             </div>
             <div className="col-xl-7 mt-3 mt-xl-0">
@@ -147,7 +151,11 @@ data-bs-target="#loginModal"
                 <div className="col-xl-5 col-sm-6">
                   <div className="featurecard-main2 position-relative d-flex align-items-center  py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={guestmessage} alt="Guest message" className="w-100 p-2" />
+                      <img
+                        src={guestmessage}
+                        alt="Guest message"
+                        className="w-100 p-2"
+                      />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Guest Messaging</p>
                   </div>
@@ -155,7 +163,11 @@ data-bs-target="#loginModal"
                 <div className="col-xl-5 col-sm-6 mt-3 mt-sm-0">
                   <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={cleaningtourner} alt="cleaning tour" className="w-100 p-2" />
+                      <img
+                        src={cleaningtourner}
+                        alt="cleaning tour"
+                        className="w-100 p-2"
+                      />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Cleaning Turnovers</p>
                   </div>
@@ -163,7 +175,11 @@ data-bs-target="#loginModal"
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3 ms-0 ms-xl-4">
                   <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={maintanceitem} alt="maintenance" className="w-100 p-2" />
+                      <img
+                        src={maintanceitem}
+                        alt="maintenance"
+                        className="w-100 p-2"
+                      />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Maintenance Items</p>
                   </div>
@@ -171,7 +187,11 @@ data-bs-target="#loginModal"
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3">
                   <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={smartdevice2} alt="smart device" className="w-100 p-2" />
+                      <img
+                        src={smartdevice2}
+                        alt="smart device"
+                        className="w-100 p-2"
+                      />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Smart Devices</p>
                   </div>

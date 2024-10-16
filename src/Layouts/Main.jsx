@@ -101,7 +101,6 @@ function Main() {
                 </li>
                 <li>
                   <Link
-                    // to="admin/inbox"
                     className={`sidelink d-flex align-items-center text-white ${isActive(
                       "/admin/inbox"
                     )}`}

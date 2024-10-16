@@ -14,7 +14,7 @@ function AutomationTable() {
             trigger: "Every Monday",
             shared: "Yes",
             numberOfitems: "30",
-            isActive: true,  // Added to store the active state
+            isActive: true, 
         },
         {
             id: 2,
@@ -22,7 +22,7 @@ function AutomationTable() {
             trigger: "Every Monday",
             shared: "Yes",
             numberOfitems: "30",
-            isActive: false,  // Added to store the active state
+            isActive: false, 
         },
         {
             id: 3,
@@ -30,7 +30,7 @@ function AutomationTable() {
             trigger: "Every Monday",
             shared: "Yes",
             numberOfitems: "30",
-            isActive: true,  // Added to store the active state
+            isActive: true, 
         },
         {
             id: 4,
@@ -38,7 +38,7 @@ function AutomationTable() {
             trigger: "Every Monday",
             shared: "Yes",
             numberOfitems: "30",
-            isActive: false,  // Added to store the active state
+            isActive: false, 
         },
     ];
 

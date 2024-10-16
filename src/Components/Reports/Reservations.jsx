@@ -42,7 +42,6 @@ function Reservations() {
     },
   ];
 
-
   return (
     <div>
       <FilterRow />
@@ -50,11 +49,19 @@ function Reservations() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Report Name</th>
-              <th className="small fw-semi text-black text-nowrap">Report Type</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Report Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Report Type
+              </th>
               <th className="small fw-semi text-black text-nowrap">Last Ran</th>
-              <th className="small fw-semi text-black text-nowrap">Auto-Send</th>
-              <th className="small fw-semi text-black text-nowrap">Auto Send Frequency</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Auto-Send
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Auto Send Frequency
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
@@ -92,4 +99,3 @@ function Reservations() {
 }
 
 export default Reservations;
-

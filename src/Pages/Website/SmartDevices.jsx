@@ -53,18 +53,18 @@ function SmartDevices() {
       <section className="effort-sec py-5">
         <div className="container">
           <div className="row justify-content-center">
-          <div className="d-flex flex-column align-items-center col-xl-7 col-sm-9 col-md-8 col-lg-7">
-            <h2 className="fw-bold text-center">
-              One <span className="litblue">SimpliHost</span> platform.<br></br> Amazing A
-              world of possibilities.
-            </h2>
-            <div>
-              <img src={platform1} alt="pic" className="img-fluid" />
+            <div className="d-flex flex-column align-items-center col-xl-7 col-sm-9 col-md-8 col-lg-7">
+              <h2 className="fw-bold text-center">
+                One <span className="litblue">SimpliHost</span> platform.
+                <br></br> Amazing A world of possibilities.
+              </h2>
+              <div>
+                <img src={platform1} alt="pic" className="img-fluid" />
+              </div>
+              <div>
+                <img src={platform2} alt="pic" className="img-fluid" />
+              </div>
             </div>
-            <div>
-              <img src={platform2} alt="pic" className="img-fluid" />
-            </div>
-          </div>
           </div>
         </div>
       </section>

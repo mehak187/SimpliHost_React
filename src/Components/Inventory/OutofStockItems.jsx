@@ -12,7 +12,7 @@ function OutofStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Stock: "0",
       Status: "Out of Stock",
@@ -22,7 +22,7 @@ function OutofStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Stock: "0",
       Status: "Out of Stock",
@@ -32,7 +32,7 @@ function OutofStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Stock: "0",
       Status: "Out of Stock",
@@ -42,7 +42,7 @@ function OutofStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Stock: "0",
       Status: "Out of Stock",
@@ -52,7 +52,7 @@ function OutofStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: <GroupImage/>,
+      property: <GroupImage />,
       Size: "Product Size here",
       Stock: "0",
       Status: "Out of Stock",
@@ -61,50 +61,56 @@ function OutofStockItems() {
 
   return (
     <div>
-    <FilterRow />
-    <div className="table-responsive default-table mt-3">
-      <table className="table">
-        <thead className="">
-          <tr className="align-middle">
-            <th className="small fw-semi text-black text-nowrap">Item Name</th>
-            <th className="small fw-semi text-black text-nowrap">Description</th>
-            <th className="small fw-semi text-black text-nowrap">Type</th>
-            <th className="small fw-semi text-black text-nowrap">Properties</th>
-            <th className="small fw-semi text-black text-nowrap">Size</th>
-            <th className="small fw-semi text-black text-nowrap">Stock</th>
-            <th className="small fw-semi text-black text-nowrap">Status</th>
-            <th className="small fw-semi text-black text-nowrap">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {DataCollection.map((data) => (
-            <tr key={data.id} className="align-middle">
-              <td className="small text-black">{data.ItemName}</td>
-              <td className="small text-black">{data.Description}</td>
-              <td className="small text-black text-nowrap">{data.Type}</td>
-              <td className="small text-black">{data.property}</td>
-              <td className="small text-black">{data.Size}</td>
-              <td className="small text-black">{data.Stock}</td>
-              <td className="small text-black">
-                <div className="redbtn text-nowrap">{data.Status}</div>
-              </td>
-              <td className="small text-black">
-                <div className="d-flex">
-                  <Link to="/admin/edit-inventory" className="mx-1 tblicon ">
-                    <IoPencil  className=" fs-5"/>
-                  </Link>
-                  <Link to="" className="mx-1 tblicon">
-                    <HiTrash  className=" fs-5"/>
-                  </Link>
-                </div>
-              </td>
+      <FilterRow />
+      <div className="table-responsive default-table mt-3">
+        <table className="table">
+          <thead className="">
+            <tr className="align-middle">
+              <th className="small fw-semi text-black text-nowrap">
+                Item Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Description
+              </th>
+              <th className="small fw-semi text-black text-nowrap">Type</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Properties
+              </th>
+              <th className="small fw-semi text-black text-nowrap">Size</th>
+              <th className="small fw-semi text-black text-nowrap">Stock</th>
+              <th className="small fw-semi text-black text-nowrap">Status</th>
+              <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {DataCollection.map((data) => (
+              <tr key={data.id} className="align-middle">
+                <td className="small text-black">{data.ItemName}</td>
+                <td className="small text-black">{data.Description}</td>
+                <td className="small text-black text-nowrap">{data.Type}</td>
+                <td className="small text-black">{data.property}</td>
+                <td className="small text-black">{data.Size}</td>
+                <td className="small text-black">{data.Stock}</td>
+                <td className="small text-black">
+                  <div className="redbtn text-nowrap">{data.Status}</div>
+                </td>
+                <td className="small text-black">
+                  <div className="d-flex">
+                    <Link to="/admin/edit-inventory" className="mx-1 tblicon ">
+                      <IoPencil className=" fs-5" />
+                    </Link>
+                    <Link to="" className="mx-1 tblicon">
+                      <HiTrash className=" fs-5" />
+                    </Link>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
-export default OutofStockItems
+export default OutofStockItems;

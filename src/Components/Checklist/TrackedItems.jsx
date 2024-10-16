@@ -43,14 +43,20 @@ function TrackedItems() {
 
   return (
     <div>
-      <FilterRow/>
+      <FilterRow />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Item Name</th>
-              <th className="small fw-semi text-black text-nowrap">Number of Checklists</th>
-              <th className="small fw-semi text-black text-nowrap">Last Updated</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Item Name
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Number of Checklists
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Last Updated
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
@@ -59,14 +65,16 @@ function TrackedItems() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.ItemName}</td>
                 <td className="small text-black">{data.NumberofChecklists}</td>
-                <td className="small text-black text-nowrap">{data.LastUpdated}</td>
+                <td className="small text-black text-nowrap">
+                  {data.LastUpdated}
+                </td>
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="" className="mx-1 tblicon">
-                      <IoPencil className="fs-5"/>
+                      <IoPencil className="fs-5" />
                     </Link>
                     <Link to="" className="mx-1 tblicon">
-                      <HiTrash className="fs-5"/>
+                      <HiTrash className="fs-5" />
                     </Link>
                   </div>
                 </td>
@@ -80,8 +88,3 @@ function TrackedItems() {
 }
 
 export default TrackedItems;
-
-
-
-
-

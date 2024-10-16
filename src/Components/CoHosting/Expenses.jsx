@@ -10,7 +10,7 @@ function Expenses() {
       ExpenseType: "Kitchen Gas",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: <GroupImage/>,
+      Property: <GroupImage />,
       Amount: "$3,000.00",
       status: "Active",
     },
@@ -20,7 +20,7 @@ function Expenses() {
       ExpenseType: "Kitchen Gas",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: <GroupImage/>,
+      Property: <GroupImage />,
       Amount: "$3,000.00",
       status: "Active",
     },
@@ -30,15 +30,13 @@ function Expenses() {
       ExpenseType: "Kitchen Gas",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: <GroupImage/>,
+      Property: <GroupImage />,
       Amount: "$3,000.00",
       status: "Active",
     },
   ];
   const getStatusClass = (status) => {
     switch (status) {
-      // case "Overdue":
-      //   return "text-danger";
       case "Active":
         return "text-success";
       default:
@@ -74,18 +72,16 @@ function Expenses() {
                   {data.ExpenseType}
                 </td>
                 <td className="small text-black">
-                 <div className="d-flex align-items-center">
-                 <img
-                    src={data.Owner}
-                    alt="property-img"
-                    className="img-fluid me-2 owner-img"
-                  />
-                  {data.OwnerName}
-                 </div>
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Owner}
+                      alt="property-img"
+                      className="img-fluid me-2 owner-img"
+                    />
+                    {data.OwnerName}
+                  </div>
                 </td>
-                <td className="small text-black">
-                  {data.Property}
-                </td>
+                <td className="small text-black">{data.Property}</td>
                 <td className="small text-black">{data.Amount}</td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>
                   {data.status}

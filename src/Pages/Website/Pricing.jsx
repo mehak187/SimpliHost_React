@@ -39,51 +39,53 @@ function Pricing() {
             </div>
             <div className="buttonbg mt-5">
               <Link className="bluelink text-white">Monthly</Link>
-              <Link className="whitelink text-black">Annual <span>Save 20%</span></Link>
-            </div>
-          </div>
-        </div>
-      </section>
-      <PricingSlider/>
-      <section className="py-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-10 logoImg-main">
-            <h3 className="mb-4 litblue fw-bold">
-              Get More Done with Our Awesome Integrations!
-            </h3>
-            <div className="row justify-content-center">
-              {logoImages.map((logo, index) => (
-                <div
-                  key={index}
-                  className={`col-lg-2 col-md-3 col-sm-4 mb-3 ${
-                    index === 5 ? "ms-lg-5 ms-0" : ""
-                  }`}
-                >
-                  <div className="bg-grey logoimg-main rounded-3 py-2 d-flex justify-content-center align-items-center">
-                    <img
-                      src={logo}
-                      alt={`logo-${index + 1}`}
-                      className="logo-imgs"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div>
-              <Link
-                to="#"
-                type="button"
-                className="border-0 text-white opacity-hover text-decoration-none explore-btn mt-2"
-              >
-                Explore the Full List
+              <Link className="whitelink text-black">
+                Annual <span>Save 20%</span>
               </Link>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <PricingMadeSimple />
+      </section>
+      <PricingSlider />
+      <section className="py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-10 logoImg-main">
+              <h3 className="mb-4 litblue fw-bold">
+                Get More Done with Our Awesome Integrations!
+              </h3>
+              <div className="row justify-content-center">
+                {logoImages.map((logo, index) => (
+                  <div
+                    key={index}
+                    className={`col-lg-2 col-md-3 col-sm-4 mb-3 ${
+                      index === 5 ? "ms-lg-5 ms-0" : ""
+                    }`}
+                  >
+                    <div className="bg-grey logoimg-main rounded-3 py-2 d-flex justify-content-center align-items-center">
+                      <img
+                        src={logo}
+                        alt={`logo-${index + 1}`}
+                        className="logo-imgs"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <Link
+                  to="#"
+                  type="button"
+                  className="border-0 text-white opacity-hover text-decoration-none explore-btn mt-2"
+                >
+                  Explore the Full List
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <PricingMadeSimple />
       <Sliderr />
       <GotbackSection />
     </div>

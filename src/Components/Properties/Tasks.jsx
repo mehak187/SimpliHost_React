@@ -49,13 +49,13 @@ function Tasks() {
   const getStatusClass = (status) => {
     switch (status) {
       case "Not Started":
-        return "text-primary"; // Blue for Not Started
+        return "text-primary";
       case "In Progress":
-        return "text-warning"; // Yellow for In Progress
+        return "text-warning";
       case "Overdue":
-        return "text-danger"; // Red for Overdue
+        return "text-danger";
       case "Completed":
-        return "text-success"; // Green for Completed
+        return "text-success";
       default:
         return "";
     }

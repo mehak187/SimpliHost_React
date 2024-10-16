@@ -95,4 +95,4 @@ function CoHostOpenInvoices() {
   );
 }
 
-export default CoHostOpenInvoices
+export default CoHostOpenInvoices;

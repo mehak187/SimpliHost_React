@@ -14,44 +14,44 @@ function Widgets() {
       WidgetsName: "John",
       Type: "Search",
       status: "Active",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Inactive",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Inactive",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Active",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Active",
-      property: <GroupImage/>,
+      property: <GroupImage />,
     },
   ];
 
   const getStatusClass = (status) => {
     switch (status) {
       case "Inactive":
-        return "text-danger"; // Yellow for In Progress
+        return "text-danger";
       case "Active":
-        return "text-success"; // Green for Completed
+        return "text-success";
       default:
         return "";
     }

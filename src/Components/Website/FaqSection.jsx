@@ -1,27 +1,32 @@
 import React from "react";
 import { FaPlus } from "react-icons/fa6";
 
-
 const faqs = [
   {
     question: "How can Simplihost help me?",
-    answer: "Simplihost helps you manage your property seamlessly with features like booking management, automated communications, and more.",
+    answer:
+      "Simplihost helps you manage your property seamlessly with features like booking management, automated communications, and more.",
   },
   {
-    question: "How is Simplihost different from other vacation rental management software?",
-    answer: "Simplihost offers unique features like customizable booking settings and integration with popular listing platforms.",
+    question:
+      "How is Simplihost different from other vacation rental management software?",
+    answer:
+      "Simplihost offers unique features like customizable booking settings and integration with popular listing platforms.",
   },
   {
     question: "How will I be supported during onboarding?",
-    answer: "Our team provides personalized onboarding assistance to ensure you get up and running quickly.",
+    answer:
+      "Our team provides personalized onboarding assistance to ensure you get up and running quickly.",
   },
   {
     question: "Does Simplihost have a mobile application?",
-    answer: "Yes, Simplihost offers a mobile application for easy access and management on the go.",
+    answer:
+      "Yes, Simplihost offers a mobile application for easy access and management on the go.",
   },
   {
     question: "Do you have any product demos I can watch and learn more from?",
-    answer: "Yes, we offer various product demos that showcase Simplihost's features. You can find them on our website.",
+    answer:
+      "Yes, we offer various product demos that showcase Simplihost's features. You can find them on our website.",
   },
 ];
 
@@ -33,8 +38,13 @@ function FaqSection() {
           <div className="col-lg-8">
             <div className="p-4 rounded-4 bg-white">
               <h3 className="fw-bold">Frequently asked questions</h3>
-              <p className="mb-4 fw-semi">About Simplihost Property Management Platform</p>
-              <div className="accordion accordion-flush custom-accordion" id="accordionFlushExample">
+              <p className="mb-4 fw-semi">
+                About Simplihost Property Management Platform
+              </p>
+              <div
+                className="accordion accordion-flush custom-accordion"
+                id="accordionFlushExample"
+              >
                 {faqs.map((faq, index) => (
                   <div key={index} className="accordion-item mb-3">
                     <h2 className="accordion-header">
@@ -47,7 +57,7 @@ function FaqSection() {
                         aria-controls={`flush-collapse${index}`}
                       >
                         {faq.question}
-                        <FaPlus className="icon text-black fs-5 ms-auto"/>
+                        <FaPlus className="icon text-black fs-5 ms-auto" />
                       </button>
                     </h2>
                     <div
@@ -55,7 +65,9 @@ function FaqSection() {
                       className="accordion-collapse collapse"
                       data-bs-parent="#accordionFlushExample"
                     >
-                      <div className="accordion-body px-3 px-md-4 pt-0">{faq.answer}</div>
+                      <div className="accordion-body px-3 px-md-4 pt-0">
+                        {faq.answer}
+                      </div>
                     </div>
                   </div>
                 ))}

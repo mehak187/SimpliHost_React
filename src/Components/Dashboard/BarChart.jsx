@@ -1,4 +1,3 @@
-// BarChart.jsx
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
@@ -15,15 +14,15 @@ const BarChart = () => {
       {
         label: 'Gross Revenue',
         data: [2500, 6000, 7500, 2200, 5000, 7500, 5000, 2200, 3200, 0, 9500, 5000],
-        backgroundColor: '#3551B6', // Customize bar color
+        backgroundColor: '#3551B6',
         borderRadius: {
-          topLeft: 15,   // Top left corner
-          topRight: 15,  // Top right corner
-          bottomLeft: 0, // Bottom left corner
-          bottomRight: 0 // Bottom right corner
+          topLeft: 15,
+          topRight: 15,
+          bottomLeft: 0,
+          bottomRight: 0
         },
-        borderSkipped: false, // Ensure the bar corners are rounded
-        barThickness: 15 // Adjust the width of the bars
+        borderSkipped: false,
+        barThickness: 15
       }
     ]
   };
@@ -33,28 +32,28 @@ const BarChart = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false // Hide legend (you can change this if you want to show it)
+        display: false
       },
       tooltip: {
-        enabled: true // Enable tooltips on hover
+        enabled: true
       }
     },
     scales: {
       y: {
         beginAtZero: true,
         ticks: {
-          callback: (value) => `$${value}` // Format y-axis values as currency
+          callback: (value) => `$${value}`
         },
         grid: {
-          display: true, // Display grid lines for Y-axis
+          display: true,
         },
       },
       x: {
         ticks: {
-          color: '#000' // Customize x-axis label color
+          color: '#000'
         },
         grid: {
-          display: false, // Hide grid lines for X-axis
+          display: false,
         },
       }
     }

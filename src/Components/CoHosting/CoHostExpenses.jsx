@@ -36,15 +36,19 @@ function CoHostExpenses() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Expense Name</th>
               <th className="small fw-semi text-black text-nowrap">
-              Expense Type
+                Expense Name
               </th>
               <th className="small fw-semi text-black text-nowrap">
-              Recurring Expense
+                Expense Type
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Recurring Expense
               </th>
               <th className="small fw-semi text-black text-nowrap">LastPaid</th>
-              <th className="small fw-semi text-black text-nowrap">Invoice Number</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Invoice Number
+              </th>
               <th className="small fw-semi text-black text-nowrap">Status</th>
               <th className="small fw-semi text-black text-nowrap">Amount</th>
               <th className="small fw-semi text-black text-nowrap">Property</th>
@@ -54,7 +58,9 @@ function CoHostExpenses() {
           <tbody>
             {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
-                <td className="small text-black text-nowrap">{data.ExpenseName}</td>
+                <td className="small text-black text-nowrap">
+                  {data.ExpenseName}
+                </td>
                 <td className="small text-black text-nowrap">
                   {data.ExpenseType}
                 </td>
@@ -66,12 +72,12 @@ function CoHostExpenses() {
                 </td>
                 <td className="small text-black">{data.Amount}</td>
                 <td className="small text-black">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={data.Property}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={data.Property}
+                      alt="property-img"
+                      className="img-fluid me-2 property-img"
+                    />
                   </div>
                 </td>
                 <td className="small text-black">

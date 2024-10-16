@@ -48,13 +48,13 @@ function AllTasks() {
   const getStatusClass = (status) => {
     switch (status) {
       case "Not Started":
-        return "text-primary"; // Blue for Not Started
+        return "text-primary";
       case "In Progress":
-        return "text-warning"; // Yellow for In Progress
+        return "text-warning";
       case "Overdue":
-        return "text-danger"; // Red for Overdue
+        return "text-danger";
       case "Completed":
-        return "text-success"; // Green for Completed
+        return "text-success";
       default:
         return "";
     }
@@ -67,10 +67,16 @@ function AllTasks() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">Task Name</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Task Name
+              </th>
               <th className="small fw-semi text-black text-nowrap">Property</th>
-              <th className="small fw-semi text-black text-nowrap">Task Type</th>
-              <th className="small fw-semi text-black text-nowrap">Assigned To</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Task Type
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Assigned To
+              </th>
               <th className="small fw-semi text-black text-nowrap">Due Date</th>
               <th className="small fw-semi text-black text-nowrap">Status</th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
@@ -81,7 +87,9 @@ function AllTasks() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.taskname}</td>
                 <td className="small text-black">{data.property}</td>
-                <td className="small text-black text-nowrap">{data.tasktype}</td>
+                <td className="small text-black text-nowrap">
+                  {data.tasktype}
+                </td>
                 <td className="small text-black">{data.assignedTo}</td>
                 <td className="small text-black">{data.dueDate}</td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>

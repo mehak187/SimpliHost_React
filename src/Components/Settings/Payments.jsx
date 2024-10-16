@@ -48,33 +48,41 @@ function Payments() {
       Properties: property,
     },
   ];
-  
+
   return (
     <div className="">
       <div className="d-flex justify-content-end align-items-center">
-      <Link className="d-inline-block mt-3 border border-1 border-primary rounded-3 px-4 py-2 text-decoration-none">Add Payment</Link>
+        <Link className="d-inline-block mt-3 border border-1 border-primary rounded-3 px-4 py-2 text-decoration-none">
+          Add Payment
+        </Link>
       </div>
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
             <tr className="align-middle border-bottom-0">
               <th className="small fw-semi text-black text-nowrap">Type</th>
-              <th className="small fw-semi text-black text-nowrap">Name of Account</th>
-              <th className="small fw-semi text-black text-nowrap">Account Number</th>
-              <th className="small fw-semi text-black text-nowrap">Properties Associated To</th>
+              <th className="small fw-semi text-black text-nowrap">
+                Name of Account
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Account Number
+              </th>
+              <th className="small fw-semi text-black text-nowrap">
+                Properties Associated To
+              </th>
               <th className="small fw-semi text-black text-nowrap">Action</th>
             </tr>
           </thead>
           <tbody>
             {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
-              <td className="small text-black">
+                <td className="small text-black">
                   <div className="d-flex align-items-center">
-                  <img
-                    src={data.Type}
-                    alt="property-img"
-                    className="me-2 payment-img"
-                  />
+                    <img
+                      src={data.Type}
+                      alt="property-img"
+                      className="me-2 payment-img"
+                    />
                   </div>
                 </td>
                 <td className="small text-black text-nowrap">
@@ -85,20 +93,20 @@ function Payments() {
                 </td>
                 <td className="small text-black">
                   <div className="d-flex align-items-center">
-                  <img
-                    src={data.Properties}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
+                    <img
+                      src={data.Properties}
+                      alt="property-img"
+                      className="img-fluid me-2 property-img"
+                    />
                   </div>
                 </td>
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="/manager_detail" className="mx-1 tblicon">
-                      <IoPencil className="fs-5"/>
+                      <IoPencil className="fs-5" />
                     </Link>
                     <Link to="/delete_task" className="mx-1 tblicon">
-                      <HiTrash className="fs-5"/>
+                      <HiTrash className="fs-5" />
                     </Link>
                   </div>
                 </td>
@@ -108,7 +116,7 @@ function Payments() {
         </table>
       </div>
     </div>
-  )
+  );
 }
 
-export default Payments
+export default Payments;
