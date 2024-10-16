@@ -144,25 +144,21 @@ function QuickFilter() {
                       {renderCheckboxes(checkboxes, checkboxes)}
                     </div>
 
-                    {/* Additional filter section - Platform */}
                     <div className="filter-col bg-lightgrey border p-3 rounded-4">
                       <h6 className="fw-semi mb-0 text-blue">Platform</h6>
                       {renderCheckboxes(platforms, platforms)}
                     </div>
 
-                    {/* Additional filter section - Properties */}
                     <div className="filter-col bg-lightgrey border p-3 rounded-4">
                       <h6 className="fw-semi mb-0 text-blue">Properties</h6>
                       {renderCheckboxes(properties, properties)}
                     </div>
 
-                    {/* Additional filter section - Property Groups */}
                     <div className="filter-col bg-lightgrey border p-3 rounded-4">
                       <h6 className="fw-semi mb-0 text-blue">Property Groups</h6>
                       {renderCheckboxes(propertyGroups, propertyGroups)}
                     </div>
 
-                    {/* Additional filter section - Pets */}
                     <div className="filter-col bg-lightgrey border p-3 rounded-4">
                       <h6 className="fw-semi mb-0 text-blue">Pets</h6>
                       {renderCheckboxes(pets, pets)}

@@ -119,7 +119,7 @@ function LabelStepper() {
                                 <Typography>All steps completed</Typography>
                             ) : (
                                 <div>
-                                    {getStepContent(activeStep)} {/* Render the content based on the active step */}
+                                    {getStepContent(activeStep)}
                                     <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 2 }}>
                                         <Button
                                             className='bg-lgrey text-dark rounded-3 py-2 px-4 fw-semi border text-decoration-none'

@@ -202,7 +202,6 @@ function EditPropertyTabs() {
               aria-labelledby="calendar-tab"
               tabIndex={0}
             >
-              {/* Content for Calendar */}
             </div>
             <div
               className="tab-pane fade"
@@ -256,7 +255,6 @@ function EditPropertyTabs() {
               aria-labelledby="smart-devices-tab"
               tabIndex={0}
             >
-              {/* Content for Smart Devices */}
             </div>
             <div
               className="tab-pane fade"
@@ -265,7 +263,6 @@ function EditPropertyTabs() {
               aria-labelledby="taxes-tab"
               tabIndex={0}
             >
-              {/* Content for Taxes */}
             </div>
             <div
               className="tab-pane fade"
@@ -274,7 +271,6 @@ function EditPropertyTabs() {
               aria-labelledby="mechanicals-tab"
               tabIndex={0}
             >
-              {/* Content for Mechanicals */}
             </div>
             <div
               className="tab-pane fade"
@@ -283,7 +279,6 @@ function EditPropertyTabs() {
               aria-labelledby="users-tab"
               tabIndex={0}
             >
-              {/* Content for Users */}
             </div>
             <div
               className="tab-pane fade"
@@ -292,7 +287,6 @@ function EditPropertyTabs() {
               aria-labelledby="files-tab"
               tabIndex={0}
             >
-              {/* Content for Files */}
             </div>
             <div
               className="tab-pane fade"
@@ -301,7 +295,6 @@ function EditPropertyTabs() {
               aria-labelledby="settings-tab"
               tabIndex={0}
             >
-              {/* Content for Settings */}
             </div>
             <div
               className="tab-pane fade"
@@ -310,7 +303,6 @@ function EditPropertyTabs() {
               aria-labelledby="faqs-tab"
               tabIndex={0}
             >
-              {/* Content for FAQs */}
             </div>
           </div>
         </nav>

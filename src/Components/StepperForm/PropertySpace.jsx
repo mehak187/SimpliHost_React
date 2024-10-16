@@ -78,13 +78,10 @@ function PropertySpace() {
                         </div>
                     ))}
 
-                    {/* Counter for Bedrooms */}
                     <RoomCounter label="Bedroom" count={bedroomCount} setCount={setBedroomCount} />
                     
-                    {/* Counter for Beds */}
                     <RoomCounter label="Number of Beds" count={bedCount} setCount={setBedCount} />
 
-                    {/* Property size and unit inputs */}
                     <div className="row">
                         <div className="col-sm-6 mb-3">
                             <label className="fw-semi">Property Size</label>
