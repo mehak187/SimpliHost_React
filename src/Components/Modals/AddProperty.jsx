@@ -83,7 +83,7 @@ function AddProperty() {
                                         <label htmlFor="" className='fw-semi ps-3'>I have read and accept the information above</label>
                                     </div>
                                     <div className='mt-5'>
-                                        <Link to='#' className='rounded-3 border-0 d-block text-decoration-none text-center py-2 px-2 bg-lblue text-blue w-100 fw-semi'>Connect</Link>
+                                        <Link to='/admin/stepper' className='rounded-3 border-0 d-block text-decoration-none text-center py-2 px-2 bg-lblue text-blue w-100 fw-semi'>Connect</Link>
                                     </div>
                                 </div>
                             </div>
