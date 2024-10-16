@@ -83,7 +83,7 @@ function ContactUs() {
                       <img
                         src={phone}
                         alt="pic"
-                        className="w-100"
+                        className=""
                       />
                     </div>
                     <div className="ms-3">
