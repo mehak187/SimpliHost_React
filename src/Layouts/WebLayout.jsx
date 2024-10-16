@@ -272,7 +272,7 @@ function WebLayout() {
                   </Link>
                 </li>
                 <li className="nav-item  dropdown mx-1 mx-xl-2">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -280,7 +280,7 @@ function WebLayout() {
                     aria-expanded="false"
                   >
                     Resources
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu py-0">
                     <li>
                       <Link
@@ -519,45 +519,45 @@ function WebLayout() {
                     <ul className="list-unstyled footer-list">
                       <li>Phone: 123456789</li>
                       <li>
-                        <a
+                        <Link
                           href="mailto:company@email.com"
                           className="text-decoration-none white-color"
                         >
                           company@email.com
-                        </a>
+                        </Link>
                       </li>
                       <li>Location: 100 Smart Street, LA, USA</li>
                       <li>
-                        <a
+                        <Link
                           href="#"
                           className="text-decoration-none white-color f-size"
                         >
                           <i className="fa-brands fa-square-facebook" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="text-decoration-none white-color f-size ms-3"
                         >
                           <i className="fa-brands fa-twitter" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="text-decoration-none white-color f-size ms-3"
                         >
                           <i className="fa-brands fa-instagram" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="text-decoration-none white-color f-size ms-3"
                         >
                           <i className="fa-brands fa-youtube" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="#"
                           className="text-decoration-none white-color f-size ms-3"
                         >
                           <i className="fa-brands fa-linkedin" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -654,9 +654,9 @@ function WebLayout() {
                     </label>
                   </div>
                   <div>
-                    <a href="#" className="text-decoration-none">
+                    <Link href="#" className="text-decoration-none">
                       Forget Password
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="my-3">
@@ -831,13 +831,13 @@ function WebLayout() {
                   <p className="mb-0 mt-2 text-center">
                     Do you have an account?
                     <span className="ms-2">
-                      <a
+                      <Link
                         data-bs-toggle="modal"
                         data-bs-target="#loginModal"
                         className="text-decoration-none pointer"
                       >
                         Sign in
-                      </a>
+                      </Link>
                     </span>
                   </p>
                 </div>
@@ -1009,9 +1009,9 @@ function WebLayout() {
                 <p className="mb-0 mt-3 text-center fw-semi">
                   Having problems?
                   <span className="ms-2">
-                    <a href="#" className="text-decoration-none">
+                    <Link href="#" className="text-decoration-none">
                       Let us help and contact us!
-                    </a>
+                    </Link>
                   </span>
                 </p>
               </form>
@@ -1092,9 +1092,9 @@ function WebLayout() {
                 <p className="mb-0 mt-3 text-center fw-semi">
                   Having problems?
                   <span className="ms-2">
-                    <a href="#" className="text-decoration-none">
+                    <Link href="#" className="text-decoration-none">
                       Let us help and contact us!
-                    </a>
+                    </Link>
                   </span>
                 </p>
               </form>

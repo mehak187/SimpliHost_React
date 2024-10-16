@@ -97,7 +97,7 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-6 mt-0 mt-lg-0">
-              <div className="hero-main-pic">
+              <div className="hero-main-pic position-relative">
                 <img src={heroimg} alt="hero-pic" className="w-100" />
               </div>
             </div>
@@ -188,7 +188,7 @@ function Home() {
                 One simple plan for all your needs!
               </p>
               <div className="mt-4">
-                <Link to="#" className="text-decoration-none more-btn px-5 py-2 fw-semi">
+                <Link to="" className="text-decoration-none more-btn px-5 py-2 fw-semi">
                   Learn More
                 </Link>
               </div>
