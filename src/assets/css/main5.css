@@ -1,20 +1,5 @@
 /* ---------hamza---------- */
 :root {
-    --grey: #F7F7F7;
-    --yellow: #F4B942;
-    --orange: #FE5D26;
-    --lite-orange: #FF9900;
-    --white: #fff;
-    --ex-blue: #C6D4FF;
-    --d-green: #35D9BB;
-    --exx-green: #B8F8ED;
-    --ex-sky: #F5F6FB;
-    --ex-green: #D6FCF5;
-    --lit-grey: #F8F8F8;
-    --exx-blue: #B9C9E6;
-    --exx-yellow: #F2E8C3;
-    --exx-oragne: #F3CCBA;
-    --exxx-sky: #EBFDFA;
     --prpl: #6C07FD;
 }
 
@@ -23,63 +8,59 @@
 }
 
 .bg-liteOrange {
-    background-color: var(--lite-orange);
+    background-color:  #FF9900;
 }
 
 .bg-exxBlue {
-    background-color: var(--exx-blue);
+    background-color: #B9C9E6;
 }
 
 .bg-exxxSky {
-    background-color: var(--exxx-sky);
+    background-color: #EBFDFA;
 }
 
 .bg-exxOrange {
-    background-color: var(--exx-oragne);
+    background-color: #F3CCBA;
 }
 
 .bg-exxYellow {
-    background-color: var(--exx-yellow);
+    background-color: #F2E8C3;
 }
 
 .bg-exxGreen {
-    background-color: var(--exx-green);
-}
-
-.bg-white {
-    background-color: var(--white);
+    background-color: #B8F8ED;
 }
 
 .bg-exgreen {
-    background-color: var(--ex-green);
+    background-color: #D6FCF5;
 }
 
 .bg-litgrey {
-    background-color: var(--lit-grey);
+    background-color: #F8F8F8;
 }
 
 .bg-exsky {
-    background-color: var(--ex-sky);
+    background-color: #F5F6FB;;
 }
 
 .bg-dgreen {
-    background-color: var(--d-green);
+    background-color: #35D9BB;
 }
 
 .bg-exblue {
-    background-color: var(--ex-blue);
+    background-color: #C6D4FF;
 }
 
 .bg-grey {
-    background-color: var(--grey);
+    background-color: #F7F7F7;
 }
 
 .bg-yellow {
-    background-color: var(--yellow);
+    background-color: #F4B942;
 }
 
 .bg-orange {
-    background-color: var(--orange);
+    background-color: #FE5D26;
 }
 
 .litblue {
@@ -101,7 +82,6 @@
 .fhero-sec,
 .commhero-sec {
     padding-bottom: 120px;
-    /* min-height: 500px !important; */
     border-bottom-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
 }
@@ -277,6 +257,7 @@
 .custom-accordion .accordion-button.collapsed {
     border-radius: 8px;
 }
+
 .custom-accordion button svg {
     min-width: 25px;
 }
@@ -294,9 +275,11 @@
 .custom-accordion .accordion-item {
     border: none;
 }
+
 .accordion-item{
     border-radius: 8px !important;
 }
+
 .custom-accordion .accordion-button:not(.collapsed) .icon {
     transform: rotate(135deg);
 }
@@ -321,10 +304,12 @@
     height: 25px;
     width: 25px;
 }
+
 .dot-img {
     height: 6px;
     width: 6px;
 }
+
 .communication-sec {
     background: linear-gradient(to bottom, #ECFDFA 0%, #FFFFFF 100%);
 }
@@ -370,19 +355,6 @@
     border-radius: 30px;
     box-shadow: 0px 0px 24px 0px #DADADAB2;
 }
-
-/* .slider {
-    width: 100%;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 20px;
-    background: #E8FEFF;
-    border-radius: 25px;
-    outline: none;
-} */
 
 .range-labels {
     display: flex;
@@ -507,7 +479,6 @@
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* Aspect ratio 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -523,12 +494,6 @@
 .video-shadow{
     box-shadow: 0px 30px 50px 0px #8742EB1A;
 }
-
-
-
-
-
-
 
 @media screen and (max-width:433px) {
     .priceBtn-main {
