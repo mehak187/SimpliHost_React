@@ -2,8 +2,8 @@ import React from "react";
 import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import propertyCollection from "../../assets/img/property-collection.png";
 import FilterRow from "./FilterRow";
+import GroupImage from "../Checklist/GroupImage";
 
 function LowStockItems() {
   const DataCollection = [
@@ -12,7 +12,7 @@ function LowStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: propertyCollection,
+      property: <GroupImage/>,
       Size: "Product Size here",
       Stock: "2",
       Status: "High/Med/Low",
@@ -22,7 +22,7 @@ function LowStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: propertyCollection,
+      property: <GroupImage/>,
       Size: "Product Size here",
       Stock: "2",
       Status: "High/Med/Low",
@@ -32,7 +32,7 @@ function LowStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: propertyCollection,
+      property: <GroupImage/>,
       Size: "Product Size here",
       Stock: "2",
       Status: "High/Med/Low",
@@ -42,7 +42,7 @@ function LowStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: propertyCollection,
+      property: <GroupImage/>,
       Size: "Product Size here",
       Stock: "2",
       Status: "High/Med/Low",
@@ -52,7 +52,7 @@ function LowStockItems() {
       ItemName: "Toilet Paper",
       Description: "Product Description",
       Type: "Bathroom",
-      property: propertyCollection,
+      property: <GroupImage/>,
       Size: "Product Size here",
       Stock: "2",
       Status: "High/Med/Low",
@@ -82,7 +82,7 @@ function LowStockItems() {
                 <td className="small text-black">{data.ItemName}</td>
                 <td className="small text-black">{data.Description}</td>
                 <td className="small text-black text-nowrap">{data.Type}</td>
-                <td className="small text-black"><img src={data.property} alt="property-img" className="img-fluid property-img"/></td>
+                <td className="small text-black">{data.property}</td>
                 <td className="small text-black">{data.Size}</td>
                 <td className="small text-black">{data.Stock}</td>
                 <td className="small text-black">

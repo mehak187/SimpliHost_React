@@ -1,7 +1,7 @@
 import React from "react";
 import owner from "../../assets/img/owner.png";
-import property from "../../assets/img/property-collection.png";
 import FilterRow from "./FilterRow";
+import GroupImage from "../Checklist/GroupImage";
 function Expenses() {
   const DataCollection = [
     {
@@ -10,7 +10,7 @@ function Expenses() {
       ExpenseType: "Kitchen Gas",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: property,
+      Property: <GroupImage/>,
       Amount: "$3,000.00",
       status: "Active",
     },
@@ -20,7 +20,7 @@ function Expenses() {
       ExpenseType: "Kitchen Gas",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: property,
+      Property: <GroupImage/>,
       Amount: "$3,000.00",
       status: "Active",
     },
@@ -30,7 +30,7 @@ function Expenses() {
       ExpenseType: "Kitchen Gas",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: property,
+      Property: <GroupImage/>,
       Amount: "$3,000.00",
       status: "Active",
     },
@@ -84,11 +84,7 @@ function Expenses() {
                  </div>
                 </td>
                 <td className="small text-black">
-                  <img
-                    src={data.Property}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
+                  {data.Property}
                 </td>
                 <td className="small text-black">{data.Amount}</td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>

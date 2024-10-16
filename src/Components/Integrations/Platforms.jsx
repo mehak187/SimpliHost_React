@@ -2,11 +2,11 @@ import React from "react";
 import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import propertyCollection from "../../assets/img/property-collection.png";
 import owner from "../../assets/img/owner.png";
 import platform from "../../assets/img/platform.png";
 import FilterRow from "./FilterRow";
 import { FaEye } from "react-icons/fa";
+import GroupImage from "../Checklist/GroupImage";
 
 function Platforms() {
   const DataCollection = [
@@ -17,7 +17,7 @@ function Platforms() {
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -26,7 +26,7 @@ function Platforms() {
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -35,7 +35,7 @@ function Platforms() {
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -44,7 +44,7 @@ function Platforms() {
       Owner: owner,
       OwnerName: "Naseeb Designer",
       Listings: "05",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
   
   ];
@@ -97,16 +97,11 @@ function Platforms() {
                 
                 <td className="small text-black">{data.Listings}</td>
                 <td className="small text-black">
-                <div className="d-flex align-items-center">
-                  <img
-                    src={data.property}
-                    alt="property-col"
-                    className="img-fluid me-2 property-col"
-                  />
+                <div className="d-flex align-items-center justify-content-center">{data.property}
                   </div>
                 </td>
                 <td className="small text-black">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                     <Link to="/admin/co-hosting-details" className="mx-1 tblicon">
                       <FaEye className="fs-5" />
                     </Link>

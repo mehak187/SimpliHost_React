@@ -473,6 +473,11 @@ input:focus {
     display: block;
     text-align: center;
 }
+
+.avt .css-1wlk0hk-MuiAvatar-root{
+    width: 25px;
+    height: 25px;
+}
 /* ----------------Chat---------- */
 .left-chat{
     width: calc(25% - 12px);

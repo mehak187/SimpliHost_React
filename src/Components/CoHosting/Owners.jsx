@@ -107,7 +107,7 @@ function Owners() {
                 <td className="small text-black text-nowrap">{data.FeeType}</td>
                 <td className="small text-black">{data.Balance}</td>
                 <td className="small text-black">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                     <Link to="/admin/co-hosting-details" className="mx-1 tblicon">
                       <FaEye className="fs-5" />
                     </Link>

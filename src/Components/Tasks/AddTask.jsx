@@ -53,7 +53,6 @@ function AddTask() {
                 </div>
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="EndDate" className='fw-semi'>Select End Date</label><br />
-                  <input type="date" id='EndDate' className='inputstyle focus-none'/>
                   <Calendar showIcon className='impdate'/>
                 </div>
                 
