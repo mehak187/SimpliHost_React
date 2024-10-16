@@ -81,10 +81,10 @@ function Taxes() {
                     <Link to="#" className="mx-1 tblicon">
                       <FaEye />
                     </Link>
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <IoPencil />
                     </Link>
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <HiTrash />
                     </Link>
                   </div>

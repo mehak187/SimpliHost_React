@@ -103,15 +103,15 @@ function Platforms() {
                 <td className="small text-black">
                   <div className="d-flex justify-content-center">
                     <Link
-                      to="/admin/co-hosting-details"
+                      to="#"
                       className="mx-1 tblicon"
                     >
                       <FaEye className="fs-5" />
                     </Link>
-                    <Link to="/admin/edit-inventory" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <IoPencil className=" fs-5" />
                     </Link>
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <HiTrash className=" fs-5" />
                     </Link>
                   </div>

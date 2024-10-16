@@ -74,7 +74,7 @@ function Webhooks() {
                     <Link to="#" className="mx-1 tblicon">
                       <TbCopy />
                     </Link>
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <HiTrash />
                     </Link>
                   </div>

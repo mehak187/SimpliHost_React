@@ -83,11 +83,7 @@ function AddTask() {
                     Select Start Date
                   </label>
                   <br />
-                  <input
-                    type="date"
-                    id="StartDate"
-                    className="inputstyle focus-none"
-                  />
+                  <Calendar showIcon className="impdate" />
                 </div>
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="StartTime" className="fw-semi">

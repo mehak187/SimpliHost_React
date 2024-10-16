@@ -100,10 +100,10 @@ function AllTasks() {
                     <Link to="#" className="mx-1 tblicon">
                       <TbCopy />
                     </Link>
-                    <Link to="/manager_detail" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <IoPencil />
                     </Link>
-                    <Link to="/delete_task" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <HiTrash />
                     </Link>
                   </div>
