@@ -137,11 +137,7 @@ function Home() {
           <div className="row align-items-center position-relative">
             <div className="col-xl-5 col-md-6 mx-auto">
               <div>
-                <img
-                  src={featureproperty}
-                  alt="Propety"
-                  className="img-fluid"
-                />
+                <img src={featureproperty}  alt="Property" className="img-fluid"/>
               </div>
             </div>
             <div className="col-xl-7 mt-3 mt-xl-0">
@@ -149,7 +145,7 @@ function Home() {
                 <div className="col-xl-5 col-sm-6">
                   <div className="featurecard-main2 position-relative d-flex align-items-center  py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={guestmessage} className="w-100 p-2" />
+                      <img src={guestmessage} alt="Guest message" className="w-100 p-2" />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Guest Messaging</p>
                   </div>
@@ -157,7 +153,7 @@ function Home() {
                 <div className="col-xl-5 col-sm-6 mt-3 mt-sm-0">
                   <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={cleaningtourner} className="w-100 p-2" />
+                      <img src={cleaningtourner} alt="cleaning tour" className="w-100 p-2" />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Cleaning Turnovers</p>
                   </div>
@@ -165,7 +161,7 @@ function Home() {
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3 ms-0 ms-xl-4">
                   <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={maintanceitem} className="w-100 p-2" />
+                      <img src={maintanceitem} alt="maintenance" className="w-100 p-2" />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Maintenance Items</p>
                   </div>
@@ -173,7 +169,7 @@ function Home() {
                 <div className="col-xl-5 col-sm-6 mt-sm-5 mt-3">
                   <div className="featurecard-main2 position-relative d-flex align-items-center py-2 px-3 rounded-3 h-100">
                     <div className="featurecard-img2">
-                      <img src={smartdevice2} className="w-100 p-2" />
+                      <img src={smartdevice2} alt="smart device" className="w-100 p-2" />
                     </div>
                     <p className="mb-0 ms-2 fw-semi fs-5">Smart Devices</p>
                   </div>
@@ -192,12 +188,9 @@ function Home() {
                 One simple plan for all your needs!
               </p>
               <div className="mt-4">
-                <a
-                  href="#"
-                  className="text-decoration-none more-btn px-5 py-2 fw-semi"
-                >
+                <Link to="#" className="text-decoration-none more-btn px-5 py-2 fw-semi">
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xl-7 mt-4 mt-xl-4">
@@ -212,12 +205,9 @@ function Home() {
                       Our plan gives you everything you need, hassle-free
                     </p>
                     <div className="mt-auto">
-                      <a
-                        href="#"
-                        className="text-decoration-none simplified-btn d-block text-center fw-semi"
-                      >
+                      <Link to="#" className="text-decoration-none simplified-btn d-block text-center fw-semi">
                         Get Your Price
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -229,12 +219,9 @@ function Home() {
                       right from the start. It's all included!
                     </p>
                     <div className=" mt-auto">
-                      <a
-                        href="#"
-                        className="text-decoration-none fullyfeature-btn d-block text-center fw-semi"
-                      >
+                      <Link to="#" className="text-decoration-none text-white fullyfeature-btn d-block text-center fw-semi">
                         Sign Up Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
