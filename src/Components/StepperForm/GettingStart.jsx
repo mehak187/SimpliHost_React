@@ -13,9 +13,9 @@ function GettingStart() {
               <img src={HostLogo} alt="" className="host-img" />
             </div>
             <div>
-              <button className="bg-blue text-white shadow rounded-3 py-2 px-3 border-0">
+              <Link to="/admin/properties" className="bg-blue text-decoration-none text-white shadow rounded-3 py-2 px-3 border-0">
                 Save & Exit
-              </button>
+              </Link>
             </div>
           </div>
         </div>
