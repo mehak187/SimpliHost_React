@@ -2,10 +2,10 @@ import React from "react";
 import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import propertyCollection from "../../assets/img/property-collection.png";
 import owner from "../../assets/img/owner.png";
 
 import FilterRow from "./FilterRow";
+import GroupImage from "../Checklist/GroupImage";
 
 function AllUsers() {
   const DataCollection = [
@@ -18,7 +18,7 @@ function AllUsers() {
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Active",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -29,7 +29,7 @@ function AllUsers() {
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Active",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -40,7 +40,7 @@ function AllUsers() {
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Deleted",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -51,7 +51,7 @@ function AllUsers() {
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Inactive",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
@@ -62,7 +62,7 @@ function AllUsers() {
       PhoneNumber: "+21 999 999 999",
       Email: "simplihost@gmail.com",
       status: "Deleted",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
   ];
 
@@ -113,7 +113,8 @@ function AllUsers() {
                 <td className="small text-black">{data.Email}</td>
                 <td className={`small fw-semi ${getStatusClass(data.status)}`}>
                   {data.status}
-                </td>                <td className="small text-black"><img src={data.property} alt="property-img" className="img-fluid property-img"/></td>
+                </td>                
+                <td className="small text-black">{data.property}</td>
                 <td className="small text-black">
                   <div className="d-flex">
                     <Link to="/admin/edit-inventory" className="mx-1 tblicon">

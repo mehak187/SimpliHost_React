@@ -87,7 +87,7 @@ function Invoices() {
                   {data.status}
                 </td>
                 <td className="small text-black">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                     <Link to="#" className="mx-1 tblicon">
                       <FaDollarSign className="fs-5" />
                     </Link>

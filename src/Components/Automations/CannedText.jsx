@@ -61,7 +61,7 @@ function CannedText() {
                 {data.Message}
               </td>
               <td className="small text-black">
-                <div className="d-flex">
+                <div className="d-flex justify-content-center">
                 <Link to="#" className="mx-1 tblicon">
                       <TbCopy className="fs-5"/>
                     </Link>

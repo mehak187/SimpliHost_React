@@ -3,10 +3,10 @@ import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import owner from "../../assets/img/owner.png";
-import property from "../../assets/img/property-collection.png";
 import FilterRow from "./FilterRow";
 import { FaEye } from "react-icons/fa";
 import { FaDollarSign } from "react-icons/fa";
+import GroupImage from "../Checklist/GroupImage";
 
 function FeeTypes() {
   const DataCollection = [
@@ -16,7 +16,7 @@ function FeeTypes() {
       FeeType: "Simple",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: property,
+      Property: <GroupImage/>,
     },
     {
       id: 1,
@@ -24,7 +24,7 @@ function FeeTypes() {
       FeeType: "Simple",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: property,
+      Property: <GroupImage/>,
     },
     {
       id: 1,
@@ -32,13 +32,11 @@ function FeeTypes() {
       FeeType: "Simple",
       Owner: owner,
       OwnerName: "Naseeb Designer",
-      Property: property,
+      Property: <GroupImage/>,
     },
   ];
   const getStatusClass = (status) => {
     switch (status) {
-      // case "Overdue":
-      //   return "text-danger";
       case "Active":
         return "text-success";
       default:
@@ -75,14 +73,10 @@ function FeeTypes() {
                 </div>
                 </td>
                 <td className="small text-black">
-                  <img
-                    src={data.Property}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
+                  {data.Property}
                 </td>
                 <td className="small text-black">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                     <Link to="#" className="mx-1 tblicon">
                       <IoPencil className=" fs-5" />
                     </Link>

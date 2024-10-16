@@ -5,43 +5,64 @@ import { IoPencil } from "react-icons/io5";
 import { TbCopy } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import FilterRow from "./FilterRow";
-import propertyCollection from "../../assets/img/property-collection.png";
+import GroupImage from "./GroupImage";
 
 function Maintenance() {
   const DataCollection = [
     {
       id: 1,
-      ChecklistName: "Green Back Home Maintenance",
-      Type: "Maintenance",
-      property: propertyCollection,
+      ChecklistName: "Green Back Home Cleaning",
+      Type: "Cleaning",
+      property: <GroupImage/>,
       NoOfItems: "30",
     },
     {
       id: 2,
-      ChecklistName: "Green Back Home Maintenance",
-      Type: "Maintenance",
-      property: propertyCollection,
+      ChecklistName: "Green Back Home Inspection",
+      Type: "Inspection",
+      property: <GroupImage/>,
       NoOfItems: "30",
     },
     {
       id: 3,
       ChecklistName: "Green Back Home Maintenance",
       Type: "Maintenance",
-      property: propertyCollection,
+      property: <GroupImage/>,
       NoOfItems: "30",
     },
     {
       id: 4,
-      ChecklistName: "Green Back Home Maintenance",
-      Type: "Maintenance",
-      property: propertyCollection,
+      ChecklistName: "Green Back Home Pet",
+      Type: "Pet",
+      property: <GroupImage/>,
+      NoOfItems: "30",
+    },
+    {
+      id: 5,
+      ChecklistName: "Green Back Home Amenity",
+      Type: "Amenity",
+      property: <GroupImage/>,
+      NoOfItems: "30",
+    },
+    {
+      id: 6,
+      ChecklistName: "Green Back Home Seasonal",
+      Type: "Seasonal",
+      property: <GroupImage/>,
+      NoOfItems: "30",
+    },
+    {
+      id: 7,
+      ChecklistName: "Green Back Home Admin",
+      Type: "Admin",
+      property: <GroupImage/>,
       NoOfItems: "30",
     },
   ];
 
   return (
     <div>
-      <FilterRow/>
+      <FilterRow />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
@@ -58,7 +79,7 @@ function Maintenance() {
               <tr key={data.id} className="align-middle">
                 <td className="small text-black">{data.ChecklistName}</td>
                 <td className="small text-black">{data.Type}</td>
-                <td className="small text-black"><img src={data.property} alt="property-img" className="img-fluid property-img"/></td>
+                <td className="small text-black">{data.property}</td>
                 <td className="small text-black">{data.NoOfItems}</td>
                 <td className="small text-black">
                   <div className="d-flex">
@@ -86,6 +107,7 @@ function Maintenance() {
 }
 
 export default Maintenance;
+
 
 
 

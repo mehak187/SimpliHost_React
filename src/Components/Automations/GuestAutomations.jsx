@@ -2,9 +2,9 @@ import React from "react";
 import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import property from "../../assets/img/property-collection.png";
 import FilterRow from "./FilterRow";
 import { TbCopy } from "react-icons/tb";
+import GroupImage from "../Checklist/GroupImage";
 
 function GuestAutomations() {
   const DataCollection = [
@@ -12,21 +12,21 @@ function GuestAutomations() {
       id: 1,
       RuleName: "First Day",
       Trigger: "Every Monday",
-      Property: property,
+      Property: <GroupImage/>,
       Active:"On",
     },
     {
       id: 1,
       RuleName: "First Day",
       Trigger: "Every Monday",
-      Property: property,
+      Property: <GroupImage/>,
       Active:"Off",
     },
     {
       id: 1,
       RuleName: "First Day",
       Trigger: "Every Monday",
-      Property: property,
+      Property: <GroupImage/>,
       Active:"On",
     },
   ];
@@ -55,16 +55,12 @@ function GuestAutomations() {
                   {data.Trigger}
                 </td>
                 <td className="small text-black">
-                  <div className="d-flex align-items-center">
-                  <img
-                    src={data.Property}
-                    alt="property-img"
-                    className="img-fluid me-2 property-img"
-                  />
+                  <div className="d-flex align-items-center justify-content-center">
+                  {data.Property}
                   </div>
                 </td>
                 <td className="small fw-semi">
-                    <div className=" d-flex align-items-center">
+                    <div className=" d-flex align-items-center justify-content-center">
                       <span>Off</span>
                       <label className="switch mx-1">
                         <input type="checkbox" id="Capture" checked={data.Active === "On"} readOnly/>
@@ -74,7 +70,7 @@ function GuestAutomations() {
                     </div>
                 </td>
                 <td className="small text-black">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                   <Link to="#" className="mx-1 tblicon">
                       <TbCopy className="fs-5"/>
                     </Link>

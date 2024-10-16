@@ -2,11 +2,10 @@ import React from "react";
 import { HiTrash } from "react-icons/hi2";
 import { IoPencil } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import propertyCollection from "../../assets/img/property-collection.png";
 import owner from "../../assets/img/owner.png";
-
 import FilterRow from "./FilterRow";
 import { FaEye } from "react-icons/fa";
+import GroupImage from "../Checklist/GroupImage";
 
 function Widgets() {
   const DataCollection = [
@@ -15,35 +14,35 @@ function Widgets() {
       WidgetsName: "John",
       Type: "Search",
       status: "Active",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Inactive",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Inactive",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Active",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
     {
       id: 1,
       WidgetsName: "John",
       Type: "Search",
       status: "Active",
-      property: propertyCollection,
+      property: <GroupImage/>,
     },
   ];
 
@@ -83,14 +82,12 @@ function Widgets() {
                   {data.status}
                 </td>{" "}
                 <td className="small text-black">
-                  <img
-                    src={data.property}
-                    alt="property-img"
-                    className="img-fluid property-img"
-                  />
+                  <div className="d-flex justify-content-center">
+                    {data.property}
+                  </div>
                 </td>
                 <td className="small text-black">
-                  <div className="d-flex">
+                  <div className="d-flex justify-content-center">
                     <Link to="" className="mx-1 tblicon">
                       <FaEye className=" fs-5" />
                     </Link>
