@@ -273,7 +273,7 @@ function WebLayout() {
                 </li>
                 <li className="nav-item  dropdown mx-1 mx-xl-2">
                   <Link
-                    className="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle me-0 pe-0"
                     to="#"
                     role="button"
                     data-bs-toggle="dropdown"

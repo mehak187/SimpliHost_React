@@ -94,7 +94,7 @@
 }
 
 .black-color {
-    color: black;
+    color: #000;
 }
 
 .featurecard-main2 {
@@ -696,8 +696,8 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: rgba(151, 151, 151, 1) !important;
-    color: white !important;
+    background-color: rgba(151, 151, 151, 1);
+    color: white;
     position: relative;
 }
 
@@ -706,7 +706,7 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: rgba(151, 151, 151, 1) !important;
+    background-color: rgba(151, 151, 151, 1);
     position: relative;
 }
 
@@ -791,13 +791,13 @@
 
 /* ---------navbar------------ */
 .simplihost-navbar {
-    background-color: var(--blue) !important;
-    color: white !important;
+    background-color: var(--blue);
+    color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.simplihost-navbar .active {
+.simplihost-navbar .navbar-nav .nav-link.active {
     color: var(--green) !important;
     font-weight: 600;
 }

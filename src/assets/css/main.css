@@ -197,7 +197,6 @@ template
     padding: 10px 10px;
 }
 
-
 .sideicon {
     width: 16px;
     margin-right: 10px;
@@ -277,6 +276,7 @@ template
     z-index: 9;
     width: 36px;
 }
+
 .min-sidebar .list>ul>li {
     margin-bottom: 10px;
 }
@@ -330,7 +330,6 @@ template
     justify-content: center;
 }
 
-
 @media screen and (max-width:768px) {
     .main {
         position: relative;
@@ -372,7 +371,6 @@ template
         padding: 0px 20px;
     }
 }
-
 
 @media screen and (min-width:769px) {
     .left {
