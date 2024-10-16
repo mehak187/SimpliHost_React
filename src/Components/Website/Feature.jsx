@@ -45,6 +45,57 @@ function Feature() {
     );
   };
 
+  const coreFeatures = [
+    {
+      name: "Unified Inbox",
+      des: "A single destination for guest communication synched with your listing data across all channels.",
+      link: "/unified-inbox",
+      img: cf11,
+    },
+    {
+      name: "Smart Devices Integration",
+      des: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests, and more based on easy-to-create rules.",
+      link: "/smart-devices",
+      img: cf1,
+    },
+    {
+      name: "Task and Checklists",
+      des: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests, and more based on easy-to-create rules.",
+      link: "/task-and-checklist",
+      img: cf2,
+    },
+    {
+      name: "Inventory Management",
+      des: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests, and more based on easy-to-create rules.",
+      link: "/inventory-management",
+      img: cf4,
+    },
+    {
+      name: "Maintenance Tracking",
+      des: "A single destination for guest communication synched with your listing data across all channels.",
+      link: "/maintenance-tracking",
+      img: cf5,
+    },
+    {
+      name: "Co-Hosting",
+      des: "Create invoices, share financial reports, and give owners access to their property calendars. Simplify your co-hosting duties and keep everyone in the loop!",
+      link: "/cohosting",
+      img: cf6,
+    },
+    {
+      name: "Automations",
+      des: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests, and more based on easy-to-create rules.",
+      link: "/automation",
+      img: cf7,
+    },
+    {
+      name: "Direct Booking",
+      des: "Eliminate repetitive tasks and reduce mistakes with booking reminders, directions, payment requests, and more based on easy-to-create rules.",
+      link: "/direct-booking",
+      img: cf8,
+    },
+  ];
+
   const potentials = [
     {
       title: "Easy to Use",
@@ -113,6 +164,33 @@ function Feature() {
         "We Won’t Leave You Hanging! Our Customer Success team will check in regularly to understand your business goals and help you make the most of the SimpliHost platform.",
     },
   ];
+
+  const stats = [
+    {
+      imgSrc: globe,
+      bgColor: "bg-blue",
+      title: "50",
+      description: "Countries Simplihost Operates in",
+    },
+    {
+      imgSrc: seting,
+      bgColor: "bg-green",
+      title: "50",
+      description: "Number of integrations",
+    },
+    {
+      imgSrc: suitcase,
+      bgColor: "bg-yellow",
+      title: "50",
+      description: "Bookings Per Month",
+    },
+    {
+      imgSrc: heart,
+      bgColor: "bg-orange",
+      title: "50",
+      description: "Preferred Partners",
+    },
+  ];
   return (
     <div>
       <section className="fhero-sec pt-5 bg-grey">
@@ -152,50 +230,19 @@ function Feature() {
             </div>
             <div className="col-md-6">
               <div className="row">
-                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div className="bg-blue p-3 rounded-4 h-100">
-                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={globe} alt="pic" className="vacation-cardPic" />
-                    </div>
-                    <div className="mt-3 text-white">
-                      <h5 className="fw-semi">50</h5>
-                      <p className="mb-0">Countries Simplihost Operates in</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div className="bg-green p-3 rounded-4 h-100">
-                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={seting} alt="pic" className="vacation-cardPic" />
-                    </div>
-                    <div className="mt-3 text-white">
-                      <h5 className="fw-semi">50</h5>
-                      <p className="mb-0">Number of integrations</p>
+                {stats.map((stat, index) => (
+                  <div key={index} className="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                    <div className={`${stat.bgColor} p-3 rounded-4 h-100`}>
+                      <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
+                        <img src={stat.imgSrc} alt="pic" className="vacation-cardPic" />
+                      </div>
+                      <div className="mt-3 text-white">
+                        <h5 className="fw-semi">{stat.title}</h5>
+                        <p className="mb-0">{stat.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div className="bg-yellow p-3 rounded-4 h-100">
-                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={suitcase} alt="pic" className="vacation-cardPic" />
-                    </div>
-                    <div className="mt-3 text-white">
-                      <h5 className="fw-semi">50</h5>
-                      <p className="mb-0">Bookings Per Month</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-                  <div className="bg-orange p-3 rounded-4 h-100">
-                    <div className="bg-white p-2 rounded-3 d-flex justify-content-center align-items-center">
-                      <img src={heart} alt="pic" className="vacation-cardPic" />
-                    </div>
-                    <div className="mt-3 text-white">
-                      <h5 className="fw-semi">50</h5>
-                      <p className="mb-0">Preferred Partners</p>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -205,75 +252,15 @@ function Feature() {
         <div className="container">
           <h2 className="text-center mb-4 fw-bold">Core Features</h2>
           <div className="row">
-            <FeatureCard
-              name="Unified Inbox"
-              des="A single destination for guest communication synched with your
-              listing data across all channels."
-              link="/unified-inbox"
-              img={cf11}
-            />
-            <FeatureCard
-              name="Smart Devices Integration"
-              des="Eliminate repetitive tasks and reduce
-                mistakes with booking reminders, directions,
-                payment requests and more based on
-                easy-to-create rules."
-              link="/smart-devices"
-              img={cf1}
-            />
-            <FeatureCard
-              name="Task and Checklists"
-              des="Eliminate repetitive tasks and reduce
-            mistakes with booking reminders, directions,
-            payment requests and more based on
-            easy-to-create rules."
-              link="/task-and-checklist"
-              img={cf2}
-            />
-            <FeatureCard
-              name="Inventory Management"
-              des="Eliminate repetitive tasks and reduce
-                mistakes with booking reminders, directions,
-                payment requests and more based on
-                easy-to-create rules."
-              link="/inventory-management"
-              img={cf4}
-            />
-            <FeatureCard
-              name="Maintenance Tracking"
-              des="A single destination for guest communication
-            synched with your listing data across all
-            channels."
-              link="/maintenance-tracking"
-              img={cf5}
-            />
-            <FeatureCard
-              name="Co-Hosting"
-              des="Create invoices, share financial reports, and 
-            give owners access to their property calendars.
-            Simplify your co-hosting duties and keep 
-            everyone in the loop!"
-              link="/cohosting"
-              img={cf6}
-            />
-            <FeatureCard
-              name="Automations"
-              des="Eliminate repetitive tasks and reduce mistake
-            with booking reminders, directions, payment
-            requests and more based on
-            easy-to-create rules."
-              link="/automation"
-              img={cf7}
-            />
-            <FeatureCard
-              name="Direct Booking"
-              des="Eliminate repetitive tasks and reduce
-            mistakes with booking reminders, directions,
-            payment requests and more based on
-            easy-to-create rules."
-              link="/direct-booking"
-              img={cf8}
-            />
+            {coreFeatures.map((feature, index) => (
+              <FeatureCard
+                key={index}
+                name={feature.name}
+                des={feature.des}
+                link={feature.link}
+                img={feature.img}
+              />
+            ))}
           </div>
         </div>
       </section>

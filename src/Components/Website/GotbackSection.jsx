@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function GotbackSection() {
   return (
@@ -13,8 +14,8 @@ function GotbackSection() {
                 to answer your inquiries, investigate your queries, and they
                 genuinely want to provide you with a better experience. Simply
                 reach out to us via email (
-                <a href="mailto:simplihost@gmail.com" target="_blank" className="">simplihost@gmail.com
-                </a>
+                <Link to="mailto:simplihost@gmail.com" target="_blank" className="">simplihost@gmail.com
+                </Link>
                 ) or click the button below to start chatting now.
               </p>
             </div>

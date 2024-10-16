@@ -48,8 +48,6 @@ function FaqSection() {
                       >
                         {faq.question}
                         <FaPlus className="icon text-black fs-5 ms-auto"/>
-                        {/* <i className="fas fa-plus" /> */}
-
                       </button>
                     </h2>
                     <div
