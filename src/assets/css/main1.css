@@ -3074,6 +3074,11 @@ tr {
   color: #484848;
 }
 
+.faq-icons {
+  max-width: 54px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
@@ -3408,6 +3413,7 @@ tr {
     width: calc(50% - 12px);
     padding: 6px;
 }
+
 }
 
 @media screen and (max-width: 480px) {
