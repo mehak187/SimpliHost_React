@@ -285,7 +285,7 @@ function WebLayout() {
                     <li>
                       <Link
                         className="dropdown-item py-2 border-bottom border-1 fw-semi"
-                        to="#"
+                        to="/faq"
                       >
                         FAQS
                       </Link>
