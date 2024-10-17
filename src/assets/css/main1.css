@@ -2967,7 +2967,7 @@ tr {
 
 .vertical-tab .nav .nav-link{
   background-color: #32F0CD;
-  margin-bottom: 6px;
+  margin:6px 0px;
   color: #000;
   min-width: 230px;
   font-size: 14px;
@@ -3039,8 +3039,23 @@ tr {
 }
 
 .faq-height{
-  height: 380px;
+  height: 430px;
   overflow-y: auto
+}
+
+.faq-height::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.faq-height::-webkit-scrollbar-track {
+  background: #d8ece9;
+  border-radius: 5px
+}
+
+.faq-height::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5px;
 }
 
 .featured-border:before {

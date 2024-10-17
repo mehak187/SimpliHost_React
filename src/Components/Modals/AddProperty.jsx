@@ -12,7 +12,7 @@ function AddProperty() {
         <div>
             <div className="dropdown">
                 <button
-                    className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white me-sm-2 text-decoration-none py-2"
+                    className="px-sm-4 px-3 w-100 mt-sm-0 mt-2 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white me-sm-2 text-decoration-none py-2"
                     type="button"
                     onClick={() => setShowModal(true)}
                 >
