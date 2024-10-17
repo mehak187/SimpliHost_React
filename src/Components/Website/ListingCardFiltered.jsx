@@ -1,62 +1,80 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
+import React from "react";
 import PCI from "../../assets/img/pci.png";
-import Left from "../../assets/img/arrow_left.png";
-import rightarrow from "../../assets/img/arrow_right.png";
+import Arrows from "../../assets/img/arrow2.png";
+import FurnishFlower from "../../assets/img/furnishFlower.png";
 import locationimg from "../../assets/img/furnished-location.svg";
 import bedimg from "../../assets/img/furnished-bed.svg";
 import furniture2img from "../../assets/img/furniture2.svg";
 import carimg from "../../assets/img/furnished-car.svg";
 import furniture4 from "../../assets/img/furniture4.svg";
+import Slider from "react-slick";
+import Left from "../../assets/img/arrow_left.png";
+import rightarrow from "../../assets/img/arrow_right.png";
+import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
+
 const listings = [
   {
-    imageSrcs: [PCI, PCI, PCI, PCI, PCI, PCI],
-    title: "Well Furnished Apartment1",
+    imageSrc: PCI,
+    leftArrowSrc: "path_to_left_arrow_image",
+    rightArrowSrc: "path_to_right_arrow_image",
+    flowerSrc: FurnishFlower,
+    title: "Well Furnished Apartment",
     location: "100 Smart Street, LA, USA",
     beds: 3,
     baths: 2,
     cars: 1,
     garage: 0,
+    detailImageSrc: Arrows,
   },
   {
-    imageSrcs: [PCI, PCI, PCI, PCI, PCI, PCI],
-    title: "Well Furnished Apartment 2",
+    imageSrc: PCI,
+    leftArrowSrc: "path_to_left_arrow_image",
+    rightArrowSrc: "path_to_right_arrow_image",
+    flowerSrc: FurnishFlower,
+    title: "Well Furnished Apartment",
     location: "100 Smart Street, LA, USA",
     beds: 3,
     baths: 2,
     cars: 1,
     garage: 0,
+    detailImageSrc: Arrows,
   },
   {
-    imageSrcs: [PCI, PCI, PCI, PCI, PCI, PCI],
-    title: "Well Furnished Apartment 3",
+    imageSrc: PCI,
+    leftArrowSrc: "path_to_left_arrow_image",
+    rightArrowSrc: "path_to_right_arrow_image",
+    flowerSrc: FurnishFlower,
+    title: "Well Furnished Apartment",
     location: "100 Smart Street, LA, USA",
     beds: 3,
     baths: 2,
     cars: 1,
     garage: 0,
+    detailImageSrc: Arrows,
   },
   {
-    imageSrcs: [PCI, PCI, PCI, PCI, PCI, PCI],
-    title: "Well Furnished Apartment 4",
+    imageSrc: PCI,
+    leftArrowSrc: "path_to_left_arrow_image",
+    rightArrowSrc: "path_to_right_arrow_image",
+    flowerSrc: FurnishFlower,
+    title: "Well Furnished Apartment",
     location: "100 Smart Street, LA, USA",
     beds: 3,
     baths: 2,
     cars: 1,
     garage: 0,
+    detailImageSrc: Arrows,
   },
 ];
 
-const ListingCard = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const settingsOuter = {
+const ListingCardFiltered = () => {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: (
       <div className="slider-arrow1 slider-prev">
@@ -69,14 +87,7 @@ const ListingCard = () => {
       </div>
     ),
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
+    
       {
         breakpoint: 600,
         settings: {
@@ -88,45 +99,26 @@ const ListingCard = () => {
     ],
   };
 
-  const settingsInner = {
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    afterChange: (current) => setCurrentIndex(current),
-    prevArrow: (
-      <div className="slider-prev2">
-        <img src={Left} alt="left" className="ar-img shadow" />
-      </div>
-    ),
-    nextArrow: (
-      <div className="slider-next2">
-        <img src={rightarrow} alt="right" className="ar-img shadow" />
-      </div>
-    ),
-  };
-
   return (
     <div className="slides">
-      <Slider {...settingsOuter}>
+      <Slider {...settings}>
         {listings.map((listing, index) => (
           <div className="col-12 mt-4 mx-auto px-sm-4 px-2 py-5" key={index}>
-            <div className="p-3 furnished-shadow inner-slider position-relative rounded-3">
-              <Slider {...settingsInner}>
-                {listing.imageSrcs.map((src, idx) => (
-                  <img
-                    key={idx}
-                    src={src}
-                    alt={`furnished-${idx}`}
-                    className="w-100"
-                  />
-                ))}
-              </Slider>
+            <div className="p-3 furnished-shadow rounded-3">
+              <div className="furnished-siz">
+                <img src={listing.imageSrc} alt="furnished" className="w-100" />
+              </div>
               <Link to="#" className="furnishedover-size">
                 <FaRegHeart className=" text-black"/>
               </Link>
               <div className="d-flex align-items-center mt-3">
+                <div className="furnished-flower">
+                  <img
+                    src={listing.flowerSrc}
+                    alt="furnished-flower"
+                    className="w-100"
+                  />
+                </div>
                 <p className="mb-0 fs-6 fw-bold ms-2">{listing.title}</p>
               </div>
               <div className="d-flex align-items-center mt-3">
@@ -139,7 +131,7 @@ const ListingCard = () => {
               </div>
               <div className="d-flex justify-content-between mt-3">
                 <div className="d-flex align-items-center">
-                <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center">
                     <div className="furniture-size">
                       <img src={bedimg} alt="bed" className="sm-img" />
                     </div>
@@ -172,6 +164,17 @@ const ListingCard = () => {
                     <p className="mb-0 fw-bold ms-2">{listing.garage}</p>
                   </div>
                 </div>
+                <Link
+                  to=""
+                  className="detail-btn text-white d-inline-flex align-items-center text-decoration-none"
+                >
+                  Detail
+                  <img
+                    src={listing.detailImageSrc}
+                    alt="detail"
+                    className="ms-2"
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -181,4 +184,4 @@ const ListingCard = () => {
   );
 };
 
-export default ListingCard;
+export default ListingCardFiltered;
