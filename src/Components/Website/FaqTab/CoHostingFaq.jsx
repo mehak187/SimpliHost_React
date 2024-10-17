@@ -3,34 +3,34 @@ import { FaPlus } from "react-icons/fa6";
 
 const faqs = [
   {
-    question: "How quickly are messages synced to other platforms?",
+    question: "Can property owners see their property's calendar in real-time?",
     answer:
       "Simplihost helps you manage your property seamlessly with features like booking management, automated communications, and more.",
   },
   {
     question:
-      "Can I respond to guests from the unified inbox directly?",
+      "Is there a way to control what information co-hosts can access?",
     answer:
       "Simplihost offers unique features like customizable booking settings and integration with popular listing platforms.",
   },
   {
-    question: "Does the unified inbox integrate with all major booking platforms?",
+    question: "Can co-hosts create separate invoices for property owners?",
     answer:
       "Our team provides personalized onboarding assistance to ensure you get up and running quickly.",
   },
   {
-    question: "Is there a search feature to find specific messages or conversations?",
+    question: "Can you set multiple management agreements for different owners?",
     answer:
       "Yes, Simplihost offers a mobile application for easy access and management on the go.",
   },
   {
-    question: "Is it possible to set up templates for common responses in the unified inbox?",
+    question: "Can you add recurring expenses to an invoice?",
     answer:
       "Yes, we offer various product demos that showcase Simplihost's features. You can find them on our website.",
   },
 ];
 
-function UnifiedInboxTab() {
+function CoHostingFaq() {
   return (
     <section className="accordian-sec w-100">
       <div className="container psm-2 p-0">
@@ -80,6 +80,6 @@ function UnifiedInboxTab() {
   );
 }
 
-export default UnifiedInboxTab;
+export default CoHostingFaq;
 
 

@@ -3,41 +3,41 @@ import { FaPlus } from "react-icons/fa6";
 
 const faqs = [
   {
-    question: "How quickly are messages synced to other platforms?",
+    question: "Which smart devices does the software integrate with?",
     answer:
       "Simplihost helps you manage your property seamlessly with features like booking management, automated communications, and more.",
   },
   {
     question:
-      "Can I respond to guests from the unified inbox directly?",
+      "Can I control smart locks and thermostats remotely through the software?",
     answer:
       "Simplihost offers unique features like customizable booking settings and integration with popular listing platforms.",
   },
   {
-    question: "Does the unified inbox integrate with all major booking platforms?",
+    question: "Are there notifications if a smart device malfunctions?",
     answer:
       "Our team provides personalized onboarding assistance to ensure you get up and running quickly.",
   },
   {
-    question: "Is there a search feature to find specific messages or conversations?",
+    question: "Are there any limitations on the number of smart devices that can be integrated?",
     answer:
       "Yes, Simplihost offers a mobile application for easy access and management on the go.",
   },
   {
-    question: "Is it possible to set up templates for common responses in the unified inbox?",
+    question: "Is there a way to automate smart device settings based on guest check-in/out?",
     answer:
       "Yes, we offer various product demos that showcase Simplihost's features. You can find them on our website.",
   },
 ];
 
-function UnifiedInboxTab() {
+function SmartDeviceInteraction() {
   return (
     <section className="accordian-sec w-100">
       <div className="container psm-2 p-0">
         <div className="rounded-4 py-3 px-3 bg-green">
           <div className="faq-height w-100">
             <div className="pt-4 px-sm-4 pe-2 rounded-4">
-              <h3 className="fw-bold">Unified Inbox</h3>
+              <h3 className="fw-bold">Smart Device Interaction</h3>
               <p className="mb-4 fw-semi">
                 About Simplihost Property Management Platform
               </p>
@@ -80,6 +80,6 @@ function UnifiedInboxTab() {
   );
 }
 
-export default UnifiedInboxTab;
+export default SmartDeviceInteraction;
 
 

@@ -3038,6 +3038,13 @@ tr {
   color: #FD6363;
 }
 
+.faq-height{
+  height: 380px;
+  overflow-y: auto
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
@@ -3207,6 +3214,16 @@ tr {
   .logoImg-main {
     border-radius: 50px;
   }
+
+  .vertical-tab .nav .nav-link {
+    background-color: #32F0CD;
+    color: #000;
+    min-width: 0;
+    font-size: 12px;
+    width: calc(33.33% - 12px);
+    margin: 6px;
+    text-align: start;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -3352,6 +3369,11 @@ tr {
     outline: none;
     background-color: #fff;
   }
+
+  .vertical-tab .nav .nav-link {
+    width: calc(50% - 12px);
+    padding: 6px;
+}
 }
 
 @media screen and (max-width: 480px) {

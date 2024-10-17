@@ -94,7 +94,7 @@ function LabelStepper() {
   };
 
   return (
-    <form action="">
+    <form action="/admin/properties">
       <div className="">
         <div className="bg-lgrey py-3">
           <div className="container">
