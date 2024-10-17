@@ -66,39 +66,42 @@ function Faq() {
             <div className="col-lg-6">
               <div className="">
                 <h1 className="fw-bold">We've got answers!</h1>
-                <p className="mb-0 comm-para">Read the frequently asked questions to make an informed decision!</p>
+                <p className="mb-0 comm-para">
+                  Read the frequently asked questions to make an informed
+                  decision!
+                </p>
                 <div className="d-flex align-items-center shadow mt-3 border border-1 rounded-pill bg-white px-2 py-1">
-                    <input
+                  <input
                     type="search"
                     className="border-0 py-3 px-3 bg-transparent w-100"
                     placeholder={`Search FAQ question here \u{1F64B}`}
                     id=""
-                    />
-                    <div className="d-flex align-items-center bg-blue text-white px-3 rounded-circle py-3">
-                    <FaSearch className=""/>
-                    </div>
+                  />
+                  <div className="d-flex align-items-center bg-blue text-white px-3 rounded-circle py-3">
+                    <FaSearch className="" />
+                  </div>
                 </div>
                 <div className="row align-items-center">
                   <div className="col-6 my-4">
-                     <div className="bg-white d-flex align-items-center shadow p-2 rounded-3">
-                        <div className="faq-icons me-2">
-                            <img src={faq2} alt="faq" className="w-100"/>
-                        </div>
-                        <div>
-                            <p className="fw-bold mb-0">500+</p>
-                            <div className="mt-1">Happy Customers</div>
-                        </div>
+                    <div className="bg-white d-flex align-items-center shadow p-2 rounded-3">
+                      <div className="faq-icons me-2">
+                        <img src={faq2} alt="faq" className="w-100" />
+                      </div>
+                      <div>
+                        <p className="fw-bold mb-0">500+</p>
+                        <div className="mt-1">Happy Customers</div>
+                      </div>
                     </div>
                   </div>
                   <div className="col-6 my-4">
-                     <div className="bg-white d-flex align-items-center shadow p-2 rounded-3">
-                        <div className="faq-icons me-2">
-                            <img src={faq1} alt="faq" className="w-100"/>
-                        </div>
-                        <div>
-                            <p className="fw-bold mb-0">1000+</p>
-                            <div className="mt-1">Ready Property</div>
-                        </div>
+                    <div className="bg-white d-flex align-items-center shadow p-2 rounded-3">
+                      <div className="faq-icons me-2">
+                        <img src={faq1} alt="faq" className="w-100" />
+                      </div>
+                      <div>
+                        <p className="fw-bold mb-0">1000+</p>
+                        <div className="mt-1">Ready Property</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -106,33 +109,38 @@ function Faq() {
             </div>
             <div className="col-lg-6 col-xl-5 offset-xl-1 d-lg-block d-none">
               <div className="mb-5 mb-lg-0">
-              <video width="600" controls className="rounded-4 w-100">
-        <source src={testVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+                <video width="600" controls className="rounded-4 w-100">
+                  <source src={testVideo} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section className="effort-sec py-5 mt-lg-5">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="text-center col-sm-9 col-md-8 col-lg-7">
-            <h2 className="fw-bold">Which Simplihost product would you like to
-            learn more about?</h2>
-            <div>
-              <img src={stock1} alt={stock1} className="img-fluid" />
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="text-center col-sm-9 col-md-8 col-lg-7">
+              <h2 className="fw-bold">
+                Which Simplihost product would you like to learn more about?
+              </h2>
+              <div>
+                <img src={stock1} alt={stock1} className="img-fluid" />
+              </div>
+            </div>
+            <div className="text-center col-sm-11 col-md-10 col-lg-9">
+              <p className="mb-0 effort-para mt-3">
+                Got questions? We've got answers! Dive into our FAQ treasure
+                chest to find all the info you need. Whether it’s about
+                features, pricing, or just how to get started, we’ve covered the
+                basics (and the fun stuff too). No need to wait on hold—get
+                quick answers right here and keep things rolling smoothly!
+              </p>
             </div>
           </div>
-          <div className="text-center col-sm-11 col-md-10 col-lg-9">
-            <p className="mb-0 effort-para mt-3">Got questions? We've got answers! Dive into our FAQ treasure chest to find all the info you need. Whether it’s about features,
-pricing, or just how to get started, we’ve covered the basics (and the fun stuff too). No need to wait on hold—get
-quick answers right here and keep things rolling smoothly!</p>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
       <section>
         <div className="container py-5">
           <h5 className="fw-semi ms-sm-3">About Simplihost</h5>
