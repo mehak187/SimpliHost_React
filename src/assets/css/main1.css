@@ -2937,6 +2937,50 @@ tr {
   box-shadow: 0px 30px 50px 0px #8742EB1A;
 }
 
+#myinput {
+  height: 20px;
+}
+
+#myinput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  border: 1px solid #3551B6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.position-sign{
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -22px;
+}
+
+.bg-nav{
+  background-color: #B9FAEE;
+}
+
+.vertical-tab .nav .nav-link{
+  background-color: #32F0CD;
+  margin-bottom: 6px;
+  color: #000;
+  min-width: 230px;
+  font-size: 14px;
+
+}
+
+.vertical-tab .nav .nav-link.active{
+  background-color: #32F0CD;
+  margin-bottom: 6px;
+  color: #3551B6;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);

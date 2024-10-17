@@ -65,6 +65,7 @@ import ContactUs from "./Pages/Website/ContactUs";
 import ListingDetails from "./Pages/Website/ListingDetails";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Faq from "./Pages/Website/Faq";
 function App() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -134,6 +135,7 @@ function App() {
           <Route path="/simple-price" element={<Pricing />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/listing-details" element={<ListingDetails />} />
+          <Route path="/faq" element={<Faq />} />
         </Route>
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
