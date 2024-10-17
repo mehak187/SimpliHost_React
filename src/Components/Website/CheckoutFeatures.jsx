@@ -57,8 +57,8 @@ function CheckoutFeatures() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
     autoplay: true,
+    arrows: false,
     autoplaySpeed: 1500,
     responsive: [
       {
