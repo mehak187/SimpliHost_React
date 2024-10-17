@@ -62,7 +62,7 @@ function PricingSlider() {
           </div>
 
           <div className="text-center position-sign">
-            <button className="signup-btn1 rounded-pill px-sm-5 small" data-bs-toggle="modal" data-bs-target="#signupModal">
+            <button className="signup-btn1 rounded-pill py-3 px-sm-4 small" data-bs-toggle="modal" data-bs-target="#signupModal">
               Sign Up Now!
             </button>
           </div>

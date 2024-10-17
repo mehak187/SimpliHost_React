@@ -3043,7 +3043,21 @@ tr {
   overflow-y: auto
 }
 
+.featured-border:before {
+  position: absolute;
+  content: '';
+  background: #484848;
+  width: 60%;
+  height: 6px;
+  border-radius: 50px;
+  bottom: -14px;
+  left: 50%;
+  transform: translatex(-50%);
+}
 
+.featured-border {
+  color: #484848;
+}
 
 @media screen and (max-width: 1200px) {
   .filter-col {
@@ -3290,6 +3304,11 @@ tr {
   .slides .slick-next img {
     display: none;
   }
+
+  .slides .inner-slider .slick-prev img,
+  .slides .inner-slider .slick-next img {
+    display: block;
+}
 
   .main-tabs .nav-tabs .nav-link {
     padding: 4px 8px;
