@@ -1,6 +1,7 @@
 import React from "react";
 import listingdetail from "../../assets/img/listingdetail-pic.svg";
 import futnished from "../../assets/img/futnished-flower.svg";
+import { Link } from "react-router-dom";
 
 function ListingDetails() {
   return (
@@ -21,9 +22,9 @@ function ListingDetails() {
               </div>
             </div>
             <div className="mt-4  mt-sm-0">
-              <button type="button" className="listingshow-all-btn ">
+              <Link to="/listing-photos" type="button" className="listingshow-all-btn text-decoration-none">
                 Show all photos
-              </button>
+              </Link>
             </div>
           </div>
         </div>
