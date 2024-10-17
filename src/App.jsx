@@ -143,7 +143,6 @@ function App() {
           <Route path="admin/labelStepper" element={<LabelStepper />} />
           <Route path="/login" element={<Login />} />
           <Route path="/connect" element={<ConnectModal />} />
-          <Route path="/addProperty" element={<AddProperty />} />
       </Routes>
     </BrowserRouter>
    </div>

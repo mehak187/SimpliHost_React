@@ -33,14 +33,6 @@ function PropertySpace() {
   const handleSelectProperty = (propertyType) =>
     setSelectedProperty(propertyType);
 
-  const modifyCount = (count, setCount, increment) => {
-    if (increment) {
-      setCount(count + 1);
-    } else if (count > 0) {
-      setCount(count - 1);
-    }
-  };
-
   return (
     <div className="container py-5">
       <div className="row px-lg-4 justify-content-between">
@@ -123,20 +115,30 @@ function PropertySpace() {
 }
 
 const RoomCounter = ({ label, count, setCount }) => {
+  const modifyCount = (increment) => {
+    if (increment) {
+      setCount(count + 1);
+    } else if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+
   return (
-    <div style={containerStyle}>
-      <span style={labelStyle}>{label}</span>
-      <div style={counterWrapperStyle}>
+    <div className="containerStyle d-flex justify-content-between align-items-center border p-2 rounded-3 bg-lgrey mb-2 ">
+      <span className="labelStyle">{label}</span>
+      <div className="counterWrapperStyle d-flex">
         <button
+          type="button"
           style={buttonStyle}
-          onClick={() => modifyCount(count, setCount, false)}
+          onClick={() => modifyCount(false)}
         >
           <span>−</span>
         </button>
         <span style={countStyle}>{count}</span>
         <button
+          type="button"
           style={buttonStyle}
-          onClick={() => modifyCount(count, setCount, true)}
+          onClick={() => modifyCount(true)}
         >
           <span>+</span>
         </button>
@@ -145,17 +147,6 @@ const RoomCounter = ({ label, count, setCount }) => {
   );
 };
 
-const containerStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  padding: "10px",
-  border: "1px solid #ddd",
-  borderRadius: "8px",
-  backgroundColor: "#f9f9f9",
-  width: "100%",
-  marginBottom: "10px",
-};
 
 const labelStyle = {
   fontSize: "16px",

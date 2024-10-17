@@ -1,26 +1,33 @@
 import React, { useState } from 'react';
 import { FaCaretRight, FaCaretDown } from 'react-icons/fa';
 import UnifiedInboxTab from '../../Components/Website/FaqTab/UnifiedInboxTab';
+import SmartDeviceInteraction from '../../Components/Website/FaqTab/SmartDeviceInteraction';
+import TaskChecklist from '../../Components/Website/FaqTab/TaskChecklist';
+import InventoryManagement from '../../Components/Website/FaqTab/InventoryManagement';
+import MaintenanceTracking from '../../Components/Website/FaqTab/MaintenanceTracking';
+import CoHostingFaq from '../../Components/Website/FaqTab/CoHostingFaq';
+import AutomationFaq from '../../Components/Website/FaqTab/AutomationFaq';
+import DirectBookingFaq from '../../Components/Website/FaqTab/DirectBookingFaq';
 
 function Faq() {
     const [activeTab, setActiveTab] = useState('v-pills-home');
 
     const tabs = [
         { id: 'v-pills-home', label: 'Unified Inbox', content: <UnifiedInboxTab /> },
-        { id: 'v-pills-profile', label: 'Smart Device Interaction', content: 'Smart Device Interaction content here' },
-        { id: 'v-pills-task', label: 'Task and Checklists', content: 'Task and Checklists content here' },
-        { id: 'v-pills-inventory', label: 'Inventory Management', content: 'Inventory Management content here' },
-        { id: 'v-pills-maintenance', label: 'Maintenance Tracking', content: 'Maintenance Tracking content here' },
-        { id: 'v-pills-cohosting', label: 'Co-Hosting', content: 'Co-Hosting content here' },
-        { id: 'v-pills-automation', label: 'Automations', content: 'Automations content here' },
-        { id: 'v-pills-booking', label: 'Direct Booking', content: 'Direct Booking content here' }
+        { id: 'v-pills-profile', label: 'Smart Device Interaction', content: <SmartDeviceInteraction/> },
+        { id: 'v-pills-task', label: 'Task and Checklists', content: <TaskChecklist/> },
+        { id: 'v-pills-inventory', label: 'Inventory Management', content: <InventoryManagement/> },
+        { id: 'v-pills-maintenance', label: 'Maintenance Tracking', content: <MaintenanceTracking/> },
+        { id: 'v-pills-cohosting', label: 'Co-Hosting', content: <CoHostingFaq/> },
+        { id: 'v-pills-automation', label: 'Automations', content: <AutomationFaq/> },
+        { id: 'v-pills-booking', label: 'Direct Booking', content: <DirectBookingFaq/> }
     ];
 
     return (
         <div className='container py-5'>
-            <h5 className='fw-semi'>About Simplihost</h5>
-            <div className="d-flex align-items-start vertical-tab">
-                <div className="nav flex-column nav-pills me-3 bg-nav p-2 rounded-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <h5 className='fw-semi ms-sm-3'>About Simplihost</h5>
+            <div className="d-flex flex-md-row flex-column align-items-start vertical-tab">
+                <div className="nav flex-md-column nav-pills me-md-2 mx-md-0 mx-sm-3 bg-nav p-2 rounded-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     {tabs.map((tab) => (
                         <button
                             key={tab.id}
@@ -39,7 +46,7 @@ function Faq() {
                         </button>
                     ))}
                 </div>
-                <div className="tab-content" id="v-pills-tabContent">
+                <div className="tab-content p-0 w-100 mt-md-0 mt-3" id="v-pills-tabContent">
                     {tabs.map((tab) => (
                         <div
                             key={tab.id}
