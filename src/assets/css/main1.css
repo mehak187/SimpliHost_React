@@ -1986,8 +1986,8 @@ tr {
 }
 
 .offeredpic-size {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3079,6 +3079,9 @@ tr {
   width: 100%;
 }
 
+.text-lgrey {
+  color: #484848;
+}
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);

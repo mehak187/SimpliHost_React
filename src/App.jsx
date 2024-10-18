@@ -67,6 +67,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Faq from "./Pages/Website/Faq";
 import ListingFiltered from "./Pages/Website/ListingFiltered";
+import ListingPhotos from "./Pages/Website/ListingPhotos";
 function App() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -136,6 +137,7 @@ function App() {
           <Route path="/simple-price" element={<Pricing />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/listing-details" element={<ListingDetails />} />
+          <Route path="/listing-photos" element={<ListingPhotos />} />
           <Route path="/listing-filtered" element={<ListingFiltered />} />
           <Route path="/faq" element={<Faq />} />
         </Route>

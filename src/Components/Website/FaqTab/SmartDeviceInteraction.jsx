@@ -33,10 +33,10 @@ const faqs = [
 function SmartDeviceInteraction() {
   return (
     <section className="accordian-sec w-100">
-      <div className="container psm-2 p-0">
+      <div className="container">
         <div className="rounded-4 py-3 px-3 bg-green">
           <div className="faq-height w-100">
-            <div className="pt-4 px-sm-4 pe-2 rounded-4">
+            <div className="pt-2 px-sm-3 pe-2 rounded-4">
               <h3 className="fw-bold">Smart Device Interaction</h3>
               <p className="mb-4 fw-semi">
                 About Simplihost Property Management Platform

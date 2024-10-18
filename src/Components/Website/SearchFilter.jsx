@@ -3,7 +3,7 @@ import faserach from "../../assets/img/faserach-listing.svg";
 
 function SearchFilter() {
   return (
-    <form>
+    <form action="/listing-filtered">
     <div className="row justify-content-center">
       <div className="col-md-11 col-lg-10 col-xl-9 col-xxl-7">
         <div className="d-flex justify-content-between listingform-bg shadow rounded-4 p-3">
@@ -49,15 +49,13 @@ function SearchFilter() {
               />
             </div>
             <div className="">
-              <a href="#" className="text-decoration-none">
-                <div className="listingsearchicon-size">
+                <button type='submit' className="border-0 listingsearchicon-size">
                   <img
                     src={faserach}
                     alt="search"
                     className="search-icon"
                   />
-                </div>
-              </a>
+                </button>
             </div>
           </div>
         </div>

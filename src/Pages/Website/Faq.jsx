@@ -146,7 +146,7 @@ function Faq() {
           <h5 className="fw-semi ms-sm-3">About Simplihost</h5>
           <div className="d-flex flex-md-row flex-column align-items-start vertical-tab">
             <div
-              className="nav flex-md-column nav-pills me-md-2 mx-md-0 mx-sm-3 bg-nav p-2 rounded-3"
+              className="nav flex-md-column nav-pills me-md-2 mx-md-0 mx-sm-3 bg-nav py-1 px-2 rounded-3"
               id="v-pills-tab"
               role="tablist"
               aria-orientation="vertical"
