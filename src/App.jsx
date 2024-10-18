@@ -45,8 +45,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AddChecklistCategory from "./Components/Settings/AddChecklistCategory";
 import AddPropertyTags from "./Components/Settings/AddPropertyTags";
-import ConnectModal from "./Components/Modals/ConnectModal";
-import AddProperty from "./Components/Modals/AddProperty";
 import ChecklistTabs from "./Components/ChecklistArrival/ChecklistTabs";
 import WebLayout from "./Layouts/WebLayout";
 import Home from "./Pages/Website/Home";
@@ -67,6 +65,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Faq from "./Pages/Website/Faq";
 import ListingFiltered from "./Pages/Website/ListingFiltered";
+import SelectPropertiesModal from "./Components/Modals/SelectPropertiesModal";
 function App() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -142,7 +141,7 @@ function App() {
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/connect" element={<ConnectModal />} />
+          <Route path="/connect" element={<SelectPropertiesModal />} />
       </Routes>
     </BrowserRouter>
    </div>
