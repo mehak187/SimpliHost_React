@@ -3088,6 +3088,10 @@ tr {
 .h-300 {
   height: 240px;
 }
+
+th,td {
+  text-align: start;
+}
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);

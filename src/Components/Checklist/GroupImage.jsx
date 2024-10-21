@@ -5,6 +5,7 @@ import PCI from "../../assets/img/pci.png";
 
 export default function GroupImage() {
   return (
+    <div className=" d-flex justify-content-start">
     <AvatarGroup max={4} className="avt">
       <Avatar alt="Remy Sharp" src={PCI} className="sm-img" />
       <Avatar alt="Travis Howard" src={PCI} className="sm-img" />
@@ -12,5 +13,6 @@ export default function GroupImage() {
       <Avatar alt="Agnes Walker" src={PCI} className="sm-img" />
       <Avatar alt="Trevor Henderson" src={PCI} className="sm-img" />
     </AvatarGroup>
+    </div>
   );
 }
