@@ -55,6 +55,13 @@ function WebLayout() {
     return paths.some((path) => isActive(path));
   }
 
+  function isResourceActive() {
+    const paths = [
+      "/faq",
+    ];
+    return paths.some((path) => isActive(path));
+  }
+
   return (
     <>
       <header className="bg-grey">
@@ -91,7 +98,12 @@ function WebLayout() {
                 <li className="nav-item  mx-1 mx-xl-2">
                   <Link
                     className={`nav-link  pe-1 pe-lg-0 ${
-                      isActive("/listings") ? "active" : ""
+                      isActive("/listings") ||
+                      isActive("/listing-details") ||
+                      isActive("/listing-photos") ||
+                      isActive("/listing-filtered")
+                        ? "active"
+                        : ""
                     }`}
                     to="/listings"
                   >
@@ -271,16 +283,20 @@ function WebLayout() {
                     Pricing
                   </Link>
                 </li>
-                <li className="nav-item  dropdown mx-1 mx-xl-2">
-                  <Link
-                    className="nav-link dropdown-toggle me-0 pe-0"
-                    to="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                <li className="nav-item d-flex flex-wrap dropdown mx-1 mx-xl-2">
+                    <Link
+                    className={`nav-link pe-1 pe-lg-0 ${
+                      isResourceActive() ? "active" : ""
+                    }`}
                   >
                     Resources
                   </Link>
+                  <p
+                    className="nav-link mb-0 pe-0 dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></p>
                   <ul className="dropdown-menu py-0">
                     <li>
                       <Link

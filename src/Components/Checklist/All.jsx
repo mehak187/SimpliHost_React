@@ -67,27 +67,27 @@ function All() {
         <table className="table">
           <thead className="">
             <tr className="align-middle">
-              <th className="small fw-semi text-black text-nowrap">
+              <th className="small fw-semi text-black text-nowrap text-start">
                 Checklist Name
               </th>
-              <th className="small fw-semi text-black text-nowrap">Type</th>
-              <th className="small fw-semi text-black text-nowrap">
+              <th className="small fw-semi text-black text-nowrap text-start">Type</th>
+              <th className="small fw-semi text-black text-nowrap text-start">
                 Properties
               </th>
-              <th className="small fw-semi text-black text-nowrap">
+              <th className="small fw-semi text-black text-nowrap text-start">
                 Number of Items
               </th>
-              <th className="small fw-semi text-black text-nowrap">Action</th>
+              <th className="small fw-semi text-black text-nowrap text-start">Action</th>
             </tr>
           </thead>
           <tbody>
             {DataCollection.map((data) => (
               <tr key={data.id} className="align-middle">
-                <td className="small text-black">{data.ChecklistName}</td>
-                <td className="small text-black">{data.Type}</td>
-                <td className="small text-black">{data.property}</td>
-                <td className="small text-black">{data.NoOfItems}</td>
-                <td className="small text-black">
+                <td className="small text-black text-start">{data.ChecklistName}</td>
+                <td className="small text-black text-start">{data.Type}</td>
+                <td className="small text-black text-start">{data.property}</td>
+                <td className="small text-black text-start">{data.NoOfItems}</td>
+                <td className="small text-black text-start">
                   <div className="d-flex">
                     <Link to="#" className="mx-1 tblicon">
                       <TbCopy className="fs-5" />
