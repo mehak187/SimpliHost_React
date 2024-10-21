@@ -70,7 +70,7 @@ function ContactUs() {
               </div>
               <div className="row">
                 <div className="col-md-6">
-                  <div className="d-flex align-items-center bg-white p-4 rounded-4 mt-5">
+                  <div className="d-flex align-items-center bg-white p-4 rounded-4 mt-4">
                     <div className="bg-yellow p-3 rounded-4 coreF-card1 d-flex align-items-center justify-content-center">
                       <img src={mail} alt="pic" className="" />
                     </div>
@@ -80,7 +80,7 @@ function ContactUs() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex align-items-center bg-white p-4 rounded-4 mt-5">
+                  <div className="d-flex align-items-center bg-white p-4 rounded-4 mt-4">
                     <div className="bg-yellow p-3 rounded-4 coreF-card1 d-flex align-items-center justify-content-center">
                       <img src={phone} alt="pic" className="" />
                     </div>

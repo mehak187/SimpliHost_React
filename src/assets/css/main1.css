@@ -1986,7 +1986,7 @@ tr {
 }
 
 .offeredpic-size {
-  width: 24px;
+  min-width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -1994,13 +1994,15 @@ tr {
 }
 
 .contactpic-size {
-  width: 45px;
-  height: 45px;
   background-color: rgba(53, 81, 182, 1);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.contactpic-size img{
+  width: 40px;
+  height: 40px;
 }
 
 .contact-border {
@@ -2040,7 +2042,7 @@ tr {
 }
 
 .deatilreview-btn {
-  padding: 10px 25px;
+  padding: 14px 25px;
   background-color: rgba(53, 81, 182, 1);
   color: white;
   border-radius: 5px;
@@ -3119,6 +3121,14 @@ tr {
 
 .text-lgrey {
   color: #484848;
+}
+
+.h-300 {
+  height: 240px;
+}
+
+th,td {
+  text-align: start;
 }
 @media screen and (max-width: 1200px) {
   .filter-col {
