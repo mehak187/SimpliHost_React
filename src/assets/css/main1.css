@@ -3151,6 +3151,10 @@ tr {
   overflow-y: auto;
 }
 
+.faq-icons {
+  max-width: 54px;
+  width: 100%;
+}
 
 .faq-icons {
   max-width: 54px;
