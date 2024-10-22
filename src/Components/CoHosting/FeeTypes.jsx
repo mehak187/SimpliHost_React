@@ -45,7 +45,7 @@ function FeeTypes() {
   };
   return (
     <div>
-      <FilterRow searchName="Fee" btnName="Add Fee" btnLink="#" />
+      <FilterRow searchName="Fee" btnName="Add Fee" btnLink="/admin/add-fee" />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">
