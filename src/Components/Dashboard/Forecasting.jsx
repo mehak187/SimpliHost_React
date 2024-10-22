@@ -53,7 +53,7 @@ const StatCard = ({ title, value, image, trend }) => {
           </div>
           <h4 className="fw-semibold">{value}</h4>
         </div>
-        <img src={image} alt={title} />
+        <img src={image} alt={title}  className='md-img'/>
       </div>
     </div>
   );
@@ -115,7 +115,7 @@ function Forecasting() {
       <div className="d-sm-flex align-items-center justify-content-between border-bottom pb-2">
         <div className='d-sm-flex align-items-center'>
           <div>
-            <h4 className="fw-semibold">
+            <h4 className="fw-semibold mb-0">
             Forcasting Dashboard <CiStar />
           </h4>
           </div>

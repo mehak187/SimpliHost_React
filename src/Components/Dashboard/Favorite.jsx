@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 const StatCard = ({ title, value, image }) => {
   return (
-    <div className='col-xl-3 col-lg-4 col-sml-6 mb-3'>
+    <div className='col-xl-3 col-lg-4 col-sm-6 mb-3'>
       <div className='bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border'>
         <div>
           <p className='mb-0 small'>{title}</p>
@@ -43,11 +43,11 @@ function Favorite() {
       <div className="d-sm-flex align-items-center justify-content-between">
         <div className='d-sm-flex align-items-center'>
           <div>
-            <h4 className="fw-semibold d-flex">
+            <h4 className="fw-semibold d-flex mb-0">
               Dashboard <CiStar />
           </h4>
           </div>
-          <div className='mx-sm-2 w-100'>
+          <div className='mx-sm-2 w-100 mt-sm-0 mt-3'>
             <QuickFilter/>
           </div>
         </div>

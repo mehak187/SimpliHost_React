@@ -112,21 +112,22 @@ function Operations() {
 
   return (
     <div>
-      <div className="d-xl-flex align-items-center justify-content-between">
-        <div className="d-lg-flex align-items-center">
-          <h4 className="fw-semibold">
+      <div className="d-xl-flex align-items-center">
+        <div>
+          <h4 className="fw-semibold w-100 text-nowrap">
             Today at a Glance <BsStarFill className='text-warning'/>
           </h4>
+        </div>
+        <div className="d-sm-flex align-items-center justify-content-between w-100">
           <div className='d-sm-flex justify-content-end'>
-          <div className='mx-sm-2'>
+          <div className='mx-sm-2 mt-sm-0 mt-3'>
             <QuickFilter />
           </div>
           <div className='my-sm-0 my-2'>
             <DateCalendarPicker/>
           </div>
           </div>
-        </div>
-        <div className="dropdown">
+          <div className="dropdown">
           <button className="bg-white border py-2 px-3 w-100 justify-content-center rounded-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <GrUpload className="me-2" />Export
           </button>
@@ -134,6 +135,7 @@ function Operations() {
             <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Excel</Link></li><hr className='m-0'></hr>
             <li><Link className="dropdown-item" to="#"><BiSolidFileExport className='text-blue mb-1 me-2'/>Export to Pdf</Link></li>
           </ul>
+        </div>
         </div>
       </div>
       <div className="row mt-3">
