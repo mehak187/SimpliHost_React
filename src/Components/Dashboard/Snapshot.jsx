@@ -28,7 +28,7 @@ import { BiSolidFileExport } from 'react-icons/bi';
 
 const StatCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border">
+    <div className="bg-white shadow rounded-3 p-2 d-flex align-items-center justify-content-between border h-100">
       <div>
         <p className="mb-0 small">{title}</p>
         <h4 className="fw-semibold">{value}</h4>
@@ -40,7 +40,7 @@ const StatCard = ({ title, value, image }) => (
 
 const RevenueCard = ({ title, value, image }) => (
   <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
-    <div className="bg-white p-2 rounded-3 shadow d-flex align-items-center justify-content-between border">
+    <div className="bg-white p-2 rounded-3 shadow d-flex align-items-center justify-content-between border h-100">
       <div>
         <p className="mb-0 small">{title}</p>
         <h6 className="fw-semibold fs-4">{value}</h6>
@@ -79,11 +79,11 @@ function Snapshot() {
       <div className="d-sm-flex align-items-center justify-content-between">
         <div className='d-sm-flex align-items-center'>
           <div>
-            <h4 className="fw-semibold">
+            <h4 className="fw-semibold mb-0">
               Snapshot Dashboard <CiStar />
           </h4>
           </div>
-          <div className='mx-sm-2'>
+          <div className='mx-sm-2 mt-sm-0 mt-3'>
             <QuickFilter/>
           </div>
         </div>

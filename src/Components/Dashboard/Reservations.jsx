@@ -80,11 +80,11 @@ function Reservations() {
       <div className="d-sm-flex align-items-center justify-content-between">
         <div className='d-sm-flex align-items-center'>
           <div>
-            <h4 className="fw-semibold">
+            <h4 className="fw-semibold mb-0">
             Today at a Glance <CiStar />
           </h4>
           </div>
-          <div className='mx-sm-2'>
+          <div className='mx-sm-2 mt-sm-0 mt-3'>
             <QuickFilter/>
           </div>
         </div>
