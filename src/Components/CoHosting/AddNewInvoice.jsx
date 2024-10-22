@@ -204,7 +204,7 @@ function AddNewInvoice() {
                   <td className="small text-black text-nowrap">{data.Date}</td>
                   <td className="small text-black text-nowrap">{data.Night}</td>
                   <td className="small text-black text-nowrap">
-                    <img src={platforms} alt="platform" className="pltimg" />
+                    <img src={platforms} alt="platform" className="pltimg me-2" />
                     {data.Platform}
                   </td>
                   <td className="small text-black text-nowrap">
