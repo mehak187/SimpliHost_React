@@ -67,6 +67,8 @@ import Faq from "./Pages/Website/Faq";
 import ListingFiltered from "./Pages/Website/ListingFiltered";
 import ListingPhotos from "./Pages/Website/ListingPhotos";
 import CopyItem from "./Components/Modals/CopyItem";
+import AddFee from "./Components/CoHosting/AddFee";
+
 function App() {
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -111,7 +113,8 @@ function App() {
           <Route path="admin/editProperty" element={<EditPropertyTabs />} />
           <Route path="admin/add-owner" element={<AddNewOwner />} />
           <Route path="admin/add-invoice" element={<AddNewInvoice />} />
-          <Route path="admin/add-expenses" element={<AddNewExpenses />} />         
+          <Route path="admin/add-expenses" element={<AddNewExpenses />} />   
+          <Route path="admin/add-fee" element={<AddFee />} />
           <Route path="admin/add-smart-device" element={<AddSmartDevice />} />
           <Route path="admin/add-operations-codes" element={<AddOperationsCodes />} />
           <Route path="admin/add-canned-text" element={<AddCannedText />} />

@@ -190,10 +190,15 @@ function Main() {
                 <li>
                   <Link
                     to="admin/co-hosting"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/co-hosting"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/co-hosting") || 
+                      isActive("/admin/add-invoice") ||
+                      isActive("/admin/add-expenses") ||
+                      isActive("/admin/add-owner") ||
+                      isActive("/admin/add-fee")
+                    }`}
                   >
+                    
                     <div className="d-flex align-items-center">
                       <img src={cohosting} alt="" className="sideicon" />
                       <p className="mb-0">CoHosting</p>
@@ -203,9 +208,10 @@ function Main() {
                 <li>
                   <Link
                     to="admin/smart-devices"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/smart-devices"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/smart-devices") ||
+                      isActive("/admin/add-operations-codes")
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={smartdevices} alt="" className="sideicon" />
@@ -216,9 +222,12 @@ function Main() {
                 <li>
                   <Link
                     to="admin/automations"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/automations"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/automations") ||
+                      isActive("/admin/addAutomation") ||
+                      isActive("/admin/add-canned-text") ||
+                      isActive("/admin/add-special-indicators") 
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={automations} alt="" className="sideicon" />

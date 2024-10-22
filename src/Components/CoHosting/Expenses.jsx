@@ -45,7 +45,7 @@ function Expenses() {
   };
   return (
     <div>
-      <FilterRow searchName="Expense" btnName="Add Expense" btnLink="#" />
+      <FilterRow searchName="Expense" btnName="Add Expense" btnLink="/admin/add-expenses" />
       <div className="table-responsive default-table mt-3">
         <table className="table">
           <thead className="">

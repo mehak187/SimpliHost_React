@@ -68,7 +68,7 @@ function Webhooks() {
                 </td>
                 <td className="small text-black">
                   <div className="d-flex">
-                    <Link to="#" className="mx-1 greenbtn text-decoration-none">
+                    <Link to="#" className="mx-1 greenbtn text-primary text-decoration-none">
                       Test
                     </Link>
                     <Link to="#" className="mx-1 tblicon">

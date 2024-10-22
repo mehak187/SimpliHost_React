@@ -3175,6 +3175,7 @@ th,td {
   text-align: start;
 }
 
+
 .modal-h{
   font-size: 14px;
 }
@@ -3189,6 +3190,13 @@ th,td {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.platform2 {
+  min-width: 40px;
+  padding: 8px 6px;
+}
+
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);

@@ -1,21 +1,20 @@
 import React from "react";
+import { FaChevronRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function AddCannedText() {
   return (
     <>
       <section>
-        <div>
-          <h2 className="fw-semi fs-3">Add Canned Text</h2>
-        </div>
+      <div className="myshadow py-3 px-3 mb-3 rounded-3">
+        <h2 className="fw-semi mb-0 fs-5">Add Canned Text</h2>
+      </div>
         <form action="">
-          <div className="row">
-            <div className="col-lg-12">
               <div className="row">
-                <div className="col-lg-6 mt-3">
+                <div className="col-lg-6 col-xl-4 mt-3">
                   <label htmlFor="Name" className="fw-semi">
                     Name
                   </label>
-                  <br />
                   <input
                     type="text"
                     id="Name"
@@ -23,11 +22,13 @@ function AddCannedText() {
                     placeholder="Type Name here"
                   />
                 </div>
-                <div className="col-lg-6 mt-3">
-                  <label htmlFor="Trigger" className="fw-semi">
-                    Trigger
-                  </label>
-                  <br />
+                <div className="col-lg-6 col-xl-4 mt-3">
+                <div className="d-flex align-items-center justify-content-between">
+                  <label htmlFor="Trigger" className="fw-semi me-2">
+                      Trigger
+                    </label>
+                    <span className="small">Only 15 chars</span>
+                  </div>
                   <input
                     type="text"
                     id="Trigger"
@@ -36,15 +37,23 @@ function AddCannedText() {
                   />
                 </div>
                 <div className="mt-4">
-                  <div className="d-flex"></div>
-                  <h4 className="fw-semi mt-4 border-bottom border-3 mb-3">
-                    Message
-                  </h4>
-                  <div className="mt-2">
+                  <div className="d-sm-flex align-items-center justify-content-between mt-4 border-bottom border-2 pb-3">
+                    <div className="d-xl-flex align-items-center me-2">
+                      <div className="d-flex me-2 align-items-center">
+                      <h4 className="fw-semi me-2 mb-0">
+                        Message
+                      </h4>
+                      <FaChevronRight className=""/>
+                      </div>
+                      <p className="mb-0 mt-2 mt-xl-0">This is the message for guests or operations. You can customize it by selecting fields with the 'Add Field' button at the top.</p>
+                    </div>
+                    <Link to="#" className="bluebutton d-inline-block mt-3 mt-sm-0 text-center text-decoration-none opacity-hover rounded-2 text-white">Add Field</Link>
+                  </div>
+                  <div className="mt-4">
                     Hello{" "}
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="Guest First Name"
                     />
                     !
@@ -53,13 +62,13 @@ function AddCannedText() {
                     Thanks a lot for your interest in{" "}
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="Listing Name"
                     />
                     for your trip in
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="Listing City"
                     />
                     !
@@ -69,25 +78,25 @@ function AddCannedText() {
                     to host you from{" "}
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="Check-In Date"
                     />
                     to
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="Check-Out Date"
                     />
                     (
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="guests"
                     />
                     for
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="nights"
                     />
                     )
@@ -96,7 +105,7 @@ function AddCannedText() {
                     Although the
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="listing_type"
                     />
                     is still available at this time, I may have received
@@ -104,7 +113,7 @@ function AddCannedText() {
                     quickly.
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="answers"
                     />
                   </div>
@@ -118,7 +127,7 @@ function AddCannedText() {
                     <p className="my-2">Best regards,</p>
                     <input
                       type="text"
-                      className="focus-none cannedinput"
+                      className="focus-none cannedinput my-1 px-2 py-1"
                       placeholder="host_first_name"
                     />
                   </div>
@@ -138,8 +147,6 @@ function AddCannedText() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
         </form>
       </section>
     </>
