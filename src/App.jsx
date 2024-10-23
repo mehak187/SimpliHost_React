@@ -73,6 +73,8 @@ import SelectPropertiesModal from "./Components/Modals/SelectPropertiesModal";
 import CleaningTask from "./Components/Modals/CleaningTask";
 import EditGeneral from "./Components/Settings/EditGeneral";
 import AddWidget from "./Components/DirectBooking/AddWidget";
+import PropertyQuickFilter from "./Components/Modals/QuickPropertyFilter";
+
 
 function App() {
   function ScrollToTop() {
@@ -131,6 +133,8 @@ function App() {
           <Route path="admin/add-promo" element={<AddPromoCode />} />
           <Route path="admin/add-policy" element={<AddPolicy />} />
           <Route path="admin/add-widget" element={<AddWidget />} />
+          <Route path="admin/PropertyQuickFilter" element={<PropertyQuickFilter />} />
+          
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />

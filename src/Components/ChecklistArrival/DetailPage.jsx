@@ -11,6 +11,9 @@ import Typography from "@mui/material/Typography";
 import SettingImg from "../../assets/img/setting-img.png";
 import { RiDragMove2Line } from "react-icons/ri";
 import DropDetail from "./DropDetail";
+import SelectPropertiesModal from "../Modals/SelectPropertiesModal";
+import SelectProperty1 from "../Modals/SelectProperty1";
+import SelectProperty2 from "../Modals/SelectProperty2";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -65,7 +68,7 @@ function DetailPage({ activeTab }) {
     <div>
       <form action="">
         <div className="bg-white rounded-3 shadow p-3">
-          <h5 className="mb-0 fw-semi">Checklist Detail</h5>
+          <h5 className="mb-0 fs-5 fw-semi">Checklist Details</h5>
         </div>
         <div>
           <div className="row mt-4">
@@ -87,7 +90,7 @@ function DetailPage({ activeTab }) {
                   <label htmlFor="" className="fw-semi mb-1">
                     Type
                   </label>
-                  <select name="" id="" className="inputstyle py-2">
+                  <select name="" id="" className="inputstyle form-select py-2">
                     <option value="">Select Type</option>
                   </select>
                 </div>
@@ -95,17 +98,13 @@ function DetailPage({ activeTab }) {
                   <label htmlFor="" className="fw-semi mb-1">
                     Properties
                   </label>
-                  <select name="" id="" className="inputstyle py-2">
-                    <option value="">Select Type</option>
-                  </select>
+                  <SelectProperty1 />
                 </div>
                 <div className="col-sm-6 mb-3">
                   <label htmlFor="" className="fw-semi mb-1">
                     Property Group
                   </label>
-                  <select name="" id="" className="inputstyle py-2">
-                    <option value="">Select Type</option>
-                  </select>
+                  <SelectProperty2 />
                 </div>
                 <div className="col-sm-6 mb-3">
                   <div className="d-flex align-items-center justify-content-between">
@@ -165,7 +164,7 @@ function DetailPage({ activeTab }) {
                 <CiSearch className="fs-1 rounded-3 p-2 text-white bg-blue" />
                 <input
                   type="search"
-                  className="border-0 px-3 w-100 bg-lgrey ex-small"
+                  className="border-0 px-1 w-100 bg-lgrey ex-small"
                   placeholder="Search Checklist by name"
                 />
               </div>

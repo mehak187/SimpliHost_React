@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Calendar } from "primereact/calendar";
+import SelectProperty1 from "../Modals/SelectProperty1";
 
 function AddItems() {
   return (
@@ -42,14 +44,16 @@ function AddItems() {
                 <select
                   name="Property"
                   id="Property"
-                  className="inputstyle focus-none"
+                  className="inputstyle form-select focus-none"
                 >
                   <option value="" selected disabled hidden>
                     Select Type
                   </option>
-                  <option value="Type1">Type1</option>
-                  <option value="Type2">Type2</option>
-                  <option value="Type3">Type3</option>
+                  <option value="Bathroom">Bathroom</option>
+                  <option value="Kitchen">Kitchen</option>
+                  <option value="Bedroom">Bedroom</option>
+                  <option value="Laundry">Laundry</option>
+                  <option value="Admin">Admin</option>
                 </select>
               </div>
               <div className="col-lg-6 mt-3">
@@ -57,18 +61,7 @@ function AddItems() {
                   Property
                 </label>
                 <br />
-                <select
-                  name="Property"
-                  id="Property"
-                  className="inputstyle focus-none"
-                >
-                  <option value="" selected disabled hidden>
-                    Select Property
-                  </option>
-                  <option value="Property1">Property1</option>
-                  <option value="Property2">Property2</option>
-                  <option value="Property3">Property3</option>
-                </select>
+                <SelectProperty1 />
               </div>
               <div className="col-lg-6 mt-3">
                 <label htmlFor="TaskType" className="fw-semi">
@@ -78,14 +71,19 @@ function AddItems() {
                 <select
                   name="TaskType"
                   id="TaskType"
-                  className="inputstyle focus-none"
+                  className="inputstyle form-select focus-none"
                 >
                   <option value="" selected disabled hidden>
                     Select Size
                   </option>
-                  <option value="Size1">Size1</option>
-                  <option value="Size2">Size2</option>
-                  <option value="Size3">Size3</option>
+                  <option value="Each">Each</option>
+                  <option value="Unit">Unit</option>
+                  <option value="Battle">Battle</option>
+                  <option value="Box">Box</option>
+                  <option value="Roll">Roll</option>
+                  <option value="Container">Container</option>
+                  <option value="Bundle">Bundle</option>
+                  <option value="Misc">Misc</option>
                 </select>
               </div>
               <h2 className="fw-semi fs-5 mt-4">Inventory Stock</h2>
@@ -109,7 +107,7 @@ function AddItems() {
                 <select
                   name="TaskType"
                   id="TaskType"
-                  className="inputstyle focus-none"
+                  className="inputstyle form-select focus-none"
                 >
                   <option value="" selected disabled hidden>
                     Select Vendor
@@ -128,7 +126,7 @@ function AddItems() {
                   type="text"
                   id="purchaseLink"
                   placeholder="Type here"
-                  className="inputstyle focus-none"
+                  className="inputstyle py-3 focus-none"
                 />
               </div>
               <div className="col-lg-6 mt-3">
@@ -136,11 +134,7 @@ function AddItems() {
                   Last Purchase Date
                 </label>
                 <br />
-                <input
-                  type="date"
-                  id="lastDate"
-                  className="inputstyle focus-none"
-                />
+                <Calendar showIcon className="impdate focus-none py-2" />
               </div>
               <div className="col-12 mt-3">
                 <div className="d-flex align-items-center">

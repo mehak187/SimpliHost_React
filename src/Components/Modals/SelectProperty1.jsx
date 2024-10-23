@@ -22,7 +22,7 @@ function PropertyItem({ propertyName, id }) {
   );
 }
 
-function SelectPropertiesModal() {
+function SelectProperty1() {
   const [showModal, setShowModal] = useState(false);
 
   const handleToggleModal = () => {
@@ -46,13 +46,13 @@ function SelectPropertiesModal() {
     <div>
       <form>
         <div className="dropdown">
-          <button
-            className="bg-white border w-100 py-2 px-3 rounded-3 dropdown-toggle d-flex align-items-center justify-content-center"
-            type="button"
-            onClick={handleToggleModal}
-          >
-            <CiFilter /> Filter
-          </button>
+        <button
+        className="inputstyle text-start form-select focus-none"
+        type="button"
+        onClick={handleToggleModal}
+      >
+        Select Property
+      </button>
         </div>
 
         {showModal && (
@@ -74,9 +74,9 @@ function SelectPropertiesModal() {
 
                   <div className="modal-body">
                     <div className="d-flex align-items-center">
-                      <div className="checkbox-wrapper-13">
-                        <input type="checkbox" id="adminOnlyTask" />
-                      </div>
+                       <div className="checkbox-wrapper-13">
+        <input type="checkbox" id="adminOnlyTask" />
+      </div>
                       <label
                         htmlFor="adminOnlyTask"
                         className="text-blue fw-semi ms-2"
@@ -126,10 +126,10 @@ function SelectPropertiesModal() {
                       className="btn btn-light"
                       onClick={handleToggleModal}
                     >
-                      Cancel
+                      Clear
                     </button>
                     <button type="button" className="btn btn-primary">
-                      Apply Filters
+                     Save
                     </button>
                   </div>
                 </div>
@@ -142,4 +142,4 @@ function SelectPropertiesModal() {
   );
 }
 
-export default SelectPropertiesModal;
+export default SelectProperty1;
