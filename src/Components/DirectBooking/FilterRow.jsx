@@ -40,7 +40,7 @@ function FilterRow() {
       </div>
       <div className="d-sm-flex col-xl-6 col-12 mt-3 mt-xl-0 justify-content-end align-items-center">
         <Link
-          to="#"
+          to="/admin/add-widget"
           className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2"
         >
           Add Widget

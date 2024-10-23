@@ -36,12 +36,12 @@ function WebsiteAbout() {
         <div className="col-xl-8">
           <div className="row mt-4">
             <div className="col-12 mt-3">
-              <label className="fw-semi">Main Title</label>
-              <textarea className="inputstyle bg-white py-2" rows="3"></textarea>
+              <label htmlFor='mainTitle1' className="fw-semi">Main Title</label>
+              <textarea className="inputstyle bg-white py-2" id='mainTitle1' rows="3"></textarea>
             </div>
             <div className="col-12 mt-3">
-              <label className="fw-semi">Sub Title</label>
-              <textarea className="inputstyle bg-white py-2" rows="3"></textarea>
+              <label htmlFor='subtitle1' className="fw-semi">Sub Title</label>
+              <textarea className="inputstyle bg-white py-2" id='subtitle1' rows="3"></textarea>
             </div>
           </div>
 

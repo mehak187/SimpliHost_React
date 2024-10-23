@@ -4,8 +4,6 @@ import { IoMdCloseCircle } from "react-icons/io";
 
 function CalendarPropertyModal() {
     const [showModal, setShowModal] = useState(false);
-
-    // Function to handle the copy link functionality
     const handleCopyLink = () => {
         const link = "https://www.simplihost.com/calendar/";
         navigator.clipboard.writeText(link);
@@ -26,7 +24,6 @@ function CalendarPropertyModal() {
 
             {showModal && (
                 <>
-                    {/* Backdrop to close the modal when clicked */}
                     <div className="custom-backdrop" onClick={() => setShowModal(false)}></div>
                     <div
                         className="modal d-block"

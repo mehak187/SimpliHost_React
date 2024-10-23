@@ -4,8 +4,6 @@ import { IoMdCloseCircle } from "react-icons/io";
 
 function CopyItem() {
     const [showModal, setShowModal] = useState(false);
-
-    // Function to handle the copy link functionality
     const handleCopyLink = () => {
         const link = "https://www.simplihost.com/calendar/";
         navigator.clipboard.writeText(link);
