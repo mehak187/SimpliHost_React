@@ -71,6 +71,7 @@ import AddPromoCode from "./Components/DirectBooking/AddPromoCode";
 import AddPolicy from "./Components/DirectBooking/AddPolicy";
 import SelectPropertiesModal from "./Components/Modals/SelectPropertiesModal";
 import CleaningTask from "./Components/Modals/CleaningTask";
+import EditGeneral from "./Components/Settings/EditGeneral";
 
 function App() {
   function ScrollToTop() {
@@ -110,6 +111,7 @@ function App() {
           <Route path="admin/user-details" element={<UserDetails />} />
           <Route path="admin/help-center" element={<HelpCenter />} />
           <Route path="admin/settings" element={<Settings />} />
+          <Route path="admin/edit-general" element={<EditGeneral />} />
           <Route path="admin/addAutomation" element={<AddAutomation />} />
           <Route path="admin/profile" element={<Profile />} />
           <Route path="admin/Notifications" element={<Notifications />} />

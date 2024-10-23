@@ -37,12 +37,9 @@ function Inventory() {
                           id="Property"
                           className="inputstyle me-2 bg-white w-100 focus-none"
                         >
-                          <option value="" selected disabled hidden>
-                            Days
-                          </option>
-                          <option value="10">10</option>
-                          <option value="20">20</option>
-                          <option value="30">30</option>
+                          <option value="Days">Days</option>
+                          <option value="Weeks">Weeks</option>
+                          <option value="Months">Months</option>
                         </select>
                         <img src={info} alt="info" className="img-fluid" />
                       </div>

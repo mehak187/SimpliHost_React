@@ -18,7 +18,7 @@ function General() {
           </div>
         </div>
         <Link
-          to="#"
+          to="/admin/edit-general"
           className="rounded-3 text-black text-decoration-none px-3 py-2 edit-bg d-inline-block mt-3 mt-sm-0"
         >
           <IoPencil className=" me-2 fs-6" />

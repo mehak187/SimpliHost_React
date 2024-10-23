@@ -91,7 +91,7 @@ function Checklist() {
               aria-controls="cohosting"
               aria-selected="false"
             >
-              Cohosting
+              Co-Hosting
             </button>
             <button
               className="nav-link"
