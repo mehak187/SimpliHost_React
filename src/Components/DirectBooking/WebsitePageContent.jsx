@@ -53,21 +53,21 @@ function WebsitePageContent() {
                         <div className="col-lg-6 mb-3">
                             <h6 className='fw-semi'>Company Name</h6>
                             <div>
-                                <label htmlFor="" className='fw-semi'>Type Company Name</label>
-                                <input type="text" className='inputstyle bg-white py-2' placeholder='Simplihost.com' />
+                                <label htmlFor="companyname" className='fw-semi'>Type Company Name</label>
+                                <input type="text" id='companyname' className='inputstyle bg-white py-2' placeholder='Simplihost.com' />
                             </div>
                             <div className='mt-3'>
-                                <label htmlFor="" className='fw-semi'>Type Company Slogan</label>
-                                <input type="text" className='inputstyle bg-white py-2' placeholder='Simplihost.com' />
+                                <label htmlFor="slogan" className='fw-semi'>Type Company Slogan</label>
+                                <input type="text" id='slogan' className='inputstyle bg-white py-2' placeholder='Simplihost.com' />
                             </div>
                         </div>
                         <div className="col-12 mt-3">
-                            <label htmlFor="" className='fw-semi'>Main Title</label>
-                            <textarea name="" className='inputstyle bg-white py-2' id="" rows="3"></textarea>
+                            <label htmlFor="mainTitle" className='fw-semi'>Main Title</label>
+                            <textarea name="" className='inputstyle bg-white py-2' id="mainTitle" rows="3"></textarea>
                         </div>
                         <div className="col-12 mt-3">
-                            <label htmlFor="" className='fw-semi'>Sub Title</label>
-                            <textarea name="" className='inputstyle bg-white py-2' id="" rows="3"></textarea>
+                            <label htmlFor="subtitle" className='fw-semi'>Sub Title</label>
+                            <textarea name="" className='inputstyle bg-white py-2' id="subtitle" rows="3"></textarea>
                         </div>
                     </div>
                 </div>

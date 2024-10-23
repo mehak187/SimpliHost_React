@@ -3,19 +3,19 @@ import React from 'react'
 function AddPromoCode() {
     return (
         <div className='h-100'>
-            <form action="" className='h-100'>
+            <form action="/admin/direct-booking" className='h-100'>
                 <div className='d-flex flex-column justify-content-between h-100 '>
                     <div className="row px-2">
                         <h5 className='bg-white p-3 shadow mb-3 rounded-3 fw-semi'>Add promo Code Details</h5>
                         <div className="col-lg-9">
                             <div className="row mt-4">
                                 <div className="col-sm-6 mb-3">
-                                    <label htmlFor="" className='fw-semi mb-2 small'>Promo Code Name</label>
-                                    <input type="text" name="" className='inputstyle py-2' id="" placeholder='Type name here' />
+                                    <label htmlFor="promoCode" className='fw-semi mb-2 small'>Promo Code Name</label>
+                                    <input type="text" name="" className='inputstyle py-2' id="promoCode" placeholder='Type name here' />
                                 </div>
                                 <div className="col-sm-6 mb-3">
-                                    <label htmlFor="" className='fw-semi mb-2 small'>Type -  Percentage or Flat Fee</label>
-                                    <input type="text" name="" className='inputstyle py-2' id="" placeholder='Type name here' />
+                                    <label htmlFor="flat" className='fw-semi mb-2 small'>Type -  Percentage or Flat Fee</label>
+                                    <input type="text" name="" className='inputstyle py-2' id="flat" placeholder='Type name here' />
                                 </div>
                             </div>
                         </div>

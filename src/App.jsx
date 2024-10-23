@@ -72,6 +72,7 @@ import AddPolicy from "./Components/DirectBooking/AddPolicy";
 import SelectPropertiesModal from "./Components/Modals/SelectPropertiesModal";
 import CleaningTask from "./Components/Modals/CleaningTask";
 import EditGeneral from "./Components/Settings/EditGeneral";
+import AddWidget from "./Components/DirectBooking/AddWidget";
 
 function App() {
   function ScrollToTop() {
@@ -129,6 +130,7 @@ function App() {
           <Route path="admin/checklist-tab" element={<ChecklistTabs />} />
           <Route path="admin/add-promo" element={<AddPromoCode />} />
           <Route path="admin/add-policy" element={<AddPolicy />} />
+          <Route path="admin/add-widget" element={<AddWidget />} />
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />

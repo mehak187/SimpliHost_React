@@ -3264,6 +3264,10 @@ th,td {
     border: none;
     cursor: pointer;
 }
+
+textarea:focus{
+  outline: none;
+}
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);

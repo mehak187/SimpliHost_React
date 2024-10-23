@@ -34,7 +34,6 @@ const AccordionSummary = styled((props) => (
   '& .MuiAccordionSummary-content': { marginLeft: theme.spacing(1) },
 }));
 
-
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   borderTop: '1px solid rgba(0, 0, 0, .125)',
@@ -56,38 +55,55 @@ const DataCollection = [
   { id: 4, FirstName: "Promo Code D", FlatFee: "5%", status: "Active", lastUsed: "09/25/2024" },
 ];
 
-const DataPolicy = [
-  { id: 1, Name: "Flexible", RefundPolicy: "50% refund", Properties: <GroupImage /> },
-  { id: 2, Name: "Strict", RefundPolicy: "No refund", Properties: <GroupImage /> },
-  { id: 3, Name: "Moderate", RefundPolicy: "75% refund", Properties: <GroupImage /> },
-];
-
 function Website() {
   const [expanded, setExpanded] = useState('panel1');
+
+  // State for promo codes
+  const [promoCodes, setPromoCodes] = useState([
+    { id: 1, FirstName: "Promo Code A", FlatFee: "10%", status: false, lastUsed: "09/25/2024" },
+    { id: 2, FirstName: "Promo Code B", FlatFee: "20%", status: true, lastUsed: "09/25/2024" },
+    { id: 3, FirstName: "Promo Code C", FlatFee: "15%", status: true, lastUsed: "09/25/2024" },
+    { id: 4, FirstName: "Promo Code D", FlatFee: "5%", status: true, lastUsed: "09/25/2024" },
+  ]);
+
+  // State for instant booking options
+  const [instantData, setInstantData] = useState([
+    { label: 'Instant Book', imageSrc: InstantBook, status: false },
+    { label: 'Last Minute Instant Book', imageSrc: LastMin, status: true },
+    { label: 'Request Reviews', imageSrc: ReqRev, status: false }
+  ]);
+
+  // Handle panel expansion
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
 
-  const instantData = [
-    { label: 'Instant Book', imageSrc: InstantBook, status: false },
-    { label: 'Last Minute Instant Book', imageSrc: LastMin, status: true },
-    { label: 'Request Reviews', imageSrc: ReqRev, status: false }
+  // Toggle status for promo codes
+  const togglePromoCodeStatus = (id) => {
+    setPromoCodes(prevPromoCodes =>
+      prevPromoCodes.map(promo => 
+        promo.id === id ? { ...promo, status: !promo.status } : promo
+      )
+    );
+  };
+
+  // Toggle status for instant booking options
+  const toggleInstantStatus = (index) => {
+    setInstantData(prevInstantData =>
+      prevInstantData.map((item, i) =>
+        i === index ? { ...item, status: !item.status } : item
+      )
+    );
+  };
+
+  const DataPolicy = [
+    { id: 1, Name: "Flexible", RefundPolicy: "50% refund", Properties: <GroupImage /> },
+    { id: 2, Name: "Strict", RefundPolicy: "No refund", Properties: <GroupImage /> },
+    { id: 3, Name: "Moderate", RefundPolicy: "75% refund", Properties: <GroupImage /> },
   ];
 
   return (
     <div className='bg-lgrey p-2 rounded-3'>
-      <div className='d-sm-flex align-items-center mb-4'>
-        <div>
-          <button className='bg-blue w-100 text-white rounded-3 border-0 py-2 px-3 fw-semi'>
-            <FaChevronRight className='me-2 mb-1' /> Expand All
-          </button>
-        </div>
-        <div>
-          <button className='bg-lgrey w-100 text-blue fw-semi rounded-3 border py-2 px-3 ms-sm-2 mt-sm-0 mt-3'>
-            <FaChevronRight className='me-2 mb-1' /> Collapse All
-          </button>
-        </div>
-      </div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className='border-0 mb-3'>
         <AccordionSummary className='bg-white shadow border-0 rounded-3' aria-controls="panel1d-content" id="panel1d-header">
           <Typography className='fw-semibold'>General Section</Typography>
@@ -103,7 +119,7 @@ function Website() {
                 <div className='d-flex justify-content-end mt-sm-0 mt-3'>
                   <span>No</span>
                   <label className="switch mx-2">
-                    <input type="checkbox" checked={item.status} onChange={() => { }} />
+                    <input type="checkbox" checked={item.status} onChange={() => toggleInstantStatus(index)} />
                     <span className="slider round"></span>
                   </label>
                   <span>Yes</span>
@@ -113,6 +129,7 @@ function Website() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} className='border-0 mb-3'>
         <AccordionSummary className='bg-white shadow border-0 rounded-3' aria-controls="panel2d-content" id="panel2d-header">
           <Typography className='fw-semibold'>Promo Codes Section</Typography>
