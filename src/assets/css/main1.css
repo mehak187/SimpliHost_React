@@ -3282,6 +3282,17 @@ textarea:focus{
 }
 
 
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+    color: #3551B6;
+    text-decoration: none;
+}
+.fc-daygrid-day-number {
+        color: #000;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
