@@ -86,8 +86,8 @@ function ListingPhotos() {
             </div>
           </div>
           <div className="mt-4 mt-sm-0">
-            <Link to=""><FaRegHeart className="me-3 fs-4 text-black"/></Link>
-            <Link to=""><FaShareAlt className="fs-4 text-black"/></Link>
+            <Link to="#"><FaRegHeart className="me-3 fs-4 text-black"/></Link>
+            <Link to="#"><FaShareAlt className="fs-4 text-black"/></Link>
           </div>
         </div>
         </div>

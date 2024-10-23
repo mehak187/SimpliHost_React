@@ -14,64 +14,80 @@ function Preferences() {
             <div className="col-lg-11 col-xl-8 col-xxl-7">
               <div className="row d-flex align-items-center mt-3">
                 <div className="col-lg-4">
-                  <label htmlFor="category" className="fw-semi text-nowrap">
+                  <label htmlFor="fvrt" className="fw-semi text-nowrap">
                     Favorite Dashboard
                   </label>
                 </div>
                 <div className="col-lg-8">
                   <select
-                    name="category"
-                    id="category"
+                    name="fvrt"
+                    id="fvrt"
                     className="inputstyle bg-white focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Select Dashboard
                     </option>
-                    <option value="Dashboard1">Dashboard1</option>
-                    <option value="Dashboard2">Dashboard2</option>
-                    <option value="Dashboard3">Dashboard3</option>
+                    <option value="Favourite">Favourite</option>
+                    <option value="Reservations">Reservations</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Forecasting">Forecasting</option>
+                    <option value="Taxes">Taxes</option>
+                    <option value="Snapshot">Snapshot</option>
+
                   </select>
                 </div>
               </div>
               <div className="row d-flex align-items-center mt-3">
                 <div className="col-lg-4">
-                  <label htmlFor="category" className="fw-semi text-nowrap">
+                  <label htmlFor="home" className="fw-semi text-nowrap">
                     Home Page
                   </label>
                 </div>
                 <div className="col-lg-8">
                   <select
-                    name="category"
-                    id="category"
+                    name="home"
+                    id="home"
                     className="inputstyle bg-white focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Select Home Page
                     </option>
-                    <option value="home1">home1</option>
-                    <option value="home2">home2</option>
-                    <option value="home3">home3</option>
+                    <option value="Dashboard">Dashboard</option>
+                    <option value="Inbox">Inbox</option>
+                    <option value="Calendar">Calendar</option>
+                    <option value="Properties">Properties</option>
+                    <option value="Tasks">Tasks</option>
+                    <option value="Checklist">Checklist</option>
+                    <option value="Inventory">Inventory</option>
+                    <option value="Co-Hosting">Co-Hosting</option>
+                    <option value="Smart Devices">Smart Devices</option>
+                    <option value="Automations">Automations</option>
+                    <option value="Integrations">Integrations</option>
+                    <option value="Direct Booking">Direct Booking</option>
+                    <option value="Report">Report</option>
+                    <option value="Users">Users</option>
+                    <option value="Help Center">Help Center</option>
+                    <option value="Settings">Settings</option>
                   </select>
                 </div>
               </div>
               <div className="row d-flex align-items-center mt-3">
                 <div className="col-lg-4">
-                  <label htmlFor="category" className="fw-semi text-nowrap">
+                  <label htmlFor="Property" className="fw-semi text-nowrap">
                     Property Name Display
                   </label>
                 </div>
                 <div className="col-lg-8">
                   <select
-                    name="category"
-                    id="category"
+                    name="Property"
+                    id="Property"
                     className="inputstyle bg-white focus-none"
                   >
                     <option value="" selected disabled hidden>
-                      Select Home Page
+                      Select Property
                     </option>
-                    <option value="home1">home1</option>
-                    <option value="home2">home2</option>
-                    <option value="home3">home3</option>
+                    <option value="tag">Tag Name</option>
+                    <option value="address">Address</option>
                   </select>
                 </div>
               </div>

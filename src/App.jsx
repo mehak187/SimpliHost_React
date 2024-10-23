@@ -68,6 +68,7 @@ import ListingFiltered from "./Pages/Website/ListingFiltered";
 import ListingPhotos from "./Pages/Website/ListingPhotos";
 import CopyItem from "./Components/Modals/CopyItem";
 import AddFee from "./Components/CoHosting/AddFee";
+import EditGeneral from "./Components/Settings/EditGeneral";
 
 function App() {
   function ScrollToTop() {
@@ -107,6 +108,7 @@ function App() {
           <Route path="admin/user-details" element={<UserDetails />} />
           <Route path="admin/help-center" element={<HelpCenter />} />
           <Route path="admin/settings" element={<Settings />} />
+          <Route path="admin/edit-general" element={<EditGeneral />} />
           <Route path="admin/addAutomation" element={<AddAutomation />} />
           <Route path="admin/profile" element={<Profile />} />
           <Route path="admin/Notifications" element={<Notifications />} />
