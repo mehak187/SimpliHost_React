@@ -2000,7 +2000,8 @@ tr {
   justify-content: center;
   align-items: center;
 }
-.contactpic-size img{
+
+.contactpic-size img {
   width: 40px;
   height: 40px;
 }
@@ -3109,7 +3110,7 @@ tr {
 
 }
 
-.property-h{
+.property-h {
   height: 300px;
   overflow-y: auto;
 }
@@ -3148,7 +3149,7 @@ tr {
 
 }
 
-.property-h{
+.property-h {
   height: 300px;
   overflow-y: auto;
 }
@@ -3171,20 +3172,21 @@ tr {
   height: 240px;
 }
 
-th,td {
+th,
+td {
   text-align: start;
 }
 
 
-.modal-h{
+.modal-h {
   font-size: 14px;
 }
 
-.max-p{
+.max-p {
   max-width: 700px;
 }
 
-.img-pr{
+.img-pr {
   width: 100%;
   height: 140px;
   object-fit: cover;
@@ -3196,26 +3198,37 @@ th,td {
   padding: 8px 6px;
 }
 
-.col-in{
-    height: 40px;
-    border: 2px solid #fff;
+.col-in {
+  height: 40px;
+  border: 2px solid #fff;
 }
 
-.bg-grey{
+.bg-grey {
   background-color: #E7E7E7;
 }
 
-.promo-code{
-    min-height: 300px;
-    height: 100%;
+.promo-code {
+  min-height: 300px;
+  height: 100%;
 }
 
-.logo-brand{
-    max-width: 200px;
-    height: 150px;
-    border: 2px dashed #ddd;
-    border-radius: 10px;
+.logo-brand {
+  max-width: 200px;
+  height: 150px;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
 }
+
+.property-modal.modal-dialog {
+  max-width: 800px !important;
+  padding: 0 20px;
+}
+
+.form-select:focus {
+  box-shadow: none;
+  outline: none;
+}
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
@@ -3551,6 +3564,10 @@ th,td {
     padding: 6px;
   }
 
+  .p-calendar:not(.p-calendar-disabled).p-focus>.p-inputtext {
+    box-shadow: none;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -3562,6 +3579,7 @@ th,td {
   .high-slide .slick-next {
     top: 50px;
   }
+
   .inputstyle {
     padding: 14px 8px;
   }
