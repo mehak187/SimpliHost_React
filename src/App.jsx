@@ -68,6 +68,8 @@ import ListingFiltered from "./Pages/Website/ListingFiltered";
 import ListingPhotos from "./Pages/Website/ListingPhotos";
 import CopyItem from "./Components/Modals/CopyItem";
 import AddFee from "./Components/CoHosting/AddFee";
+import AddPromoCode from "./Components/DirectBooking/AddPromoCode";
+import AddPolicy from "./Components/DirectBooking/AddPolicy";
 import EditGeneral from "./Components/Settings/EditGeneral";
 
 function App() {
@@ -123,7 +125,9 @@ function App() {
           <Route path="admin/add-special-indicators" element={<AddSpecialIndicators />} />
           <Route path="admin/add-checklist-category" element={<AddChecklistCategory />} />
           <Route path="admin/add-property-tags" element={<AddPropertyTags />} />
-          <Route path="admin/checklistTab" element={<ChecklistTabs />} />
+          <Route path="admin/checklist-tab" element={<ChecklistTabs />} />
+          <Route path="admin/add-promo" element={<AddPromoCode />} />
+          <Route path="admin/add-policy" element={<AddPolicy />} />
         </Route>
         <Route element={<WebLayout />}>
           <Route path="/" element={<Home />} />

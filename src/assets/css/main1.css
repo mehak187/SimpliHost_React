@@ -3196,7 +3196,26 @@ th,td {
   padding: 8px 6px;
 }
 
+.col-in{
+    height: 40px;
+    border: 2px solid #fff;
+}
 
+.bg-grey{
+  background-color: #E7E7E7;
+}
+
+.promo-code{
+    min-height: 300px;
+    height: 100%;
+}
+
+.logo-brand{
+    max-width: 200px;
+    height: 150px;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+}
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
