@@ -6,9 +6,9 @@ import Grp from '../../assets/img/grp.png';
 import GrpImport from '../../assets/img/grp-import.png';
 
 function AddProperty() {
-    const [showFirstModal, setShowFirstModal] = useState(false); // State for first modal
-    const [showSecondModal, setShowSecondModal] = useState(false); // State for second modal
-    const [selectedOption, setSelectedOption] = useState(null); // Track the selected option
+    const [showFirstModal, setShowFirstModal] = useState(false); 
+    const [showSecondModal, setShowSecondModal] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null);
     const navigate = useNavigate();
 
     const handleSelection = (option) => {
@@ -17,7 +17,6 @@ function AddProperty() {
 
     const handleConnectClick = () => {
         if (selectedOption) {
-            // Navigate to the next page when a selection is made
             navigate('/admin/stepper');
         }
     };
@@ -27,25 +26,21 @@ function AddProperty() {
     };
 
     const openSecondModal = () => {
-        // Close the first modal when the second modal opens
         setShowFirstModal(false);
         setShowSecondModal(true);
     };
 
     return (
         <div>
-            {/* Button to open the first modal */}
             <div className="dropdown">
                 <button
                     className="px-sm-4 px-3 w-100 mt-sm-0 mt-2 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white me-sm-2 text-decoration-none py-2"
                     type="button"
-                    onClick={openFirstModal} // Opens the first modal
+                    onClick={openFirstModal}
                 >
                     Add Property
                 </button>
             </div>
-
-            {/* First modal */}
             {showFirstModal && (
                 <>
                     <div className="custom-backdrop" onClick={() => setShowFirstModal(false)}></div>
@@ -123,12 +118,11 @@ function AddProperty() {
                 </>
             )}
 
-            {/* Second modal (Import Airbnb Modal) */}
             {showSecondModal && (
                 <>
                     <div className="custom-backdrop" onClick={() => setShowSecondModal(false)}></div>
                     <div className="modal d-block" tabIndex="-1">
-                        <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-dialog  property-modal modal-dialog-centered">
                             <div className="modal-content">
                                 <div className="modal-header">
                                     <button type="button" className="bg-transparent border-0 text-secondary fs-4" onClick={() => setShowSecondModal(false)}>

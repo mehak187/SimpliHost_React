@@ -1,5 +1,6 @@
 import { Calendar } from "primereact/calendar";
 import React from "react";
+import SelectProperty2 from "../Modals/SelectProperty2";
 
 function AddTask() {
   return (
@@ -28,19 +29,8 @@ function AddTask() {
                   <label htmlFor="Property" className="fw-semi">
                     Property
                   </label>
-                  <br />
-                  <select
-                    name="Property"
-                    id="Property"
-                    className="inputstyle focus-none"
-                  >
-                    <option value="" selected disabled hidden>
-                      Select Property
-                    </option>
-                    <option value="Property1">Property1</option>
-                    <option value="Property2">Property2</option>
-                    <option value="Property3">Property3</option>
-                  </select>
+                  <SelectProperty2 />
+
                 </div>
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="TaskType" className="fw-semi">
@@ -50,7 +40,7 @@ function AddTask() {
                   <select
                     name="TaskType"
                     id="TaskType"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Select Task Type
@@ -68,7 +58,7 @@ function AddTask() {
                   <select
                     name="Assign"
                     id="Assign"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Select Assign To
@@ -97,7 +87,7 @@ function AddTask() {
                   <select
                     name="startTime"
                     id="startTime"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="12:00AM">12:00 AM</option>
                     <option value="12:30AM">12:30 AM</option>
@@ -165,7 +155,7 @@ function AddTask() {
                   <select
                     name="endTime"
                     id="endTime"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="12:00AM">12:00 AM</option>
                     <option value="12:30AM">12:30 AM</option>
@@ -242,7 +232,7 @@ function AddTask() {
                       <select
                         name=""
                         id=""
-                        className="inputstyle w-100 focus-none"
+                        className="inputstyle form-select w-100 focus-none"
                       >
                         <option value="days">Days</option>
                         <option value="weeks">Weeks</option>
@@ -260,7 +250,7 @@ function AddTask() {
                   <select
                     name="Checklist"
                     id="Checklist"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Select Select Checklist
