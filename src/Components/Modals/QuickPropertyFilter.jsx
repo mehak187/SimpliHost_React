@@ -23,7 +23,7 @@ const dummyData = {
 };
 
 function PropertyQuickFilter() {
-  const [showModal, setShowModal] = useState(false); // Added state for modal visibility
+  const [showModal, setShowModal] = useState(false); 
   const [checkboxes, setCheckboxes] = useState([]);
   const [assignedto, setAssignedTo] = useState([]);
   const [status, setStatus] = useState([]);

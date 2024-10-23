@@ -93,12 +93,16 @@ function Website() {
   return (
     <div className='bg-lgrey p-sm-2 rounded-3'>
       <div className='d-sm-flex align-items-center mb-4'>
-        <button className='bg-blue w-100 text-white rounded-3 border-0 py-2 px-3 fw-semi'>
-          <FaChevronRight className='me-2 mb-1' /> Expand All
-        </button>
-        <button className='bg-lgrey w-100 text-blue fw-semi rounded-3 border py-2 px-3 ms-sm-2 mt-sm-0 mt-3'>
-          <FaChevronRight className='me-2 mb-1' /> Collapse All
-        </button>
+        <div>
+          <button className='bg-blue w-100 text-white rounded-3 border-0 py-2 px-3 fw-semi'>
+            <FaChevronRight className='me-2 mb-1' /> Expand All
+          </button>
+        </div>
+        <div>
+          <button className='bg-lgrey w-100 text-blue fw-semi rounded-3 border py-2 px-3 ms-sm-2 mt-sm-0 mt-3'>
+            <FaChevronRight className='me-2 mb-1' /> Collapse All
+          </button>
+        </div>
       </div>
       <form action="">
         <div className='mt-4'>

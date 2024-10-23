@@ -3,10 +3,7 @@ import { CiFilter } from "react-icons/ci";
 import { IoMdCloseCircle } from "react-icons/io";
 
 function EditProperty() {
-    const [showModal, setShowModal] = useState(false);
-
-    // Function to handle the copy link functionality
-   
+    const [showModal, setShowModal] = useState(false); 
     return (
         <div>
             <div className="dropdown">

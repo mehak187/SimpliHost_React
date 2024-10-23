@@ -1,8 +1,24 @@
-import React from 'react'
-import SmallImg from '../../assets/img/small-img.png';
+import React, { useState } from 'react';
+import SmallImg from '../../assets/img/small-img.png'; 
 import { FaExclamationTriangle } from "react-icons/fa";
 
 function WebsitePageContent() {
+    const [previewImage, setPreviewImage] = useState(SmallImg);
+    const [isImageUploaded, setIsImageUploaded] = useState(false); 
+
+    // Handler for image file input
+    const handleImageUpload = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setPreviewImage(reader.result); 
+                setIsImageUploaded(true); 
+            };
+            reader.readAsDataURL(file); 
+        }
+    };
+
     return (
         <div>
             <div className="row">
@@ -15,11 +31,19 @@ function WebsitePageContent() {
                             <div className='logo-brand bg-white d-flex flex-column justify-content-center align-items-center'>
                                 <label htmlFor="brand">
                                     <div className='text-center'>
-                                        <img src={SmallImg} alt="" />
+                                        <img src={previewImage} alt="Uploaded Preview" className="img-fluid" />
                                     </div>
-                                    <p className='ex-small mt-2'>Click and Upload</p>
+                                    {!isImageUploaded && (
+                                        <p className='ex-small mt-2 pointer'>Click and Upload</p>
+                                    )}
                                 </label>
-                                <input type="file" id='brand' className='d-none' />
+                                <input
+                                    type="file"
+                                    id='brand'
+                                    className='d-none'
+                                    accept="image/*" 
+                                    onChange={handleImageUpload}
+                                />
                             </div>
                             <div className='d-flex mt-3'>
                                 <FaExclamationTriangle className='text-danger fs-4 mb-1' />
@@ -52,4 +76,4 @@ function WebsitePageContent() {
     )
 }
 
-export default WebsitePageContent
+export default WebsitePageContent;

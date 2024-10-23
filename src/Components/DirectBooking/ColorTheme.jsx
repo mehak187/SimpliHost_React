@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { FaSearch } from "react-icons/fa";
 
 function ColorTheme() {
+    const [searchBoxColor, setSearchBoxColor] = useState('#3551B6');
+    const [primaryColor, setPrimaryColor] = useState('#3551B6');
+    const [buttonColor, setButtonColor] = useState('#3551B6');
+    const [headerColor, setHeaderColor] = useState('#3551B6');
+    const [footerColor, setFooterColor] = useState('#3551B6');
+    const [middleColor, setMiddleColor] = useState('#3551B6');
+
     return (
         <div>
             <h5>Select a Color Scheme for Website</h5>
@@ -39,43 +46,55 @@ function ColorTheme() {
                         <div className="col-lg-6 col-md-12 col-sm-6 mb-2">
                             <label htmlFor="" className='fw-semi'>Search Box Background Color</label>
                             <div className='d-flex align-items-center'>
-                                <input type="color" className='col-in shadow rounded-3' />
-                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>#3551B6</p>
+                                <input type="color" className='col-in shadow rounded-3'
+                                    value={searchBoxColor}
+                                    onChange={(e) => setSearchBoxColor(e.target.value)} />
+                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>{searchBoxColor}</p>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-6 mb-2">
                             <label htmlFor="" className='fw-semi'>Primary Color</label>
                             <div className='d-flex align-items-center'>
-                                <input type="color" className='col-in shadow rounded-3' />
-                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>#3551B6</p>
+                                <input type="color" className='col-in shadow rounded-3'
+                                    value={primaryColor}
+                                    onChange={(e) => setPrimaryColor(e.target.value)} />
+                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>{primaryColor}</p>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-6 mb-2">
                             <label htmlFor="" className='fw-semi'>Button Color</label>
                             <div className='d-flex align-items-center'>
-                                <input type="color" className='col-in shadow rounded-3' />
-                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>#3551B6</p>
+                                <input type="color" className='col-in shadow rounded-3'
+                                    value={buttonColor}
+                                    onChange={(e) => setButtonColor(e.target.value)} />
+                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>{buttonColor}</p>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-6 mb-2">
                             <label htmlFor="" className='fw-semi'>Header Color</label>
                             <div className='d-flex align-items-center'>
-                                <input type="color" className='col-in shadow rounded-3' />
-                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>#3551B6</p>
+                                <input type="color" className='col-in shadow rounded-3'
+                                    value={headerColor}
+                                    onChange={(e) => setHeaderColor(e.target.value)} />
+                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>{headerColor}</p>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-6 mb-2">
                             <label htmlFor="" className='fw-semi'>Footer Color</label>
                             <div className='d-flex align-items-center'>
-                                <input type="color" className='col-in shadow rounded-3' />
-                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>#3551B6</p>
+                                <input type="color" className='col-in shadow rounded-3'
+                                    value={footerColor}
+                                    onChange={(e) => setFooterColor(e.target.value)} />
+                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>{footerColor}</p>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-6 mb-2">
                             <label htmlFor="" className='fw-semi'>Middle Color</label>
                             <div className='d-flex align-items-center'>
-                                <input type="color" className='col-in shadow rounded-3' />
-                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>#3551B6</p>
+                                <input type="color" className='col-in shadow rounded-3'
+                                    value={middleColor}
+                                    onChange={(e) => setMiddleColor(e.target.value)} />
+                                <p className='bg-white border rounded-3 w-100 mb-0 p-1'>{middleColor}</p>
                             </div>
                         </div>
                     </div>
@@ -87,10 +106,10 @@ function ColorTheme() {
                             <div className='bg-white shadow p-3 rounded-3 d-flex align-items-center'>
                                 <div className='border-end w-100'>
                                     <label htmlFor="" className='fw-semi'>Location</label>
-                                    <input type="text" className='w-100 border-0 small mt-2' placeholder='Which city do you prefer?'/>
+                                    <input type="text" className='w-100 border-0 small mt-2' placeholder='Which city do you prefer?' />
                                 </div>
                                 <div className='bg-blue rounded-circle d-inline-flex p-2 text-white m-2'>
-                                    <FaSearch className='fs-5'/>
+                                    <FaSearch className='fs-5' />
                                 </div>
                             </div>
                             <div className='mt-3'>
@@ -104,4 +123,4 @@ function ColorTheme() {
     )
 }
 
-export default ColorTheme
+export default ColorTheme;

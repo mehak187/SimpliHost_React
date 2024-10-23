@@ -66,10 +66,11 @@ import { useLocation } from "react-router-dom";
 import Faq from "./Pages/Website/Faq";
 import ListingFiltered from "./Pages/Website/ListingFiltered";
 import ListingPhotos from "./Pages/Website/ListingPhotos";
-import CopyItem from "./Components/Modals/CopyItem";
 import AddFee from "./Components/CoHosting/AddFee";
 import AddPromoCode from "./Components/DirectBooking/AddPromoCode";
 import AddPolicy from "./Components/DirectBooking/AddPolicy";
+import SelectPropertiesModal from "./Components/Modals/SelectPropertiesModal";
+import CleaningTask from "./Components/Modals/CleaningTask";
 
 function App() {
   function ScrollToTop() {
@@ -150,7 +151,8 @@ function App() {
           <Route path="admin/stepper" element={<GettingStart />} />
           <Route path="admin/labelStepper" element={<LabelStepper />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/connect" element={<CopyItem />} />
+          <Route path="/connect" element={<SelectPropertiesModal />} />
+          <Route path="/clean-task" element={<CleaningTask />} />
       </Routes>
     </BrowserRouter>
    </div>
