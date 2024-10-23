@@ -1,16 +1,62 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import DetailPage from "./DetailPage";
 
 function ChecklistTabs() {
+  const [activeTab, setActiveTab] = useState("details");
+  const tabRefs = useRef({});
+
+  useEffect(() => {
+    tabRefs.current[activeTab]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, [activeTab]);
+
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
+
   const tabs = [
-    { id: "details", label: "Details", content: <DetailPage /> },
-    { id: "calendar", label: "Kitchen", content: "" },
-    { id: "pricing", label: "Living Room", content: "" },
-    { id: "tasks", label: "Bathroom No. 1", content: "" },
-    { id: "checklists", label: "Bedroom No. 1", content: "" },
-    { id: "inventory", label: "Bathroom No. 2", content: "" },
-    { id: "automations", label: "Bedroom No. 2", content: "" },
-    { id: "smart-devices", label: "Basement", content: "" },
+    {
+      id: "details",
+      label: "Details",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "kitchen",
+      label: "Kitchen",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "living-room",
+      label: "Living Room",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "bathroom-1",
+      label: "Bathroom No. 1",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "bedroom-1",
+      label: "Bedroom No. 1",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "bathroom-2",
+      label: "Bathroom No. 2",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "bedroom-2",
+      label: "Bedroom No. 2",
+      content: <DetailPage activeTab={activeTab} />,
+    },
+    {
+      id: "basement",
+      label: "Basement",
+      content: <DetailPage activeTab={activeTab} />,
+    },
   ];
 
   return (
@@ -22,31 +68,34 @@ function ChecklistTabs() {
             id="nav-tab"
             role="tablist"
           >
-            {tabs.map((tab, index) => (
+            {tabs.map((tab) => (
               <button
                 key={tab.id}
-                className={`nav-link ${index === 0 ? "active" : ""}`}
+                onClick={() => handleTabClick(tab.id)}
+                className={`nav-link ${activeTab === tab.id ? "active" : ""}`}
                 id={`${tab.id}-tab`}
                 data-bs-toggle="tab"
                 data-bs-target={`#${tab.id}`}
                 type="button"
                 role="tab"
                 aria-controls={tab.id}
-                aria-selected={index === 0 ? "true" : "false"}
+                aria-selected={activeTab === tab.id ? "true" : "false"}
               >
                 {tab.label}
               </button>
             ))}
           </div>
           <div className="tab-content mt-3" id="nav-tabContent">
-            {tabs.map((tab, index) => (
+            {tabs.map((tab) => (
               <div
                 key={tab.id}
-                className={`tab-pane fade ${index === 0 ? "show active" : ""}`}
+                ref={(el) => (tabRefs.current[tab.id] = el)}
+                className={`tab-pane fade ${
+                  activeTab === tab.id ? "show active" : ""
+                }`}
                 id={tab.id}
                 role="tabpanel"
                 aria-labelledby={`${tab.id}-tab`}
-                tabIndex={0}
               >
                 {tab.content}
               </div>

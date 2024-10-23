@@ -155,7 +155,7 @@ function AddNewInvoice() {
       <div>
         <div className="d-flex justify-content-end align-items-center mt-3">
           <Link
-            to=""
+            to="#"
             className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2"
           >
             Add Property
@@ -231,7 +231,7 @@ function AddNewInvoice() {
             <h4 className="fw-semi mt-4">Properties Details:</h4>
             <div className="d-flex justify-content-end align-items-center mt-3">
               <Link
-                to=""
+                to="#"
                 className="px-sm-4 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2 me-3"
               >
                 Add Refund

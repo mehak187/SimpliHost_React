@@ -32,7 +32,15 @@ function FilterRow() {
                 className="form-select px-1 text-grey small border-0 w-100 focus-none"
                 id=""
               >
-                <option value="Filter">Filter</option>
+                <option value="Admin">Admin</option>
+                <option value="Amenity">Amenity</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Inspection">Inspection</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Pet">Pet</option>
+                <option value="Seasonal">Seasonal</option>
+                <option value="Property">Property</option>
+                <option value="Property Group">Property Group</option>
               </select>
             </div>
           </div>
@@ -40,7 +48,7 @@ function FilterRow() {
       </div>
       <div className="d-sm-flex col-xl-6 col-12 mt-3 mt-xl-0 justify-content-end align-items-center">
         <Link
-          to="#"
+          to="/admin/checklistTab"
           className="px-sm-4 mt-3 mt-sm-0 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2"
         >
           Add Checklist

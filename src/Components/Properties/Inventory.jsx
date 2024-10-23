@@ -97,7 +97,7 @@ function Inventory() {
         </div>
         <div className="d-sm-flex col-xl-6 col-12 mt-3 mt-xl-0 justify-content-end align-items-center">
           <Link
-            to=""
+            to="#"
             className="px-sm-4 mt-3 me-2 mt-sm-0 px-3 border-blue text-center d-block d-sm-inline text-blue rounded-3 opacity-hover bg-white text-decoration-none py-2"
           >
             Replenish Item
@@ -149,10 +149,10 @@ function Inventory() {
                 </td>
                 <td className="small text-black">
                   <div className="d-flex">
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <IoPencil className="fs-5" />
                     </Link>
-                    <Link to="" className="mx-1 tblicon">
+                    <Link to="#" className="mx-1 tblicon">
                       <HiTrash className="fs-5" />
                     </Link>
                   </div>

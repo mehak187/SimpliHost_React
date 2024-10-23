@@ -286,14 +286,14 @@ function Checklists() {
                   </div>
                   <div className="col-lg-4 d-flex mt-3 align-items-center ">
                     <span className="text-nowrap me-2">Up to: </span>
-                    <select
-                      id="Property"
-                      className="inputstyle bg-white w-100 focus-none"
-                    >
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                    </select>
+                  
+                    <select className="inputstyle bg-white w-100 focus-none">
+                  {Array.from({ length: 31 }, (_, i) => (
+                    <option key={i + 1} value={String(i + 1).padStart(2, "0")}>
+                      {String(i + 1).padStart(2, "0")}
+                    </option>
+                  ))}
+                </select>
                   </div>
                   <div className="col-lg-7 d-flex mt-3 align-items-center ">
                     <p className="mb-0">day(s) after guest checkout</p>
