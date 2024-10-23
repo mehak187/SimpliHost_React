@@ -21,7 +21,7 @@ function AddChecklistCategory() {
                     type="text"
                     id="categoryName"
                     className="inputstyle bg-white focus-none"
-                    placeholder="Type Na,e here"
+                    placeholder="Type Name here"
                   />
                 </div>
                 <div className="col-lg-6 mt-3">

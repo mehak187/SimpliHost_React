@@ -308,7 +308,8 @@ function Main() {
                     to="admin/settings"
                     className={`sidelink d-flex align-items-center text-white ${
                       isActive("/admin/settings") ||
-                      isActive("/admin/add-checklist-category")
+                      isActive("/admin/add-checklist-category") ||
+                      isActive("/admin/edit-general")
                         ? "active"
                         : ""
                     }`}

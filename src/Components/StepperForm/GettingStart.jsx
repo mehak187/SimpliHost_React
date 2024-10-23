@@ -43,7 +43,7 @@ function GettingStart() {
         <div className="d-flex align-items-center justify-content-between mt-5">
           <div>
             <Link
-              to=""
+              to="#"
               className="bg-lgrey text-dark rounded-3 py-2 px-4 fw-semi border text-decoration-none"
             >
               Back

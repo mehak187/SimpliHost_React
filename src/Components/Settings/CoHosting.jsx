@@ -25,9 +25,8 @@ function CoHosting() {
                     <option value="" selected disabled hidden>
                       Select Expense Type
                     </option>
-                    <option value="Expense1">Expense1</option>
-                    <option value="Expense2">Expense2</option>
-                    <option value="Expense3">Expense3</option>
+                    <option value="All Recurring Expenses">All Recurring Expenses</option>
+                    <option value="Default Recurring Expense Type">Default Recurring Expense Type</option>
                   </select>
                 </div>
                 <div className="col-lg-6 me-lg-2 mt-3">

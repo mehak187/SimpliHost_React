@@ -56,7 +56,7 @@ function Login() {
                           </div>
                           <div className="text-end">
                             <Link
-                              to=""
+                              to="#"
                               className="text-decoration-none small blu-clr"
                             >
                               Forgot Password
@@ -78,7 +78,7 @@ function Login() {
                                     <div className="position-or"></div>
                                   </div>
                                   <Link
-                                    to=""
+                                    to="#"
                                     className="bg-lgrey text-dark text-decoration-none d-flex align-items-center justify-content-center border-0 py-2 rounded-3 w-100 my-3"
                                   >
                                     <div>
@@ -95,7 +95,7 @@ function Login() {
                                     </div>
                                   </Link>
                                   <Link
-                                    to=""
+                                    to="#"
                                     className="bg-lgrey border-0 text-dark text-decoration-none d-flex align-items-center justify-content-center py-2 rounded-3 w-100 "
                                   >
                                     <div>

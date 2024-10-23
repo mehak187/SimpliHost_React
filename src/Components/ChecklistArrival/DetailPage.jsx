@@ -50,12 +50,17 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-function DetailPage() {
-  const [expanded, setExpanded] = React.useState("panel1");
+function DetailPage({ activeTab }) {
+  const [expanded, setExpanded] = useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
+
+  const isExpanded = (id) => {
+    return activeTab === id ? "panel1" : false; 
+  };
+
   return (
     <div>
       <form action="">
@@ -183,9 +188,9 @@ function DetailPage() {
         </div>
         <div className="mt-4">
           <Accordion
+            expanded={expanded === "kitchen" || isExpanded("kitchen")}
+            onChange={handleChange("kitchen")}
             className="mb-3 border-0"
-            expanded={expanded === "panel1"}
-            onChange={handleChange("panel1")}
           >
             <AccordionSummary
               className="border-0 bg-blue text-white rounded-3"
@@ -299,10 +304,11 @@ function DetailPage() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+
           <Accordion
+            expanded={expanded === "living-room" || isExpanded("living-room")}
+            onChange={handleChange("living-room")}
             className="mb-3 border-0"
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
           >
             <AccordionSummary
               className="border-0 bg-blue text-white rounded-3"
@@ -417,9 +423,9 @@ function DetailPage() {
             </AccordionDetails>
           </Accordion>
           <Accordion
+            expanded={expanded === "bathroom-1" || isExpanded("bathroom-1")}
+            onChange={handleChange("bathroom-1")}
             className="mb-3 border-0"
-            expanded={expanded === "panel3"}
-            onChange={handleChange("panel3")}
           >
             <AccordionSummary
               className="border-0 bg-blue text-white rounded-3"
@@ -534,9 +540,9 @@ function DetailPage() {
             </AccordionDetails>
           </Accordion>
           <Accordion
+            expanded={expanded === "bedroom-1" || isExpanded("bedroom-1")}
+            onChange={handleChange("bedroom-1")}
             className="mb-3 border-0"
-            expanded={expanded === "panel4"}
-            onChange={handleChange("panel4")}
           >
             <AccordionSummary
               className="border-0 bg-blue text-white rounded-3"
@@ -651,9 +657,243 @@ function DetailPage() {
             </AccordionDetails>
           </Accordion>
           <Accordion
+            expanded={expanded === "bathroom-2" || isExpanded("bathroom-2")}
+            onChange={handleChange("bathroom-2")}
             className="mb-3 border-0"
-            expanded={expanded === "panel5"}
-            onChange={handleChange("panel5")}
+          >
+            <AccordionSummary
+              className="border-0 bg-blue text-white rounded-3"
+              aria-controls="panel3d-content"
+              id="panel3d-header"
+            >
+              <Typography>Bathroom No. 2</Typography>
+            </AccordionSummary>
+            <AccordionDetails className="border-0">
+              <Typography>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">
+                        Spot check kitchen (dishes/glasses, pots/pans, etc.)
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">Verify dishwasher is empty</p>
+                      <p className="fw-semi mb-0">
+                        Verify dishwasher does not smell
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">Verify microwave</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">Verify dishwasher is empty</p>
+                      <p className="fw-semi mb-0">
+                        Verify dishwasher does not smell
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "bedroom-2" || isExpanded("bedroom-2")}
+            onChange={handleChange("bedroom-2")}
+            className="mb-3 border-0"
+          >
+            <AccordionSummary
+              className="border-0 bg-blue text-white rounded-3"
+              aria-controls="panel4d-content"
+              id="panel4d-header"
+            >
+              <Typography>Bedroom No. 2</Typography>
+            </AccordionSummary>
+            <AccordionDetails className="border-0">
+              <Typography>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">
+                        Spot check kitchen (dishes/glasses, pots/pans, etc.)
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">Verify dishwasher is empty</p>
+                      <p className="fw-semi mb-0">
+                        Verify dishwasher does not smell
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">Verify microwave</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-lgrey p-2 border rounded-3 d-sm-flex align-items-center justify-content-between mb-2">
+                  <div className="d-flex align-items-center">
+                    <div className="border-end d-flex align-items-center px-2">
+                      <div>
+                        <input type="checkbox" className="" />
+                      </div>
+                      <div className="ms-2">
+                        <RiDragMove2Line className="text-blue fs-3" />
+                      </div>
+                    </div>
+                    <div className="ps-3">
+                      <p className="fw-semi mb-0">Verify dishwasher is empty</p>
+                      <p className="fw-semi mb-0">
+                        Verify dishwasher does not smell
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center justify-content-end mt-sm-0 mt-3">
+                    <div>
+                      <img src={SettingImg} alt="" className="md-img" />
+                    </div>
+                    <div className="ms-2">
+                      <DropDetail />
+                    </div>
+                  </div>
+                </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "basement" || isExpanded("basement")}
+            onChange={handleChange("basement")}
+            className="mb-3 border-0"
           >
             <AccordionSummary
               className="border-0 bg-blue text-white rounded-3"

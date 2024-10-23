@@ -1236,7 +1236,7 @@ input:focus {
 /* --------css-3------- */
 .inputstyle {
   width: 100%;
-  padding: 18px;
+  padding: 14px 14px;
   border-radius: 10px;
   background-color: #F3F3F5;
   border: solid 1px #D5D5D5;
@@ -3561,6 +3561,9 @@ th,td {
   .high-slide .slick-prev,
   .high-slide .slick-next {
     top: 50px;
+  }
+  .inputstyle {
+    padding: 14px 8px;
   }
 }
 
