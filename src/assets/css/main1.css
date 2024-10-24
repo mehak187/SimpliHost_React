@@ -3224,6 +3224,58 @@ td {
   padding: 0 20px;
 }
 
+.dropdown1,
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-toggle1{
+    cursor: pointer;
+}
+
+.dropdown-menu1,
+.dropdown-content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.customer-list-item {
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.customer-list-item img {
+  width: 30px;
+  margin-right: 10px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.create-new-btn {
+    padding: 10px;
+    width: 100%;
+}
+
+.search-input {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+textarea:focus{
+  outline: none;
+}
+
 .form-select:focus {
   box-shadow: none;
   outline: none;
@@ -3232,6 +3284,7 @@ td {
 .p-calendar:not(.p-calendar-disabled).p-focus>.p-inputtext {
   box-shadow: none !important;
 }
+
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
