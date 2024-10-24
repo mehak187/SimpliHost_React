@@ -43,6 +43,9 @@ function Multi() {
         if (hasEvent) {
           info.el.style.backgroundColor = "#cdcdcd"; 
         }
+        else{
+          info.el.style.backgroundColor = "#a6e3a1"; 
+        }
       }
     });
 
