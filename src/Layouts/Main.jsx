@@ -252,9 +252,12 @@ function Main() {
                 <li>
                   <Link
                     to="admin/direct-booking"
-                    className={`sidelink d-flex align-items-center text-white ${isActive(
-                      "/admin/direct-booking"
-                    )}`}
+                    className={`sidelink d-flex align-items-center text-white ${
+                      isActive("/admin/direct-booking") ||
+                      isActive("/admin/add-widget") ||
+                      isActive("/admin/add-promo") ||
+                      isActive("/admin/add-policy")
+                    }`}
                   >
                     <div className="d-flex align-items-center">
                       <img src={directbooking} alt="" className="sideicon" />

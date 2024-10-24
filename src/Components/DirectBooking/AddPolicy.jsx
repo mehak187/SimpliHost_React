@@ -1,4 +1,5 @@
 import React from 'react'
+import SelectProperty1 from '../Modals/SelectProperty1'
 
 function AddPolicy() {
     return (
@@ -11,13 +12,11 @@ function AddPolicy() {
                             <div className="row mt-4">
                                 <div className="col-lg-6 mb-3">
                                     <label htmlFor="policyName" className='fw-semi mb-2 small'>Policy Name</label>
-                                    <input type="text" name="" className='inputstyle py-2' id="policyName" placeholder='Type name here' />
+                                    <input type="text" name="" className='inputstyle' id="policyName" placeholder='Type name here' />
                                 </div>
                                 <div className="col-lg-6 mb-3">
                                     <label htmlFor="property" className='fw-semi mb-2 small'>Select Property & Property Group</label>
-                                    <select name="" id="property" className='inputstyle py-2'>
-                                        <option value="">Select Property</option>
-                                    </select>
+                                    <SelectProperty1 />
                                 </div>
                                 <div className="col-12">
                                     <label htmlFor="refund" className='fw-semi mb-2 small'>Refund Policy</label>
