@@ -79,7 +79,7 @@ function Multi() {
         } else {
           info.el.style.backgroundImage = `url(${moonImage})`; 
           info.el.style.backgroundRepeat = 'no-repeat'; 
-          info.el.style.backgroundPosition = 'top right'; 
+          info.el.style.backgroundPosition = 'top 10px right 10px'; 
         }
       }
     });
