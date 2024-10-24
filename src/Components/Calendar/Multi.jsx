@@ -4,7 +4,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
 import { addDays } from "date-fns";
-
+import moonImage from '../../assets/img/moon.png';
 function Multi() {
   useEffect(() => {
     let calendarEl = document.getElementById("calendar");
@@ -42,9 +42,10 @@ function Multi() {
 
         if (hasEvent) {
           info.el.style.backgroundColor = "#cdcdcd"; 
-        }
-        else{
-          info.el.style.backgroundColor = "#a6e3a1"; 
+        } else {
+          info.el.style.backgroundImage = `url(${moonImage})`; 
+          info.el.style.backgroundRepeat = 'no-repeat'; 
+          info.el.style.backgroundPosition = '20px 20px'; 
         }
       }
     });
