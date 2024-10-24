@@ -33,6 +33,39 @@ function Multi() {
       },
       dayHeaderFormat: { weekday: "long" },
       events: adjustedEvents,
+
+      dayCellDidMount: function (info) {
+        const dateStr = toDateOnly(info.date.toISOString());
+  
+        // Check if the current day falls within the range of an event
+        const hasEvent = events.some((event) => {
+          const start = toDateOnly(new Date(event.start).toISOString());
+          const end = toDateOnly(
+            event.end ? new Date(event.end).toISOString() : start
+          );
+          return dateStr >= start && dateStr <= end;
+        });
+  
+        // Apply slash if it's part of an event
+        if (hasEvent) {
+          info.el.style.backgroundImage =
+            "linear-gradient(45deg, transparent 45%, black 45%, black 55%, transparent 55%)";
+          info.el.style.backgroundSize = "100% 100%";
+        } else {
+          // Apply moon icon for days without events
+          if (!info.el.querySelector(".moon-icon")) {
+            const moonIcon = document.createElement("span");
+            moonIcon.classList.add("moon-icon");
+            moonIcon.innerHTML = "🌙";
+            moonIcon.style.fontSize = "30px";
+            moonIcon.style.position = "absolute";
+            moonIcon.style.top = "5px";
+            moonIcon.style.left = "5px";
+            info.el.style.position = "relative";
+            info.el.appendChild(moonIcon);
+          }
+        }
+      },
     });
 
     calendar.render();
