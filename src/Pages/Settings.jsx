@@ -10,6 +10,7 @@ import Payments from "../Components/Settings/Payments";
 import Subscription from "../Components/Settings/Subscription";
 import Preferences from "../Components/Settings/Preferences";
 import Taxes from "../Components/Settings/Taxes";
+import SubscriptionInvoices from "../Components/Settings/SubscriptionInvoices";
 
 function Checklist() {
   return (
@@ -127,7 +128,19 @@ function Checklist() {
               aria-controls="subscription"
               aria-selected="false"
             >
-              Subscription
+              Subscription Plans
+            </button>
+            <button
+              className="nav-link"
+              id="subscriptioninvoices-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#subscriptioninvoices"
+              type="button"
+              role="tab"
+              aria-controls="subscriptioninvoices"
+              aria-selected="false"
+            >
+              Subscription Invoices
             </button>
             <button
               className="nav-link"
@@ -235,6 +248,15 @@ function Checklist() {
               tabIndex={0}
             >
               <Subscription />
+            </div>
+            <div
+              className="tab-pane fade"
+              id="subscriptioninvoices"
+              role="tabpanel"
+              aria-labelledby="subscriptioninvoices-tab"
+              tabIndex={0}
+            >
+              <SubscriptionInvoices />
             </div>
             <div
               className="tab-pane fade"

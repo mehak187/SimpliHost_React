@@ -87,7 +87,7 @@ export default function AddWidget() {
                                         <div className="row">
                                             <div className="col-12 col-md-12 col-sm-6 mb-2">
                                                 <label htmlFor="" className='fw-semi'>Select Theme</label>
-                                                <select name="" id="" className='inputstyle py-2 bg-white'>
+                                                <select name="" id="" className='inputstyle form-select py-2 bg-white'>
                                                     <option value="">Custom</option>
                                                     <option value="">Sunset Glow</option>
                                                     <option value="">Ocean Breeze</option>
