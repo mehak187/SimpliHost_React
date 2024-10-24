@@ -3,9 +3,10 @@ import { Calendar } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
-import { addDays } from "date-fns";
+import { addDays, format } from "date-fns";
 import moonImage from '../../assets/img/moon.png';
 import lineImage from '../../assets/img/line.png';
+
 function Multi() {
   useEffect(() => {
     let calendarEl = document.getElementById("calendar");
@@ -14,6 +15,12 @@ function Multi() {
       { title: "Conference", start: "2024-10-22", end: "2024-10-25" },
       { title: "Meeting", start: "2024-10-27", end: "2024-10-27" },
       { title: "Workshop", start: "2024-10-14", end: "2024-10-17" },
+    ];
+
+    const blockedDays = [
+      "2024-10-28", 
+      "2024-10-29",
+      "2024-10-30",
     ];
 
     const adjustedEvents = events.map((event) => ({
@@ -30,22 +37,26 @@ function Multi() {
       events: adjustedEvents,
 
       dayCellDidMount: function (info) {
-        const adjustedDate = addDays(info.date, 1);
-        const dateStr = adjustedDate.toISOString().split("T")[0]; 
+        const dateStr = format(info.date, 'yyyy-MM-dd'); 
 
         const hasEvent = adjustedEvents.some(event => {
           return dateStr >= event.start && dateStr < event.end;
         });
 
-        if (hasEvent) {
+        const isBlocked = blockedDays.includes(dateStr);
+        
+        if (isBlocked) {
+          info.el.style.backgroundColor = "#F0F0F0"; // Light gray background
+          info.el.style.color = "#cdcdcd"; // Grayed out text
+          info.el.style.pointerEvents = 'none'; // Disable interactions if needed
+        } else if (hasEvent) {
           info.el.style.backgroundImage = `url(${lineImage})`; 
           info.el.style.backgroundRepeat = 'no-repeat'; 
           info.el.style.backgroundSize = 'cover'; 
-
         } else {
           info.el.style.backgroundImage = `url(${moonImage})`; 
           info.el.style.backgroundRepeat = 'no-repeat'; 
-          info.el.style.backgroundPosition = '20px 20px'; 
+          info.el.style.backgroundPosition = 'right 10px top 10px'; // Background positioned top-right
         }
       }
     });
