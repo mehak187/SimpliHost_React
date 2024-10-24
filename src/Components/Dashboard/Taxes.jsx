@@ -34,7 +34,7 @@ function Taxes() {
               Occupancy Taxes <CiStar />
           </h4>
         </div>
-        <div className="d-md-flex align-items-center justify-content-between w-100">
+        <div className="d-sm-flex align-items-center justify-content-between w-100">
           <div className="d-sm-flex align-items-center justify-content-end my-sm-0 my-2">
             <div className="mx-sm-2 mt-sm-0 mt-2">
               <QuickFilter />
@@ -43,8 +43,7 @@ function Taxes() {
               <DateCalendarPicker />
             </div>
           </div>
-        </div>
-        <div className="dropdown">
+          <div className="dropdown">
           <button
             className="bg-white border w-100 py-2 px-3 rounded-2 dropdown-toggle d-flex align-items-center justify-content-center"
             type="button"
@@ -69,6 +68,7 @@ function Taxes() {
               </Link>
             </li>
           </ul>
+        </div>
         </div>
       </div>
       <div className="row mt-3">
