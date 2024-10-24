@@ -1,4 +1,5 @@
 import React from "react";
+import SelectProperty1 from "../Modals/SelectProperty1";
 function AddNewExpenses() {
   return (
     <section>
@@ -27,14 +28,17 @@ function AddNewExpenses() {
             <select
               name="ExpenseType"
               id="ExpenseType"
-              className="inputstyle focus-none"
+              className="inputstyle  form-select focus-none"
             >
               <option value="" selected disabled hidden>
                 Select Expense Type
               </option>
-              <option value="Type1">Type1</option>
-              <option value="Type2">Type2</option>
-              <option value="Type3">Type3</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Repairs">Repairs</option>
+              <option value="Supplies">Supplies</option>
+              <option value="Utilities">Utilities</option>
+              <option value="Misc">Misc</option>
+
             </select>
           </div>
           <div className="col-lg-4 mt-3 d-flex align-items-center">
@@ -44,9 +48,10 @@ function AddNewExpenses() {
               placeholder="00"
               className="inputstyle me-2 mt-3 w-100 focus-none"
             />
-            <select name="" id="" className="inputstyle mt-3 w-100 focus-none">
+            <select name="" id="" className="inputstyle form-select mt-3 w-100 focus-none">
               <option value="days">Days</option>
               <option value="weeks">Weeks</option>
+              <option value="months">Months</option>
             </select>
           </div>
 
@@ -55,25 +60,14 @@ function AddNewExpenses() {
               Properties
             </label>
             <br />
-            <select
-              name="Properties"
-              id="Properties"
-              className="inputstyle focus-none"
-            >
-              <option value="" selected disabled hidden>
-                Select Properties
-              </option>
-              <option value="Property1">Property1</option>
-              <option value="Property2">Property2</option>
-              <option value="Property3">Property3</option>
-            </select>
+           <SelectProperty1 />
           </div>
           <div className="col-lg-4 mt-3">
             <label htmlFor="Owner" className="fw-semi">
               Select Owner
             </label>
             <br />
-            <select name="Owner" id="Owner" className="inputstyle focus-none">
+            <select name="Owner" id="Owner" className="inputstyle form-select focus-none">
               <option value="" selected disabled hidden>
                 Select Owner
               </option>
