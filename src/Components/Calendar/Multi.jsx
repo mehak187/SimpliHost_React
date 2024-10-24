@@ -4,26 +4,35 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
 import { addDays, format } from "date-fns";
-import moonImage from "../../assets/img/moon.png";
-import lineImage from "../../assets/img/line.png";
+import moonImage from '../../assets/img/moon.png';
+import lineImage from '../../assets/img/line.png';
+import owner from '../../assets/img/owner.png';
 
 function Multi() {
   useEffect(() => {
     let calendarEl = document.getElementById("calendar");
 
     const events = [
-      { title: "Laurie +3 guests • $1,000", start: "2024-10-22", end: "2024-10-25", color: "#3551B6" },
-      { title: "Alex and Andy • $500", start: "2024-10-27", end: "2024-10-27", color: "#FA585D" },
-      { title: "Laurie +3 guests • $1,000", start: "2024-10-14", end: "2024-10-17", color: "#FA585D" },
+      { 
+        title: "Laurie +3 guests • $1,000", 
+        start: "2024-10-22", 
+        end: "2024-10-25", 
+        color: "#3551B6",
+        imageUrl:owner ,
+      },
+      { title: "Meeting", start: "2024-10-27", end: "2024-10-27", color: "#F39C12" },
+      { title: "Workshop", start: "2024-10-14", end: "2024-10-17", color: "#2ECC71" },
     ];
 
-    const blockedDays = ["2024-10-28", "2024-10-29", "2024-10-30"];
+    const blockedDays = [
+      "2024-10-28", 
+      "2024-10-29",
+      "2024-10-30",
+    ];
 
     const adjustedEvents = events.map((event) => ({
       ...event,
-      end: event.end
-        ? addDays(new Date(event.end), 1).toISOString().split("T")[0]
-        : event.end,
+      end: event.end ? addDays(new Date(event.end), 1).toISOString().split("T")[0] : event.end,
       allDay: true,
     }));
 
@@ -34,29 +43,33 @@ function Multi() {
       dayHeaderFormat: { weekday: "long" },
       events: adjustedEvents,
 
-      dayCellDidMount: function (info) {
-        const dateStr = format(info.date, "yyyy-MM-dd");
+      eventContent: function(arg) {
+        const event = arg.event;
+        const imageElement = event.extendedProps.imageUrl ? `<img src="${event.extendedProps.imageUrl}" style="width:30px; height:30px; margin-right:5px;" />` : '';
+        return { html: `${imageElement}<span style="color: ${event.color}">${event.title}</span>` };
+      },
 
-        const hasEvent = adjustedEvents.some((event) => {
+      dayCellDidMount: function (info) {
+        const dateStr = format(info.date, 'yyyy-MM-dd'); 
+
+        const hasEvent = adjustedEvents.some(event => {
           return dateStr >= event.start && dateStr < event.end;
         });
 
         const isBlocked = blockedDays.includes(dateStr);
-
         if (isBlocked) {
-          info.el.style.backgroundColor = "#F0F0F0";
-          info.el.style.color = "#cdcdcd";
-          info.el.style.pointerEvents = "none";
+          info.el.style.backgroundColor = "#F0F0F0"; 
+          info.el.style.color = "#cdcdcd"; 
         } else if (hasEvent) {
-          info.el.style.backgroundImage = `url(${lineImage})`;
-          info.el.style.backgroundRepeat = "no-repeat";
-          info.el.style.backgroundSize = "cover";
+          info.el.style.backgroundImage = `url(${lineImage})`; 
+          info.el.style.backgroundRepeat = 'no-repeat'; 
+          info.el.style.backgroundSize = 'cover'; 
         } else {
-          info.el.style.backgroundImage = `url(${moonImage})`;
-          info.el.style.backgroundRepeat = "no-repeat";
-          info.el.style.backgroundPosition = "right 10px top 10px";
+          info.el.style.backgroundImage = `url(${moonImage})`; 
+          info.el.style.backgroundRepeat = 'no-repeat'; 
+          info.el.style.backgroundPosition = 'top right'; 
         }
-      },
+      }
     });
 
     calendar.render();
