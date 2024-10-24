@@ -20,8 +20,20 @@ function Multi() {
         color: "#3551B6",
         imageUrl:owner ,
       },
-      { title: "Meeting", start: "2024-10-27", end: "2024-10-27", color: "#F39C12" },
-      { title: "Workshop", start: "2024-10-14", end: "2024-10-17", color: "#2ECC71" },
+      { 
+        title: "Laurie +3 guests • $1,000", 
+        start: "2024-10-27", 
+        end: "2024-10-27", 
+        color: "#FA585D",
+        imageUrl:owner ,
+      },
+      { 
+        title: "Laurie +3 guests • $1,000", 
+        start: "2024-10-14",
+         end: "2024-10-17",
+          color: "#2ECC71",
+        imageUrl:owner ,
+      },
     ];
 
     const blockedDays = [
@@ -45,7 +57,7 @@ function Multi() {
 
       eventContent: function(arg) {
         const event = arg.event;
-        const imageElement = event.extendedProps.imageUrl ? `<img src="${event.extendedProps.imageUrl}" style="width:30px; height:30px; margin-right:5px;" />` : '';
+        const imageElement = event.extendedProps.imageUrl ? `<img src="${event.extendedProps.imageUrl}" style="width:30px; height:30px; margin:5px 10px;" />` : '';
         return { html: `${imageElement}<span style="color: ${event.color}">${event.title}</span>` };
       },
 
