@@ -3224,6 +3224,11 @@ td {
   padding: 0 20px;
 }
 
+.filter-modal.modal-dialog {
+  max-width: 1000px !important;
+  padding: 0 20px;
+}
+
 .dropdown1,
 .dropdown-container {
     position: relative;
