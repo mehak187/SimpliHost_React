@@ -25,11 +25,7 @@ function Multi() {
     let calendar = new Calendar(calendarEl, {
       plugins: [dayGridPlugin, timeGridPlugin, listPlugin],
       initialView: "dayGridMonth",
-      headerToolbar: {
-        left: "prev,next today",
-        center: "title",
-        right: "dayGridMonth,timeGridWeek,listWeek",
-      },
+      headerToolbar: false,
       dayHeaderFormat: { weekday: "long" },
       events: adjustedEvents,
 
