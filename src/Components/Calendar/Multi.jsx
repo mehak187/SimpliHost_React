@@ -12,9 +12,9 @@ function Multi() {
     let calendarEl = document.getElementById("calendar");
 
     const events = [
-      { title: "Conference", start: "2024-10-22", end: "2024-10-25" },
-      { title: "Meeting", start: "2024-10-27", end: "2024-10-27" },
-      { title: "Workshop", start: "2024-10-14", end: "2024-10-17" },
+      { title: "Laurie +3 guests • $1,000", start: "2024-10-22", end: "2024-10-25", color: "#3551B6" },
+      { title: "Alex and Andy • $500", start: "2024-10-27", end: "2024-10-27", color: "#FA585D" },
+      { title: "Laurie +3 guests • $1,000", start: "2024-10-14", end: "2024-10-17", color: "#FA585D" },
     ];
 
     const blockedDays = ["2024-10-28", "2024-10-29", "2024-10-30"];
