@@ -1322,7 +1322,7 @@ input:checked+.slider:before {
 }
 
 .tblicon {
-  width: 45px;
+  min-width: 45px;
   height: 45px;
   color: #000;
   font-size: 25px;
@@ -3229,6 +3229,9 @@ td {
   outline: none;
 }
 
+.p-calendar:not(.p-calendar-disabled).p-focus>.p-inputtext {
+  box-shadow: none !important;
+}
 @media screen and (max-width: 1200px) {
   .filter-col {
     width: calc(33.33% - 12px);
@@ -3564,9 +3567,6 @@ td {
     padding: 6px;
   }
 
-  .p-calendar:not(.p-calendar-disabled).p-focus>.p-inputtext {
-    box-shadow: none;
-  }
 
 }
 

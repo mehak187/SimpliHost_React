@@ -1,4 +1,6 @@
 import React from "react";
+import SelectProperty1 from "../Modals/SelectProperty1";
+import { Calendar } from "primereact/calendar";
 
 function AddOperationsCodes() {
   return (
@@ -31,7 +33,7 @@ function AddOperationsCodes() {
                   <select
                     name="Code"
                     id="Code"
-                    className="inputstyle focus-none"
+                    className="inputstyle focus-none form-select"
                   >
                     <option value="" selected disabled hidden>
                       Select Code
@@ -57,40 +59,21 @@ function AddOperationsCodes() {
                     Start Date/Time
                   </label>
                   <br />
-                  <input
-                    type="date"
-                    id="StartDate"
-                    className="inputstyle focus-none"
-                  />
+                  <Calendar showIcon className="impdate" />
                 </div>
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="EndDate" className="fw-semi">
                     End Date/Time
                   </label>
                   <br />
-                  <input
-                    type="date"
-                    id="EndDate"
-                    className="inputstyle focus-none"
-                  />
+                  <Calendar showIcon className="impdate" />
                 </div>
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="Group" className="fw-semi">
                     Select Property/Property Group
                   </label>
                   <br />
-                  <select
-                    name="Group"
-                    id="Group"
-                    className="inputstyle focus-none"
-                  >
-                    <option value="" selected disabled hidden>
-                      Select Property/Property Group
-                    </option>
-                    <option value="Group1">Group1</option>
-                    <option value="Group2">Group2</option>
-                    <option value="Group3">Group3</option>
-                  </select>
+                 <SelectProperty1 />
                 </div>
                 <div className="col-lg-6 mt-3">
                   <label htmlFor="User" className="fw-semi">
@@ -100,7 +83,7 @@ function AddOperationsCodes() {
                   <select
                     name="User"
                     id="User"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Select Users

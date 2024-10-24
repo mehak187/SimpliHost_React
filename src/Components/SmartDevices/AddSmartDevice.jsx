@@ -1,4 +1,5 @@
 import React from "react";
+import SelectProperty1 from "../Modals/SelectProperty1";
 
 function AddSmartDevice() {
   return (
@@ -43,7 +44,7 @@ function AddSmartDevice() {
                   <select
                     name="Type"
                     id="Type"
-                    className="inputstyle focus-none"
+                    className="inputstyle form-select focus-none"
                   >
                     <option value="" selected disabled hidden>
                       Device Type
@@ -58,18 +59,7 @@ function AddSmartDevice() {
                     Property
                   </label>
                   <br />
-                  <select
-                    name="Property"
-                    id="Property"
-                    className="inputstyle focus-none"
-                  >
-                    <option value="" selected disabled hidden>
-                      Select Property
-                    </option>
-                    <option value="Property1">Property1</option>
-                    <option value="Property2">Property2</option>
-                    <option value="Property3">Property3</option>
-                  </select>
+                  <SelectProperty1 />
                 </div>
                 <div className="col-12 mt-4">
                   <div className="d-flex align-items-center">

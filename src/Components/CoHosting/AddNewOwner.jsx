@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SelectProperty1 from "../Modals/SelectProperty1";
+import SelectProperty2 from "../Modals/SelectProperty2";
 
 function AddNewOwner() {
   return (
@@ -121,7 +123,7 @@ function AddNewOwner() {
               Terms
             </label>
             <br />
-            <select name="Terms" id="Terms" className="inputstyle focus-none">
+            <select name="Terms" id="Terms" className="inputstyle form-select focus-none">
               <option value="" selected disabled hidden>
                 Select Terms
               </option>
@@ -138,7 +140,7 @@ function AddNewOwner() {
             <select
               name="FeeType"
               id="FeeType"
-              className="inputstyle focus-none"
+              className="inputstyle focus-none form-select"
             >
               <option value="" selected disabled hidden>
                 Select Fee Type
@@ -153,36 +155,14 @@ function AddNewOwner() {
               Properties
             </label>
             <br />
-            <select
-              name="Properties"
-              id="Properties"
-              className="inputstyle focus-none"
-            >
-              <option value="" selected disabled hidden>
-                Select Properties
-              </option>
-              <option value="Property1">Property1</option>
-              <option value="Property2">Property2</option>
-              <option value="Property3">Property3</option>
-            </select>
+           <SelectProperty1 />
           </div>
           <div className="col-lg-4 mt-3">
             <label htmlFor="PropertyGroup" className="fw-semi">
               Property Group
             </label>
             <br />
-            <select
-              name="PropertyGroup"
-              id="PropertyGroup"
-              className="inputstyle focus-none"
-            >
-              <option value="" selected disabled hidden>
-                Select Property Group
-              </option>
-              <option value="Group1">Group1</option>
-              <option value="Group2">Group2</option>
-              <option value="Group3">Group3</option>
-            </select>
+            <SelectProperty2 />
           </div>
           <div className="col-12 mt-4">
             <div className="d-flex align-items-center">

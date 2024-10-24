@@ -210,7 +210,8 @@ function Main() {
                     to="admin/smart-devices"
                     className={`sidelink d-flex align-items-center text-white ${
                       isActive("/admin/smart-devices") ||
-                      isActive("/admin/add-operations-codes")
+                      isActive("/admin/add-operations-codes") ||
+                      isActive("/admin/add-smart-device")
                     }`}
                   >
                     <div className="d-flex align-items-center">
