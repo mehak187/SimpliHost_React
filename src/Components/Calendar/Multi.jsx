@@ -4,8 +4,8 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
 import { addDays, format } from "date-fns";
-import moonImage from '../../assets/img/moon.png';
-import lineImage from '../../assets/img/line.png';
+import moonImage from "../../assets/img/moon.png";
+import lineImage from "../../assets/img/line.png";
 
 function Multi() {
   useEffect(() => {
@@ -17,15 +17,13 @@ function Multi() {
       { title: "Workshop", start: "2024-10-14", end: "2024-10-17" },
     ];
 
-    const blockedDays = [
-      "2024-10-28", 
-      "2024-10-29",
-      "2024-10-30",
-    ];
+    const blockedDays = ["2024-10-28", "2024-10-29", "2024-10-30"];
 
     const adjustedEvents = events.map((event) => ({
       ...event,
-      end: event.end ? addDays(new Date(event.end), 1).toISOString().split("T")[0] : event.end,
+      end: event.end
+        ? addDays(new Date(event.end), 1).toISOString().split("T")[0]
+        : event.end,
       allDay: true,
     }));
 
@@ -37,28 +35,28 @@ function Multi() {
       events: adjustedEvents,
 
       dayCellDidMount: function (info) {
-        const dateStr = format(info.date, 'yyyy-MM-dd'); 
+        const dateStr = format(info.date, "yyyy-MM-dd");
 
-        const hasEvent = adjustedEvents.some(event => {
+        const hasEvent = adjustedEvents.some((event) => {
           return dateStr >= event.start && dateStr < event.end;
         });
 
         const isBlocked = blockedDays.includes(dateStr);
-        
+
         if (isBlocked) {
-          info.el.style.backgroundColor = "#F0F0F0"; // Light gray background
-          info.el.style.color = "#cdcdcd"; // Grayed out text
-          info.el.style.pointerEvents = 'none'; // Disable interactions if needed
+          info.el.style.backgroundColor = "#F0F0F0";
+          info.el.style.color = "#cdcdcd";
+          info.el.style.pointerEvents = "none";
         } else if (hasEvent) {
-          info.el.style.backgroundImage = `url(${lineImage})`; 
-          info.el.style.backgroundRepeat = 'no-repeat'; 
-          info.el.style.backgroundSize = 'cover'; 
+          info.el.style.backgroundImage = `url(${lineImage})`;
+          info.el.style.backgroundRepeat = "no-repeat";
+          info.el.style.backgroundSize = "cover";
         } else {
-          info.el.style.backgroundImage = `url(${moonImage})`; 
-          info.el.style.backgroundRepeat = 'no-repeat'; 
-          info.el.style.backgroundPosition = 'right 10px top 10px'; // Background positioned top-right
+          info.el.style.backgroundImage = `url(${moonImage})`;
+          info.el.style.backgroundRepeat = "no-repeat";
+          info.el.style.backgroundPosition = "right 10px top 10px";
         }
-      }
+      },
     });
 
     calendar.render();
